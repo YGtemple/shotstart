@@ -1,0 +1,24 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Contact Us
+
+[PUBLISH] Have a question about an order, a product, or the 7-Day Shooting Challenge? Send us a note — we read every message and reply as soon as we can. For order questions, please include your order number so we can help faster.
+
+## Contact Form
+
+- [INTERNAL] Field: First name
+- [INTERNAL] Field: Email
+- [INTERNAL] Field: Order number (optional)
+- [INTERNAL] Field: Subject
+- [INTERNAL] Field: Message
+
+- [PUBLISH] Checkbox: I agree to be contacted about my question.
+- [PUBLISH] Submit button: Send message
+
+## Other Contact
+
+[PUBLISH] Email 1744059451@qq.com — include your name, order number (if any), and a short description of the issue. Reference your order number in the subject line for a faster reply.
+
+[PUBLISH] We read every message and reply as soon as we can. This store is email-only; no physical mailing address is published.
+
+[INTERNAL] 【操作者说明】Demo configuration，正式营业前复核：回复渠道与时效按真实客服能力核实，不承诺固定回复时限；不公布实体地址。
