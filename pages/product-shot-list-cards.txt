@@ -1,0 +1,84 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Product Detail: Shot List Cards
+
+[INTERNAL] 【操作者说明】卡片件数、材质与语种清单属于需核实信息；未确认前一律占位。卡片为 ShotStarter AI 草稿的配套提示工具，不替代创作者自行审核。
+
+## Product Title
+
+[PUBLISH] Shot List Cards — Plan Your Four Shots Before You Press Record
+
+## Selling Points (bullets)
+
+- [PUBLISH] Four-shot prompt sequence: hook, close-up, demonstration, closing line.
+- [PUBLISH] Each card pairs with the ShotStarter AI script and storyboard draft.
+- [PUBLISH] Pocket-sized set to keep beside the setup during filming.
+- [PUBLISH] Card count, material, and language list are listed in What's in the Box.
+
+- [INTERNAL] Pending before launch: [待确认: shot list cards contents and material]; [待确认: card size and count]; [待确认: printed language list].
+
+## Description Paragraph
+
+[PUBLISH] The Shot List Cards turn the ShotStarter draft into a physical check you can follow on set. Match each card to the script line and the four-shot storyboard, then tick off the hook, close-up, demonstration, and closing line before you publish. The cards are a companion to the ShotStarter AI assistant; they do not replace your own review of the draft. Exact card count, size, and material will be confirmed after final product verification.
+
+## Specifications
+
+Attribute | Detail
+--- | ---
+Product type | Shot list prompt card set
+Use | On-set four-shot planning paired with the ShotStarter draft
+Contents | Card count and material confirmed in What's in the Box
+
+## What's in the Box
+
+- [PUBLISH] 1 x Shot List card set
+
+[PUBLISH] Card count, material, and any included ring or pocket case are still being finalized; contact us for details.
+
+## Use Scenarios
+
+- [PUBLISH] Planning the hook, close-up, demonstration, and closing line before filming
+- [PUBLISH] Matching each shot to the ShotStarter script draft on set
+- [PUBLISH] Keeping the shot order visible beside a desk or flat-ground setup
+
+## FAQ
+
+- [INTERNAL] FAQ layout: question line as a bold standalone heading; answer paragraph below; collapsed by default on mobile; on desktop, open the first question and collapse the rest.
+
+[PUBLISH] Q: What cards are included?
+
+[PUBLISH] A: The set follows the four-shot sequence — hook, close-up, demonstration, closing line; card count and material are still being finalized; contact us for details.
+
+[PUBLISH] Q: Do the cards replace the ShotStarter AI draft?
+
+[PUBLISH] A: No. The cards pair with the script and storyboard draft from ShotStarter; you still review and edit the draft before posting.
+
+[PUBLISH] Q: What languages are the cards printed in?
+
+[PUBLISH] A: The printed language list is under legal review; contact us with any questions; check What's in the Box before ordering.
+
+## Pricing
+
+[INTERNAL] Demo price: $8.99 — Demo configuration, confirm before launch. Sold as a single item; bundle sets are listed in the Creator Kits collection.
+
+## Add to Cart
+
+- [PUBLISH] Primary button: Add to Cart
+- [PUBLISH] Secondary button: Browse Creator Kits
+
+## Shopping Trust (generic; no certification claims)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] Return terms: see the Return & Refund Policy for the confirmed return window.
+- [PUBLISH] ShotStarter outputs are drafts you review and approve before posting.
+- [PUBLISH] No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.
+- [PUBLISH] Questions? Reach us at 1744059451@qq.com.
+
+[INTERNAL] 【操作者说明】Platform fact (INTERNAL only): the drill store is hosted on Shoplazza; the public checkout line does not name the platform. Strip any platform mention from the live store per the launch cleanup checklist.
+
+## Bundle Entry
+
+[PUBLISH] This item is sold as a single item. Bundle sets are listed in the Creator Kits collection.
+
+
+[INTERNAL] 【待确认占位键】上线前在 placeholder-map.txt 查英文定稿与中性兜底句；前台不得残留方括号占位： [待确认: included contents list]; [待确认: shot list cards contents and material]; [待确认: printed language list]
