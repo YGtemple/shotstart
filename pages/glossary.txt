@@ -1,0 +1,38 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Copy Glossary (Canonical Terms)
+
+[INTERNAL] 【操作者说明】全店英文文案统一用词；右列为避免混用或已废弃的写法。
+
+Topic | Use this | Avoid
+--- | --- | ---
+[INTERNAL] Audience | small shop owners | small merchants, sellers
+[INTERNAL] Content readiness | publish-ready | ready-to-publish, ready-to-post
+[INTERNAL] Program name | 7-Day Shooting Challenge | lowercase “7-day challenge” as a title, Shooting Challenge 7 Days
+[INTERNAL] Privacy term | personal data | user data, customer info (in privacy context)
+[INTERNAL] AI assistant | ShotStarter | Shot Starter, AI helper
+[INTERNAL] Bundle | Creator Starter Kit, Pro Creator Kit | Starter bundle, Creator Pack, Pro Pack
+[INTERNAL] Welcome code | NEWCREATOR10 | FIRSTSHOT, generic “welcome code” when the code is referenced
+[INTERNAL] Bundle code | STARTERKIT | STARTER KIT written as two words in code context
+[INTERNAL] Collections | All Gear / Creator Kits | Shop All, Creator Bundle as collection names
+[INTERNAL] Cleaning claim | Designed for lens surfaces | lens-safe, scratch-free guarantee wording
+
+## Policy Terms (English → 中文对照)
+
+[INTERNAL] 【操作者说明】政策页英文术语与中文释义对照；条款定稿以法务确认为准。
+
+English term | 中文含义
+--- | ---
+[INTERNAL] Return window | 可退货期限（自签收起算）
+[INTERNAL] Restocking fee | 补货手续费（退货条款以法务定稿为准）
+[INTERNAL] Original payment method | 原路退回的支付方式
+[INTERNAL] Refund | 退款
+[INTERNAL] Exchange | 换货
+[INTERNAL] Consent | 同意（订阅邮件或数据处理）
+[INTERNAL] Unsubscribe | 退订
+[INTERNAL] Personal data | 个人数据
+[INTERNAL] Service provider | 服务商（支付、物流、邮件等）
+[INTERNAL] Promo code | 优惠码
+[INTERNAL] Free standard shipping | 标准配送免邮
+[INTERNAL] Out of stock | 缺货
+[INTERNAL] Secure checkout | 安全结账（通用表述，不代表某项认证）
