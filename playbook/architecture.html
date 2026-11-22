@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ShotStart 商品架构图</title>
+<style>
+  :root{
+    --navy:#0F1B2D; --coral:#FF5A2C; --cream:#FAF6F0; --white:#FFFFFF;
+    --sand:#F3ECE3; --line:#E8DED2; --muted:#6B6259; --note:#555555;
+    --ink:#1B1B1B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--cream); color:var(--navy);
+    font-family:Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    width:1560px; padding:36px 40px;
+  }
+  h1{font-family:Montserrat,Poppins,"Helvetica Neue",Arial,sans-serif;font-size:30px;letter-spacing:.2px;}
+  .sub{color:var(--muted);font-size:15px;margin-top:6px;}
+  .legend{display:flex;gap:22px;flex-wrap:wrap;margin:16px 0 26px;font-size:13px;color:var(--note);}
+  .legend span{display:inline-flex;align-items:center;gap:7px;}
+  .sw{width:16px;height:16px;border-radius:4px;display:inline-block;border:1px solid var(--line);}
+  .sw.single{background:var(--white);}
+  .sw.kit{background:var(--navy);}
+  .sw.collection{background:var(--sand);}
+  .arrow-solid{color:var(--coral);font-weight:700;}
+  .arrow-dash{color:var(--muted);}
+  section{margin-bottom:34px;}
+  h2{font-family:Montserrat,Poppins,"Helvetica Neue",Arial,sans-serif;font-size:19px;margin-bottom:14px;border-left:4px solid var(--coral);padding-left:10px;}
+  /* collection lanes */
+  .lanes{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+  .lane{background:var(--sand);border:1px solid var(--line);border-radius:12px;padding:14px;}
+  .lane h3{font-size:14px;font-family:Montserrat,Poppins,Arial,sans-serif;margin-bottom:4px;}
+  .lane .cnt{font-size:11px;color:var(--muted);margin-bottom:10px;}
+  .pcard{background:var(--white);border:1px solid var(--line);border-radius:9px;padding:9px 10px;margin-bottom:8px;}
+  .pcard .t{font-size:13px;font-weight:600;color:var(--ink);}
+  .pcard .h{font-size:11.5px;color:var(--muted);font-family:Consolas,Menlo,monospace;margin-top:2px;}
+  .pcard .p{font-size:12.5px;margin-top:3px;color:var(--navy);}
+  .tag{display:inline-block;font-size:10px;color:var(--muted);border:1px dashed var(--muted);border-radius:5px;padding:1px 6px;margin-top:4px;}
+  .price-new{color:var(--coral);font-weight:700;}
+  .price-tbd{color:var(--muted);font-style:italic;}
+  .allgear{margin-top:12px;font-size:12.5px;color:var(--note);background:var(--white);border:1px dashed var(--line);border-radius:9px;padding:9px 12px;}
+  /* kits */
+  .kits{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .kit{background:var(--navy);color:var(--cream);border-radius:14px;padding:18px;}
+  .kit h3{font-family:Montserrat,Poppins,Arial,sans-serif;font-size:17px;}
+  .kit .code{font-size:12px;color:#FFD9CC;margin-top:4px;}
+  .kit .math{font-size:13px;margin-top:10px;line-height:1.7;}
+  .kit .save{color:#FFB199;font-weight:700;}
+  .members{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
+  .member{background:rgba(250,246,240,.12);border:1px solid rgba(250,246,240,.25);border-radius:7px;padding:5px 9px;font-size:12px;}
+  .member b{font-family:Consolas,Menlo,monospace;}
+  /* homepage order bar */
+  .order{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;}
+  .step{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12.5px;flex:1;min-width:120px;}
+  .step .n{font-size:10.5px;color:var(--coral);font-weight:700;}
+  .step .d{margin-top:3px;color:var(--ink);}
+  .arrow{display:flex;align-items:center;color:var(--coral);font-size:18px;padding:0 6px;font-weight:700;}
+  /* recs */
+  .recs{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;}
+  .rec{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-size:12.5px;line-height:1.8;}
+  .rec .from{font-weight:700;color:var(--ink);}
+  .rec .from b{font-family:Consolas,Menlo,monospace;}
+  .rec .to{font-family:Consolas,Menlo,monospace;color:var(--navy);}
+  .badge{font-size:10px;border-radius:5px;padding:1px 7px;margin-left:6px;}
+  .badge.given{background:#FFE9E1;color:var(--coral);}
+  .badge.self{background:var(--sand);color:var(--muted);}
+  .note{font-size:11.5px;color:var(--note);margin-top:10px;line-height:1.7;}
+  table{border-collapse:collapse;width:100%;font-size:12px;}
+  th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;}
+  th{background:var(--sand);font-family:Montserrat,Arial,sans-serif;}
+</style>
+</head>
+<body>
+
+<h1>ShotStart 商品架构图</h1>
+<div class="sub">12 单品 + 2 套装 · 5 用途集合 + 1 隐藏套装集合 · 首页陈列顺序 · PDP 互补推荐（2026-11-20 落表口径）</div>
+
+<div class="legend">
+  <span><i class="sw single"></i>单品 SPU</span>
+  <span><i class="sw kit"></i>套装 SPU（独立捆绑）</span>
+  <span><i class="sw collection"></i>集合泳道</span>
+  <span><span class="arrow-solid">→</span> PDP 互补（文案包给定）</span>
+  <span><span class="arrow-dash">⇢</span> PDP 互补（同层自拟）</span>
+  <span>板内色：navy #0F1B2D · coral #FF5A2C · 暖白 #FAF6F0</span>
+</div>
+
+<section>
+  <h2>一、集合归属泳道（单品 → 用途集合）</h2>
+  <div class="lanes">
+    <div class="lane">
+      <h3>Stability &amp; Height</h3><div class="cnt">稳定与高度 · 3 件</div>
+      <div class="pcard"><div class="t">Adjustable Phone Tripod</div><div class="h">tripod</div><div class="p">$19.99</div></div>
+      <div class="pcard"><div class="t">Extension Pole</div><div class="h">extension-pole</div><div class="p">$16.99</div></div>
+      <div class="pcard"><div class="t">Mini Ball Head Mount</div><div class="h">mini-ball-head</div><div class="p">$12.99</div><div class="tag">兼 Desk &amp; Angle</div></div>
+    </div>
+    <div class="lane">
+      <h3>Desk &amp; Angle</h3><div class="cnt">桌面与角度 · 3 件</div>
+      <div class="pcard"><div class="t">Desktop Phone Stand</div><div class="h">desktop-stand</div><div class="p">$14.99</div></div>
+      <div class="pcard"><div class="t">Magnetic Phone Mount</div><div class="h">magnetic-mount</div><div class="p">$11.99</div></div>
+      <div class="pcard"><div class="t">Mini Ball Head Mount</div><div class="h">mini-ball-head</div><div class="p">$12.99</div><div class="tag">兼 Stability &amp; Height</div></div>
+    </div>
+    <div class="lane">
+      <h3>Clean &amp; Care</h3><div class="cnt">清洁与保养 · 3 件</div>
+      <div class="pcard"><div class="t">Lens Cleaning Kit</div><div class="h">cleaning-kit</div><div class="p">$9.99</div></div>
+      <div class="pcard"><div class="t">Microfiber Cloth 3-Pack</div><div class="h">microfiber-3pack</div><div class="p">$6.99</div></div>
+      <div class="pcard"><div class="t">Lens Cleaning Refill</div><div class="h">cleaning-refill</div><div class="p">$7.99</div></div>
+    </div>
+    <div class="lane">
+      <h3>Carry &amp; Set Up</h3><div class="cnt">携带与布场 · 3 件</div>
+      <div class="pcard"><div class="t">Creator Carry Case</div><div class="h">carry-case</div><div class="p"><span class="price-new">$12.99</span></div></div>
+      <div class="pcard"><div class="t">Folding Reflector</div><div class="h">reflector</div><div class="p"><span class="price-new">$10.99</span></div></div>
+      <div class="pcard"><div class="t">Backdrop Cloth</div><div class="h">backdrop</div><div class="p"><span class="price-new">$13.99</span></div></div>
+    </div>
+    <div class="lane">
+      <h3>Hook（转化挂钩）</h3><div class="cnt">第 5 分区 · 1 件</div>
+      <div class="pcard"><div class="t">Shot List Cards</div><div class="h">shot-list-cards</div><div class="p">$8.99</div><div class="tag">不进用途集合</div></div>
+    </div>
+  </div>
+  <div class="allgear"><b>All Gear</b>（主集合 <span style="font-family:Consolas,monospace">all-gear</span>）：以上 12 单品全量列入；两套装不入 All Gear，归隐藏集合 <b>Creator Kits</b>。</div>
+</section>
+
+<section>
+  <h2>二、套装层（独立捆绑 SPU + STARTERKIT 15% off）</h2>
+  <div class="kits">
+    <div class="kit">
+      <h3>Creator Starter Kit</h3>
+      <div class="code">handle: creator-starter-kit · 隐藏集合 Creator Kits</div>
+      <div class="math">
+        单买：$19.99 + $14.99 + $9.99 = <b>$44.97</b><br>
+        用码：$44.97 × 0.85 = $38.2245 → <b>$38.22</b><br>
+        <span class="save">省 $6.75</span> · 码 STARTERKIT 仅作用套装 SPU
+      </div>
+      <div class="members">
+        <span class="member"><b>tripod</b> · $19.99</span>
+        <span class="member"><b>desktop-stand</b> · $14.99</span>
+        <span class="member"><b>cleaning-kit</b> · $9.99</span>
+      </div>
+    </div>
+    <div class="kit">
+      <h3>Pro Creator Kit</h3>
+      <div class="code">handle: pro-creator-kit · 隐藏集合 Creator Kits</div>
+      <div class="math">
+        单买：$19.99 + $16.99 + $12.99 + $12.99 = <b>$62.96</b><br>
+        用码：$62.96 × 0.85 = $53.516 → <b>$53.52</b><br>
+        <span class="save">省 $9.44</span> · 码 STARTERKIT 仅作用套装 SPU
+      </div>
+      <div class="members">
+        <span class="member"><b>tripod</b> · $19.99</span>
+        <span class="member"><b>extension-pole</b> · $16.99</span>
+        <span class="member"><b>mini-ball-head</b> · $12.99</span>
+        <span class="member"><b>carry-case</b> · $12.99</span>
+      </div>
+    </div>
+  </div>
+  <div class="note">两套装均排除首单码 NEWCREATOR10；每单一码，STARTERKIT 与 NEWCREATOR10 不叠加；不使用 compare-at 原价划线字段。handle 为工作 slug，完整 slug 以建站后台回报为准；单件价即套装计入价，不拆分组件双价。</div>
+</section>
+
+<section>
+  <h2>三、首页陈列顺序（自上而下）</h2>
+  <div class="order">
+    <div class="step"><div class="n">1</div><div class="d">Hero 双 CTA</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">2</div><div class="d">信任行</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">3</div><div class="d">场景门 3 列</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">4</div><div class="d">Starter Kit 横幅卡</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">5</div><div class="d">单品网格 4×3<br>锚点→主力→配件→耗材→Hook</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">6</div><div class="d">Pro Kit 卡</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">7</div><div class="d">ShotStarter AI</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">8</div><div class="d">Challenge 留资</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">9</div><div class="d">页脚政策链接</div></div>
+  </div>
+  <div class="note">网格行 1：tripod（锚点）· desktop-stand · carry-case · reflector；行 2：backdrop · extension-pole · mini-ball-head · magnetic-mount；行 3：cleaning-kit · microfiber-3pack · cleaning-refill · shot-list-cards（Hook）。</div>
+</section>
+
+<section>
+  <h2>四、PDP 互补推荐位（成对关系）</h2>
+  <div class="recs">
+    <div class="rec"><span class="from"><b>tripod</b></span> <span class="arrow-solid">→</span> <span class="to">extension-pole · mini-ball-head · carry-case</span><span class="badge given">给定</span></div>
+    <div class="rec"><span class="from"><b>desktop-stand</b></span> <span class="arrow-solid">→</span> <span class="to">magnetic-mount · mini-ball-head</span><span class="badge given">给定</span></div>
+    <div class="rec"><span class="from"><b>cleaning-kit</b></span> <span class="arrow-solid">→</span> <span class="to">microfiber-3pack · cleaning-refill</span><span class="badge given">给定</span></div>
+    <div class="rec"><span class="from"><b>carry-case</b></span> <span class="arrow-solid">→</span> <span class="to">tripod · extension-pole</span><span class="badge given">给定</span></div>
+    <div class="rec"><span class="from"><b>shot-list-cards</b></span> <span class="arrow-solid">→</span> <span class="to">tripod · creator-starter-kit</span><span class="badge given">给定</span></div>
+    <div class="rec"><span class="from"><b>extension-pole</b></span> <span class="arrow-dash">⇢</span> <span class="to">tripod · mini-ball-head</span><span class="badge self">自拟</span></div>
+    <div class="rec"><span class="from"><b>mini-ball-head</b></span> <span class="arrow-dash">⇢</span> <span class="to">tripod · desktop-stand</span><span class="badge self">自拟</span></div>
+    <div class="rec"><span class="from"><b>magnetic-mount</b></span> <span class="arrow-dash">⇢</span> <span class="to">desktop-stand · mini-ball-head</span><span class="badge self">自拟</span></div>
+    <div class="rec"><span class="from"><b>reflector</b></span> <span class="arrow-dash">⇢</span> <span class="to">backdrop · carry-case</span><span class="badge self">自拟</span></div>
+    <div class="rec"><span class="from"><b>backdrop</b></span> <span class="arrow-dash">⇢</span> <span class="to">reflector · carry-case</span><span class="badge self">自拟</span></div>
+    <div class="rec"><span class="from"><b>microfiber-3pack</b></span> <span class="arrow-dash">⇢</span> <span class="to">cleaning-kit · cleaning-refill</span><span class="badge self">自拟</span></div>
+    <div class="rec"><span class="from"><b>cleaning-refill</b></span> <span class="arrow-dash">⇢</span> <span class="to">cleaning-kit · microfiber-3pack</span><span class="badge self">自拟</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>五、价格口径备查</h2>
+  <table>
+    <tr><th>handle</th><th>标题</th><th>价格</th><th>状态</th></tr>
+    <tr><td>tripod</td><td>Adjustable Phone Tripod</td><td>$19.99</td><td>不变</td></tr>
+    <tr><td>desktop-stand</td><td>Desktop Phone Stand</td><td>$14.99</td><td>不变</td></tr>
+    <tr><td>cleaning-kit</td><td>Lens Cleaning Kit</td><td>$9.99</td><td>不变</td></tr>
+    <tr><td>extension-pole</td><td>Extension Pole</td><td>$16.99</td><td>口径更正</td></tr>
+    <tr><td>cleaning-refill</td><td>Lens Cleaning Refill</td><td>$7.99</td><td>不变</td></tr>
+    <tr><td>carry-case</td><td>Creator Carry Case</td><td>$12.99</td><td>调价</td></tr>
+    <tr><td>reflector</td><td>Folding Reflector</td><td>$10.99</td><td>调价</td></tr>
+    <tr><td>backdrop</td><td>Backdrop Cloth</td><td>$13.99</td><td>调价</td></tr>
+    <tr><td>mini-ball-head</td><td>Mini Ball Head Mount</td><td>$12.99</td><td>新件，标题/主图待回填</td></tr>
+    <tr><td>magnetic-mount</td><td>Magnetic Phone Mount</td><td>$11.99</td><td>新件，标题/主图待回填</td></tr>
+    <tr><td>microfiber-3pack</td><td>Microfiber Cloth 3-Pack</td><td>$6.99</td><td>新件，标题/主图待回填</td></tr>
+    <tr><td>shot-list-cards</td><td>Shot List Cards</td><td>$8.99</td><td>新件，标题/主图待回填</td></tr>
+  </table>
+</section>
+
+</body>
+</html>
