@@ -1,0 +1,91 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Product Detail: Lens Cleaning Kit
+
+[INTERNAL] 【操作者说明】清洁液成分、容量、适用表面属于需核实信息；未确认前一律占位，不得写认证或功效承诺。四件组成为演示配置，上线前与实物核对。
+
+## Product Title
+
+[PUBLISH] Lens Cleaning Kit — Keep Phone and Camera Lenses Clear
+
+[PUBLISH] Contents are listed in What's in the Box.
+
+## Selling Points (bullets)
+
+- [PUBLISH] A compact cleaning set for phone and camera lenses; contents listed in What's in the Box.
+- [PUBLISH] For dust, smudges, and fingerprints on phone lenses, compact camera lenses, and accessory lenses.
+
+- [INTERNAL] Demo composition, pending physical confirmation: cleaning fluid bottle, air blower, cleaning cloth, lens pen. Do not publish fixed contents or material names until the physical product is verified.
+- [INTERNAL] Pending before launch: [待确认: approved surface list]; [待确认: included contents list]; [待确认: blower/pen material, cloth material]; [待确认: liquid volume, kit dimensions].
+
+## Description Paragraph
+
+[PUBLISH] A clear lens makes your clips look cleaner. The Lens Cleaning Kit gathers the basics for dusting and wiping phone, camera, and accessory lenses. It is compact enough to keep in your filming bag. Final contents, materials, and any liquid ingredients will be confirmed after final verification.
+
+## Specifications
+
+Attribute | Detail
+--- | ---
+Product type | Lens cleaning kit
+Compatible surfaces | Phone lenses, compact camera lenses, accessory lenses
+
+## What's in the Box
+
+[PUBLISH] A compact cleaning set for phone and camera lenses. Contents will be listed here after final confirmation.
+
+- [INTERNAL] Demo composition (confirm against the physical product before launch): cleaning fluid bottle, air blower, cleaning cloth, lens pen.
+- [INTERNAL] Final included items, cloth material, and fluid volume/ingredients: [待确认: included contents, cloth material, liquid volume and ingredients].
+
+[INTERNAL] 【操作者说明】图注口径：商品图注只写商品与用途，不标注生成方式或演示性质；上线前替换为真实在售商品图。
+
+## Use Scenarios
+
+- [PUBLISH] Wiping fingerprints off a phone lens before filming
+- [PUBLISH] Dusting a compact camera or accessory lens between takes
+- [PUBLISH] Traveling with a small cleaning set in a creator bag
+
+## FAQ
+
+- [INTERNAL] FAQ layout: question line as a bold standalone heading; answer paragraph below; collapsed by default on mobile; on desktop, open the first question and collapse the rest.
+
+[PUBLISH] Q: Is it safe for my phone camera?
+
+[PUBLISH] A: The kit is designed for lens surfaces; avoid pressing or rubbing hard. The approved surface list is still being finalized; contact us for details.
+
+[PUBLISH] Q: What is included in the set?
+
+[PUBLISH] A: The set is a compact cleaning set; contents are listed in What's in the Box. Contents, cloth material, and fluid volume are still being finalized; contact us for details.
+
+[PUBLISH] Q: Does it include cleaning liquid?
+
+[PUBLISH] A: Whether cleaning liquid is included, along with its volume and ingredients, is still being finalized; contact us for details; check the contents list before ordering.
+
+## Pricing
+
+[INTERNAL] Demo price: $9.99 — Demo configuration, confirm before launch. Bundle pricing available in the Creator Starter Kit.
+
+## Add to Cart
+
+- [PUBLISH] Primary button: Add to Cart
+- [PUBLISH] Secondary button: Add to Creator Starter Kit
+
+## Shopping Trust (generic; no certification claims)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] Return terms: see the Return & Refund Policy for the confirmed return window.
+- [PUBLISH] ShotStarter outputs are drafts you review and approve before posting.
+- [PUBLISH] No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.
+- [PUBLISH] Questions? Reach us at 1744059451@qq.com.
+
+[INTERNAL] 【操作者说明】Platform fact (INTERNAL only): the drill store is hosted on Shoplazza; the public checkout line does not name the platform. Strip any platform mention from the live store per the launch cleanup checklist.
+
+## Bundle Entry
+
+[PUBLISH] Pair this with the other Creator Starter Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.
+
+- [PUBLISH] STARTERKIT applies to this kit only; it cannot be combined with other codes.
+
+- [INTERNAL] Demo configuration: the kit is a standalone SPU listed at $44.97; STARTERKIT (15% off) applies to that SPU only; code price $38.22; savings $6.75 (44.97 − 38.22), rounded to the cent. Confirm bundle discount, inventory, and eligibility before launch. No compare-at reference price or strike-through field is used.
+
+
+[INTERNAL] 【待确认占位键】上线前在 placeholder-map.txt 查英文定稿与中性兜底句；前台不得残留方括号占位： [待确认: compatible surface types]; [待确认: included contents, cloth material, liquid volume and ingredients]; [待确认: liquid inclusion, volume, and ingredients]
