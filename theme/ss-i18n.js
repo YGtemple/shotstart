@@ -1,0 +1,1369 @@
+/* ============================================================
+   ShotStart theme custom i18n — ss-i18n.js
+   Languages: EN (default) + Simplified Chinese only.
+
+   Progressive enhancement:
+     - Without JavaScript the storefront stays in English; the DOM
+       is only touched after this script runs.
+     - Switching does not reload the page; the choice is stored in
+       localStorage (`ss-lang`) and restored on next visit.
+     - Exact text-node match: a node is translated only when its
+       trimmed text matches a dictionary key verbatim.
+     - Attribute match: placeholder / aria-label / title values are
+       matched verbatim against the dictionary; an explicit
+       `data-i18n-placeholder` (and `data-i18n-aria-label`,
+       `data-i18n-title`) overrides the dictionary for that attribute.
+       Original attribute values are recorded and restored on switch back.
+     - Images are single-source wordless banners shared by EN and zh-CN;
+       this engine never swaps `src` or hides gallery frames.
+     - Checkout is a hosted, third-party DOM and is excluded from
+       translation along with scripts, styles, iframes and the
+       language toggle itself.
+
+   Dictionary: 761 EN -> zh-CN keys embedded from
+   shotstart-copy/tools/i18n_zh.json (flat `zh-CN` node; `_meta`
+   is not translated). The header count above must equal the
+   parsed `SS_I18N_ZH` entry count; ss-verify asserts this.
+   Coverage/uncovered scope: see
+   shotstart-copy/tools/i18n_zh_coverage.md.
+
+   Deliberately NOT translated (per coverage declaration):
+     - hosted checkout deep DOM, payment fields, third-party pay
+       flow, live shipping/tax totals, hosted order confirmation;
+     - INTERNAL/operator notes, demo price/setup placeholders;
+     - PDP spec placeholder parameters pending store config;
+     - challenge Day 1-7 body, nurture emails, AI draft scripts;
+     - legal clauses pending review; the Chinese judge-guide
+       exception page (already Chinese).
+   ============================================================ */
+(function () {
+  "use strict";
+
+  var STORAGE_KEY = "ss-lang";
+  var DEFAULT_LANG = "en";
+  var ZH = "zh-CN";
+
+  /* @@I18N_ZH_INJECT@@ — EN exact string -> Simplified Chinese */
+  var SS_I18N_ZH = {
+  "Free standard shipping on US orders over $35.": "美国订单满 $35 免标准运费。",
+  "Headline: Your first shot starts here.": "主标题：你的第一个镜头，从这里开始。",
+  "Your first shot starts here.": "你的第一个镜头，从这里开始。",
+  "Subhead: ShotStart helps beginner creators and small shop owners film cleaner videos, write smarter captions, and stay consistent — with simple phone gear and the ShotStarter AI content assistant.": "副标题：ShotStart 用简洁的手机装备与 ShotStarter AI 内容助手，帮助新手创作者和小商家拍出更干净的视频、写出更聪明的文案，并保持更新节奏。",
+  "Primary CTA button: Shop All Gear": "主按钮：选购全部装备",
+  "Secondary CTA button: Join the 7-Day Shooting Challenge": "次按钮：加入 7 天拍摄挑战",
+  "Shop All Gear": "选购全部装备",
+  "Join the 7-Day Shooting Challenge": "加入 7 天拍摄挑战",
+  "Policy links: Shipping Policy · Return & Refund Policy · Privacy Policy · Terms of Service": "政策链接：运输政策 · 退换货政策 · 隐私政策 · 服务条款",
+  "ShotStarter AI outputs are drafts you review before posting · Beginner-friendly plain-language guidance · Responsive support by email.": "ShotStarter 输出为发布前由你审核的草稿 · 新手友好的直白指引 · 邮件及时支持。",
+  "Made for beginners: No jargon, no complicated setup. Simple gear and plain-language AI prompts help you publish your first video faster.": "为新手而设：无术语、无复杂设置。简洁装备加直白的 AI 提示，帮你更快发出第一条视频。",
+  "Gear that works with your phone: Designed around common smartphone sizes and everyday short-video setups; confirmed compatibility details are listed on each product page.": "适配你的手机：围绕常见手机尺寸与日常短视频场景设计；已核实的适配细节列在各商品页。",
+  "AI that stays on your side: ShotStarter turns your platform, product, and main selling point into a 15-second script, a four-shot storyboard, and publish-ready caption copy.": "站在你这边的 AI：ShotStarter 根据你的平台、商品与核心卖点，生成 15 秒脚本、四镜分镜与可直接发布的文案。",
+  "Section title: The Starter Kit: your first filming setup in one kit.": "区块标题：基础套装：一套配齐你的第一套拍摄装备。",
+  "Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.": "套装价 $44.97——结账时使用优惠码 STARTERKIT：$38.22，省 $6.75。",
+  "Card CTA button: View the kit": "卡片按钮：查看套装",
+  "View the kit": "查看套装",
+  "Section title: The Pro Kit: stable framing, height, angle control, and a carry case for the next level.": "区块标题：进阶套装：稳定构图、高度与角度控制，外加收纳包，助你再进一步。",
+  "Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.": "套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。",
+  "Footer links: Shop, About, Contact, Shipping Policy, Return & Refund Policy, Privacy Policy, Terms of Service": "页脚链接：商店、关于、联系我们、运输政策、退换货政策、隐私政策、服务条款",
+  "Meet ShotStarter, your AI content assistant.": "认识 ShotStarter，你的 AI 内容助手。",
+  "Tell ShotStarter your platform (TikTok, Instagram Reels, YouTube Shorts, or another), your product type, and the one selling point you want to lead with. It drafts a 15-second script, lays out a four-shot storyboard, and suggests a caption and publish-ready text you can edit before posting.": "把你的平台（TikTok、Instagram Reels、YouTube Shorts 或其他）、商品类型和想主推的一个卖点告诉 ShotStarter。它会起草 15 秒脚本，排出四镜分镜，并给出可供发布前自行编辑的文案与成稿。",
+  "15-second script draft tailored to your platform and product": "按你的平台和商品定制的 15 秒脚本草稿",
+  "Four-shot storyboard: hook, close-up, demonstration, closing line": "四镜分镜：钩子、特写、演示、收尾",
+  "Caption and publish-ready copy to review and personalize": "可供审阅与调整的文案与成稿",
+  "Button: Join the challenge": "按钮：加入挑战",
+  "Join the challenge": "加入挑战",
+  "All Gear: Every creator item in one collection.": "全部装备：所有创作者商品归入同一集合。",
+  "Creator Kits: Bundled gear sets — the Creator Starter Kit and the Pro Creator Kit.": "创作者套装：捆绑装备组合——Creator Starter Kit 与 Pro Creator Kit。",
+  "Card description: Creator Starter Kit — steady framing, a desk stand, and a compact lens cleaning set together.": "卡片描述：Creator Starter Kit——稳定机位、桌面支架与便携镜头清洁套装合集。",
+  "Card description: Pro Creator Kit — a tripod, extension pole, mini ball head, and carry case for the next level of setup.": "卡片描述：Pro Creator Kit——三脚架、延长杆、迷你云台与收纳包，为进阶拍摄配置。",
+  "Adjustable Phone Tripod": "可调手机三脚架",
+  "Desktop Phone Stand": "桌面手机支架",
+  "Lens Cleaning Kit": "镜头清洁套装",
+  "Creator Carry Case": "器材收纳包",
+  "Folding Reflector": "折叠反光板",
+  "Backdrop Cloth": "背景布",
+  "Extension Pole": "延长杆",
+  "Lens Cleaning Refill": "清洁补充装",
+  "Adjustable Phone Tripod — Steady, Hands-Free Framing for Short Videos": "可调手机三脚架——短视频稳定免手持构图",
+  "Desktop Phone Stand — Keep Your Phone Upright on Your Desk": "桌面手机支架——让手机在桌面上直立摆放",
+  "Lens Cleaning Kit — Keep Phone and Camera Lenses Clear": "镜头清洁套装——保持手机与相机镜头洁净",
+  "Creator Carry Case — Keep Your Gear Together on the Go": "器材收纳包——外出时把装备集中收纳",
+  "Folding Reflector — Soften and Fill Light for Clips": "折叠反光板——柔化光线并为片段补光",
+  "Backdrop Cloth — A Simple Background for Product and Talking-Head Clips": "背景布——产品与口播片段的简洁背景",
+  "Extension Pole — Reach Higher Angles for Selfie and Group Clips": "延长杆——自拍与群拍获取更高机位",
+  "Lens Cleaning Refill — Restock Fluid, Cloths, and the Brush Pen for Your Kit": "清洁补充装——为你的套装补充清洁液、清洁布与笔刷",
+  "Adjustable height and angle for varied shooting setups.": "高度与角度可调，适配不同拍摄机位。",
+  "Holds your phone upright at a usable desk angle.": "以适合桌面使用的角度直立固定手机。",
+  "A compact cleaning set for phone and camera lenses; contents listed in What's in the Box.": "小巧的手机/相机镜头清洁套装；构成以包装清单为准。",
+  "A carry case for the tripod, stand, and small filming accessories.": "用于收纳三脚架、支架与小型拍摄配件的收纳包。",
+  "Fills harsh shadows and softens light on a face or product.": "填平生硬阴影，柔化面部或产品上的光线。",
+  "A plain background for product and talking-head clips.": "为产品与口播片段提供纯色背景。",
+  "Extends your reach for overhead or higher-angle shots.": "延长手臂，获取俯拍或高角度机位。",
+  "Refills the cleaning fluid, cloth, and brush pen for your Lens Cleaning Kit.": "为你的镜头清洁套装补充清洁液、清洁布与笔刷。",
+  "Primary button: Add to Cart": "主按钮：加入购物车",
+  "Add to Cart": "加入购物车",
+  "Secondary button: Add to Creator Starter Kit": "次按钮：加入 Creator Starter Kit",
+  "Secondary button: Add to Pro Creator Kit": "次按钮：加入 Pro Creator Kit",
+  "Secondary button: Browse Creator Kits": "次按钮：浏览创作者套装",
+  "Complete your set": "配齐你的套装",
+  "Sold out": "已售罄",
+  "Added": "已加入",
+  "Added to cart": "已加入购物车",
+  "Secure Checkout": "安全结账",
+  "Free shipping over $35": "满 $35 免运费",
+  "Responsive support by email": "邮件响应支持",
+  "Beginner-friendly gear": "新手友好装备",
+  "Secure checkout": "安全结账",
+  "Continue browsing gear": "继续浏览装备",
+  "Secure checkout: Payments are processed on the store's secure checkout page.": "安全结账：支付在店铺安全结账页面完成。",
+  "Return terms: see the Return & Refund Policy for the confirmed return window.": "退货条款：退货期限以退换货政策为准。",
+  "ShotStarter outputs are drafts you review and approve before posting.": "ShotStarter 输出为草稿，发布前由你审核确认。",
+  "No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.": "无隐藏费用：结账显示价格即你所付金额，不含应付运费。",
+  "Questions? Reach us at 1744059451@qq.com.": "有疑问？邮件联系 1744059451@qq.com。",
+  "Will it fit my phone?": "能否适配我的手机？",
+  "Can I take it outdoors?": "能否带到户外使用？",
+  "Does it come with a carry bag?": "是否附带收纳包？",
+  "Can I charge my phone while it's on the stand?": "手机放在支架上时能否充电？",
+  "Is the base stable?": "底座是否稳固？",
+  "Is it safe for my phone camera?": "对手机摄像头是否适用？",
+  "What is included in the set?": "套装内包含什么？",
+  "Does it include cleaning liquid?": "是否包含清洁液？",
+  "Will it fit the tripod and stand?": "能否放下三脚架和支架？",
+  "What accessories fit inside?": "里面能放哪些配件？",
+  "Is the case water resistant?": "收纳包是否防水？",
+  "What size and surface does it have?": "尺寸和面料是什么？",
+  "How do I store it?": "如何收纳？",
+  "Does it come with a stand?": "是否附带支架？",
+  "What size is the cloth?": "背景布尺寸是多少？",
+  "What color is it?": "是什么颜色？",
+  "How do I hang it?": "如何悬挂？",
+  "How long does it extend?": "能伸多长？",
+  "Does it fit my phone?": "能否适配我的手机？",
+  "What is the pole made of?": "延长杆是什么材质？",
+  "What is included in the refill?": "补充装内包含什么？",
+  "Does it include cleaning fluid?": "是否包含清洁液？",
+  "Does it work with the Lens Cleaning Kit?": "是否适用于镜头清洁套装？",
+  "ShotStart was built around a simple observation: the hardest part of starting short-video creation isn't talent — it's taking the first shot.": "ShotStart 源于一个朴素观察：开始做短视频最难的不是天赋，而是迈出第一个镜头。",
+  "We don't promise overnight growth. We help you finish and publish that first video, then the next one — seven days at a time.": "我们不承诺一夜涨粉。我们帮你做完并发出第一条视频，然后一条一条继续——七天一个节奏。",
+  "Checkbox: I agree to be contacted about my question.": "勾选框：我同意接收与我的咨询相关的回复邮件。",
+  "Submit button: Send message": "提交按钮：发送留言",
+  "This policy describes how orders are handled after checkout. Actual carrier times depend on destination and order availability; estimated delivery times are provided at checkout.": "本政策说明结账后订单的处理方式。实际承运时效取决于目的地与订单库存；预估送达时间以结账页为准。",
+  "We process orders within 2 business days after payment. Orders placed on weekends or holidays are processed the next business day.": "付款后 2 个工作日内处理订单；周末或节假日下单顺延至下一个工作日处理。",
+  "We currently ship to the United States only. Cross-border shipping is not available from this store.": "目前仅配送至美国；本店不提供跨境配送。",
+  "Standard shipping: US flat rate $4.99; free standard shipping on orders over $35.": "标准配送：美国统一费率 $4.99；订单满 $35 免标准运费。",
+  "US standard delivery typically arrives in 5–8 business days after processing. Carrier timing may vary; the estimated delivery window is shown at checkout.": "美国标准配送一般在处理后 5–8 个工作日送达；承运时效可能波动，预估时段见结账页。",
+  "You may request a return within 30 days of delivery. Items must be unused and in their original packaging.": "可在收货后 30 天内申请退货；商品须未使用且保持原包装。",
+  "Opened hygiene-related items cannot be returned.": "已开封的卫生类商品不可退货。",
+  "Unless the item arrives damaged or defective, return shipping costs are paid by the customer.": "除商品到货破损或有缺陷外，退货运费由顾客承担。",
+  "Approved refunds are issued to the original payment method within 5 business days after we receive the returned item. Original shipping charges are not refundable.": "核准退款在收到退回商品后 5 个工作日内原路退回；原运费不予退还。",
+  "If an item arrives damaged or defective, contact us with photos within 30 days of delivery. We will arrange a replacement or refund according to eligibility.": "若商品到货破损或有缺陷，请在收货后 30 天内带照片联系我们；将按资格安排换货或退款。",
+  "Contact and order information: name, email address, shipping address, and order details": "联系与订单信息：姓名、邮箱地址、收货地址与订单详情。",
+  "Order records are kept for 24 months. Marketing consent remains active until 30 days after you unsubscribe; after that, the associated email is removed from marketing lists.": "订单记录保留 24 个月；营销同意在退订后保留 30 天，之后相关邮箱从营销名单移除。",
+  "Marketing emails are sent only with your consent. Each email includes an unsubscribe option.": "营销邮件仅在你同意后发送；每封邮件均含退订选项。",
+  "We do not sell personal data. Information is shared with service providers (payment, shipping, email) only as needed to operate the store.": "我们不出售个人数据；仅在运营店铺所需范围内与服务商（支付、物流、邮件）共享信息。",
+  "We apply reasonable measures to protect personal data; no method of transmission over the internet is fully secure.": "我们采取合理措施保护个人数据；互联网传输方式不存在绝对安全。",
+  "You may request access to, correction of, or deletion of your personal data, and may withdraw consent at any time. To exercise these rights, email 1744059451@qq.com.": "你可查阅、更正或删除个人数据，并可随时撤回同意；行权请邮件联系 1744059451@qq.com。",
+  "The store is not directed to children under 13. If you are under 13, do not place an order or submit personal data.": "本店不面向 13 岁以下儿童；未满 13 岁请勿下单或提交个人数据。",
+  "The store is intended for customers 13 or older. Minors require a parent or guardian's account where permitted. If you are under 13, do not place an order without adult involvement.": "本店面向 13 岁及以上顾客；未成年人在允许情形下须使用父母或监护人账户；未满 13 岁须有成年人参与方可下单。",
+  "ShotStarter outputs are drafts. You are responsible for reviewing, editing, and any claims made in content you publish.": "ShotStarter 输出为草稿；你负责审核、编辑，并对所发布内容中的表述负责。",
+  "Joining the 7-Day Shooting Challenge is optional. Participation does not guarantee followers, sales, or any platform result.": "参加 7 天拍摄挑战纯属自愿；参与不保证涨粉、销量或任何平台结果。",
+  "Discount codes such as NEWCREATOR10 and STARTERKIT follow the rules listed at checkout: eligibility, one-use limits, stacking restrictions, excluded items, and validity dates. A code cannot be applied after an order is placed.": "NEWCREATOR10、STARTERKIT 等优惠码遵循结账页所列规则：适用范围、使用次数、叠加限制、排除商品与有效期；下单后无法再使用优惠码。",
+  "Nudge line: You're $X away from free US standard shipping.": "凑单提示：距美国标准免邮还差 $X。",
+  "Suggestion card: Add the Lens Cleaning Kit — keep your lenses clear and unlock free standard shipping.": "建议卡片：加购镜头清洁套装——保持镜头洁净并解锁标准免邮。",
+  "Invalid code message: This code isn't valid. Check the code and try again.": "无效码提示：该优惠码无效，请核对后重试。",
+  "Out of stock: This item is out of stock. Remove it from your cart or check back later.": "缺货：该商品已售罄。可从购物车移除，或稍后再来查看。",
+  "First name": "名字",
+  "Email": "邮箱",
+  "Platform (challenge sign-up form only)": "平台（仅挑战报名表）",
+  "Message (contact form only)": "留言（仅联系表单）",
+  "Email popup: Thanks — your welcome code is shown below. Save it before you leave.": "邮件弹窗：谢谢——欢迎码显示在下方，离开前请保存。",
+  "Please enter your first name.": "请输入你的名字。",
+  "Please enter your email address.": "请输入邮箱地址。",
+  "Please enter your message.": "请输入留言内容。",
+  "Please enter a valid email address, e.g., name@example.com.": "请输入有效邮箱地址，例如 name@example.com。",
+  "Something went wrong and your message wasn't sent. Please try again, or email us directly at 1744059451@qq.com.": "出错了，留言未发送。请重试，或直接邮件联系 1744059451@qq.com。",
+  "Contact: I agree to be contacted about my question.": "联系表单：我同意接收与我的咨询相关的回复邮件。",
+  "Challenge / popup: By signing up, I agree to receive challenge and marketing emails. I can unsubscribe at any time.": "挑战/弹窗：报名即同意接收挑战与营销邮件，可随时退订。",
+  "Unselected state: Please agree to be contacted before submitting.": "未勾选状态：提交前请同意接收联系。",
+  "First-order offer: 10% off your first order with code NEWCREATOR10, valid on all single items in the Shop collection; bundle kits are excluded; the code does not stack with STARTERKIT.": "首单优惠：使用优惠码 NEWCREATOR10 首单 9 折，适用于 Shop 集合全部单件；捆绑套装除外；不可与 STARTERKIT 叠加。",
+  "Shop": "商店",
+  "About": "关于",
+  "Contact": "联系我们",
+  "Shipping Policy": "运输政策",
+  "Return & Refund Policy": "退换货政策",
+  "Privacy Policy": "隐私政策",
+  "Terms of Service": "服务条款",
+  "ShotStart helps beginner creators and small shop owners film cleaner videos, write smarter captions, and stay consistent — with simple phone gear and the ShotStarter AI content assistant.": "ShotStart 用简洁的手机装备与 ShotStarter AI 内容助手，帮助新手创作者和小商家拍出更干净的视频、写出更聪明的文案，并保持更新节奏。",
+  "Shipping Policy · Return & Refund Policy · Privacy Policy · Terms of Service": "运输政策 · 退换货政策 · 隐私政策 · 服务条款",
+  "The Starter Kit: your first filming setup in one kit.": "基础套装：一套配齐你的第一套拍摄装备。",
+  "The Pro Kit: stable framing, height, angle control, and a carry case for the next level.": "进阶套装：稳定构图、高度与角度控制，外加收纳包，助你再进一步。",
+  "Shop, About, Contact, Shipping Policy, Return & Refund Policy, Privacy Policy, Terms of Service": "商店、关于、联系我们、运输政策、退换货政策、隐私政策、服务条款",
+  "Creator Starter Kit — steady framing, a desk stand, and a compact lens cleaning set together.": "Creator Starter Kit——稳定机位、桌面支架与便携镜头清洁套装合集。",
+  "Pro Creator Kit — a tripod, extension pole, mini ball head, and carry case for the next level of setup.": "Pro Creator Kit——三脚架、延长杆、迷你云台与收纳包，为进阶拍摄配置。",
+  "Add to Creator Starter Kit": "加入 Creator Starter Kit",
+  "Add to Pro Creator Kit": "加入 Pro Creator Kit",
+  "Browse Creator Kits": "浏览创作者套装",
+  "I agree to be contacted about my question.": "我同意接收与我的咨询相关的回复邮件。",
+  "Send message": "发送留言",
+  "You're $X away from free US standard shipping.": "距美国标准免邮还差 $X。",
+  "Add the Lens Cleaning Kit — keep your lenses clear and unlock free standard shipping.": "加购镜头清洁套装——保持镜头洁净并解锁标准免邮。",
+  "This code isn't valid. Check the code and try again.": "该优惠码无效，请核对后重试。",
+  "This item is out of stock. Remove it from your cart or check back later.": "该商品已售罄。可从购物车移除，或稍后再来查看。",
+  "Thanks — your welcome code is shown below. Save it before you leave.": "谢谢——欢迎码显示在下方，离开前请保存。",
+  "By signing up, I agree to receive challenge and marketing emails. I can unsubscribe at any time.": "报名即同意接收挑战与营销邮件，可随时退订。",
+  "Please agree to be contacted before submitting.": "提交前请同意接收联系。",
+  "10% off your first order with code NEWCREATOR10, valid on all single items in the Shop collection; bundle kits are excluded; the code does not stack with STARTERKIT.": "使用优惠码 NEWCREATOR10 首单 9 折，适用于 Shop 集合全部单件；捆绑套装除外；不可与 STARTERKIT 叠加。",
+  "Free US shipping over $35": "美国订单满 $35 免运费",
+  "30-day returns": "30 天退货",
+  "ShotStarter AI script assistant": "ShotStarter AI 脚本助手",
+  "Steady shooting": "稳定拍摄",
+  "Desktop demos": "桌面演示",
+  "Clean & care": "清洁养护",
+  "Stable framing for talking-head and product clips.": "口播与产品片段的稳定构图。",
+  "Compact stands for desk-side setup.": "桌面拍摄的紧凑支架。",
+  "Keep lenses and phones clear between takes.": "拍摄间隙保持镜头与手机洁净。",
+  "Turn one product into a ready-to-shoot set": "把一件商品变成可开拍的一套配置。",
+  "Choose your platform": "选择你的平台",
+  "Pick your product and point": "选定商品与核心卖点",
+  "Get script, storyboard and copy": "获取脚本、分镜与文案",
+  "Try the AI assistant": "试用 AI 助手",
+  "One short video a day. Templates and prompts included.": "每天一条短视频，模板与提示一并提供。",
+  "Email address": "邮箱地址",
+  "You can unsubscribe at any time. We never share your email.": "可随时退订；我们不会分享你的邮箱。",
+  "Close": "关闭",
+  "Get your first-order code": "获取你的首单优惠码",
+  "Get the code": "获取优惠码",
+  "Your code": "你的优惠码",
+  "Single items only; bundle kits are excluded and the code does not stack with STARTERKIT. You can unsubscribe at any time.": "仅适用单件；捆绑套装除外，不可与 STARTERKIT 叠加；可随时退订。",
+  "Creator Starter Kit": "Creator Starter Kit",
+  "Pro Creator Kit": "Pro Creator Kit",
+  "Home": "首页",
+  "7-Day Challenge": "7 天拍摄挑战",
+  "More links": "更多链接",
+  "For beginner creators and small shop owners": "面向新手创作者与小商家",
+  "Scene image": "场景图",
+  "Search": "搜索",
+  "Account": "账户",
+  "Cart": "购物车",
+  "View cart": "查看购物车",
+  "You may also like": "你可能还喜欢",
+  "View all": "查看全部",
+  "Buy Now": "立即购买",
+  "Buy now": "立即购买",
+  "Add to cart": "加入购物车",
+  "Buy {amount} more to enjoy Free Shipping": "再买 {amount} 即可享免运费",
+  "Your cart is reserved for {countdown}!": "购物车已为你保留 {countdown}！",
+  "Taxes and shipping calculated at checkout": "税费与运费在结账时计算",
+  "Your first shot": "你的第一镜",
+  "starts here.": "从这里开始。",
+  "GEAR": "装备",
+  "AI ASSISTANT": "AI 助手",
+  "All Gear": "全部装备",
+  "Stability & Height": "稳定与高度",
+  "Desk & Angle": "桌面与角度",
+  "Clean & Care": "清洁与保养",
+  "Carry & Set Up": "携带与布景",
+  "Pairs well with": "搭配推荐",
+  "Gear": "单品装备",
+  "Kits": "套装",
+  "KITS": "套装",
+  "Support": "支持",
+  "FAQ": "常见问题",
+  "Newsletter": "订阅通讯",
+  "Subscribe": "订阅",
+  "All gear": "全部装备",
+  "Policies": "政策",
+  "Starter kit": "基础套装",
+  "Pro kit": "进阶套装",
+  "Starter Kit": "基础套装",
+  "Pro Kit": "进阶套装",
+  "© 2026 ShotStart. All rights reserved.": "© 2026 ShotStart. 保留所有权利。",
+  "Free US shipping over $35 · 30-day returns · Weekly creator tips": "美国满 $35 免邮 · 30 天退货 · 每周创作者技巧",
+  "Mini Ball Head": "迷你云台",
+  "Magnetic Mount": "磁吸手机支架",
+  "Microfiber 3-Pack": "清洁布三片装",
+  "Shot List Cards": "分镜清单卡片",
+  "Mini Ball Head — Level Your Frame in One Twist": "迷你云台——一拧即可调平画面",
+  "Magnetic Mount — Snap Your Phone On and Off in Seconds": "磁吸支架——几秒拆装手机",
+  "Microfiber 3-Pack — Soft Cloths for Between-Take Cleaning": "清洁布三片装——拍摄间隙擦净镜头",
+  "Shot List Cards — Plan Your Four Shots Before You Press Record": "分镜清单卡片——开拍前规划好四个镜头",
+  "New creators get 10% off their first order with code NEWCREATOR10.": "新客首单使用优惠码 NEWCREATOR10 立享 9 折。",
+  "Alternate announcement: New creators get 10% off their first order with code NEWCREATOR10.": "新客首单使用优惠码 NEWCREATOR10 立享 9 折。",
+  "Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99).": "可调手机三脚架（$19.99）、桌面手机支架（$14.99）、镜头清洁套装（$9.99）。",
+  "What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99).": "可调手机三脚架（$19.99）、桌面手机支架（$14.99）、镜头清洁套装（$9.99）。",
+  "STARTERKIT applies to this kit only; it cannot be combined with other codes.": "STARTERKIT 仅适用于本套装，不可与其他优惠码叠加。",
+  "Join the 7-Day Shooting Challenge.": "加入 7 天拍摄挑战。",
+  "Section title: Join the 7-Day Shooting Challenge.": "加入 7 天拍摄挑战。",
+  "One small filming task each day for seven days. Sign up with your email to receive the day-by-day tasks, prompts, and ShotStarter template suggestions.": "连续七天，每天一个小拍摄任务。用邮箱报名，即可收到逐日任务、提示与 ShotStarter 模板建议。",
+  "Body: One small filming task each day for seven days. Sign up with your email to receive the day-by-day tasks, prompts, and ShotStarter template suggestions.": "连续七天，每天一个小拍摄任务。用邮箱报名，即可收到逐日任务、提示与 ShotStarter 模板建议。",
+  "Your first discount is one click away.": "你的首单优惠，一键即可获取。",
+  "Popup headline: Your first discount is one click away.": "你的首单优惠，一键即可获取。",
+  "Submit to get your welcome code NEWCREATOR10.": "提交后即可获取欢迎码 NEWCREATOR10。",
+  "Popup body: Submit to get your welcome code NEWCREATOR10.": "提交后即可获取欢迎码 NEWCREATOR10。",
+  "Save my spot": "为我预留名额",
+  "Button: Save my spot": "为我预留名额",
+  "By subscribing, you agree to receive marketing emails from ShotStart. You can unsubscribe at any time.": "订阅即同意接收 ShotStart 的营销邮件，可随时退订。",
+  "Fine print: By subscribing, you agree to receive marketing emails from ShotStart. You can unsubscribe at any time.": "订阅即同意接收 ShotStart 的营销邮件，可随时退订。",
+  "ShotStart builds simple filming gear and the ShotStarter AI content assistant for beginner short-video creators and small shop owners in the US market. Your first shot starts here.": "ShotStart 为美国市场的新手短视频创作者与小商家打造简洁拍摄装备，并提供 ShotStarter AI 内容助手。你的第一个镜头，从这里开始。",
+  "Adjustable Phone Tripod — $19.99. Steady, hands-free framing for talking-head clips and product demos.": "可调手机三脚架 —— $19.99。口播片段与产品演示的稳定免手持构图。",
+  "Desktop Phone Stand — $14.99. Keep your phone upright on the desk for demos and live clips.": "桌面手机支架 —— $14.99。演示与实时片段时让手机在桌面上直立摆放。",
+  "Lens Cleaning Kit — $9.99. A compact cleaning set to keep lenses clear.": "镜头清洁套装 —— $9.99。保持镜头洁净的小巧清洁套装。",
+  "Creator Carry Case — $12.99. A portable case to keep gear and small accessories together.": "器材收纳包 —— $12.99。便携收纳，把装备与小型配件集中放置。",
+  "Folding Reflector — $10.99. Soften and fill light for face and product clips.": "折叠反光板 —— $10.99。为面部与产品片段柔化并补光。",
+  "Backdrop Cloth — $13.99. A plain background for product and talking-head clips.": "背景布 —— $13.99。为产品与口播片段提供纯色背景。",
+  "Extension Pole — $16.99. Reach overhead and higher-angle shots for selfie and group clips.": "延长杆 —— $16.99。获取俯拍与高角度机位，适合自拍与群拍片段。",
+  "Lens Cleaning Refill — $7.99. Restock fluid, cloths, and the brush pen for your cleaning kit.": "清洁补充装 —— $7.99。为你的清洁套装补充清洁液、清洁布与笔刷。",
+  "Mini Ball Head — $12.99. Level and lock the frame between shots with one twist.": "迷你云台 —— $12.99。一拧即可调平画面并在镜头间锁定。",
+  "Magnetic Mount — $11.99. Snap your phone on and off for quick desk setups.": "磁吸手机支架 —— $11.99。手机一吸即装、一取即下，快速完成桌面机位。",
+  "Microfiber 3-Pack — $6.99. Three spare soft cloths for between-take lens and screen cleaning.": "清洁布三片装 —— $6.99。三片备用软布，用于拍摄间隙擦拭镜头与屏幕。",
+  "Shot List Cards — $8.99. Four-shot prompt cards paired with your ShotStarter script draft.": "分镜清单卡片 —— $8.99。与你的 ShotStarter 脚本草稿配套的四镜提示卡片。",
+  "Phone clamp fits common smartphone sizes.": "手机夹适配通用智能手机尺寸。",
+  "Hands-free shooting for talking-head clips, product demos, and outdoor clips.": "口播片段、产品演示与户外片段均可免手持拍摄。",
+  "Foldable, portable design for indoor and on-location use.": "可折叠便携设计，适合室内与外景使用。",
+  "Feet designed for placement on flat surfaces.": "支脚设计用于放置在平整表面。",
+  "The Adjustable Phone Tripod is built for creators who want steady framing without a complicated rig. Set your phone in the clamp, adjust the height and angle to your shot, and film hands-free. It suits short talking-head videos, product close-ups, and casual on-location clips. Exact dimensions, materials, and compatibility details will be updated after final product verification.": "可调手机三脚架面向想要稳定构图、又不想摆弄复杂支架的创作者。把手机放入夹具，按镜头调整高度与角度，即可免手持拍摄。适合短口播视频、产品特写与日常外景片段。确切尺寸、材质与适配细节将在最终商品核验后更新。",
+  "Product type": "商品类型",
+  "Adjustable phone tripod": "可调手机三脚架",
+  "Clamp compatibility": "夹具适配",
+  "Common smartphone sizes": "通用智能手机尺寸",
+  "Adjustability": "调节方式",
+  "Height and angle adjustable": "高度与角度可调",
+  "Placement surface": "放置表面",
+  "Flat, stable surfaces": "平整稳固的表面",
+  "Carry design": "携带设计",
+  "Portable, foldable design": "便携可折叠设计",
+  "1 x Adjustable phone tripod": "1 × 可调手机三脚架",
+  "Talking-head introductions and talking points filmed at home": "在家拍摄的口播自我介绍与要点片段",
+  "Product demos and unboxing clips on a tabletop or floor": "桌面或地面拍摄的产品演示与开箱片段",
+  "On-location clips outdoors or at an event, placed on flat ground": "户外或活动现场放置在平整地面的外景片段",
+  "The tripod is designed for portable, on-location use on flat, stable surfaces; avoid unstable or sloped ground.": "三脚架设计用于平整稳固表面上的便携外景使用；请勿放置在不稳或倾斜的地面。",
+  "Pair this with the other Creator Starter Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.": "可与 Creator Starter Kit 其他商品搭配套装。套装内含：可调手机三脚架（$19.99）、桌面手机支架（$14.99）、镜头清洁套装（$9.99）。套装价 $44.97——结账时使用优惠码 STARTERKIT：$38.22，省 $6.75。",
+  "Compact footprint for desks, countertops, and small workspaces.": "占地小巧，适合桌面、操作台与小工作区。",
+  "Designed for steady desk placement during demos, live clips, and reference viewing.": "演示、实时片段与对照查看时稳固放置于桌面。",
+  "Holder compatible with common smartphone sizes.": "支架适配通用智能手机尺寸。",
+  "Cable-friendly open design.": "开放式设计，走线方便。",
+  "The Desktop Phone Stand gives your phone a steady home right on the desk. Keep your device upright while you film product demos, follow along with a recipe or tutorial, or prepare for a live short clip. Its compact footprint suits small workspaces, and the open design leaves room for everyday use. Exact dimensions, materials, and compatibility will be confirmed after final verification.": "桌面手机支架让手机在桌面上有个稳固的安放位置。拍摄产品演示、跟做食谱或教程、准备实时短视频时，保持设备直立。占地小巧，适合小工作区；开放式设计留出日常使用空间。确切尺寸、材质与适配将在最终核验后确认。",
+  "Desktop phone stand": "桌面手机支架",
+  "Holder compatibility": "支架适配",
+  "Angle adjustability": "角度调节",
+  "Adjustable viewing/tilt angle": "观看/俯仰角度可调",
+  "Base": "底座",
+  "Desk base": "桌面底座",
+  "Cable access": "走线开口",
+  "Open design for charging cable": "开放式设计，供充电线通过",
+  "1 x Desktop phone stand": "1 × 桌面手机支架",
+  "Product demos shot from a desk or countertop": "桌面或操作台拍摄的产品演示",
+  "Live streams and Q&A clips with the phone held steady": "手机固定稳固的直播与问答片段",
+  "Keeping reference videos, scripts, or captions within view while filming": "拍摄时让参考视频、脚本或文案保持在视野内",
+  "Contents are listed in What's in the Box.": "构成以包装清单为准。",
+  "For dust, smudges, and fingerprints on phone lenses, compact camera lenses, and accessory lenses.": "用于清除手机镜头、便携相机镜头与配件镜头上的灰尘、污渍与指纹。",
+  "A clear lens makes your clips look cleaner. The Lens Cleaning Kit gathers the basics for dusting and wiping phone, camera, and accessory lenses. It is compact enough to keep in your filming bag. Final contents, materials, and any liquid ingredients will be confirmed after final verification.": "洁净的镜头让片段画面更清爽。镜头清洁套装汇集除尘与擦拭手机、相机及配件镜头的基础用品，小巧到可以放进拍摄包。最终构成、材质及液体成分将在最终核验后确认。",
+  "Lens cleaning kit": "镜头清洁套装",
+  "Compatible surfaces": "适用表面",
+  "Phone lenses, compact camera lenses, accessory lenses": "手机镜头、便携相机镜头、配件镜头",
+  "A compact cleaning set for phone and camera lenses. Contents will be listed here after final confirmation.": "小巧的手机/相机镜头清洁套装。构成将在最终确认后列于此处。",
+  "Wiping fingerprints off a phone lens before filming": "开拍前擦除手机镜头上的指纹",
+  "Dusting a compact camera or accessory lens between takes": "镜头间隙清除便携相机或配件镜头上的灰尘",
+  "Traveling with a small cleaning set in a creator bag": "在创作者包中携带小型清洁套装外出",
+  "Compact, portable design for home storage and on-location shoots.": "紧凑便携设计，适合居家收纳与外景拍摄。",
+  "Internal organization is listed in What's in the Box.": "内部收纳结构以包装清单为准。",
+  "Built around common creator gear setups.": "围绕常见创作者装备配置设计。",
+  "The Creator Carry Case keeps your phone gear and small accessories in one place between shoots. Pack the tripod, stand, cleaning supplies, and clips for a session, then stow the case at home or take it to a location. Exact dimensions, material, and fit details will be updated after final product verification.": "器材收纳包在拍摄间隙把手机装备与小型配件集中收纳。出发前装好三脚架、支架、清洁用品与夹具，拍完把包收存家中或带到外景地。确切尺寸、材质与适配细节将在最终商品核验后更新。",
+  "Gear carry case": "装备收纳包",
+  "Portable case": "便携包",
+  "Organization": "收纳结构",
+  "Internal pockets/compartments listed in What's in the Box": "内袋/隔层以包装清单为准",
+  "1 x Creator carry case": "1 × 器材收纳包",
+  "Packing gear for a home or outdoor shoot": "为居家或户外拍摄整理装备",
+  "Storing tripod, stand, and small accessories between sessions": "拍摄间隙收纳三脚架、支架与小型配件",
+  "Moving gear between locations without loose pieces": "在不同场地间转运装备，避免零件散落",
+  "Folds down for storage in a gear bag.": "可折叠收起，放入装备包收纳。",
+  "Handheld or held by a second person during a shot.": "拍摄时可手持，或由第二人持握。",
+  "Suited to talking-head and product close-up clips.": "适合口播与产品特写片段。",
+  "The Folding Reflector helps bounce light back onto your subject when the room light is flat or one-sided. Hold it near the product or face to open up shadows, then fold it flat for storage between takes. Exact diameter, fabric, and weight will be confirmed after final product verification.": "折叠反光板在室内光线平淡或单侧时，把光线反射回拍摄主体。举在产品或面部附近提亮阴影，拍完折叠平放收纳。确切直径、面料与重量将在最终商品核验后确认。",
+  "Folding light reflector": "折叠反光板",
+  "Use": "用途",
+  "Fill light for face and product clips": "为面部与产品片段补光",
+  "Storage": "收纳",
+  "Folds flat for a gear bag": "可折叠平放，放入装备包",
+  "1 x Folding reflector": "1 × 折叠反光板",
+  "Filling shadow on a talking-head clip at home": "在家拍口播片段时提亮阴影",
+  "Softening product close-up lighting near a window": "在窗边柔化产品特写光线",
+  "On-location shots where natural light is uneven": "自然光不均的外景拍摄",
+  "The reflector folds flat for bag storage. The included storage pouch, if any, is listed in What's in the Box.": "反光板可折叠平放收纳包内；是否附带收纳袋以包装清单为准。",
+  "This item is sold as a single item. Bundle sets are listed in the Creator Kits collection.": "本商品为单件销售。捆绑套装见创作者套装集合。",
+  "Hangs on common stands, clamps, or a wall-mounted setup.": "可挂在通用支架、夹具或墙面装置上。",
+  "Easy to hang and fold for storage between sessions.": "悬挂简便，拍摄间隙可折叠收纳。",
+  "One neutral surface behind the subject.": "在主体背后提供一块中性背景面。",
+  "The Backdrop Cloth gives your clip a clean, uncluttered background instead of a busy room. Hang it behind the product or yourself, frame the shot, and film. Exact size, fabric, and color will be confirmed after final product verification.": "背景布让片段拥有干净整洁的背景，而不是杂乱的房间。把它挂在产品或自己身后，构图后即可拍摄。确切尺寸、面料与颜色将在最终商品核验后确认。",
+  "Backdrop cloth": "背景布",
+  "Background for product and talking-head clips": "产品与口播片段的背景",
+  "Mounting": "悬挂方式",
+  "Common stands, clamps, or wall setup": "通用支架、夹具或墙面装置",
+  "1 x Backdrop cloth": "1 × 背景布",
+  "Product shots with a plain background": "纯色背景的产品拍摄",
+  "Talking-head clips filmed at a desk": "桌面拍摄的口播片段",
+  "Recurring setup reused across daily challenge videos": "每日挑战视频可复用的固定背景",
+  "The available color is listed after final product verification; exact dimensions, fabric, and finish are being finalized.": "可选颜色在最终商品核验后列出；确切尺寸、面料与饰面正在定稿。",
+  "Handheld for selfie-style clips or mounted on a stand.": "可手持拍摄自拍风片段，也可安装在支架上。",
+  "Collapses for transport in a gear bag.": "可收缩，放入装备包携带。",
+  "Phone holder fits common smartphone sizes.": "手机夹适配通用智能手机尺寸。",
+  "The Extension Pole lifts your phone above eye level for top-down, overhead, or wider group clips. Extend the length to your shot, hold it or fix it to a stand, and collapse it afterward. Exact extended and collapsed length, material, and weight will be confirmed after final product verification.": "延长杆把手机抬到平视高度以上，用于俯拍、顶视或更广的群拍片段。按镜头拉出长度，手持或固定在支架上，用完收回。确切伸展/收缩长度、材质与重量将在最终商品核验后确认。",
+  "Extension pole with phone holder": "带手机夹的延长杆",
+  "Overhead, higher-angle, and selfie-style clips": "俯拍、高角度与自拍风片段",
+  "Collapses for a gear bag": "可收缩放入装备包",
+  "1 x Extension pole": "1 × 延长杆",
+  "Overhead product arrangement shots": "俯拍产品摆放画面",
+  "Group clips where one phone must reach the whole frame": "单机位需覆盖全画面的群拍片段",
+  "Higher-angle talking-head setup on a stand": "支架上的高角度口播机位",
+  "For phone lenses, compact camera lenses, and accessory lenses.": "适用于手机镜头、便携相机镜头与配件镜头。",
+  "Contents and pack count are listed in What's in the Box.": "构成与件数以包装清单为准。",
+  "The Lens Cleaning Refill restocks the cleaning fluid, cloth, and brush pen you use between shoots, so your kit stays ready for the next clip. Exact counts, cloth material, and any fluid volume or ingredients will be confirmed after final product verification.": "清洁补充装补足拍摄间隙使用的清洁液、清洁布与笔刷，让套装随时为下一条片段做好准备。确切件数、布料材质及清洁液容量或成分将在最终商品核验后确认。",
+  "Cleaning kit refill": "清洁套装补充装",
+  "The depicted refill includes a cleaning fluid bottle, a cloth, and a brush pen; final counts, materials, and fluid details are listed here after final confirmation.": "所示补充装含一瓶清洁液、一块布与一支笔刷；最终件数、材质与清洁液细节将在最终确认后列于此处。",
+  "Replenishing the cloth and brush pen after repeated lens cleaning": "多次擦拭镜头后补充清洁布与笔刷",
+  "Refilling fluid for the existing Lens Cleaning Kit": "为既有镜头清洁套装补充清洁液",
+  "Keeping cleaning supplies on hand for on-location shoots": "外景拍摄常备清洁用品",
+  "The refill is made for use with the Lens Cleaning Kit on phone, compact camera, and accessory lenses.": "本补充装配合镜头清洁套装使用，适用于手机、便携相机与配件镜头。",
+  "This refill is sold as a single item. Bundle sets are listed in the Creator Kits collection.": "本补充装为单件销售。捆绑套装见创作者套装集合。",
+  "Tilt and rotate to level the frame, then lock it in for the take.": "俯仰与旋转调平画面，拍摄时锁定。",
+  "Mounts between the tripod and phone clamp for steadier angle adjustments.": "安装在三脚架与手机夹之间，角度调节更稳固。",
+  "Compact add-on that stays on the tripod between shoots.": "小巧附加件，拍摄间隙留在三脚架上即可。",
+  "Mount size and compatibility details are listed in What's in the Box.": "安装尺寸与适配细节以包装清单为准。",
+  "The Mini Ball Head sits between your tripod and phone clamp, so you can tilt, rotate, and level the frame with one twist instead of moving the whole tripod. It suits talking-head setups, product demos, and quick re-framing between takes. Exact mount size, materials, and hold details will be confirmed after final product verification.": "迷你云台装在三脚架与手机夹之间，一拧即可俯仰、旋转并调平画面，无需搬动整个三脚架。适合口播机位、产品演示与镜头间隙快速重新构图。确切安装尺寸、材质与夹持细节将在最终商品核验后确认。",
+  "Mini ball head": "迷你云台",
+  "Angle adjustment on a tripod": "三脚架上的角度调节",
+  "Mount": "安装接口",
+  "Details confirmed in What's in the Box": "细节以包装清单为准",
+  "1 x Mini ball head": "1 × 迷你云台",
+  "Re-leveling the frame between talking-head takes": "口播镜头间隙重新调平画面",
+  "Adjusting the angle for product demos on a flat surface": "在平整表面上为产品演示调节角度",
+  "Moving between a desk setup and an outdoor flat-ground spot": "在桌面机位与户外平地机位间转换",
+  "What tripod does it fit?": "适配哪种三脚架？",
+  "Does it replace the tripod?": "能否替代三脚架？",
+  "No. The ball head is an add-on that mounts to a tripod or stand; it does not replace the support itself.": "不能。云台是加装在三脚架或支架上的配件，不能替代支撑本身。",
+  "What is it made of?": "是什么材质？",
+  "Attach and remove the phone in one motion for quick setup between clips.": "一吸即装、一取即下，片段间隙快速完成机位。",
+  "Holds the phone at a usable angle for desk demos and reference viewing.": "以适合桌面演示与对照查看的角度固定手机。",
+  "Case and magnet compatibility are listed in What's in the Box.": "手机壳与磁吸适配以包装清单为准。",
+  "The Magnetic Mount lets you attach and remove your phone without fumbling with clamps each time. It suits desk demos, recipe or tutorial follow-alongs, and quick reference checks between shoots. Exact compatibility, base material, and hold details will be confirmed after final verification.": "磁吸支架让你无需每次摸索夹具即可装取手机。适合桌面演示、跟做食谱或教程，以及拍摄间隙快速对照查看。确切适配、底座材质与夹持细节将在最终核验后确认。",
+  "Magnetic phone mount": "磁吸手机支架",
+  "Desk-side phone holding for demos and reference viewing": "桌面侧手机固定，供演示与对照查看",
+  "Compatibility": "适配",
+  "Case and magnet details confirmed in What's in the Box": "手机壳与磁吸细节以包装清单为准",
+  "1 x Magnetic mount": "1 × 磁吸支架",
+  "Keeping a reference video or script within view while filming": "拍摄时让参考视频或脚本保持在视野内",
+  "Quick phone removal and remount between takes": "镜头间隙快速取下并重新安装手机",
+  "Will it hold my phone with a case?": "手机戴壳能否固定？",
+  "Does it work without a clamp?": "无需夹具能否使用？",
+  "The mount uses a magnetic attachment; the included plates or pads are listed in What's in the Box.": "支架采用磁吸固定；附带铁片或垫片以包装清单为准。",
+  "What is the base made of?": "底座是什么材质？",
+  "Three spare cloths so one can stay in the cleaning kit while another handles touch-ups.": "三片备用布，一片留在清洁套装中，另一片用于补擦。",
+  "For dust, smudges, and fingerprints on phone lenses and screens.": "用于清除手机镜头与屏幕上的灰尘、污渍与指纹。",
+  "Soft surface; approved use list is listed in What's in the Box.": "柔软表面；适用清单以包装清单为准。",
+  "Pairs with the Lens Cleaning Kit for between-take lens care.": "配合镜头清洁套装，用于镜头间隙养护。",
+  "The Microfiber 3-Pack gives you spare cloths so one can remain in the cleaning kit while another handles on-location touch-ups. Use it on phone lenses and screens between takes; exact cloth material, size, and pack count will be confirmed after final product verification.": "清洁布三片装提供备用布，一片留在清洁套装中，另一片用于外景补擦。镜头间隙用于手机镜头与屏幕；确切布料材质、尺寸与片数将在最终商品核验后确认。",
+  "Cleaning cloth 3-pack": "清洁布三片装",
+  "Phone lenses and screens; approved list confirmed in What's in the Box": "手机镜头与屏幕；适用清单以包装清单为准",
+  "Three soft cleaning cloths for between-take lens and screen care. Final material and size are listed here after final confirmation.": "三片柔软清洁布，用于镜头间隙的镜头与屏幕养护。最终材质与尺寸将在最终确认后列于此处。",
+  "Wiping smudges off a phone lens before a take": "开拍前擦除手机镜头上的污渍",
+  "Cleaning a phone screen between clips": "片段间隙清洁手机屏幕",
+  "Keeping a spare cloth in the creator bag for on-location shoots": "在创作者包中常备一块布供外景使用",
+  "What surfaces are the cloths for?": "这些清洁布适用于哪些表面？",
+  "How many cloths are included?": "内含几片布？",
+  "Does this replace the Lens Cleaning Kit?": "能否替代镜头清洁套装？",
+  "No. The cloths pair with the Lens Cleaning Kit; fluid and brush pen are sold separately in the kit and refill.": "不能。清洁布配合镜头清洁套装使用；清洁液与笔刷在套装和补充装中单独销售。",
+  "Four-shot prompt sequence: hook, close-up, demonstration, closing line.": "四镜提示顺序：钩子、特写、演示、收尾。",
+  "Each card pairs with the ShotStarter AI script and storyboard draft.": "每张卡片与 ShotStarter AI 脚本及分镜草稿配套。",
+  "Pocket-sized set to keep beside the setup during filming.": "口袋大小，拍摄时放在机位旁。",
+  "Card count, material, and language list are listed in What's in the Box.": "卡片数量、材质与语言清单以包装清单为准。",
+  "The Shot List Cards turn the ShotStarter draft into a physical check you can follow on set. Match each card to the script line and the four-shot storyboard, then tick off the hook, close-up, demonstration, and closing line before you publish. The cards are a companion to the ShotStarter AI assistant; they do not replace your own review of the draft. Exact card count, size, and material will be confirmed after final product verification.": "分镜清单卡片把 ShotStarter 草稿变成可在现场对照的实体清单。把每张卡片对应到脚本台词与四镜分镜，发布前逐一勾选钩子、特写、演示与收尾。卡片是 ShotStarter AI 助手的配套工具，不能替代你对草稿的自行审核。确切卡片数量、尺寸与材质将在最终商品核验后确认。",
+  "Shot list prompt card set": "分镜提示卡片套装",
+  "On-set four-shot planning paired with the ShotStarter draft": "现场四镜规划，与 ShotStarter 草稿配套",
+  "Contents": "构成",
+  "Card count and material confirmed in What's in the Box": "卡片数量与材质以包装清单为准",
+  "1 x Shot List card set": "1 × 分镜清单卡片套装",
+  "Planning the hook, close-up, demonstration, and closing line before filming": "开拍前规划钩子、特写、演示与收尾",
+  "Matching each shot to the ShotStarter script draft on set": "现场把每个镜头对应到 ShotStarter 脚本草稿",
+  "Keeping the shot order visible beside a desk or flat-ground setup": "在桌面或平地机位旁保持镜头顺序可见",
+  "What cards are included?": "内含哪些卡片？",
+  "Do the cards replace the ShotStarter AI draft?": "卡片能否替代 ShotStarter AI 草稿？",
+  "No. The cards pair with the script and storyboard draft from ShotStarter; you still review and edit the draft before posting.": "不能。卡片配合 ShotStarter 的脚本与分镜草稿使用；发布前你仍需自行审核与编辑草稿。",
+  "What languages are the cards printed in?": "卡片印刷为哪些语言？",
+  "Added to cart.": "已加入购物车。",
+  "Add-to-cart confirmation: Added to cart.": "已加入购物车。",
+  "Qty minus / plus; each line shows product name, unit price, and line total.": "数量减/加；每行显示商品名称、单价与小计。",
+  "Quantity control: Qty minus / plus; each line shows product name, unit price, and line total.": "数量减/加；每行显示商品名称、单价与小计。",
+  "Your order total, taxes, and shipping are recalculated at checkout.": "订单总额、税费与运费在结账时重新计算。",
+  "Total recalculation: Your order total, taxes, and shipping are recalculated at checkout.": "订单总额、税费与运费在结账时重新计算。",
+  "Tripod $19.99 + Stand $14.99 = $34.98 before any discount, $0.02 away. Add the Lens Cleaning Kit ($9.99) to reach the $35 free-shipping threshold.": "三脚架 $19.99 + 支架 $14.99 = 优惠前 $34.98，距免邮还差 $0.02。加购镜头清洁套装（$9.99）即可达到 $35 免邮门槛。",
+  "Example in-cart scenario: Tripod $19.99 + Stand $14.99 = $34.98 before any discount, $0.02 away. Add the Lens Cleaning Kit ($9.99) to reach the $35 free-shipping threshold.": "三脚架 $19.99 + 支架 $14.99 = 优惠前 $34.98，距免邮还差 $0.02。加购镜头清洁套装（$9.99）即可达到 $35 免邮门槛。",
+  "Promo code": "优惠码",
+  "Input label: Promo code": "优惠码",
+  "Apply": "应用",
+  "Apply button: Apply": "应用",
+  "Code applied.": "优惠码已应用。",
+  "Applied message: Code applied.": "优惠码已应用。",
+  "one code per order; STARTERKIT and NEWCREATOR10 cannot be combined.": "每单仅一码；STARTERKIT 与 NEWCREATOR10 不可叠加。",
+  "Code rule: one code per order; STARTERKIT and NEWCREATOR10 cannot be combined.": "每单仅一码；STARTERKIT 与 NEWCREATOR10 不可叠加。",
+  "Please review your address — one or more fields look incomplete. Check the highlighted field and try again.": "请核对收货地址——有一项或多项内容不完整。请检查标红字段后重试。",
+  "Address validation: Please review your address — one or more fields look incomplete. Check the highlighted field and try again.": "请核对收货地址——有一项或多项内容不完整。请检查标红字段后重试。",
+  "The order total shown at checkout includes item price and any applicable shipping; taxes (if any) are shown before you pay.": "结账显示的订单总额含商品价格及应付运费；税费（如有）在付款前显示。",
+  "No hidden fees: The order total shown at checkout includes item price and any applicable shipping; taxes (if any) are shown before you pay.": "结账显示的订单总额含商品价格及应付运费；税费（如有）在付款前显示。",
+  "Questions before ordering? Email 1744059451@qq.com.": "下单前有疑问？邮件联系 1744059451@qq.com。",
+  "Support: Questions before ordering? Email 1744059451@qq.com.": "下单前有疑问？邮件联系 1744059451@qq.com。",
+  "Thank you — your order is confirmed.": "谢谢——你的订单已确认。",
+  "Heading: Thank you — your order is confirmed.": "谢谢——你的订单已确认。",
+  "A confirmation and order number have been sent to your email. Please save your order number for support questions.": "确认信息与订单号已发送至你的邮箱。请保存订单号，便于咨询售后。",
+  "Body: A confirmation and order number have been sent to your email. Please save your order number for support questions.": "确认信息与订单号已发送至你的邮箱。请保存订单号，便于咨询售后。",
+  "your order number is shown on the confirmation page and sent to your email.": "订单号显示在确认页，并发送至你的邮箱。",
+  "Order number: your order number is shown on the confirmation page and sent to your email.": "订单号显示在确认页，并发送至你的邮箱。",
+  "We'll send tracking details once your order ships.": "订单发货后我们将发送物流详情。",
+  "Next steps: We'll send tracking details once your order ships.": "订单发货后我们将发送物流详情。",
+  "Continue shopping": "继续购物",
+  "CTA: Continue shopping": "继续购物",
+  "Contact us at 1744059451@qq.com": "联系我们：1744059451@qq.com",
+  "Support link: Contact us at 1744059451@qq.com": "联系我们：1744059451@qq.com",
+  "About ShotStart": "关于 ShotStart",
+  "New creators and small shop owners often have a real product and a real message, but they don't know how to set up a phone, frame a shot, or turn an idea into a caption. ShotStart pairs straightforward filming gear with the ShotStarter AI assistant to lower that barrier. We keep instructions plain, setups simple, and decisions in your hands.": "新手创作者与小商家往往有真实的商品和真实的表达，却不知道如何摆放手机、构图，或把想法变成文案。ShotStart 把简洁拍摄装备与 ShotStarter AI 助手搭配在一起，降低这一门槛。我们保持指引直白、机位简单，决定权在你手中。",
+  "Contact Us": "联系我们",
+  "Email 1744059451@qq.com — include your name, order number (if any), and a short description of the issue. Reference your order number in the subject line for a faster reply.": "邮件 1744059451@qq.com——请附上姓名、订单号（如有）与问题简述。主题行注明订单号，可获得更快回复。",
+  "Last updated: 2026-11-20.": "最近更新：2026-11-20。",
+  "Order Processing": "订单处理",
+  "Shipping Destinations": "配送目的地",
+  "Shipping Rates": "运费",
+  "Estimated Delivery": "预计送达",
+  "Order Tracking": "订单追踪",
+  "A tracking number is emailed to you once your order ships.": "订单发货后，物流单号将发送至你的邮箱。",
+  "Address Issues": "地址问题",
+  "It is the customer's responsibility to provide a correct shipping address. Re-routing or address correction after dispatch may incur additional carrier charges.": "提供正确收货地址为顾客责任。发货后改址或改投可能产生额外承运费用。",
+  "Customs and Duties": "关税与税费",
+  "Because this store ships to the United States only, cross-border customs and duties do not apply to current orders.": "本店目前仅配送至美国，当前订单不涉及跨境关税。",
+  "Shipping questions: 1744059451@qq.com": "配送咨询：1744059451@qq.com",
+  "Return Eligibility": "退货资格",
+  "Non-Returnable Items": "不可退货商品",
+  "How to Request a Return": "如何申请退货",
+  "Contact 1744059451@qq.com with your order number. We will send return instructions by email.": "请带订单号邮件联系 1744059451@qq.com。我们将通过邮件发送退货指引。",
+  "Return Shipping Costs": "退货运费",
+  "Refunds": "退款",
+  "Exchanges": "换货",
+  "Exchanges are handled case by case. Contact 1744059451@qq.com with your order number to check availability, any price difference, and return-shipping responsibility before a replacement is arranged.": "换货视个案处理。安排换货前，请带订单号邮件联系 1744059451@qq.com，确认是否有货、差价及退货运费责任。",
+  "Damaged or Defective Items": "破损或缺陷商品",
+  "What We Collect": "我们收集的信息",
+  "How We Use Information": "信息使用方式",
+  "Process orders and provide customer support": "处理订单并提供客户支持",
+  "Send the 7-Day Shooting Challenge sequence and marketing emails, where you have consented": "在你同意后发送 7 天拍摄挑战系列邮件与营销邮件",
+  "Improve the store experience and product assortment": "改善店铺体验与商品品类",
+  "Data Retention": "数据保留",
+  "Email Marketing": "邮件营销",
+  "Sharing Information": "信息共享",
+  "Cookies and Pixels": "Cookie 与像素追踪",
+  "The store uses necessary cookies to operate checkout and remember your preferences. Non-essential cookies can be declined through your browser or store consent settings where available.": "店铺使用必要 Cookie 运行结账并记住你的偏好。非必要 Cookie 可通过浏览器或店铺同意设置（如可用）拒绝。",
+  "Security": "安全",
+  "Your Rights": "你的权利",
+  "Children": "未成年人",
+  "Privacy questions: 1744059451@qq.com": "隐私咨询：1744059451@qq.com",
+  "Effective: 2026-11-20.": "生效日期：2026-11-20。",
+  "Use of the Store": "店铺使用",
+  "You agree to use the store lawfully and not to engage in fraud, abuse, unauthorized scraping, or interference with store operations.": "你同意合法使用店铺，不从事欺诈、滥用、未经授权的抓取或干扰店铺运营的行为。",
+  "Eligibility": "使用资格",
+  "Products, Pricing, and Availability": "商品、价格与库存",
+  "Listings, prices, and discounts may change. Availability and bundle terms are noted on each product page.": "商品条目、价格与折扣可能调整。库存与套装条款以各商品页为准。",
+  "Orders": "订单",
+  "Placing an order is an offer to purchase; acceptance and order confirmation occur when the order is processed, and a confirmation email is sent.": "下单即构成购买要约；订单处理并发送确认邮件时方视为接受要约并确认订单。",
+  "Intellectual Property": "知识产权",
+  "The ShotStart name, store copy, and creative materials belong to the brand.": "ShotStart 名称、店铺文案与创作素材归品牌所有。",
+  "ShotStarter AI Assistant": "ShotStarter AI 助手",
+  "Challenge Participation": "挑战参与",
+  "Promo Codes": "优惠码",
+  "Dispute Resolution": "争议解决",
+  "If you have an issue with an order or product, contact us at 1744059451@qq.com first. We will work with you by email to try to resolve the matter directly.": "若对订单或商品有问题，请先邮件联系 1744059451@qq.com。我们将通过邮件与你直接协商解决。",
+  "Questions about these terms: 1744059451@qq.com": "条款咨询：1744059451@qq.com",
+  "7-Day Shooting Challenge": "7 天拍摄挑战",
+  "Seven short daily tasks. One small step each day to plan, film, and publish your first short video. Sign up with your email to receive daily prompts and ShotStarter template suggestions.": "七个简短的每日任务。每天一小步，规划、拍摄并发布你的第一条短视频。用邮箱报名，即可收到每日提示与 ShotStarter 模板建议。",
+  "Sign up with a valid email; one short challenge email arrives each day for seven days.": "用有效邮箱报名；连续七天每天收到一封简短挑战邮件。",
+  "Complete one task per day. You may adapt tasks to your product and style.": "每天完成一个任务；可根据你的商品与风格调整任务。",
+  "Use ShotStarter drafts as starting points — review and edit before posting.": "以 ShotStarter 草稿为起点——发布前自行审核修改。",
+  "The challenge is free to join; no purchase is required.": "参与挑战免费，无需购买。",
+  "Participation does not guarantee followers, sales, or any platform result.": "参与不保证涨粉、销量或任何平台结果。",
+  "Day 1 — Pick your topic and selling point. Write down your product or topic and the one point you want viewers to remember. Use ShotStarter to set your platform and product type.": "Day 1 — 选定选题与卖点。写下你的商品或选题，以及想让观众记住的一个要点。用 ShotStarter 设置平台与商品类型。",
+  "Day 2 — Plan your 15-second script. Generate a draft script with ShotStarter; edit the opening line so it sounds like you.": "Day 2 — 规划 15 秒脚本。用 ShotStarter 生成脚本草稿；修改开场台词，让它听起来像你自己。",
+  "Day 3 — Set up your shot. Choose a flat surface or tripod/stand position; clean your lens; frame your first shot.": "Day 3 — 布置机位。选择平整表面或三脚架/支架位置；清洁镜头；构图拍下第一个镜头。",
+  "Day 4 — Shoot four storyboard clips. Follow the four-shot storyboard: opening hook, product/topic close-up, middle demonstration, closing line. Record each clip.": "Day 4 — 拍摄四个分镜片段。按四镜分镜执行：开场钩子、商品/选题特写、中段演示、收尾台词。逐段录制。",
+  "Day 5 — Assemble your cut. Trim clips to a 15-second pace; add simple captions; check lighting and focus.": "Day 5 — 剪辑成片。把片段剪成 15 秒节奏；添加简单字幕；检查光线与对焦。",
+  "Day 6 — Write the publish caption. Use the ShotStarter caption draft; add your own voice, relevant hashtags, and a clear call to action.": "Day 6 — 撰写发布文案。使用 ShotStarter 文案草稿；加入你自己的表达、相关话题标签与明确的行动号召。",
+  "Day 7 — Publish and review. Post your first short video, note what worked, and plan your next clip.": "Day 7 — 发布与复盘。发出第一条短视频，记录效果好的地方，并规划下一条片段。",
+  "Day 8+ Nurture Email Sequence": "Day 8+ 后续培育邮件序列",
+  "Email 1 (Day 8 — Review & next shot)": "邮件 1（Day 8 — 复盘与下一镜）",
+  "Which shot worked best?": "哪个镜头效果最好？",
+  "Subject: Which shot worked best?": "哪个镜头效果最好？",
+  "Your next topic gets a 15-second script draft.": "你的下一个选题将获得 15 秒脚本草稿。",
+  "Preheader: Your next topic gets a 15-second script draft.": "你的下一个选题将获得 15 秒脚本草稿。",
+  "Hi [first name], Day 7 is done. Which shot worked best? Reply and tell us your next topic; ShotStarter can draft your next 15-second script.": "你好 [first name]，Day 7 已完成。哪个镜头效果最好？回复告诉我们你的下一个选题；ShotStarter 可以起草你的下一条 15 秒脚本。",
+  "Body: Hi [first name], Day 7 is done. Which shot worked best? Reply and tell us your next topic; ShotStarter can draft your next 15-second script.": "你好 [first name]，Day 7 已完成。哪个镜头效果最好？回复告诉我们你的下一个选题；ShotStarter 可以起草你的下一条 15 秒脚本。",
+  "Email 2 (Day 10 — Keep your gear ready)": "邮件 2（Day 10 — 保持装备就绪）",
+  "A quick lens check before your next clip": "下一条片段前的快速镜头检查",
+  "Subject: A quick lens check before your next clip": "下一条片段前的快速镜头检查",
+  "Keep phone and camera lenses clear between shoots.": "拍摄间隙保持手机与相机镜头洁净。",
+  "Preheader: Keep phone and camera lenses clear between shoots.": "拍摄间隙保持手机与相机镜头洁净。",
+  "Quick lens check: smudges show up on camera. The Lens Cleaning Kit keeps phone and camera lenses clear between shoots.": "快速检查镜头：污渍在镜头前会显现。镜头清洁套装在拍摄间隙保持手机与相机镜头洁净。",
+  "Body: Quick lens check: smudges show up on camera. The Lens Cleaning Kit keeps phone and camera lenses clear between shoots.": "快速检查镜头：污渍在镜头前会显现。镜头清洁套装在拍摄间隙保持手机与相机镜头洁净。",
+  "Email 3 (Day 14 — Second video prompt)": "邮件 3（Day 14 — 第二条视频提示）",
+  "One video down — what's next?": "一条视频完成——接下来拍什么？",
+  "Subject: One video down — what's next?": "一条视频完成——接下来拍什么？",
+  "Pick a new selling point and run the four-shot storyboard again.": "选定一个新卖点，再跑一遍四镜分镜。",
+  "Preheader: Pick a new selling point and run the four-shot storyboard again.": "选定一个新卖点，再跑一遍四镜分镜。",
+  "Hi [first name], one video down, the next one is easier. Pick a new selling point and run the four-shot storyboard again.": "你好 [first name]，一条视频完成，下一条会更轻松。选定一个新卖点，再跑一遍四镜分镜。",
+  "Body: Hi [first name], one video down, the next one is easier. Pick a new selling point and run the four-shot storyboard again.": "你好 [first name]，一条视频完成，下一条会更轻松。选定一个新卖点，再跑一遍四镜分镜。",
+  "Your first shot is still waiting": "你的第一个镜头还在等你",
+  "Subject: Your first shot is still waiting": "你的第一个镜头还在等你",
+  "No pressure — pick up where you left off.": "不催你——从上次停下的地方继续即可。",
+  "Preheader: No pressure — pick up where you left off.": "不催你——从上次停下的地方继续即可。",
+  "We noticed you haven't finished the challenge. Reply here or open Day 1 again.": "我们注意到你还没完成挑战。在此回复，或重新打开 Day 1。",
+  "Body: We noticed you haven't finished the challenge. Reply here or open Day 1 again.": "我们注意到你还没完成挑战。在此回复，或重新打开 Day 1。",
+  "Participants may receive a thank-you offer; offer terms are finalized before launch.": "参与者可能收到致谢优惠；优惠条款将在上线前定稿。",
+  "Adjustable Phone Tripod ($19.99) + Desktop Phone Stand ($14.99) + Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.": "可调手机三脚架（$19.99）+ 桌面手机支架（$14.99）+ 镜头清洁套装（$9.99）。套装价 $44.97——结账时使用优惠码 STARTERKIT：$38.22，省 $6.75。",
+  "Bundle contents: Adjustable Phone Tripod ($19.99) + Desktop Phone Stand ($14.99) + Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.": "可调手机三脚架（$19.99）+ 桌面手机支架（$14.99）+ 镜头清洁套装（$9.99）。套装价 $44.97——结账时使用优惠码 STARTERKIT：$38.22，省 $6.75。",
+  "The Creator Starter Kit pairs steady gear with a clean lens — the basics a first-time creator needs to set up and shoot.": "Creator Starter Kit 把稳定装备与洁净镜头搭配在一起——初次创作者布置机位与开拍所需的基础配置。",
+  "Consumer copy: The Creator Starter Kit pairs steady gear with a clean lens — the basics a first-time creator needs to set up and shoot.": "Creator Starter Kit 把稳定装备与洁净镜头搭配在一起——初次创作者布置机位与开拍所需的基础配置。",
+  "The Pro Creator Kit adds steady framing, height and angle control, and a carry case for creators moving beyond the basics.": "Pro Creator Kit 在基础之上加入稳定构图、高度与角度控制以及收纳包，适合进阶创作者。",
+  "Consumer copy: The Pro Creator Kit adds steady framing, height and angle control, and a carry case for creators moving beyond the basics.": "Pro Creator Kit 在基础之上加入稳定构图、高度与角度控制以及收纳包，适合进阶创作者。",
+  "New here? Take 10% off your first order with code NEWCREATOR10.": "第一次来？使用优惠码 NEWCREATOR10 首单立享 9 折。",
+  "Consumer copy: New here? Take 10% off your first order with code NEWCREATOR10.": "第一次来？使用优惠码 NEWCREATOR10 首单立享 9 折。",
+  "Subscribe for a first-order discount and the 7-Day Shooting Challenge checklist.": "订阅即可获取首单优惠与 7 天拍摄挑战清单。",
+  "Consumer copy: Subscribe for a first-order discount and the 7-Day Shooting Challenge checklist.": "订阅即可获取首单优惠与 7 天拍摄挑战清单。",
+  "a UGC hashtag wall collecting public posts tagged #ShotStartChallenge.": "收集带 #ShotStartChallenge 标签公开发布内容的 UGC 话题墙。",
+  "Concept: a UGC hashtag wall collecting public posts tagged #ShotStartChallenge.": "收集带 #ShotStartChallenge 标签公开发布内容的 UGC 话题墙。",
+  "Made something this week? Tag #ShotStartChallenge — your clip could be featured.": "本周拍出了作品？带上 #ShotStartChallenge 标签——你的片段有机会被展示。",
+  "Display copy: Made something this week? Tag #ShotStartChallenge — your clip could be featured.": "本周拍出了作品？带上 #ShotStartChallenge 标签——你的片段有机会被展示。",
+  "Or leave your email on the Contact page": "或在联系页面留下你的邮箱",
+  "Steady shots, hands free. Adjustable framing for talking-head videos, product demos, and on-location clips.": "稳定拍摄，免手持。口播视频、产品演示与外景片段均可调整构图。",
+  "Adjustable Phone Tripod: Steady shots, hands free. Adjustable framing for talking-head videos, product demos, and on-location clips.": "稳定拍摄，免手持。口播视频、产品演示与外景片段均可调整构图。",
+  "A clean home for your phone on the desk. Keeps your device upright and within reach for demos, streams, and live clips.": "让手机在桌面上安放整齐。演示、直播与实时片段时保持设备直立、随手可取。",
+  "Desktop Phone Stand: A clean home for your phone on the desk. Keeps your device upright and within reach for demos, streams, and live clips.": "让手机在桌面上安放整齐。演示、直播与实时片段时保持设备直立、随手可取。",
+  "Keep smudges and dust off your lenses. A compact cleaning set for phones, cameras, and accessory lenses.": "擦除镜头上的污渍与灰尘。适用于手机、相机及配件镜头的小巧清洁套装。",
+  "Lens Cleaning Kit: Keep smudges and dust off your lenses. A compact cleaning set for phones, cameras, and accessory lenses.": "擦除镜头上的污渍与灰尘。适用于手机、相机及配件镜头的小巧清洁套装。",
+  "A portable case to keep your tripod, stand, and small accessories together.": "便携收纳，把三脚架、支架与小型配件集中放置。",
+  "Creator Carry Case: A portable case to keep your tripod, stand, and small accessories together.": "便携收纳，把三脚架、支架与小型配件集中放置。",
+  "Soften and fill light for face and product clips.": "为面部与产品片段柔化并补光。",
+  "Folding Reflector: Soften and fill light for face and product clips.": "为面部与产品片段柔化并补光。",
+  "Reach overhead and higher-angle shots for selfie and group clips.": "获取俯拍与高角度机位，适合自拍与群拍片段。",
+  "Extension Pole: Reach overhead and higher-angle shots for selfie and group clips.": "获取俯拍与高角度机位，适合自拍与群拍片段。",
+  "Restock fluid, cloths, and the brush pen for your cleaning kit.": "为你的清洁套装补充清洁液、清洁布与笔刷。",
+  "Lens Cleaning Refill: Restock fluid, cloths, and the brush pen for your cleaning kit.": "为你的清洁套装补充清洁液、清洁布与笔刷。",
+  "Level and lock the frame between shots with one twist.": "一拧即可调平画面并在镜头间锁定。",
+  "Mini Ball Head: Level and lock the frame between shots with one twist.": "一拧即可调平画面并在镜头间锁定。",
+  "Snap your phone on and off for quick desk setups.": "手机一吸即装、一取即下，快速完成桌面机位。",
+  "Magnetic Mount: Snap your phone on and off for quick desk setups.": "手机一吸即装、一取即下，快速完成桌面机位。",
+  "Three spare soft cloths for between-take lens and screen cleaning.": "三片备用软布，用于拍摄间隙擦拭镜头与屏幕。",
+  "Microfiber 3-Pack: Three spare soft cloths for between-take lens and screen cleaning.": "三片备用软布，用于拍摄间隙擦拭镜头与屏幕。",
+  "Four-shot prompt cards paired with your ShotStarter script draft.": "与你的 ShotStarter 脚本草稿配套的四镜提示卡片。",
+  "Shot List Cards: Four-shot prompt cards paired with your ShotStarter script draft.": "与你的 ShotStarter 脚本草稿配套的四镜提示卡片。",
+  "Featured, Price: Low to High, Price: High to Low, Newest.": "推荐、价格从低到高、价格从高到低、最新上架。",
+  "Sort options: Featured, Price: Low to High, Price: High to Low, Newest.": "推荐、价格从低到高、价格从高到低、最新上架。",
+  "Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.": "可调手机三脚架（$19.99）、桌面手机支架（$14.99）、镜头清洁套装（$9.99）。套装价 $44.97——结账时使用优惠码 STARTERKIT：$38.22，省 $6.75。",
+  "What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.": "可调手机三脚架（$19.99）、桌面手机支架（$14.99）、镜头清洁套装（$9.99）。套装价 $44.97——结账时使用优惠码 STARTERKIT：$38.22，省 $6.75。",
+  "email signup, chosen platform, and daily task interaction": "邮箱报名、所选平台与每日任务互动",
+  "Challenge participation: email signup, chosen platform, and daily task interaction": "邮箱报名、所选平台与每日任务互动",
+  "email opens and store browsing behavior": "邮件打开与店铺浏览行为",
+  "Usage data: email opens and store browsing behavior": "邮件打开与店铺浏览行为",
+  "SCENES": "拍摄场景",
+  "Simple gear. Real videos.": "简单装备，真实视频。",
+  "One small task a day. Publish your first video.": "每天一个小任务，发布你的第一条视频。",
+  "Scripts, storyboards and captions — drafted for you.": "脚本、分镜与文案——为你起草。",
+  "Gear + AI content assistant for new creators.": "装备 + 面向新创作者的 AI 内容助手。",
+  "Join the 7-Day Challenge": "参加 7 天拍摄挑战",
+  "Your AI content assistant.": "你的 AI 内容助手。",
+  "SHOTSTART · FOR BEGINNER CREATORS": "SHOTSTART · 面向新手创作者",
+  "MEET SHOTSTARTER": "认识 SHOTSTARTER",
+  "FREE · 7 DAYS · YOUR FIRST VIDEO": "免费 · 7 天 · 你的第一条视频",
+  "SHOTSTART": "SHOTSTART",
+  "Save $6.75": "省 $6.75",
+  "Save $9.44": "省 $9.44",
+  "Other Contact": "其他联系方式",
+  "Search products": "搜索商品",
+  "Thanks — here is your welcome code: NEWCREATOR10": "感谢提交——你的欢迎码：NEWCREATOR10",
+  "Thanks — you're subscribed.": "感谢订阅。",
+  "Description": "商品描述",
+  "Highlights": "亮点",
+  "Specifications": "规格",
+  "What's in the Box": "盒内清单",
+  "Use Scenarios": "使用场景",
+  "Shopping Trust": "购物保障",
+  "Bundle Entry": "套装入口",
+  "What's in the kit:": "套装内含：",
+  "Day 1 — Pick your topic and selling point.": "Day 1 — 选定选题与卖点。",
+  "Day 2 — Plan your 15-second script.": "Day 2 — 规划 15 秒脚本。",
+  "Day 3 — Set up your shot.": "Day 3 — 布置机位。",
+  "Day 4 — Shoot four storyboard clips.": "Day 4 — 拍摄四个分镜片段。",
+  "Day 5 — Assemble your cut.": "Day 5 — 剪辑成片。",
+  "Day 6 — Write the publish caption.": "Day 6 — 撰写发布文案。",
+  "Day 7 — Publish and review.": "Day 7 — 发布与复盘。",
+  "Choose a flat surface or tripod/stand position; clean your lens; frame your first shot.": "选择平整表面或三脚架/支架位置；清洁镜头；构图拍下第一个镜头。",
+  "Follow the four-shot storyboard: opening hook, product/topic close-up, middle demonstration, closing line. Record each clip.": "按四镜分镜执行：开场钩子、商品/选题特写、中段演示、收尾台词。逐段录制。",
+  "Rules": "规则",
+  "Daily Tasks": "每日任务",
+  "Thank-You Message": "致谢信",
+  "Creator Kits": "创作者套装",
+  "Write down your product or topic and the one point you want viewers to remember. Use ShotStarter to set your platform and product type.": "写下你的商品或选题，以及想让观众记住的一个要点。用 ShotStarter 设置平台与商品类型。",
+  "Generate a draft script with ShotStarter; edit the opening line so it sounds like you.": "用 ShotStarter 生成脚本草稿；修改开场台词，让它听起来像你自己。",
+  "Trim clips to a 15-second pace; add simple captions; check lighting and focus.": "把片段剪成 15 秒节奏；添加简单字幕；检查光线与对焦。",
+  "Use the ShotStarter caption draft; add your own voice, relevant hashtags, and a clear call to action.": "使用 ShotStarter 文案草稿；加入你自己的表达、相关话题标签与明确的行动号召。",
+  "Post your first short video, note what worked, and plan your next clip.": "发出第一条短视频，记录效果好的地方，并规划下一条片段。",
+  "Contact form: Thanks for reaching out. We read every message.": "联系表单：感谢留言，我们阅读每一条留言。",
+  "Thanks for reaching out. We read every message.": "感谢留言，我们阅读每一条留言。",
+  "Challenge sign-up: You're in. Day 1 is below — start shooting. Your first-order code: NEWCREATOR10 — 10% off all single items in the Shop collection; bundle kits are excluded; it does not stack with STARTERKIT.": "挑战报名：你已加入。Day 1 见下方——开始拍摄吧。首单优惠码 NEWCREATOR10——Shop 集合全部单件 9 折；捆绑套装除外；不可与 STARTERKIT 叠加。",
+  "You're in. Day 1 is below — start shooting. Your first-order code: NEWCREATOR10 — 10% off all single items in the Shop collection; bundle kits are excluded; it does not stack with STARTERKIT.": "你已加入。Day 1 见下方——开始拍摄吧。首单优惠码 NEWCREATOR10——Shop 集合全部单件 9 折；捆绑套装除外；不可与 STARTERKIT 叠加。",
+  "You're in. Day 1 is below — start shooting. Remember: your first shot starts here.": "你已加入。Day 1 见下方——开始拍摄吧。记住：你的第一个镜头，从这里开始。",
+  "Refill reminder: when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit between shoots.": "补充提醒：清洁布或气吹用旧时，在拍摄间隙补充镜头清洁套装。",
+  "when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit between shoots.": "清洁布或气吹用旧时，在拍摄间隙补充镜头清洁套装。",
+  "Filter": "筛选",
+  "Availability": "库存状态",
+  "Price": "价格",
+  "The clamp fits common smartphone sizes. The exact compatible width range is still being finalized; contact us for details.": "夹具适配常见智能手机尺寸。确切适配宽度范围正在定稿；详情请联系我们。",
+  "Whether a carry bag is included is still being finalized; contact us for details. Check the What's in the Box section for the confirmed contents.": "是否包含收纳包正在定稿；详情请联系我们。已确认的箱单见“箱单”部分。",
+  "It holds common smartphone sizes. The exact width range is still being finalized; contact us for details.": "可容纳常见智能手机尺寸。确切宽度范围正在定稿；详情请联系我们。",
+  "The open design allows cable access. The cutout position is still being finalized; contact us for details.": "开放式设计可走线充电。开孔位置正在定稿；详情请联系我们。",
+  "The base is designed for desk-level stability. Its net weight and material are still being finalized; contact us for details.": "底座按桌面稳定放置设计。净重与材质正在定稿；详情请联系我们。",
+  "The kit is designed for lens surfaces; avoid pressing or rubbing hard. The approved surface list is still being finalized; contact us for details.": "本套装面向镜头表面使用；避免用力按压或擦拭。适用表面清单正在定稿；详情请联系我们。",
+  "The set is a compact cleaning set; contents are listed in What's in the Box. Contents, cloth material, and fluid volume are still being finalized; contact us for details.": "本套装为紧凑清洁套装；构成见“箱单”。构成、布料材质与清洁液容量正在定稿；详情请联系我们。",
+  "Whether cleaning liquid is included, along with its volume and ingredients, is still being finalized; contact us for details; check the contents list before ordering.": "是否含清洁液及其容量、成分正在定稿；详情请联系我们；下单前请核对构成清单。",
+  "The case is built around common creator gear setups. Exact fitted dimensions are still being finalized; contact us for details.": "收纳包围绕常见创作者装备配置设计。确切适配尺寸正在定稿；详情请联系我们。",
+  "Internal pockets and compartments are listed in What's in the Box. Any additional accessory is still being finalized; contact us for details.": "内部口袋与隔层见“箱单”。其他附带配件正在定稿；详情请联系我们。",
+  "Water resistance and fabric coating are still being finalized; contact us for details.": "防水性与面料涂层正在定稿；详情请联系我们。",
+  "Diameter and surface fabric are pending final confirmation.": "直径与表面面料待最终确认。",
+  "A stand or mounting clip is not listed in the basic contents; any included accessory is still being finalized; contact us for details.": "基础构成不含支架或固定夹；是否附带配件正在定稿；详情请联系我们。",
+  "Dimensions and fabric are still being finalized; contact us for details.": "尺寸与面料正在定稿；详情请联系我们。",
+  "The cloth works with common stands or clamps. Any included mounting accessory is still being finalized; contact us for details.": "背景布可搭配常见支架或夹具。是否附带安装配件正在定稿；详情请联系我们。",
+  "Extended and collapsed lengths are still being finalized; contact us for details.": "伸展与收拢长度正在定稿；详情请联系我们。",
+  "The holder fits common smartphone sizes. The exact compatible width range is still being finalized; contact us for details.": "夹具适配常见智能手机尺寸。确切适配宽度范围正在定稿；详情请联系我们。",
+  "Material and net weight are still being finalized; contact us for details.": "材质与净重正在定稿；详情请联系我们。",
+  "The depicted refill includes a cleaning fluid bottle, a cloth, and a brush pen; exact count, cloth material, and fluid volume or ingredients are still being finalized; contact us for details.": "所示补充装含一瓶清洁液、一块布与一支笔刷；确切件数、布料材质及清洁液容量或成分正在定稿；详情请联系我们。",
+  "The refill includes a cleaning fluid bottle; the fluid volume and ingredients are still being finalized; contact us for details; check the contents list before ordering.": "补充装含一瓶清洁液；清洁液容量与成分正在定稿；详情请联系我们；下单前请核对构成清单。",
+  "The mount and thread details are still being finalized; contact us for details; check What's in the Box before ordering.": "安装与螺纹细节正在定稿；详情请联系我们；下单前请核对“箱单”。",
+  "Case thickness and magnet compatibility are still being finalized; contact us for details.": "手机壳厚度与磁吸适配正在定稿；详情请联系我们。",
+  "Base material and non-slip pad are still being finalized; contact us for details.": "底座材质与防滑垫正在定稿；详情请联系我们。",
+  "Approved surfaces are still being finalized; contact us for details; check What's in the Box before use.": "适用表面正在定稿；详情请联系我们；使用前请核对“箱单”。",
+  "The pack count and cloth size are still being finalized; contact us for details.": "片数与布面尺寸正在定稿；详情请联系我们。",
+  "The set follows the four-shot sequence — hook, close-up, demonstration, closing line; card count and material are still being finalized; contact us for details.": "本套卡片按四镜顺序排列——钩子、特写、演示、收尾；卡片数量与材质正在定稿；详情请联系我们。",
+  "The printed language list is under legal review; contact us with any questions; check What's in the Box before ordering.": "印刷语言清单正在法务复核；有疑问请联系我们；下单前请核对“箱单”。",
+  "What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99).": "可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$12.99）、器材收纳包（$12.99）。",
+  "Pair this with the other Pro Creator Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.": "可与 Pro Creator Kit 其他商品搭配套装。套装内含：可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$12.99）、器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。",
+  "Bundle contents: Adjustable Phone Tripod ($19.99) + Extension Pole ($16.99) + Mini Ball Head ($12.99) + Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.": "可调手机三脚架（$19.99）+ 延长杆（$16.99）+ 迷你云台（$12.99）+ 器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。",
+  "What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.": "可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$12.99）、器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。",
+  "Have a question about an order, a product, or the 7-Day Shooting Challenge? Send us a note — we read every message and reply as soon as we can. For order questions, please include your order number so we can help faster.": "对订单、商品或 7 天拍摄挑战有疑问？留言给我们——我们阅读每一条留言，并尽快回复。订单问题请附上订单号，以便更快协助。",
+  "We read every message and reply as soon as we can. This store is email-only; no physical mailing address is published.": "我们阅读每一条留言，并尽快回复。本店仅以邮箱承接联系，不公布实体邮寄地址。",
+  "ShotStart — Your first shot starts here.": "ShotStart——你的第一个镜头，从这里开始。",
+  "Sort by": "排序",
+  "Recommend": "推荐",
+  "Your cart is empty": "购物车是空的",
+  "Shop now": "立即选购",
+  "Recently viewed": "最近浏览",
+  "Quantity": "数量",
+  "1 sold": "已售 1 件",
+  "Products": "件装备",
+  "In stock": "有货",
+  "Out of stock": "缺货",
+  "Newest in": "最新上架",
+  "Pageviews, high to low": "浏览量从高到低",
+  "Price, high to low": "价格从高到低",
+  "Price, low to high": "价格从低到高",
+  "Recommended": "推荐",
+  "Best selling": "最畅销",
+  "Checkout": "去结账",
+  "Subtotal": "小计",
+  "Sign in": "登录",
+  "Register": "注册",
+  "It holds common smartphone sizes.": "支架适配常见智能手机尺寸。",
+  "The open design allows cable access.": "开放式设计预留走线空间，方便接线。",
+  "The base is designed for desk-level stability.": "底座按桌面摆放稳定性设计。",
+  "The cloth works with common stands or clamps.": "可搭配通用支架或夹具使用。",
+  "The case is built around common creator gear setups.": "收纳包围绕常见创作者器材搭配设计。",
+  "Internal pockets and compartments are listed in What's in the Box.": "内袋与隔层见“箱单”。",
+  "The clamp fits common smartphone sizes.": "夹具适配常见智能手机尺寸。",
+  "The holder fits common smartphone sizes.": "夹具适配常见智能手机尺寸。",
+  "The kit is designed for lens surfaces; avoid pressing or rubbing hard.": "本套装面向镜头表面使用；避免用力按压或擦拭。",
+  "The set is a compact cleaning set; contents are listed in What's in the Box.": "本套装为紧凑清洁套装；构成见“箱单”。",
+  "What’s in the Box": "盒内清单",
+  "Check out": "去结账",
+  "Platform": "平台",
+  "Product": "商品",
+  "Selling point": "卖点",
+  "15-Second Script": "15 秒脚本",
+  "Four-Shot Storyboard": "四镜分镜",
+  "Caption": "发布文案",
+  "Hashtags": "话题标签",
+  "Call to action": "行动号召",
+  "Voiceover": "口播",
+  "Visual cue": "画面提示",
+  "Shot": "镜号",
+  "Time": "时间",
+  "Shot type": "镜头类型",
+  "Visual action": "画面动作",
+  "On-screen subtitle": "屏内字幕",
+  "Draft to review before posting.": "草稿仅供发布前自行审核修改。",
+  "Pick a platform, product and selling point, then generate a draft.": "选平台、商品与卖点，生成一份草稿。",
+  "Live demo": "在线演示",
+  "Generate my script": "生成我的脚本",
+};;
+
+  /* _meta.plural_patterns: count patterns, {{count}} -> digit capture.
+     Source: i18n_zh.json _meta.plural_patterns; pattern entries are not
+     counted as front-facing dictionary keys. */
+  var SS_I18N_PLURAL = {
+    "{{count}} Products": "{{count}} 件装备",
+    "{{count}} sold": "已售 {{count}} 件"
+  };
+
+  function pluralZh(text) {
+    for (var pat in SS_I18N_PLURAL) {
+      var escaped = pat.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      var re = new RegExp("^\\s*" + escaped.replace("\\{\\{count\\}\\}", "(\\d+)") + "\\s*$");
+      var m = text.match(re);
+      if (m) return SS_I18N_PLURAL[pat].replace("{{count}}", m[1]);
+    }
+    return null;
+  }
+
+  /* Adjacent-sibling count split: the collection/product count renders as
+     two adjacent text nodes ("12" + "Products", or "1" + "sold") instead of
+     one whole string. A pure-integer node pairs only with its immediately
+     following text node; the unit node is replaced, the digit node is left
+     untouched. Whole-string dictionary keys still take priority on their
+     own pass; bare digits, prices ("$19.99") and standalone "Products"
+     labels are never touched. Original unit-node text is snapshotted for EN
+     restore via the shared originals/recorded text-node channel. */
+  var ADJACENT_UNITS = { Products: "件装备", sold: "件已售" };
+  function applyAdjacentCount(node) {
+    var raw = node.nodeValue;
+    if (raw == null || !/^\s*\d+\s*$/.test(raw)) return;
+    var sib = node.nextSibling;
+    while (sib && sib.nodeType !== 3) sib = sib.nextSibling;
+    if (!sib) return;
+    var unit = (sib.nodeValue || "").trim();
+    var unitZh = ADJACENT_UNITS[unit];
+    if (!unitZh) return;
+    if (isExcluded(node.parentElement) || isExcluded(sib.parentElement)) return;
+    if (!originals.has(sib)) { originals.set(sib, sib.nodeValue); recorded.push(sib); }
+    var escapedUnit = unit.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    sib.nodeValue = sib.nodeValue.replace(new RegExp("\\b" + escapedUnit + "\\b"), unitZh);
+  }
+
+  /* Hosted checkout DOM and non-content nodes must never be touched. */
+  var EXCLUDE_SELECTORS = [
+    ".ss-lang",
+    "[data-ss-i18n-exclude]",
+    "script",
+    "style",
+    "iframe",
+    "template",
+    "[id*='checkout']",
+    "[class*='checkout']",
+    ".shoplazza-checkout",
+    /* Product gallery / carousel (PC + mobile). SPZ gallery frames are not
+       i18n-aware: swapping src or hiding frames here loses gallery images on
+       zh-CN. Gallery stays in the EN baked source by design; the PDP title,
+       spec list and info bar are translated separately. */
+    "[id^='pd-images-']",
+    "[class*='pd-images-']",
+    "[class*='pd-image-gallery']",
+    ".pd-image-gallery-item",
+    ".pd-img"
+  ];
+
+  var originals = new WeakMap(); /* text node -> original raw string */
+  var recorded = []; /* text nodes translated this session (WeakMap has no iterator) */
+  var originalsEl = new WeakMap(); /* leaf element -> original innerHTML */
+  var recordedEls = []; /* leaf elements translated this session */
+  var originalsSeg = new WeakMap(); /* split segment -> original inner text */
+  var recordedSeg = []; /* split segments translated this session */
+  var originalsAttr = new WeakMap(); /* element -> { attr: original value } */
+  var recordedAttr = []; /* elements with translated attributes this session */
+  var originalsTitle = new WeakMap(); /* success title -> saved text/strong state */
+  var recordedTitle = []; /* success titles translated this session */
+  var originalsBlock = new WeakMap(); /* block element -> saved innerHTML */
+  var recordedBlock = []; /* block elements translated this session */
+  var ATTR_KEYS = ["placeholder", "aria-label", "title"];
+  var currentLang = DEFAULT_LANG;
+
+  function scopeRoots() {
+    var roots = [];
+    var announce = document.querySelector(".ss-announce");
+    var header = document.querySelector("header");
+    var main = document.querySelector("main") ||
+      document.querySelector("[role='main']") ||
+      document.querySelector("#MainContent") ||
+      document.querySelector("#main");
+    var footer = document.querySelector("footer");
+    if (announce) roots.push(announce);
+    if (header) roots.push(header);
+    if (main) roots.push(main); else roots.push(document.body);
+    if (footer) roots.push(footer);
+    return roots;
+  }
+
+  function isExcluded(el) {
+    if (!el || !el.closest) return false;
+    for (var i = 0; i < EXCLUDE_SELECTORS.length; i++) {
+      if (el.closest(EXCLUDE_SELECTORS[i])) return true;
+    }
+    return false;
+  }
+
+  /* Apostrophe/whitespace normalization: curly U+2018/U+2019 collapse to the
+     straight ASCII apostrophe and whitespace runs collapse to one space, so a
+     node typed with either quote form still matches the frozen key. */
+  function normKey(s) {
+    return String(s == null ? "" : s)
+      .replace(/[‘’]/g, "'")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  /* Nav-scoped dictionary: keys listed here are translated ONLY when the
+     element sits inside a header / nav / footer / mobile drawer / spz menu;
+     elsewhere the same English string is left untouched (e.g. the internal
+     Judge Guide page heading on the guide page itself). */
+  var NAV_SCOPED_KEYS = { "Judge Guide": "评委导览" };
+  var NAV_SCOPE_SELECTORS = [
+    "header", "nav", ".ss-footer", "[data-mobile-drawer]",
+    ".spz-menu", "spz-menu", "[class*='header']"
+  ];
+
+  /* Title-scope punctuation strip: in zh-CN, headings / card titles drop a
+     trailing 。/！. Body paragraphs, subtitles and English copy are untouched.
+     The strip is applied after translation; original text nodes are snapshotted
+     so EN restore returns the untouched source. */
+  var TITLE_SELECTORS = "h1, h2, h3, h4, .ss-hero__title, .ss-ai-band__title, " +
+    ".ss-challenge-band__title, .ss-bundle__title, .ss-kit__name, " +
+    ".ss-scene-trio__title, .ss-card__title";
+  var originalsTitlePunct = new WeakMap();
+  var recordedTitlePunct = [];
+  function inNavScope(el) {
+    if (!el || !el.closest) return false;
+    for (var i = 0; i < NAV_SCOPE_SELECTORS.length; i++) {
+      if (el.closest(NAV_SCOPE_SELECTORS[i])) return true;
+    }
+    return false;
+  }
+
+  function dictZh(raw) {
+    if (raw == null) return undefined;
+    var t = String(raw).trim();
+    if (Object.prototype.hasOwnProperty.call(SS_I18N_ZH, t)) return SS_I18N_ZH[t];
+    var n = normKey(t);
+    if (Object.prototype.hasOwnProperty.call(SS_I18N_ZH, n)) return SS_I18N_ZH[n];
+    return undefined;
+  }
+
+  /* Lookup gated by the nav whitelist: a NAV_SCOPED_KEYS entry is returned
+     only inside the nav scope; a plain dictionary key ignores scope. */
+  function zhFor(el, raw) {
+    var plain = dictZh(raw);
+    if (plain != null) return plain;
+    var n = normKey(raw);
+    if (Object.prototype.hasOwnProperty.call(NAV_SCOPED_KEYS, n) && inNavScope(el)) {
+      return NAV_SCOPED_KEYS[n];
+    }
+    return undefined;
+  }
+
+  function walkTextNodes(root, callback) {
+    if (!root) return;
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (node) {
+        if (!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        if (isExcluded(node.parentElement)) return NodeFilter.FILTER_REJECT;
+        if (node.parentElement && node.parentElement.closest &&
+            node.parentElement.closest("[data-ss-seg]")) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while ((node = walker.nextNode())) callback(node);
+  }
+
+  function collapsedText(el) {
+    return (el.textContent || "").replace(/\s+/g, " ").trim();
+  }
+
+  /* Leaf-element whole-string match: nav/footer links and buttons whose
+     trimmed, whitespace-collapsed textContent equals a dictionary key.
+     Covers nested spans / em / strong / indentation whitespace that a
+     text-node walk cannot match. Original innerHTML is snapshotted so the
+     inline wrapper structure is restored on switch back to EN. When a
+     block heading wraps its text in an anchor (h3 > a), the anchor itself
+     matches here; the block pass below must not flatten the heading link. */
+  function applyLeaf(root) {
+    if (!root) return;
+    var candidates = root.querySelectorAll("a[href], button");
+    candidates.forEach(function (el) {
+      if (isExcluded(el)) return;
+      var key = collapsedText(el);
+      var zh = zhFor(el, key);
+      if (zh && !originalsEl.has(el)) {
+        originalsEl.set(el, el.innerHTML);
+        recordedEls.push(el);
+        el.textContent = zh;
+      }
+    });
+  }
+
+  /* Inline-only block-level whole-string match: p / li / h2-h5 / td / th /
+     dd / dt / blockquote / caption / summary whose whitespace-collapsed
+     textContent equals a dictionary key, and whose element children are all
+     inline tags (strong/em/span/br/a/b/i/u/small/mark/sub/sup/del/ins/code/
+     abbr/cite/q). The whole inner content is replaced with the zh string;
+     the original innerHTML is kept in a WeakMap for EN restore. Inline
+     structure (including <br>) is flattened on zh — accepted per spec. */
+  var INLINE_TAGS = {
+    STRONG: 1, EM: 1, SPAN: 1, BR: 1, A: 1, B: 1, I: 1, U: 1,
+    SMALL: 1, MARK: 1, SUB: 1, SUP: 1, DEL: 1, INS: 1, CODE: 1,
+    ABBR: 1, CITE: 1, Q: 1, KBD: 1, TIME: 1
+  };
+
+  function inlineOnly(el) {
+    var kids = el.querySelectorAll("*");
+    for (var i = 0; i < kids.length; i++) {
+      if (!INLINE_TAGS[kids[i].tagName]) return false;
+    }
+    return true;
+  }
+
+  /* FAQ prefix tolerance: strip a leading "Q:" / "A:" (half- or full-width
+     colon) before dictionary lookup; on zh the prefix flips to 问： / 答：. */
+  function splitPrefix(text) {
+    var m = text.match(/^\s*([QA])\s*[：:]\s*([\s\S]*)$/);
+    if (!m) return null;
+    return { prefix: m[1], rest: m[2].replace(/\s+/g, " ").trim() };
+  }
+
+  function applyBlocks(root) {
+    if (!root) return;
+    var candidates = root.querySelectorAll(
+      "p, li, h2, h3, h4, h5, td, th, dd, dt, blockquote, caption, summary, span, div"
+    );
+    candidates.forEach(function (el) {
+      if (isExcluded(el)) return;
+      if (el.tagName === "A" || el.tagName === "BUTTON") return;
+      if (originalsBlock.has(el)) return;
+      if (el.closest && el.closest("[data-ss-seg]")) return;
+      if (el.closest && el.closest(".ss-form-success")) return;
+      if (!inlineOnly(el)) return;
+      var text = collapsedText(el);
+      if (!text) return;
+      var zh = zhFor(el, text);
+      var prefix = null;
+      if (!zh) {
+        var pr = splitPrefix(text);
+        if (pr) {
+          var preZh = zhFor(el, pr.rest);
+          if (preZh) {
+            prefix = pr.prefix;
+            zh = preZh;
+          }
+        }
+      }
+      if (!zh) {
+        var pmzh = pluralZh(text);
+        if (pmzh) zh = pmzh;
+      }
+      if (!zh) return;
+      originalsBlock.set(el, el.innerHTML);
+      recordedBlock.push(el);
+      el.textContent = prefix === "Q" ? "问：" + zh :
+        prefix === "A" ? "答：" + zh : zh;
+    });
+  }
+
+  /* Success title with an inline code <strong>: the full phrase key spans a
+     text node + the strong code, so match the collapsed whole phrase, swap
+     the leading text node to zh (the code repeats inside the zh string),
+     and hide the strong on zh. Original text node and strong visibility are
+     restored on switch back, so the coral bold code is not flattened. */
+  function applySuccessTitles(root) {
+    if (!root) return;
+    root.querySelectorAll("p.ss-form-success__title").forEach(function (el) {
+      if (isExcluded(el) || originalsTitle.has(el)) return;
+      var strong = el.querySelector(".ss-form-success__code");
+      if (!strong) return; /* bare titles are covered by the text-node walk */
+      var key = collapsedText(el);
+      var zh = dictZh(key);
+      if (!zh) return;
+      var firstText = null;
+      for (var i = 0; i < el.childNodes.length; i++) {
+        if (el.childNodes[i].nodeType === 3) { firstText = el.childNodes[i]; break; }
+      }
+      originalsTitle.set(el, {
+        text: firstText ? firstText.nodeValue : "",
+        strongHidden: strong.style.display === "none"
+      });
+      recordedTitle.push(el);
+      if (firstText) firstText.nodeValue = zh;
+      strong.style.display = "none";
+    });
+  }
+
+  /* Split-segment match: headings rendered as two styled spans carry
+     data-ss-en / data-ss-zh so a mixed-weight phrase still flips cleanly
+     without relying on a full-sentence dictionary key. */
+  function applySegments(root) {
+    if (!root) return;
+    var segs = root.querySelectorAll("[data-ss-seg]");
+    segs.forEach(function (el) {
+      if (isExcluded(el)) return;
+      var zh = el.getAttribute("data-ss-zh");
+      if (zh && !originalsSeg.has(el)) {
+        originalsSeg.set(el, el.textContent);
+        recordedSeg.push(el);
+        el.textContent = zh;
+      }
+    });
+  }
+
+  /* Attribute-level match: placeholder / aria-label / title. A
+     `data-i18n-<attr>` attribute carries the explicit zh value and
+     wins over the dictionary; otherwise the current attribute value
+     is matched verbatim against a dictionary key. */
+  function applyAttributes(root) {
+    if (!root) return;
+    root.querySelectorAll("[" + ATTR_KEYS.join("], [") + "]").forEach(function (el) {
+      if (isExcluded(el)) return;
+      ATTR_KEYS.forEach(function (attr) {
+        var current = el.getAttribute(attr);
+        if (current == null) return;
+        var explicit = el.getAttribute("data-i18n-" + attr);
+        var zh = explicit != null ? explicit : dictZh(current);
+        if (zh && zh !== current) {
+          if (!originalsAttr.has(el)) { originalsAttr.set(el, {}); recordedAttr.push(el); }
+          var saved = originalsAttr.get(el);
+          if (!(attr in saved)) saved[attr] = current;
+          el.setAttribute(attr, zh);
+        }
+      });
+    });
+  }
+
+  /* L10-11 alt translation: product/banner image `alt` matched verbatim against
+     the dictionary (keys already in registry = product titles / banner copy).
+     A `data-i18n-alt` explicit value wins; original alt is saved in the shared
+     attribute WeakMap and restored on switch back to EN. */
+  function applyAlts(root) {
+    if (!root) return;
+    root.querySelectorAll("img[alt]").forEach(function (el) {
+      if (isExcluded(el)) return;
+      var current = el.getAttribute("alt");
+      if (current == null) return;
+      var explicit = el.getAttribute("data-i18n-alt");
+      var zh = explicit != null ? explicit : dictZh(current);
+      if (zh && zh !== current) {
+        if (!originalsAttr.has(el)) { originalsAttr.set(el, {}); recordedAttr.push(el); }
+        var saved = originalsAttr.get(el);
+        if (!("alt" in saved)) saved.alt = current;
+        el.setAttribute("alt", zh);
+      }
+    });
+  }
+
+  /* Route title + og:title: map the composed document.title and og:title
+     content verbatim against the dictionary. Missing keys stay EN (no
+     fabricated translation). Crawlers/indexers read the EN source; zh
+     visitors see the zh title after hydration. */
+  var docTitleOrig = null;
+  var ogTitleOrig = null;
+  function applyDocTitle() {
+    if (docTitleOrig == null) docTitleOrig = document.title;
+    var tzh = SS_I18N_ZH[(document.title || "").trim()];
+    if (tzh) document.title = tzh;
+    var og = document.querySelector('meta[property="og:title"]');
+    if (og) {
+      if (ogTitleOrig == null) ogTitleOrig = og.getAttribute("content");
+      var ozh = SS_I18N_ZH[(og.getAttribute("content") || "").trim()];
+      if (ozh) og.setAttribute("content", ozh);
+    }
+  }
+  function restoreDocTitle() {
+    if (docTitleOrig != null) { document.title = docTitleOrig; docTitleOrig = null; }
+    var og = document.querySelector('meta[property="og:title"]');
+    if (og && ogTitleOrig != null) { og.setAttribute("content", ogTitleOrig); ogTitleOrig = null; }
+  }
+
+  function lastTextNode(el) {
+    var kids = el.childNodes;
+    for (var i = kids.length - 1; i >= 0; i--) {
+      if (kids[i].nodeType === 1) {
+        var deep = lastTextNode(kids[i]);
+        if (deep) return deep;
+      } else if (kids[i].nodeType === 3 && kids[i].nodeValue.trim()) {
+        return kids[i];
+      }
+    }
+    return null;
+  }
+
+  function applyTitlePunct(root) {
+    if (!root) return;
+    root.querySelectorAll(TITLE_SELECTORS).forEach(function (el) {
+      if (isExcluded(el)) return;
+      var node = lastTextNode(el);
+      if (!node) return;
+      var v = node.nodeValue;
+      var stripped = v.replace(/[。！\s]+$/, "");
+      if (stripped !== v) {
+        if (!originalsTitlePunct.has(node)) {
+          originalsTitlePunct.set(node, v);
+          recordedTitlePunct.push(node);
+        }
+        node.nodeValue = stripped;
+      }
+    });
+  }
+
+  function applyZh() {
+    applyDocTitle();
+    scopeRoots().forEach(function (root) {
+      applySegments(root);
+      applyLeaf(root);
+      applyBlocks(root);
+      applySuccessTitles(root);
+      applyAttributes(root);
+      applyAlts(root);
+      walkTextNodes(root, function (node) {
+        applyAdjacentCount(node);
+        var raw = node.nodeValue;
+        var key = raw.trim();
+        var zh = zhFor(node.parentElement, key);
+        if (zh && !originals.has(node)) {
+          originals.set(node, raw);
+          recorded.push(node);
+          node.nodeValue = raw.replace(key, zh);
+        }
+      });
+      applyTitlePunct(root);
+    });
+  }
+
+  function restoreEn() {
+    restoreDocTitle();
+    recorded.forEach(function (node) {
+      if (originals.has(node)) {
+        node.nodeValue = originals.get(node);
+        originals.delete(node);
+      }
+    });
+    recorded = [];
+    recordedEls.forEach(function (el) {
+      if (originalsEl.has(el)) {
+        el.innerHTML = originalsEl.get(el);
+        originalsEl.delete(el);
+      }
+    });
+    recordedEls = [];
+    recordedBlock.forEach(function (el) {
+      if (originalsBlock.has(el)) {
+        el.innerHTML = originalsBlock.get(el);
+        originalsBlock.delete(el);
+      }
+    });
+    recordedBlock = [];
+    recordedTitle.forEach(function (el) {
+      var saved = originalsTitle.get(el);
+      if (!saved) return;
+      var strong = el.querySelector(".ss-form-success__code");
+      var firstText = null;
+      for (var i = 0; i < el.childNodes.length; i++) {
+        if (el.childNodes[i].nodeType === 3) { firstText = el.childNodes[i]; break; }
+      }
+      if (firstText) firstText.nodeValue = saved.text;
+      if (strong) strong.style.display = saved.strongHidden ? "none" : "";
+      originalsTitle.delete(el);
+    });
+    recordedTitle = [];
+    recordedSeg.forEach(function (el) {
+      if (originalsSeg.has(el)) {
+        el.textContent = originalsSeg.get(el);
+        originalsSeg.delete(el);
+      }
+    });
+    recordedSeg = [];
+    recordedAttr.forEach(function (el) {
+      var saved = originalsAttr.get(el);
+      if (saved) {
+        Object.keys(saved).forEach(function (attr) { el.setAttribute(attr, saved[attr]); });
+        originalsAttr.delete(el);
+      }
+    });
+    recordedAttr = [];
+    recordedTitlePunct.forEach(function (node) {
+      if (originalsTitlePunct.has(node)) {
+        node.nodeValue = originalsTitlePunct.get(node);
+        originalsTitlePunct.delete(node);
+      }
+    });
+    recordedTitlePunct = [];
+  }
+
+  function persist(lang) {
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (e) { /* private mode / storage unavailable: session-only choice */ }
+  }
+
+  function readStored() {
+    try {
+      return localStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function updateToggle(lang) {
+    var buttons = document.querySelectorAll("[data-ss-lang-toggle] [data-ss-lang]");
+    buttons.forEach(function (btn) {
+      var active = btn.getAttribute("data-ss-lang") === lang;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+  }
+
+  function setLang(lang) {
+    if (lang !== ZH) lang = DEFAULT_LANG;
+    currentLang = lang;
+    if (lang === ZH) applyZh(); else restoreEn();
+    persist(lang);
+    updateToggle(lang);
+    document.documentElement.setAttribute("lang", lang === ZH ? "zh-CN" : "en");
+  }
+
+  function bindToggle() {
+    var buttons = document.querySelectorAll("[data-ss-lang-toggle] [data-ss-lang]");
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setLang(btn.getAttribute("data-ss-lang"));
+      });
+    });
+  }
+
+  function boot() {
+    var stored = readStored();
+    currentLang = stored === ZH ? ZH : DEFAULT_LANG;
+    bindToggle();
+    if (currentLang === ZH) applyZh();
+    updateToggle(currentLang);
+    document.documentElement.setAttribute("lang", currentLang === ZH ? "zh-CN" : "en");
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+
+  /* Re-scan after the theme editor or AJAX replaces a section. */
+  if (typeof window.SS_I18N_REFRESH !== "function") {
+    window.SS_I18N_REFRESH = function () {
+      if (currentLang === ZH) applyZh();
+      else restoreEn();
+    };
+  }
+})();
