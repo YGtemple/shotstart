@@ -1,0 +1,83 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Product Detail: Microfiber 3-Pack
+
+[INTERNAL] 【操作者说明】清洁布材质、片数与适用表面属于需核实信息；未确认前一律占位，不得写认证或功效承诺。
+
+## Product Title
+
+[PUBLISH] Microfiber 3-Pack — Soft Cloths for Between-Take Cleaning
+
+## Selling Points (bullets)
+
+- [PUBLISH] Three spare cloths so one can stay in the cleaning kit while another handles touch-ups.
+- [PUBLISH] For dust, smudges, and fingerprints on phone lenses and screens.
+- [PUBLISH] Soft surface; approved use list is listed in What's in the Box.
+- [PUBLISH] Pairs with the Lens Cleaning Kit for between-take lens care.
+
+- [INTERNAL] Pending before launch: [待确认: approved surfaces and cloth material]; [待确认: cloth size and count]; [待确认: cloth material and weave].
+
+## Description Paragraph
+
+[PUBLISH] The Microfiber 3-Pack gives you spare cloths so one can remain in the cleaning kit while another handles on-location touch-ups. Use it on phone lenses and screens between takes; exact cloth material, size, and pack count will be confirmed after final product verification.
+
+## Specifications
+
+Attribute | Detail
+--- | ---
+Product type | Cleaning cloth 3-pack
+Compatible surfaces | Phone lenses and screens; approved list confirmed in What's in the Box
+
+## What's in the Box
+
+[PUBLISH] Three soft cleaning cloths for between-take lens and screen care. Final material and size are listed here after final confirmation.
+
+- [INTERNAL] Final cloth material, weave, size, and count: [待确认: cloth material and count].
+
+## Use Scenarios
+
+- [PUBLISH] Wiping smudges off a phone lens before a take
+- [PUBLISH] Cleaning a phone screen between clips
+- [PUBLISH] Keeping a spare cloth in the creator bag for on-location shoots
+
+## FAQ
+
+- [INTERNAL] FAQ layout: question line as a bold standalone heading; answer paragraph below; collapsed by default on mobile; on desktop, open the first question and collapse the rest.
+
+[PUBLISH] Q: What surfaces are the cloths for?
+
+[PUBLISH] A: Approved surfaces are still being finalized; contact us for details; check What's in the Box before use.
+
+[PUBLISH] Q: How many cloths are included?
+
+[PUBLISH] A: The pack count and cloth size are still being finalized; contact us for details.
+
+[PUBLISH] Q: Does this replace the Lens Cleaning Kit?
+
+[PUBLISH] A: No. The cloths pair with the Lens Cleaning Kit; fluid and brush pen are sold separately in the kit and refill.
+
+## Pricing
+
+[INTERNAL] Demo price: $6.99 — Demo configuration, confirm before launch. Sold as a single item; bundle sets are listed in the Creator Kits collection.
+
+## Add to Cart
+
+- [PUBLISH] Primary button: Add to Cart
+- [PUBLISH] Secondary button: Browse Creator Kits
+
+## Shopping Trust (generic; no certification claims)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] Return terms: see the Return & Refund Policy for the confirmed return window.
+- [PUBLISH] ShotStarter outputs are drafts you review and approve before posting.
+- [PUBLISH] No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.
+- [PUBLISH] Questions? Reach us at 1744059451@qq.com.
+
+[INTERNAL] 【操作者说明】Platform fact (INTERNAL only): the drill store is hosted on Shoplazza; the public checkout line does not name the platform. Strip any platform mention from the live store per the launch cleanup checklist.
+
+## Bundle Entry
+
+[PUBLISH] This item is sold as a single item. Bundle sets are listed in the Creator Kits collection.
+
+
+[INTERNAL] 【待确认占位键】上线前在 placeholder-map.txt 查英文定稿与中性兜底句；前台不得残留方括号占位： [待确认: approved surfaces and cloth material]; [待确认: cloth size and count]
