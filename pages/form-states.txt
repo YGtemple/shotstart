@@ -1,0 +1,42 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Form States Copy (Contact / Challenge / Popup)
+
+[INTERNAL] 【操作者说明】三套表单共用同一套状态文案；字段命名全店统一为 First name / Email / Platform。状态句为英文消费者文案；字段定义为后台配置。
+
+## Canonical Field Labels
+
+- [INTERNAL] First name
+- [INTERNAL] Email
+- [INTERNAL] Platform (challenge sign-up form only)
+- [INTERNAL] Message (contact form only)
+
+## Success State
+
+- [PUBLISH] Contact form: Thanks for reaching out. We read every message.
+- [PUBLISH] Challenge sign-up: You're in. Day 1 is below — start shooting. Your first-order code: NEWCREATOR10 — 10% off all single items in the Shop collection; bundle kits are excluded; it does not stack with STARTERKIT.
+- [PUBLISH] Email popup: Thanks — your welcome code is shown below. Save it before you leave.
+
+## Required Field Message
+
+- [PUBLISH] Please enter your first name.
+- [PUBLISH] Please enter your email address.
+- [PUBLISH] Please enter your message.
+
+## Invalid Email Format
+
+[PUBLISH] Please enter a valid email address, e.g., name@example.com.
+
+## Submission Failure
+
+[PUBLISH] Something went wrong and your message wasn't sent. Please try again, or email us directly at 1744059451@qq.com.
+
+## Consent Checkbox
+
+- [PUBLISH] Contact: I agree to be contacted about my question.
+- [PUBLISH] Challenge / popup: By signing up, I agree to receive challenge and marketing emails. I can unsubscribe at any time.
+- [PUBLISH] Unselected state: Please agree to be contacted before submitting.
+
+## Field Labeling Note
+
+[INTERNAL] 【操作者说明】每个输入框必须有可见标签；不能只靠 placeholder 提示文字充当标签，上线前在表单组件中核对。
