@@ -1,0 +1,71 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# 评委导览 / Judge Guide
+
+[INTERNAL] 【操作者说明】本页为面向中文评委的独立 Custom Page，是英文前台口径的唯一中文例外；中英对照，供评审使用，正式店上线前可移除。页内价格与折扣均为演示配置。
+
+## 顶部提示句（首页顶部条复用，≤40 字）
+
+[PUBLISH] 评委导览：商品价格、挑战闭环与参观路线一览。
+
+## 品牌一句话 / Brand in one line
+
+[PUBLISH] ShotStart 面向美国市场的新手短视频创作者与小商家，用简洁手机装备加 ShotStarter AI 助手，帮创作者把第一条视频做完发出去。
+
+[PUBLISH] ShotStart pairs simple phone gear with the ShotStarter AI assistant for beginner creators and small shop owners in the US market, helping them finish and publish that first video.
+
+## 锁定色与字体 / Locked Colors and Fonts
+
+角色 / Role | 色值 / Hex | 字体 / Font
+--- | --- | ---
+主强调色 Coral Orange | #FF5A2C | 标题：Montserrat / Poppins（Bold, SemiBold）
+品牌深色 Deep Navy | #0F1B2D | 正文：Inter / 系统无衬线常规字重
+界面底色 Warm White | #FAF6F0 | 回落栈见品牌定稿文档
+
+[PUBLISH] 橙色仅用于 ≥24px 粗体标题、按钮与符号；小字号正文用海军蓝或暖灰，不承载正文。
+
+## 商品与捆绑价格 / Products and Bundle Pricing
+
+商品 / Item | 中文 | 价格 / Listed price
+--- | --- | ---
+Adjustable Phone Tripod | 可调手机三脚架 | $19.99
+Desktop Phone Stand | 桌面手机支架 | $14.99
+Lens Cleaning Kit | 镜头清洁套装 | $9.99
+Creator Carry Case | 器材收纳包 | $12.99
+Folding Reflector | 折叠反光板 | $10.99
+Backdrop Cloth | 背景布 | $13.99
+Extension Pole | 延长杆 | $16.99
+Lens Cleaning Refill | 清洁补充装（单件，不进捆绑） | $7.99
+Mini Ball Head | 迷你云台 | $12.99
+Magnetic Mount | 磁吸手机支架 | $11.99
+Microfiber 3-Pack | 清洁布三片装 | $6.99
+Shot List Cards | 分镜清单卡片（配套 AI 脚本草稿） | $8.99
+Creator Starter Kit (bundle) | 三件套捆绑（独立 SPU） | $44.97 → $38.22（STARTERKIT 15%，省 $6.75）
+Pro Creator Kit (bundle) | 四件套捆绑（独立 SPU） | $62.96 → $53.52（STARTERKIT 15%，省 $9.44）
+
+- [PUBLISH] STARTERKIT：15% 优惠码，仅作用两个捆绑 SPU；每单一码，不与 NEWCREATOR10 叠加。
+- [PUBLISH] NEWCREATOR10：新客首单 10%，作用 Shop 集合全部单件；两个捆绑 SPU 排除；每客一次、每单一码。
+- [PUBLISH] 以上价格、折扣与有效期以店铺后台最终配置为准，上线前须核实。
+
+## 7 日挑战闭环 / 7-Day Challenge Loop
+
+- [PUBLISH] Day 1–7：选题 → 脚本 → 布机 → 拍摄 → 剪辑 → 文案 → 发布；每日一任务、每日一封短邮件，共 7 天。
+- [PUBLISH] 留资入口：首页挑战区块与邮件弹窗；提交后即时展示 NEWCREATOR10。
+- [PUBLISH] Day 8+：三封 nurture 邮件、清洁套装复购钩子、流失唤醒邮件（均为草稿文案）；漏斗指标口径见 challenge.txt。
+
+## 参观路线 / Walkthrough
+
+- [PUBLISH] 首页 Home → Shop 集合页 → 单件商详（三脚架 / 支架 / 清洁套装 / 收纳包 / 反光板 / 背景布 / 延长杆 / 补充装 / 迷你云台 / 磁吸支架 / 清洁布三片装 / 分镜清单卡片）→ 捆绑 SPU（Starter / Pro）→ Challenge 挑战页 → 购物车与结账测试单。
+- [PUBLISH] 结账核对：价格、免邮门槛（满 $35）、折扣码适用范围与不叠加规则、运费与免邮条件。
+
+## AI 能力映射 / ShotStarter AI Capabilities
+
+- [PUBLISH] 输入：平台（TikTok / Instagram Reels / YouTube Shorts 等）、商品类型、核心卖点。
+- [PUBLISH] 输出：15 秒脚本草案、四镜分镜（钩子 / 特写 / 演示 / 收尾）、可编辑文案与发布稿。
+- [PUBLISH] 所有 AI 输出为草稿，发布前由创作者自行审核修改；页面链接以店内相对页面说明为准，不引用内部路径。
+
+## 举证索引 / Evidence Index
+
+- [PUBLISH] 评审轮次：R2–R9 文案评审，另含一轮占位清零批；最新评审报告见留证目录 round9/expert-copy.md 专家复核稿。
+- [PUBLISH] 测试断言：tools 目录扫描脚本输出七项基线（未映射占位、方括号泄漏、占位词、中文残留、演示语境外露、废弃词、docx 泄漏）均为 0；FAQ 问答加粗 24/24。
+- [PUBLISH] 留证目录：评审报告与脚本快照随文案包保存；本页不记录账号 ID、登录口令或内部服务器路径。
