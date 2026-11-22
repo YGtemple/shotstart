@@ -1,0 +1,546 @@
+{
+  "P0": [
+    {
+      "key": "Mini Ball Head — $12.99. Level and lock the frame between shots with one twist.",
+      "zh": "迷你云台 —— $12.99。一拧即可调平画面并在镜头间锁定。",
+      "type": "价格纠偏/套装正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Magnetic Mount — $11.99. Snap your phone on and off for quick desk setups.",
+      "zh": "磁吸手机支架 —— $11.99。手机一吸即装、一取即下，快速完成桌面机位。",
+      "type": "价格纠偏/套装正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Microfiber 3-Pack — $6.99. Three spare soft cloths for between-take lens and screen cleaning.",
+      "zh": "清洁布三片装 —— $6.99。三片备用软布，用于拍摄间隙擦拭镜头与屏幕。",
+      "type": "价格纠偏/套装正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Shot List Cards — $8.99. Four-shot prompt cards paired with your ShotStarter script draft.",
+      "zh": "分镜清单卡片 —— $8.99。与你的 ShotStarter 脚本草稿配套的四镜提示卡片。",
+      "type": "价格纠偏/套装正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Thanks for reaching out. We read every message.",
+      "zh": "感谢留言，我们阅读每一条留言。",
+      "type": "承诺/成功态/正文",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "You're in. Day 1 is below — start shooting. Your first-order code: NEWCREATOR10 — 10% off all single items in the Shop collection; bundle kits are excluded; it does not stack with STARTERKIT.",
+      "zh": "你已加入。Day 1 见下方——开始拍摄吧。首单优惠码 NEWCREATOR10——Shop 集合全部单件 9 折；捆绑套装除外；不可与 STARTERKIT 叠加。",
+      "type": "承诺/成功态/正文",
+      "block": "挑战/报名回执"
+    },
+    {
+      "key": "You're in. Day 1 is below — start shooting. Remember: your first shot starts here.",
+      "zh": "你已加入。Day 1 见下方——开始拍摄吧。记住：你的第一个镜头，从这里开始。",
+      "type": "承诺/成功态/正文",
+      "block": "挑战/报名回执"
+    },
+    {
+      "key": "when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit between shoots.",
+      "zh": "清洁布或气吹用旧时，在拍摄间隙补充镜头清洁套装。",
+      "type": "承诺/成功态/正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Filter",
+      "zh": "筛选",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "Availability",
+      "zh": "库存状态",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "Price",
+      "zh": "价格",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99).",
+      "zh": "可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$12.99）、器材收纳包（$12.99）。",
+      "type": "价格纠偏/套装正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Pair this with the other Pro Creator Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+      "zh": "可与 Pro Creator Kit 其他商品搭配套装。套装内含：可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$12.99）、器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。",
+      "type": "价格纠偏/套装正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Bundle contents: Adjustable Phone Tripod ($19.99) + Extension Pole ($16.99) + Mini Ball Head ($12.99) + Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+      "zh": "可调手机三脚架（$19.99）+ 延长杆（$16.99）+ 迷你云台（$12.99）+ 器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。",
+      "type": "价格纠偏/套装正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+      "zh": "可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$12.99）、器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。",
+      "type": "价格纠偏/套装正文",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Have a question about an order, a product, or the 7-Day Shooting Challenge? Send us a note — we read every message and reply as soon as we can. For order questions, please include your order number so we can help faster.",
+      "zh": "对订单、商品或 7 天拍摄挑战有疑问？留言给我们——我们阅读每一条留言，并尽快回复。订单问题请附上订单号，以便更快协助。",
+      "type": "承诺/成功态/正文",
+      "block": "挑战/报名回执"
+    },
+    {
+      "key": "We read every message and reply as soon as we can. This store is email-only; no physical mailing address is published.",
+      "zh": "我们阅读每一条留言，并尽快回复。本店仅以邮箱承接联系，不公布实体邮寄地址。",
+      "type": "承诺/成功态/正文",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "ShotStart — Your first shot starts here.",
+      "zh": "ShotStart——你的第一个镜头，从这里开始。",
+      "type": "A 功能控件",
+      "block": "其他/全局"
+    },
+    {
+      "key": "Sort by",
+      "zh": "排序",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "Recommend",
+      "zh": "推荐",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "Your cart is empty",
+      "zh": "购物车是空的",
+      "type": "A 功能控件",
+      "block": "购物车/集合 chrome"
+    },
+    {
+      "key": "Shop now",
+      "zh": "立即选购",
+      "type": "A 功能控件",
+      "block": "购物车/集合 chrome"
+    },
+    {
+      "key": "Recently viewed",
+      "zh": "最近浏览",
+      "type": "A 功能控件",
+      "block": "购物车/集合 chrome"
+    },
+    {
+      "key": "Quantity",
+      "zh": "数量",
+      "type": "A 功能控件",
+      "block": "购物车/集合 chrome"
+    },
+    {
+      "key": "1 sold",
+      "zh": "已售 1 件",
+      "type": "A 功能控件",
+      "block": "其他/全局"
+    },
+    {
+      "key": "Products",
+      "zh": "件装备",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "In stock",
+      "zh": "有货",
+      "type": "A 功能控件",
+      "block": "购物车/集合 chrome"
+    },
+    {
+      "key": "Out of stock",
+      "zh": "缺货",
+      "type": "A 功能控件",
+      "block": "购物车/集合 chrome"
+    },
+    {
+      "key": "Newest in",
+      "zh": "最新上架",
+      "type": "A 功能控件",
+      "block": "其他/全局"
+    },
+    {
+      "key": "Pageviews, high to low",
+      "zh": "浏览量从高到低",
+      "type": "A 功能控件",
+      "block": "其他/全局"
+    },
+    {
+      "key": "Price, high to low",
+      "zh": "价格从高到低",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "Price, low to high",
+      "zh": "价格从低到高",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "Recommended",
+      "zh": "推荐",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "Best selling",
+      "zh": "最畅销",
+      "type": "A 功能控件",
+      "block": "集合筛选/排序"
+    },
+    {
+      "key": "Checkout",
+      "zh": "去结账",
+      "type": "A 功能控件",
+      "block": "购物车/集合 chrome"
+    },
+    {
+      "key": "Subtotal",
+      "zh": "小计",
+      "type": "A 功能控件",
+      "block": "购物车/集合 chrome"
+    },
+    {
+      "key": "Sign in",
+      "zh": "登录",
+      "type": "A 功能控件",
+      "block": "其他/全局"
+    },
+    {
+      "key": "Register",
+      "zh": "注册",
+      "type": "A 功能控件",
+      "block": "其他/全局"
+    }
+  ],
+  "P1": [
+    {
+      "key": "The clamp fits common smartphone sizes. The exact compatible width range is still being finalized; contact us for details.",
+      "zh": "夹具适配常见智能手机尺寸。确切适配宽度范围正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Whether a carry bag is included is still being finalized; contact us for details. Check the What's in the Box section for the confirmed contents.",
+      "zh": "是否包含收纳包正在定稿；详情请联系我们。已确认的箱单见“箱单”部分。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "It holds common smartphone sizes. The exact width range is still being finalized; contact us for details.",
+      "zh": "可容纳常见智能手机尺寸。确切宽度范围正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The open design allows cable access. The cutout position is still being finalized; contact us for details.",
+      "zh": "开放式设计可走线充电。开孔位置正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The base is designed for desk-level stability. Its net weight and material are still being finalized; contact us for details.",
+      "zh": "底座按桌面稳定放置设计。净重与材质正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The kit is designed for lens surfaces; avoid pressing or rubbing hard. The approved surface list is still being finalized; contact us for details.",
+      "zh": "本套装面向镜头表面使用；避免用力按压或擦拭。适用表面清单正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The set is a compact cleaning set; contents are listed in What's in the Box. Contents, cloth material, and fluid volume are still being finalized; contact us for details.",
+      "zh": "本套装为紧凑清洁套装；构成见“箱单”。构成、布料材质与清洁液容量正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Whether cleaning liquid is included, along with its volume and ingredients, is still being finalized; contact us for details; check the contents list before ordering.",
+      "zh": "是否含清洁液及其容量、成分正在定稿；详情请联系我们；下单前请核对构成清单。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The case is built around common creator gear setups. Exact fitted dimensions are still being finalized; contact us for details.",
+      "zh": "收纳包围绕常见创作者装备配置设计。确切适配尺寸正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Internal pockets and compartments are listed in What's in the Box. Any additional accessory is still being finalized; contact us for details.",
+      "zh": "内部口袋与隔层见“箱单”。其他附带配件正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Water resistance and fabric coating are still being finalized; contact us for details.",
+      "zh": "防水性与面料涂层正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Diameter and surface fabric are pending final confirmation.",
+      "zh": "直径与表面面料待最终确认。",
+      "type": "PDP 定稿中规格句",
+      "block": "其他/全局"
+    },
+    {
+      "key": "A stand or mounting clip is not listed in the basic contents; any included accessory is still being finalized; contact us for details.",
+      "zh": "基础构成不含支架或固定夹；是否附带配件正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Dimensions and fabric are still being finalized; contact us for details.",
+      "zh": "尺寸与面料正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The cloth works with common stands or clamps. Any included mounting accessory is still being finalized; contact us for details.",
+      "zh": "背景布可搭配常见支架或夹具。是否附带安装配件正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "Extended and collapsed lengths are still being finalized; contact us for details.",
+      "zh": "伸展与收拢长度正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The holder fits common smartphone sizes. The exact compatible width range is still being finalized; contact us for details.",
+      "zh": "夹具适配常见智能手机尺寸。确切适配宽度范围正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Material and net weight are still being finalized; contact us for details.",
+      "zh": "材质与净重正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The depicted refill includes a cleaning fluid bottle, a cloth, and a brush pen; exact count, cloth material, and fluid volume or ingredients are still being finalized; contact us for details.",
+      "zh": "所示补充装含一瓶清洁液、一块布与一支笔刷；确切件数、布料材质及清洁液容量或成分正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "The refill includes a cleaning fluid bottle; the fluid volume and ingredients are still being finalized; contact us for details; check the contents list before ordering.",
+      "zh": "补充装含一瓶清洁液；清洁液容量与成分正在定稿；详情请联系我们；下单前请核对构成清单。",
+      "type": "PDP 定稿中规格句",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "The mount and thread details are still being finalized; contact us for details; check What's in the Box before ordering.",
+      "zh": "安装与螺纹细节正在定稿；详情请联系我们；下单前请核对“箱单”。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Case thickness and magnet compatibility are still being finalized; contact us for details.",
+      "zh": "手机壳厚度与磁吸适配正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Base material and non-slip pad are still being finalized; contact us for details.",
+      "zh": "底座材质与防滑垫正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Approved surfaces are still being finalized; contact us for details; check What's in the Box before use.",
+      "zh": "适用表面正在定稿；详情请联系我们；使用前请核对“箱单”。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The pack count and cloth size are still being finalized; contact us for details.",
+      "zh": "片数与布面尺寸正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "PDP 商品页"
+    },
+    {
+      "key": "The set follows the four-shot sequence — hook, close-up, demonstration, closing line; card count and material are still being finalized; contact us for details.",
+      "zh": "本套卡片按四镜顺序排列——钩子、特写、演示、收尾；卡片数量与材质正在定稿；详情请联系我们。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "The printed language list is under legal review; contact us with any questions; check What's in the Box before ordering.",
+      "zh": "印刷语言清单正在法务复核；有疑问请联系我们；下单前请核对“箱单”。",
+      "type": "PDP 定稿中规格句",
+      "block": "联系页/表单"
+    }
+  ],
+  "P2": [
+    {
+      "key": "Contact form: Thanks for reaching out. We read every message.",
+      "zh": "联系表单：感谢留言，我们阅读每一条留言。",
+      "type": "分段兜底前缀",
+      "block": "联系页/表单"
+    },
+    {
+      "key": "Challenge sign-up: You're in. Day 1 is below — start shooting. Your first-order code: NEWCREATOR10 — 10% off all single items in the Shop collection; bundle kits are excluded; it does not stack with STARTERKIT.",
+      "zh": "挑战报名：你已加入。Day 1 见下方——开始拍摄吧。首单优惠码 NEWCREATOR10——Shop 集合全部单件 9 折；捆绑套装除外；不可与 STARTERKIT 叠加。",
+      "type": "分段兜底前缀",
+      "block": "挑战/报名回执"
+    },
+    {
+      "key": "Refill reminder: when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit between shoots.",
+      "zh": "补充提醒：清洁布或气吹用旧时，在拍摄间隙补充镜头清洁套装。",
+      "type": "分段兜底前缀",
+      "block": "PDP 商品页"
+    }
+  ],
+  "stale_live": [
+    {
+      "key": "Have a question about an order, a product, or the 7-Day Shooting Challenge? Send us a note and our team will reply by email. For order questions, please include your order number so we can help faster.",
+      "zh": "对订单、商品或 7 天拍摄挑战有疑问？留言给我们，团队将通过邮件回复。订单问题请附上订单号，以便更快协助。"
+    },
+    {
+      "key": "We reply to messages within 2 business days, by email. This store is email-only; no physical mailing address is published.",
+      "zh": "我们在 2 个工作日内通过邮件回复。本店仅以邮箱承接联系，不公布实体邮寄地址。"
+    },
+    {
+      "key": "Contact form: Thanks for reaching out. We've received your message and will reply by email.",
+      "zh": "联系表单：感谢留言，我们已收到，将通过邮件回复。"
+    },
+    {
+      "key": "Challenge sign-up: You're in! Check your inbox for Day 1. Your first-order code: NEWCREATOR10 — 10% off all single items in the Shop collection; bundle kits are excluded; it does not stack with STARTERKIT.",
+      "zh": "挑战报名：你已加入！请查收 Day 1。首单优惠码 NEWCREATOR10——Shop 集合全部单件 9 折；捆绑套装除外；不可与 STARTERKIT 叠加。"
+    },
+    {
+      "key": "Thanks for reaching out. We've received your message and will reply by email.",
+      "zh": "感谢留言，我们已收到，将通过邮件回复。"
+    },
+    {
+      "key": "You're in! Check your inbox for Day 1. Your first-order code: NEWCREATOR10 — 10% off all single items in the Shop collection; bundle kits are excluded; it does not stack with STARTERKIT.",
+      "zh": "你已加入！请查收 Day 1。首单优惠码 NEWCREATOR10——Shop 集合全部单件 9 折；捆绑套装除外；不可与 STARTERKIT 叠加。"
+    },
+    {
+      "key": "Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99).",
+      "zh": "可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$11.99）、器材收纳包（$12.99）。"
+    },
+    {
+      "key": "What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99).",
+      "zh": "可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$11.99）、器材收纳包（$12.99）。"
+    },
+    {
+      "key": "Mini Ball Head — $11.99. Level and lock the frame between shots with one twist.",
+      "zh": "迷你云台 —— $11.99。一拧即可调平画面并在镜头间锁定。"
+    },
+    {
+      "key": "Magnetic Mount — $9.99. Snap your phone on and off for quick desk setups.",
+      "zh": "磁吸手机支架 —— $9.99。手机一吸即装、一取即下，快速完成桌面机位。"
+    },
+    {
+      "key": "Microfiber 3-Pack — $8.99. Three spare soft cloths for between-take lens and screen cleaning.",
+      "zh": "清洁布三片装 —— $8.99。三片备用软布，用于拍摄间隙擦拭镜头与屏幕。"
+    },
+    {
+      "key": "Shot List Cards — $6.99. Four-shot prompt cards paired with your ShotStarter script draft.",
+      "zh": "分镜清单卡片 —— $6.99。与你的 ShotStarter 脚本草稿配套的四镜提示卡片。"
+    },
+    {
+      "key": "Exact specifications — compatible width range, height and tilt ranges, material, net weight, folded length, foot material, and included accessories — are being finalized; contact us for details.",
+      "zh": "确切规格——适配宽度范围、高度与俯仰范围、材质、净重、折叠长度、支脚材质及附带配件——正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact specifications — compatible width range, angle range, material, base dimensions and non-slip pad, cable cutout details, and net weight — are being finalized; contact us for details.",
+      "zh": "确切规格——适配宽度范围、角度范围、材质、底座尺寸与防滑垫、走线开口细节及净重——正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact contents, approved surface list, materials, fluid volume, and kit dimensions are being finalized; contact us for details.",
+      "zh": "确切构成、适用表面清单、材质、清洁液容量与套装尺寸正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact dimensions, material, net weight, and included accessories are being finalized; contact us for details.",
+      "zh": "确切尺寸、材质、净重与附带配件正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Pair this with the other Pro Creator Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+      "zh": "可与 Pro Creator Kit 其他商品搭配套装。套装内含：可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$11.99）、器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。"
+    },
+    {
+      "key": "Exact diameter, surface fabric, and net weight are being finalized; contact us for details.",
+      "zh": "确切直径、表面面料与净重正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact dimensions, fabric, and color are being finalized; contact us for details.",
+      "zh": "确切尺寸、面料与颜色正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact extended/collapsed length, material, net weight, and holder compatibility are being finalized; contact us for details.",
+      "zh": "确切伸展/收缩长度、材质、净重与夹具适配正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact contents, cloth material, fluid volume, and ingredients are being finalized; contact us for details.",
+      "zh": "确切构成、布料材质、清洁液容量与成分正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact mount and thread details, material, net weight, and included adapter are being finalized; contact us for details.",
+      "zh": "确切安装与螺纹细节、材质、净重及附带转接件正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact case compatibility, material, base dimensions and non-slip pad, and net weight are being finalized; contact us for details.",
+      "zh": "确切手机壳适配、材质、底座尺寸与防滑垫及净重正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact cloth material, weave, size, and count are being finalized; contact us for details.",
+      "zh": "确切布料材质、织法、尺寸与片数正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "Exact card count, size, material, and printed language list are being finalized; contact us for details.",
+      "zh": "确切卡片数量、尺寸、材质与印刷语言清单正在定稿；详情请联系我们。"
+    },
+    {
+      "key": "You're in! Check your inbox for Day 1. Remember: your first shot starts here.",
+      "zh": "你已加入！请查收 Day 1。记住：你的第一个镜头，从这里开始。"
+    },
+    {
+      "key": "when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit to keep every new clip sharp.",
+      "zh": "当清洁布或气吹用旧时，补充镜头清洁套装，让每条新片段都清晰。"
+    },
+    {
+      "key": "Refill reminder: when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit to keep every new clip sharp.",
+      "zh": "当清洁布或气吹用旧时，补充镜头清洁套装，让每条新片段都清晰。"
+    },
+    {
+      "key": "Adjustable Phone Tripod ($19.99) + Extension Pole ($16.99) + Mini Ball Head ($11.99) + Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+      "zh": "可调手机三脚架（$19.99）+ 延长杆（$16.99）+ 迷你云台（$11.99）+ 器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。"
+    },
+    {
+      "key": "Bundle contents: Adjustable Phone Tripod ($19.99) + Extension Pole ($16.99) + Mini Ball Head ($11.99) + Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+      "zh": "可调手机三脚架（$19.99）+ 延长杆（$16.99）+ 迷你云台（$11.99）+ 器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。"
+    },
+    {
+      "key": "Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+      "zh": "可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$11.99）、器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。"
+    },
+    {
+      "key": "What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+      "zh": "可调手机三脚架（$19.99）、延长杆（$16.99）、迷你云台（$11.99）、器材收纳包（$12.99）。套装价 $62.96——结账时使用优惠码 STARTERKIT：$53.52，省 $9.44。"
+    }
+  ]
+}
