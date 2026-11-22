@@ -1,0 +1,175 @@
+[P0] ShotStart 评委速览卡 / Reviewer Quick Card
+[P1] 品牌定位 / Positioning
+[P2] 面向美国市场新手短视频创作者与小商家的拍摄装备 + AI 内容助手。Simple filming gear plus the ShotStarter AI assistant for beginner creators and small shop owners in the US market.
+[P3] 商品与演示价 / Products & Demo Prices
+[T4R0C0P0] Product
+[T4R0C1P0] 中文
+[T4R0C2P0] Demo price
+[T4R1C0P0] Adjustable Phone Tripod
+[T4R1C1P0] 可调手机三脚架
+[T4R1C2P0] $19.99
+[T4R2C0P0] Desktop Phone Stand
+[T4R2C1P0] 桌面手机支架
+[T4R2C2P0] $14.99
+[T4R3C0P0] Lens Cleaning Kit
+[T4R3C1P0] 镜头清洁套装（演示配置，构成待实物确认）
+[T4R3C2P0] $9.99
+[T4R4C0P0] Creator Carry Case
+[T4R4C1P0] 器材收纳包
+[T4R4C2P0] $12.99
+[T4R5C0P0] Folding Reflector
+[T4R5C1P0] 折叠反光板
+[T4R5C2P0] $10.99
+[T4R6C0P0] Backdrop Cloth
+[T4R6C1P0] 背景布
+[T4R6C2P0] $13.99
+[T4R7C0P0] Extension Pole
+[T4R7C1P0] 延长杆
+[T4R7C2P0] $13.99
+[T4R8C0P0] Lens Cleaning Refill
+[T4R8C1P0] 清洁补充装（单件，不进捆绑）
+[T4R8C2P0] $7.99
+[T4R9C0P0] Mini Ball Head
+[T4R9C1P0] 迷你云台
+[T4R9C2P0] $11.99
+[T4R10C0P0] Magnetic Mount
+[T4R10C1P0] 磁吸手机支架
+[T4R10C2P0] $9.99
+[T4R11C0P0] Microfiber 3-Pack
+[T4R11C1P0] 清洁布三片装
+[T4R11C2P0] $8.99
+[T4R12C0P0] Shot List Cards
+[T4R12C1P0] 分镜清单卡片（配套 AI 脚本草稿）
+[T4R12C2P0] $6.99
+[T4R13C0P0] Creator Starter Kit (bundle)
+[T4R13C1P0] 三件套捆绑（独立 SPU）
+[T4R13C2P0] Kit $44.97 → $38.22 with code STARTERKIT, save $6.75 (demo)
+[T4R14C0P0] Pro Creator Kit (bundle)
+[T4R14C1P0] 四件套捆绑（独立 SPU）
+[T4R14C2P0] Kit $62.96 → $53.52 with code STARTERKIT, save $9.44 (demo)
+[P5] 
+[P6] 商品卖点 / PDP Selling Points
+[T7R0C0P0] Product
+[T7R0C1P0] EN selling point
+[T7R0C2P0] 中文释义
+[T7R1C0P0] Adjustable Phone Tripod
+[T7R1C1P0] Adjustable height and angle for varied shooting setups.
+[T7R1C2P0] 高度与角度可调，适配不同拍摄机位（具体范围待核实）。
+[T7R2C0P0] Adjustable Phone Tripod
+[T7R2C1P0] Hands-free shooting for talking-head clips, product demos, and outdoor clips.
+[T7R2C2P0] 免手持拍摄口播、产品演示与户外片段。
+[T7R3C0P0] Desktop Phone Stand
+[T7R3C1P0] Holds your phone upright at a usable desk angle.
+[T7R3C2P0] 把手机直立固定在适合桌面拍摄/观看的角度。
+[T7R4C0P0] Desktop Phone Stand
+[T7R4C1P0] Compact footprint for desks, countertops, and small workspaces.
+[T7R4C2P0] 占地紧凑，适合书桌、台面与狭小工作空间。
+[T7R5C0P0] Lens Cleaning Kit
+[T7R5C1P0] A compact cleaning set for phone and camera lenses; contents listed in What's in the Box.
+[T7R5C2P0] 小巧的手机/相机镜头清洁套装；以包装内清单为准。
+[T7R6C0P0] Lens Cleaning Kit
+[T7R6C1P0] For dust, smudges, and fingerprints on phone, compact camera, and accessory lenses.
+[T7R6C2P0] 清除手机、便携相机与附加镜头上的灰尘、污迹与指纹。
+[T7R7C0P0] Creator Carry Case
+[T7R7C1P0] A portable case to keep tripod, stand, and small accessories together.
+[T7R7C2P0] 便携收纳包，集中收纳器材与小配件。
+[T7R8C0P0] Folding Reflector
+[T7R8C1P0] Soften and fill light for face and product clips.
+[T7R8C2P0] 柔化并补光，适合面部与产品片段。
+[T7R9C0P0] Backdrop Cloth
+[T7R9C1P0] A plain background for product and talking-head clips.
+[T7R9C2P0] 干净纯色背景，适合产品与口播片段。
+[T7R10C0P0] Extension Pole
+[T7R10C1P0] Reach overhead and higher-angle shots for selfie and group clips.
+[T7R10C2P0] 抬高机位，适合高角度自拍与群拍。
+[T7R11C0P0] Lens Cleaning Refill
+[T7R11C1P0] Restock fluid, cloths, and the brush pen for your cleaning kit.
+[T7R11C2P0] 补充清洁液、清洁布与笔刷。
+[T7R12C0P0] Mini Ball Head
+[T7R12C1P0] Tilt and rotate to level the frame, then lock it in for the take.
+[T7R12C2P0] 倾斜旋转调平画面后锁定，可加装在三脚架与手机夹之间。
+[T7R13C0P0] Magnetic Mount
+[T7R13C1P0] Attach and remove the phone in one motion for quick setup.
+[T7R13C2P0] 磁吸一键拆装手机，适合桌面演示与参考观看。
+[T7R14C0P0] Microfiber 3-Pack
+[T7R14C1P0] Three spare cloths for dust, smudges, and fingerprints on lenses and screens.
+[T7R14C2P0] 三片备用软布，用于镜头与屏幕的灰尘、污迹与指纹擦拭。
+[T7R15C0P0] Shot List Cards
+[T7R15C1P0] Four-shot prompt sequence paired with the ShotStarter AI script draft.
+[T7R15C2P0] 四镜提示卡，配套 ShotStarter AI 脚本草稿使用。
+[P8] 
+[P9] FAQ 问答对照 / Product FAQ (EN → 中文)
+[T10R0C0P0] Product
+[T10R0C1P0] Question (EN)
+[T10R0C2P0] 中文释义
+[T10R1C0P0] Tripod
+[T10R1C1P0] Will it fit my phone?
+[T10R1C2P0] 能否适配我的手机？（具体宽度范围待核实）
+[T10R2C0P0] Tripod
+[T10R2C1P0] Can I take it outdoors?
+[T10R2C2P0] 能否带到户外使用？（需放置在平整稳定表面）
+[T10R3C0P0] Tripod
+[T10R3C1P0] Does it come with a carry bag?
+[T10R3C2P0] 是否附带收纳包？（以包装清单为准）
+[T10R4C0P0] Stand
+[T10R4C1P0] Will the stand fit my phone?
+[T10R4C2P0] 支架能否适配我的手机？（常见机型，宽度范围待核实）
+[T10R5C0P0] Stand
+[T10R5C1P0] Can I charge my phone while it's on the stand?
+[T10R5C2P0] 手机放在支架上时能否充电？
+[T10R6C0P0] Stand
+[T10R6C1P0] Is the base stable?
+[T10R6C2P0] 底座是否稳固？（重量与材质待核实）
+[T10R7C0P0] Cleaning Kit
+[T10R7C1P0] Is it safe for my phone camera?
+[T10R7C2P0] 对手机摄像头是否适用？（适用表面清单待核实）
+[T10R8C0P0] Cleaning Kit
+[T10R8C1P0] What is included in the set?
+[T10R8C2P0] 套装内包含什么？（构成待实物确认）
+[T10R9C0P0] Cleaning Kit
+[T10R9C1P0] Does it include cleaning liquid?
+[T10R9C2P0] 是否包含清洁液？（是否包含、容量与成分待核实）
+[P11] 
+[P12] 政策术语对照 / Policy Terms (EN → 中文)
+[T13R0C0P0] English term
+[T13R0C1P0] 中文含义
+[T13R1C0P0] Return window
+[T13R1C1P0] 可退货期限（自签收起算）
+[T13R2C0P0] Restocking fee
+[T13R2C1P0] 演示默认无；正式营业前法务复核
+[T13R3C0P0] Original payment method
+[T13R3C1P0] 原路退回的支付方式
+[T13R4C0P0] Refund
+[T13R4C1P0] 退款
+[T13R5C0P0] Exchange
+[T13R5C1P0] 换货
+[T13R6C0P0] Consent
+[T13R6C1P0] 同意（订阅邮件或数据处理）
+[T13R7C0P0] Unsubscribe
+[T13R7C1P0] 退订
+[T13R8C0P0] Personal data
+[T13R8C1P0] 个人数据
+[T13R9C0P0] Service provider
+[T13R9C1P0] 服务商（支付、物流、邮件等）
+[T13R10C0P0] Promo code
+[T13R10C1P0] 优惠码
+[T13R11C0P0] Free standard shipping
+[T13R11C1P0] 标准配送免邮
+[T13R12C0P0] Out of stock
+[T13R12C1P0] 缺货
+[T13R13C0P0] Secure checkout
+[T13R13C1P0] 安全结账（通用表述，不代表某项认证）
+[P14] 
+[P15] 折扣码 / Codes
+[P16] NEWCREATOR10：新客首单 10% off；演示有效期为演练期间；每客一次；每单一码，不与捆绑码叠加；作用 Shop 集合全部单件，两个捆绑 SPU 排除。First order 10% off; valid during the drill period; once per customer; one code per order, no stack with the bundle code; applies to all single items in the Shop collection; both bundle SPUs excluded.
+[P17] STARTERKIT：15% 优惠码，分别作用两个独立捆绑 SPU：Starter Kit $44.97 → $38.22（省 $6.75）；Pro Creator Kit $62.96 → $53.52（省 $9.44）。15% code applied to each standalone bundle SPU only: Starter Kit $44.97 → $38.22 (save $6.75); Pro Creator Kit $62.96 → $53.52 (save $9.44).
+[P18] 免邮 / Free Shipping
+[P19] 美国标准运费 $4.99；满 $35 免标准运费（演示配置；门槛默认按折后小计计算，以后台实测为准）。US standard $4.99; free standard shipping over $35 (demo; threshold defaults to post-discount subtotal, verify against backend).
+[P20] ShotStarter 玩法 / AI Content Assistant
+[P21] 按平台、商品类型、卖点生成 15 秒脚本、四镜分镜与发布文案；草稿由创作者自行审核。15-second script, four-shot storyboard, and caption drafts by platform/product/selling point; drafts are reviewed by the creator.
+[P22] 7 天挑战 / 7-Day Shooting Challenge
+[P23] Day1–7：选题 → 脚本 → 布机 → 拍摄 → 剪辑 → 文案 → 发布；邮箱留资参与；另有 Day8+ nurture 邮件草案、清洁套装复购钩子草案与流失唤醒邮件草案。Signup by email; the Day8+ nurture sequence, refill hook, and win-back email are draft copy for review.
+[P24] 演练店 / Demo Store Access
+[P25] 地址 / URL: ygtokenstemple.myshoplaza.com　　密码 / Password: 【口令已脱敏】
+[P26] 诚实边界 / Honesty Boundary
+[P27] 价格与折扣均为演示配置；未虚构参数、销量、评价、认证、库存或到货承诺；AI 输出为草稿；所有占位项以上线前核实为准。Prices and offers are demo configs; no fabricated specs, reviews, certifications, stock, or delivery promises; AI outputs are drafts; placeholders pending verification.
