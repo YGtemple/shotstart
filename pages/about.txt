@@ -1,0 +1,14 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# About ShotStart
+
+[PUBLISH] ShotStart was built around a simple observation: the hardest part of starting short-video creation isn't talent — it's taking the first shot.
+
+[PUBLISH] New creators and small shop owners often have a real product and a real message, but they don't know how to set up a phone, frame a shot, or turn an idea into a caption. ShotStart pairs straightforward filming gear with the ShotStarter AI assistant to lower that barrier. We keep instructions plain, setups simple, and decisions in your hands.
+
+[PUBLISH] We don't promise overnight growth. We help you finish and publish that first video, then the next one — seven days at a time.
+
+- [INTERNAL] Audience: beginner short-video creators and small shop owners in the US English-speaking market.
+- [INTERNAL] Brand line: Your first shot starts here.
+
+[INTERNAL] 【操作者说明】上线前补充：品牌创立时间、所在地、法律主体名称等 [待确认: founding date, location, legal entity name]。
