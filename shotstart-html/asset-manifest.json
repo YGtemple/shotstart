@@ -1,0 +1,182 @@
+{
+  "brief_snapshot": {
+    "path": "brief.md",
+    "version": "v1",
+    "status": "frozen"
+  },
+  "assets": [
+    {
+      "asset_id": "creator-kit-clean",
+      "purpose": "首屏 Creator Kit 干净主图与购物袋缩略图",
+      "production_method": "image_edit",
+      "reference_inputs": [
+        "https://aka.doubaocdn.com/s/uMmBfAm2e4"
+      ],
+      "identity_source": "用户原 shotstarter-live.html 中的 Creator Kit 图片",
+      "prompt": "图1提供套装商品的外观、数量、颜色和构图参考。保留图中全部三脚架、桌面支架、镜头清洁用品及其配件，保持数量、外观、颜色、结构、相对比例和摆放关系不变。只移除画面左侧及所有区域的宣传标题、副标题、装饰文字和小字，使用干净的暖白色日光桌面与柔和植物阴影自然补全文字移除后的留白，保持原图的摄影光线、透视和真实接触阴影。最终图片不添加任何新文字、标志、水印、参数或其他商品。",
+      "target": {
+        "ratio": "3:2",
+        "width": 1881,
+        "height": 1254,
+        "safe_area": "完整保留商品与配件，不裁切三脚架、支架和清洁用品"
+      },
+      "consumers": [
+        "首屏图库第1张",
+        "Creator Kit 配置预览",
+        "购物袋缩略图"
+      ],
+      "acceptance": [
+        "商品和配件数量及外观与参考一致",
+        "画面无宣传文字、乱码、水印或新增标志",
+        "暖白背景与原有光影自然连续"
+      ],
+      "postprocess": [
+        "下载结果并转换为 assets/creator-kit-clean.png，保持原始宽高比"
+      ],
+      "status": "ready",
+      "output": {
+        "uri": "https://aka.doubaocdn.com/s/tUwkkW5kzS",
+        "width": 1881,
+        "height": 1254,
+        "version": "edit-v1",
+        "alpha": false
+      }
+    },
+    {
+      "asset_id": "tripod-front",
+      "purpose": "三脚架正面产品图与套装内容卡片",
+      "production_method": "verified_existing",
+      "reference_inputs": [],
+      "identity_source": "用户原 shotstarter-live.html 中的 Tripod 图片",
+      "prompt": "",
+      "target": {
+        "ratio": "1:1",
+        "width": 1536,
+        "height": 1536,
+        "safe_area": "完整保留三脚架与手机夹，不叠加文字"
+      },
+      "consumers": [
+        "首屏图库第2张",
+        "Tripod Only 配置预览",
+        "套装内容三脚架卡片"
+      ],
+      "acceptance": [
+        "产品轮廓完整且不变形",
+        "无文字遮挡产品"
+      ],
+      "postprocess": [
+        "下载并转换为 assets/tripod-front.png"
+      ],
+      "status": "reused",
+      "output": {
+        "uri": "https://aka.doubaocdn.com/s/BnsZYj79gx",
+        "width": 1536,
+        "height": 1536,
+        "version": "source-v1",
+        "alpha": false
+      }
+    },
+    {
+      "asset_id": "desk-scene",
+      "purpose": "桌面拍摄场景区与 Desk Setup 配置预览",
+      "production_method": "verified_existing",
+      "reference_inputs": [],
+      "identity_source": "用户原 shotstarter-live.html 中的桌面场景图片",
+      "prompt": "",
+      "target": {
+        "ratio": "3:2",
+        "width": 1881,
+        "height": 1254,
+        "safe_area": "保留桌面三脚架和手机主体，允许为宽屏图窗等比轻裁切"
+      },
+      "consumers": [
+        "首屏图库第3张",
+        "Desk Setup 配置预览",
+        "场景卖点宽幅图窗"
+      ],
+      "acceptance": [
+        "桌面与产品空间关系自然",
+        "无宣传文字覆盖",
+        "裁切不损伤手机和三脚架主体"
+      ],
+      "postprocess": [
+        "下载并转换为 assets/desk-scene.png"
+      ],
+      "status": "reused",
+      "output": {
+        "uri": "https://aka.doubaocdn.com/s/bFHJ7UEUwP",
+        "width": 1881,
+        "height": 1254,
+        "version": "source-v1",
+        "alpha": false
+      }
+    },
+    {
+      "asset_id": "phone-stand",
+      "purpose": "桌面支架产品图与套装内容卡片",
+      "production_method": "verified_existing",
+      "reference_inputs": [],
+      "identity_source": "用户原 shotstarter-live.html 中的 Desktop Phone Stand 图片",
+      "prompt": "",
+      "target": {
+        "ratio": "1:1",
+        "width": 1536,
+        "height": 1536,
+        "safe_area": "完整保留支架轮廓，不叠加文字"
+      },
+      "consumers": [
+        "首屏图库第4张",
+        "套装内容桌面支架卡片"
+      ],
+      "acceptance": [
+        "产品轮廓完整且不变形",
+        "无文字遮挡产品"
+      ],
+      "postprocess": [
+        "下载并转换为 assets/phone-stand.png"
+      ],
+      "status": "reused",
+      "output": {
+        "uri": "https://aka.doubaocdn.com/s/iGsxIqVkah",
+        "width": 1536,
+        "height": 1536,
+        "version": "source-v1",
+        "alpha": false
+      }
+    },
+    {
+      "asset_id": "cleaning-kit",
+      "purpose": "镜头清洁套装产品图与套装内容卡片",
+      "production_method": "verified_existing",
+      "reference_inputs": [],
+      "identity_source": "用户原 shotstarter-live.html 中的 Lens Cleaning Kit 图片",
+      "prompt": "",
+      "target": {
+        "ratio": "1:1",
+        "width": 1536,
+        "height": 1536,
+        "safe_area": "完整保留清洁用品，不叠加文字"
+      },
+      "consumers": [
+        "镜头清洁卖点图",
+        "套装内容清洁套装卡片"
+      ],
+      "acceptance": [
+        "全部清洁用品可辨且不变形",
+        "无文字遮挡产品"
+      ],
+      "postprocess": [
+        "下载并转换为 assets/cleaning-kit.png"
+      ],
+      "status": "reused",
+      "output": {
+        "uri": "https://aka.doubaocdn.com/s/XWzA3F9S4v",
+        "width": 1536,
+        "height": 1536,
+        "version": "source-v1",
+        "alpha": false
+      }
+    }
+  ],
+  "unresolved_blockers": []
+}
