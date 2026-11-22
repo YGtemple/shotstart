@@ -1,0 +1,91 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Product Detail: Desktop Phone Stand
+
+[INTERNAL] 【操作者说明】规格表仅写品类通用、可诚实描述的属性；凡需真实参数处一律用 [待确认: ...] 占位。
+
+## Product Title
+
+[PUBLISH] Desktop Phone Stand — Keep Your Phone Upright on Your Desk
+
+## Selling Points (bullets)
+
+- [PUBLISH] Holds your phone upright at a usable desk angle.
+- [PUBLISH] Compact footprint for desks, countertops, and small workspaces.
+- [PUBLISH] Designed for steady desk placement during demos, live clips, and reference viewing.
+- [PUBLISH] Holder compatible with common smartphone sizes.
+- [PUBLISH] Cable-friendly open design.
+
+- [INTERNAL] Pending before launch (specification keys only; no values published until verified): [待确认: compatible phone width range]; [待确认: angle range]; [待确认: main material, e.g., ABS plastic / metal]; [待确认: base material / non-slip pad]; [待确认: charging cutout]; [待确认: net weight].
+
+## Description Paragraph
+
+[PUBLISH] The Desktop Phone Stand gives your phone a steady home right on the desk. Keep your device upright while you film product demos, follow along with a recipe or tutorial, or prepare for a live short clip. Its compact footprint suits small workspaces, and the open design leaves room for everyday use. Exact dimensions, materials, and compatibility will be confirmed after final verification.
+
+## Specifications
+
+Attribute | Detail
+--- | ---
+Product type | Desktop phone stand
+Holder compatibility | Common smartphone sizes
+Angle adjustability | Adjustable viewing/tilt angle
+Base | Desk base
+Cable access | Open design for charging cable
+
+## What's in the Box
+
+- [PUBLISH] 1 x Desktop phone stand
+
+[PUBLISH] A non-slip pad or any additional accessory is still being finalized; contact us for details.
+
+## Use Scenarios
+
+- [PUBLISH] Product demos shot from a desk or countertop
+- [PUBLISH] Live streams and Q&A clips with the phone held steady
+- [PUBLISH] Keeping reference videos, scripts, or captions within view while filming
+
+## FAQ
+
+- [INTERNAL] FAQ layout: question line as a bold standalone heading; answer paragraph below; collapsed by default on mobile; on desktop, open the first question and collapse the rest.
+
+[PUBLISH] Q: Will it fit my phone?
+
+[PUBLISH] A: It holds common smartphone sizes. The exact width range is still being finalized; contact us for details.
+
+[PUBLISH] Q: Can I charge my phone while it's on the stand?
+
+[PUBLISH] A: The open design allows cable access. The cutout position is still being finalized; contact us for details.
+
+[PUBLISH] Q: Is the base stable?
+
+[PUBLISH] A: The base is designed for desk-level stability. Its net weight and material are still being finalized; contact us for details.
+
+## Pricing
+
+[INTERNAL] Demo price: $14.99 — Demo configuration, confirm before launch. Bundle pricing available in the Creator Starter Kit.
+
+## Add to Cart
+
+- [PUBLISH] Primary button: Add to Cart
+- [PUBLISH] Secondary button: Add to Creator Starter Kit
+
+## Shopping Trust (generic; no certification claims)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] Return terms: see the Return & Refund Policy for the confirmed return window.
+- [PUBLISH] ShotStarter outputs are drafts you review and approve before posting.
+- [PUBLISH] No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.
+- [PUBLISH] Questions? Reach us at 1744059451@qq.com.
+
+[INTERNAL] 【操作者说明】Platform fact (INTERNAL only): the drill store is hosted on Shoplazza; the public checkout line does not name the platform. Strip any platform mention from the live store per the launch cleanup checklist.
+
+## Bundle Entry
+
+[PUBLISH] Pair this with the other Creator Starter Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.
+
+- [PUBLISH] STARTERKIT applies to this kit only; it cannot be combined with other codes.
+
+- [INTERNAL] Demo configuration: the kit is a standalone SPU listed at $44.97; STARTERKIT (15% off) applies to that SPU only; code price $38.22; savings $6.75 (44.97 − 38.22), rounded to the cent. Confirm bundle discount, inventory, and eligibility before launch. No compare-at reference price or strike-through field is used.
+
+
+[INTERNAL] 【待确认占位键】上线前在 placeholder-map.txt 查英文定稿与中性兜底句；前台不得残留方括号占位： [待确认: any non-slip pad or accessory]; [待确认: compatible phone width range]; [待确认: charging cutout details]; [待确认: net weight / base material]
