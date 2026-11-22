@@ -1,0 +1,150 @@
+====================================================================================================
+Athena建店指令包.docx
+  T18R2C2P0 [single] runs=1
+     r0: '$14.99'
+  T18R4C2P0 [single] runs=1
+     r0: '$16.99'
+  T18R5C2P0 [single] runs=1
+     r0: '$12.99'
+  T18R6C2P0 [single] runs=1
+     r0: '$14.99'
+  T18R7C2P0 [single] runs=1
+     r0: '$13.99'
+  T32R0C0P11 [single] runs=1
+     r0: '2. Desktop Phone Stand - $14.99 - holds the phone upright on the desk for demos, live clips, and reference viewing.'
+  T32R0C0P13 [single] runs=1
+     r0: '4. Creator Carry Case - $16.99 - a portable case to keep gear and small accessories together.'
+  T32R0C0P14 [single] runs=1
+     r0: '5. Folding Reflector - $12.99 - soften and fill light for face and product clips.'
+  T32R0C0P15 [single] runs=1
+     r0: '6. Backdrop Cloth - $14.99 - a plain background for product and talking-head clips.'
+  T32R0C0P16 [single] runs=1
+     r0: '7. Extension Pole - $13.99 - reach overhead and higher-angle shots for selfie and group clips.'
+  P34 [single] runs=1
+     r0: '中文用途说明：一次性把品牌、口号、配色、人群、八件单件与价格、页面清单、导航和合规边界交代给 Athena，作为整套店铺的生成基线。'
+  P39 [single] runs=1
+     r0: '八件单件名称与价格 $19.99 / $14.99 / $9.99 / $16.99 / $12.99 / $14.99 / $13.99 / $7.99 一致；'
+  P46 [single] runs=1
+     r0: '5.1  完善原三件商品（标题、描述、标签、SEO、价格）'
+  T48R0C0P0 [MULTI] runs=5
+     r0: 'Complete the three existing products in ShotStart. Match each product to the copy I provide; do not change the approved prices.'
+     r1: '\n1. Adjustable Phone Tripod, $19.99: title "Adjustable Phone Tripod - Steady, Hands-Free Framing for Short Videos". Use the uploaded product-tripod.png as the main image. Draft selling points, product tags, SEO title and meta description in plain US English.'
+     r2: '\n2. Desktop Phone Stand, $14.99: title "Desktop Phone Stand - Keep Your Phone Upright on Your Desk". Use product-stand.png.'
+     r3: '\n3. Lens Cleaning Kit, $9.99: title "Lens Cleaning Kit - Keep Phone and Camera Lenses Clear". Use product-cleaning-kit.png.'
+     r4: '\nFor each product, structure the description in short sections: a one-line use-case summary, selling points, a "What\'s in the box" list, and an FAQ block. Keep dimensions, materials, weight, compatibility range, and stock as unconfirmed placeholders; do not invent specs. Apply only after I confirm each preview card.'
+  P59 [single] runs=1
+     r0: '素材映射：商品文案以 product-tripod.txt / product-stand.txt / product-cleaning-kit.txt / 五件新品 product-*.txt 为准（见第 6 节对照表）；主图 product-*.png。'
+  T63R0C0P4 [single] runs=1
+     r0: '4. Creator Starter Kit bundle card: below the individual product cards, show the three Starter Kit main images together, the list price $44.97 side by side with the after-code price $38.22 (no compare-at strike-through price field), the line "Use code STARTERKIT at checkout", and CTA "View the kit". If the free theme has no bundle card block, use an image + plain-text card with the same prices.'
+  T63R0C0P5 [single] runs=1
+     r0: '4b. Pro Creator Kit bundle card: below the Starter Kit card, show the four Pro kit images together, the list price $58.96 side by side with the after-code price $50.12 (no compare-at strike-through price field), the line "Use code STARTERKIT at checkout", and CTA "View the kit". If the free theme has no bundle card block, use an image + plain-text card with the same prices.'
+  P70 [single] runs=1
+     r0: '两张捆绑卡：Starter 三主图拼合、清单价 $44.97 与码后价 $38.22 同屏对照；Pro Creator Kit 四件清单、$58.96 与码后价 $50.12 同屏对照（均不用 compare-at 划线字段）、"Use code STARTERKIT at checkout" 与 CTA 可见；无原生卡片块时图文纯文本卡同等呈现；'
+  P87 [single] runs=1
+     r0: 'Shop 卡片短文案、八件单件先于两张捆绑卡的排序符合 shop.txt；'
+  T136R0C0P7 [single] runs=1
+     r0: '   - List price on the bundle SPU: $44.97 ($19.99 + $14.99 + $9.99).'
+  T136R0C0P8 [single] runs=1
+     r0: "   - What's in the kit: Adjustable Phone Tripod $19.99; Desktop Phone Stand $14.99; Lens Cleaning Kit $9.99."
+  T136R0C0P9 [single] runs=1
+     r0: '   - Code STARTERKIT (15% off) applies to this bundle SPU only; at checkout the bundle becomes $38.22. The bundle page and its cards read "Use code STARTERKIT at checkout".'
+  T136R0C0P14 [single] runs=1
+     r0: '   - List price on the bundle SPU: $58.96 ($16.99 + $12.99 + $14.99 + $13.99).'
+  T136R0C0P15 [single] runs=1
+     r0: "   - What's in the kit: Creator Carry Case $16.99; Folding Reflector $12.99; Backdrop Cloth $14.99; Extension Pole $13.99."
+  T136R0C0P16 [single] runs=1
+     r0: '   - Code STARTERKIT (15% off) applies to this bundle SPU only; at checkout the bundle becomes $50.12. The bundle page and its cards read "Use code STARTERKIT at checkout".'
+  P142 [single] runs=1
+     r0: 'STARTERKIT 仅作用于两张捆绑独立 SPU：Starter Kit $44.97 → $38.22、Pro Creator Kit $58.96 → $50.12；不在八件单件上生效；'
+  P147 [single] runs=1
+     r0: '预估耗时：15 分钟（P0：价格对照 $44.97 → $38.22、捆绑清单透明；映射表 #3、#7）。'
+  T150R0C0P5 [single] runs=1
+     r0: '- Both bundle product pages list their kit items and the price comparison: Starter $44.97 vs $38.22, Pro $58.96 vs $50.12, with "Use code STARTERKIT at checkout".'
+  P155 [single] runs=1
+     r0: '九个页面链接有效；八件单件 + 两张捆绑 SPU 可加购；结账页有优惠码入口；'
+  P156 [single] runs=1
+     r0: '两张捆绑页各自清单、$44.97 / $38.22 与 $58.96 / $50.12 对照与 "Use code STARTERKIT at checkout" 前台可见；购物车凑单行按 cart-checkout.txt 口径；'
+  P169 [single] runs=1
+     r0: '预期结果：八件商详各有一条指向捆绑商品的文本链接。'
+  P178 [single] runs=1
+     r0: '预期结果：八件商详链到 Challenge，Challenge 页回链 Shop。'
+  P187 [single] runs=1
+     r0: '预期结果：八件商品归入对应用途标签；主题不支持分组区块时保留单一网格。'
+  P196 [single] runs=1
+     r0: '预期结果：八件商品各有两张图；主题卡片/商详多图轮播自动展示。'
+  P236 [single] runs=1
+     r0: '5.10  扩品 SPU 创建：五件新品单件与 Pro Creator Kit 捆绑'
+  T238R0C0P2 [single] runs=1
+     r0: '1. Creator Carry Case, $16.99: title "Creator Carry Case - Keep Your Gear Together on the Go". Use product-carry-case.png as the main image.'
+  T238R0C0P3 [single] runs=1
+     r0: '2. Folding Reflector, $12.99: title "Folding Reflector - Soften and Fill Light for Clips". Use product-reflector.png.'
+  T238R0C0P4 [single] runs=1
+     r0: '3. Backdrop Cloth, $14.99: title "Backdrop Cloth - A Simple Background for Product and Talking-Head Clips". Use product-backdrop.png.'
+  T238R0C0P5 [single] runs=1
+     r0: '4. Extension Pole, $13.99: title "Extension Pole - Reach Higher Angles for Selfie and Group Clips". Main image: placeholder pending [待确认: 主图].'
+  T238R0C0P10 [single] runs=1
+     r0: '- List price: $58.96 ($16.99 + $12.99 + $14.99 + $13.99).'
+  T238R0C0P11 [single] runs=1
+     r0: "- What's in the kit: Creator Carry Case $16.99; Folding Reflector $12.99; Backdrop Cloth $14.99; Extension Pole $13.99."
+  T238R0C0P12 [single] runs=1
+     r0: '- STARTERKIT (15% off) applies to this bundle SPU only; code price $50.12; the bundle page reads "Use code STARTERKIT at checkout".'
+  P239 [single] runs=1
+     r0: '中文用途说明：把五件新品单件与 Pro Creator Kit 捆绑 SPU 录入店内，标题、价格、主图与文案包对齐；新品缺图位保留占位，不补猜素材。'
+  P240 [single] runs=1
+     r0: '预期结果：五件新品预览卡与 Pro 捆绑卡列出标题、价格、主图（缺图占位）、清单与描述；人工核对后逐张应用。'
+  P242 [single] runs=1
+     r0: '五件新品标题与价格 $16.99 / $12.99 / $14.99 / $13.99 / $7.99 与 shop.txt、对应 product-*.txt 一致；'
+  P244 [single] runs=1
+     r0: 'Pro Creator Kit 四件清单、$58.96 / $50.12 对照与 "Use code STARTERKIT at checkout" 可见；'
+  P248 [single] runs=1
+     r0: '预估耗时：12 分钟（P0：五件新品录入 + Pro 捆绑 SPU；映射表 #30、#31）。'
+  T265R19C3P0 [single] runs=1
+     r0: '集合名 "All Gear"；八件单件先于两张捆绑卡；卡片一句话短文案；Bundle Display Slot 文案'
+  T265R20C3P0 [single] runs=1
+     r0: '四件清单、$58.96 / $50.12 对照、"View the kit"；STARTERKIT 仅作用该捆绑 SPU'
+  P269 [single] runs=1
+     r0: '最低保底清单（排队超时优先保住）：八件单件 + 两张捆绑 SPU 可加购；九个页面可打开；运费两档；NEWCREATOR10 与 STARTERKIT 码入口；Bogus 成功测试单；移动端不溢出；前台无评价、销量、认证、奖项等红线内容。并行顺序：步骤 3 可与步骤 7 并行；步骤 8 与步骤 11 在 Round 2 并行；步骤 16 复查串行最后。P1 项全部后置，不挤占保底清单。'
+  P270 [single] runs=1
+     r0: '单人负荷说明：串行主链为步骤 1→2、9、12→13→14→15、16、18；可并行 / 交替的为 3∥7、4↔5、8∥11、9↔10、17∥16 末段。Athena 生成等待（3–5 分钟 / 套）期间不闲置：为已完成步骤归档确认卡截图、对照 pages 文案核对已落地内容、准备下一条指令的确认卡信息与留证目录。门禁余量不足时按降级顺序先保 P0 核心六项：八件单件 + 两张捆绑 SPU 可加购、九个页面可打开、运费两档、两个码入口、Bogus 成功测试单、移动端不溢出且前台无虚构徽章；再补失败测试单与停用 Bogus；P1 整体后置，P2 不投入时间。'
+  T271R3C5P0 [single] runs=1
+     r0: '三件原 SPU 价格、标题、主图正确；商详分段与 FAQ 卡片就位，可打开'
+  T271R4C1P0 [single] runs=1
+     r0: '指令 1b：五件新品单件 + Pro Creator Kit 捆绑录入'
+  T271R4C5P0 [single] runs=1
+     r0: '五件新品价格、标题、主图（缺图占位）正确；Pro 捆绑四件清单、$58.96 → $50.12 可见'
+  T271R12C5P0 [single] runs=1
+     r0: 'Starter 捆绑页三件清单、$44.97 → $38.22；Pro 捆绑见步骤 3a；码仅作用于捆绑 SPU；两码不叠加'
+  T271R17C5P0 [single] runs=1
+     r0: '八件单件 + 两张捆绑页链接、加购、凑单行、移动端、前台文案无问题'
+  P272 [single] runs=1
+     r0: 'Round 1 建议完成步骤 1–7 与 3a；Round 2 完成步骤 8–18。按总表复算：步骤 1–7 与 3a（R1）计 77 分钟，步骤 8–18（R2）计 75 分钟，合计 152 分钟；分层：设计配置 1–11 与 3a 计 114 分钟，测试单 12–15 计 13 分钟，复查留证 16–18 计 25 分钟；另留缓冲 10 分钟（门禁排队 5 + 故障恢复 5）。旧口径“P0 设计段约 70 分钟”为步骤 3–9 粗估，已被本总表分层取代，现场以总表步骤估时为准。'
+====================================================================================================
+运营配置与测试下单SOP.docx
+  P37 [single] runs=1
+     r0: '注记：原拟码 WELCOME10 为演练草稿占位码，此前锁定该名只为现场演示、测试矩阵与文档口径一致；按后台事实，实际首单码更正为 NEWCREATOR10，机制不变（首单 10% off、仅八件单件、每客户一次、每单一码、不与 STARTERKIT 叠加）；正式店上线前须以后台优惠码实际配置复核定名。'
+  T38R3C1P0 [single] runs=1
+     r0: 'Shop 集合内全部八件单件商品（演示）；两张捆绑独立 SPU 不适用 NEWCREATOR10'
+  P43 [single] runs=1
+     r0: '4. 适用范围：八件单件商品；演示默认有效期演练期间、无次数上限、无起订额；每客户一次（后台支持时开启）；总次数上限与资格上线前确认。'
+  T55R3C2P0 [single] runs=1
+     r0: '独立捆绑 SPU：标题 "Creator Starter Kit - Tripod, Desktop Stand, Lens Cleaning Kit"；标价 $44.97（$19.99 + $14.99 + $9.99）；STARTERKIT（15% off）仅作用于该捆绑 SPU，用码后 $38.22；不在八件单件上生效；每单仅一码，不与 NEWCREATOR10 叠加；商品页逐项列三件单品及单价、$44.97 / $38.22 对照与 "Use code STARTERKIT at checkout"；图库用三件主图，描述内链回三件单品；日期、库存与资格占位待确认。'
+  T55R3C4P0 [single] runs=1
+     r0: '捆绑页三件清单与价格对照可见；STARTERKIT 仅在捆绑 SPU 生效；两码不叠加；捆绑步骤估时 15 分钟。；STARTERKIT 限定单 SPU 为实机测试项，后台不支持时降级全店码并改为 kit 页手动用码提示，方案选择记入留证。'
+  T55R4C2P0 [single] runs=1
+     r0: '独立捆绑 SPU：标题 "Pro Creator Kit - Carry Case, Reflector, Backdrop Cloth, Extension Pole"；标价 $58.96（$16.99 + $12.99 + $14.99 + $13.99）；STARTERKIT（15% off）仅作用于该捆绑 SPU，用码后 $50.12；不在八件单件上生效；每单仅一码，不与 NEWCREATOR10 叠加；商品页逐项列四件单品及单价、$58.96 / $50.12 对照与 "Use code STARTERKIT at checkout"；图库用四件主图（Extension Pole 主图待补占位），描述内链回四件单品；日期、库存与资格占位待确认。'
+  T55R4C4P0 [single] runs=1
+     r0: '捆绑页四件清单与 $58.96 / $50.12 对照可见；STARTERKIT 仅在捆绑 SPU 生效；两码不叠加。'
+  P57 [single] runs=1
+     r0: '计算基础：$19.99 + $14.99 + $9.99 = $44.97；$44.97 × (1 − 15%) = $38.2245，取 $38.22。'
+  P58 [single] runs=1
+     r0: "落地形式（与指令包 5.7 一致）：免费能力内无原生捆绑构建器，捆绑以独立捆绑 SPU + 促销码 STARTERKIT 实现，为唯一落地路径。捆绑商品页结构：商品标题；What's in the kit 逐项列出三件单品及单价；价格对照（单买合计 $44.97，套装用码后 $38.22，15% off）；商品图库使用三件主图；描述内链回三件单品；结账输入 STARTERKIT 生效；该码不在八件单件上生效；每单仅一码，不与 NEWCREATOR10 叠加。"
+  P59 [single] runs=1
+     r0: 'Pro Creator Kit 捆绑核算：$16.99 + $12.99 + $14.99 + $13.99 = $58.96；$58.96 × (1 − 15%) = $50.116，取 $50.12；较单品合计省 $8.84。'
+  P91 [single] runs=1
+     r0: '捆绑商品页：Starter 三件清单 $44.97 / $38.22、Pro 四件清单 $58.96 / $50.12 对照与 "Use code STARTERKIT at checkout" 前台可见；捆绑为独立 SPU，不依赖免费捆绑构建器；STARTERKIT 仅作用于捆绑 SPU。'
+  P92 [single] runs=1
+     r0: '新品凑单门槛用例（折后基数默认、实机待验）：Folding Reflector $12.99 + Backdrop Cloth $14.99 + Extension Pole $13.99 = $41.97，达到免邮档；Lens Cleaning Refill $7.99 单件为付费档。'
+  P133 [single] runs=1
+     r0: '收款设置（中文）：https://helpcenter.shoplazza.com/hc/zh-cn/articles/13737790344217-设置收款'
+  P134 [single] runs=1
+     r0: '支付方式顺序（中文）：https://helpcenter.shoplazza.com/hc/zh-cn/articles/12717635757977-设置客户结账支付方式的顺序'
