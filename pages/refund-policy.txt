@@ -1,0 +1,41 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Return & Refund Policy
+
+[INTERNAL] 【操作者说明】Demo configuration，正式营业前复核：退回窗口、费用与换货规则须对照适用消费者保护规则与法务意见核实；前台行不出现演示/演练字样。
+
+[PUBLISH] Last updated: 2026-11-20.
+
+## Return Eligibility
+
+[PUBLISH] You may request a return within 30 days of delivery. Items must be unused and in their original packaging.
+
+- [INTERNAL] Demo configuration，正式营业前复核：return window and restocking fee to confirm with legal review.
+
+## Non-Returnable Items
+
+[PUBLISH] Opened hygiene-related items cannot be returned.
+
+## How to Request a Return
+
+[PUBLISH] Contact 1744059451@qq.com with your order number. We will send return instructions by email.
+
+- [INTERNAL] Demo configuration，正式营业前复核：return warehouse address is withheld from public copy; arranged by email after the return request.
+
+## Return Shipping Costs
+
+[PUBLISH] Unless the item arrives damaged or defective, return shipping costs are paid by the customer.
+
+## Refunds
+
+[PUBLISH] Approved refunds are issued to the original payment method within 5 business days after we receive the returned item. Original shipping charges are not refundable.
+
+## Exchanges
+
+[PUBLISH] Exchanges are handled case by case. Contact 1744059451@qq.com with your order number to check availability, any price difference, and return-shipping responsibility before a replacement is arranged.
+
+## Damaged or Defective Items
+
+[PUBLISH] If an item arrives damaged or defective, contact us with photos within 30 days of delivery. We will arrange a replacement or refund according to eligibility.
+
+[INTERNAL] 【操作者说明】模板免责（INTERNAL，不上前台）：本政策为演示配置，正式营业前复核；退货窗口、费用、退货运费责任须对照适用消费者保护规则核实。
