@@ -1,0 +1,53 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Terms of Service
+
+[INTERNAL] 【操作者说明】Demo configuration，正式营业前复核：法律主体、责任限制、AI 输出权属、管辖法律条款须法务确认后定稿；前台行不出现演示/演练字样。
+
+[PUBLISH] Effective: 2026-11-20.
+
+## Use of the Store
+
+[PUBLISH] You agree to use the store lawfully and not to engage in fraud, abuse, unauthorized scraping, or interference with store operations.
+
+## Eligibility
+
+[PUBLISH] The store is intended for customers 13 or older. Minors require a parent or guardian's account where permitted. If you are under 13, do not place an order without adult involvement.
+
+## Products, Pricing, and Availability
+
+[PUBLISH] Listings, prices, and discounts may change. Availability and bundle terms are noted on each product page.
+
+- [INTERNAL] Demo configuration，正式营业前复核.
+
+## Orders
+
+[PUBLISH] Placing an order is an offer to purchase; acceptance and order confirmation occur when the order is processed, and a confirmation email is sent.
+
+## Intellectual Property
+
+[PUBLISH] The ShotStart name, store copy, and creative materials belong to the brand.
+
+- [INTERNAL] Demo configuration，正式营业前复核：IP ownership of AI-generated drafts and product photos pending legal review; omitted from public terms until confirmed.
+
+## ShotStarter AI Assistant
+
+[PUBLISH] ShotStarter outputs are drafts. You are responsible for reviewing, editing, and any claims made in content you publish.
+
+## Challenge Participation
+
+[PUBLISH] Joining the 7-Day Shooting Challenge is optional. Participation does not guarantee followers, sales, or any platform result.
+
+## Promo Codes
+
+[PUBLISH] Discount codes such as NEWCREATOR10 and STARTERKIT follow the rules listed at checkout: eligibility, one-use limits, stacking restrictions, excluded items, and validity dates. A code cannot be applied after an order is placed.
+
+## Dispute Resolution
+
+[PUBLISH] If you have an issue with an order or product, contact us at 1744059451@qq.com first. We will work with you by email to try to resolve the matter directly.
+
+## Contact
+
+[PUBLISH] Questions about these terms: 1744059451@qq.com
+
+- [INTERNAL] Demo configuration，正式营业前复核：legal entity name, limitation-of-liability wording, AI-draft/photo IP, and jurisdiction/governing-law clause were not published; they are omitted until legal review confirms the wording.
