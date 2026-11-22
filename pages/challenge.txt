@@ -1,0 +1,102 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# 7-Day Shooting Challenge
+
+[PUBLISH] Seven short daily tasks. One small step each day to plan, film, and publish your first short video. Sign up with your email to receive daily prompts and ShotStarter template suggestions.
+
+## Rules
+
+- [PUBLISH] Sign up with a valid email; one short challenge email arrives each day for seven days.
+- [PUBLISH] Complete one task per day. You may adapt tasks to your product and style.
+- [PUBLISH] Use ShotStarter drafts as starting points — review and edit before posting.
+- [PUBLISH] The challenge is free to join; no purchase is required.
+- [PUBLISH] Participation does not guarantee followers, sales, or any platform result.
+
+## Daily Tasks
+
+[PUBLISH] Day 1 — Pick your topic and selling point. Write down your product or topic and the one point you want viewers to remember. Use ShotStarter to set your platform and product type.
+
+[PUBLISH] Day 2 — Plan your 15-second script. Generate a draft script with ShotStarter; edit the opening line so it sounds like you.
+
+[PUBLISH] Day 3 — Set up your shot. Choose a flat surface or tripod/stand position; clean your lens; frame your first shot.
+
+[PUBLISH] Day 4 — Shoot four storyboard clips. Follow the four-shot storyboard: opening hook, product/topic close-up, middle demonstration, closing line. Record each clip.
+
+[PUBLISH] Day 5 — Assemble your cut. Trim clips to a 15-second pace; add simple captions; check lighting and focus.
+
+[PUBLISH] Day 6 — Write the publish caption. Use the ShotStarter caption draft; add your own voice, relevant hashtags, and a clear call to action.
+
+[PUBLISH] Day 7 — Publish and review. Post your first short video, note what worked, and plan your next clip.
+
+## Sign-Up Form Fields
+
+- [INTERNAL] First name
+- [INTERNAL] Email
+- [INTERNAL] Platform (select: TikTok / Instagram Reels / YouTube Shorts / Other)
+- [INTERNAL] Product or topic you want to film (optional)
+
+- [PUBLISH] Button: Join the challenge
+
+## Thank-You Message
+
+[PUBLISH] You're in. Day 1 is below — start shooting. Remember: your first shot starts here.
+
+[PUBLISH] First-order offer: 10% off your first order with code NEWCREATOR10, valid on all single items in the Shop collection; bundle kits are excluded; the code does not stack with STARTERKIT.
+
+## Day 8+ Nurture Email Sequence
+
+[PUBLISH] Email 1 (Day 8 — Review & next shot)
+
+[PUBLISH] Subject: Which shot worked best?
+
+[PUBLISH] Preheader: Your next topic gets a 15-second script draft.
+
+[PUBLISH] Body: Hi [first name], Day 7 is done. Which shot worked best? Reply and tell us your next topic; ShotStarter can draft your next 15-second script.
+
+[PUBLISH] Email 2 (Day 10 — Keep your gear ready)
+
+[PUBLISH] Subject: A quick lens check before your next clip
+
+[PUBLISH] Preheader: Keep phone and camera lenses clear between shoots.
+
+[PUBLISH] Body: Quick lens check: smudges show up on camera. The Lens Cleaning Kit keeps phone and camera lenses clear between shoots.
+
+[PUBLISH] Email 3 (Day 14 — Second video prompt)
+
+[PUBLISH] Subject: One video down — what's next?
+
+[PUBLISH] Preheader: Pick a new selling point and run the four-shot storyboard again.
+
+[PUBLISH] Body: Hi [first name], one video down, the next one is easier. Pick a new selling point and run the four-shot storyboard again.
+
+- [INTERNAL] Merge field: [first name] inserts the sign-up first name; in emails that do not use a name greeting, keep the Body plain (e.g., the Win-Back Email below).
+- [INTERNAL] ESP and send times: [待确认: email service provider, send schedule]; sequence copy is a draft for review.
+
+## Cleaning Kit Refill Repurchase Hook
+
+[PUBLISH] Refill reminder: when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit between shoots.
+
+- [INTERNAL] Demo configuration，正式营业前复核：refill availability and any repeat-purchase offer to confirm before launch.
+
+## Win-Back Email
+
+[PUBLISH] Subject: Your first shot is still waiting
+
+[PUBLISH] Preheader: No pressure — pick up where you left off.
+
+[PUBLISH] Body: We noticed you haven't finished the challenge. Reply here or open Day 1 again.
+
+## Participant Exclusive Incentive
+
+- [PUBLISH] Participants may receive a thank-you offer; offer terms are finalized before launch.
+- [PUBLISH] Participation does not guarantee followers, sales, or any platform result.
+
+- [INTERNAL] Demo incentive; demo default code CHALLENGE7; code name and limits: [待确认: incentive code, usage window, one-time use] — Demo configuration, confirm before launch. The public line must not promise a code, free shipping, or any reward until the offer is configured and confirmed.
+
+## Growth Metrics (Funnel Definitions)
+
+- [PUBLISH] Signups: number of valid emails collected through the challenge form.
+- [PUBLISH] Participants: signups who open at least one challenge email or complete Day 1.
+- [PUBLISH] Engagement: participants who complete three or more daily tasks.
+- [PUBLISH] Purchase: participants who place an order during or after the challenge.
+- [PUBLISH] Tools: metrics tracked via the connected analytics or email tool; fields are set up in the store admin.
