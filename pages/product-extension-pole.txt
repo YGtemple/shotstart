@@ -1,0 +1,88 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Product Detail: Extension Pole
+
+[INTERNAL] 【操作者说明】规格表仅写品类通用、可诚实描述的属性；凡需真实参数处一律用 [待确认: ...] 占位，上线前由运营替换，不得编造数值。
+
+## Product Title
+
+[PUBLISH] Extension Pole — Reach Higher Angles for Selfie and Group Clips
+
+## Selling Points (bullets)
+
+- [PUBLISH] Extends your reach for overhead or higher-angle shots.
+- [PUBLISH] Handheld for selfie-style clips or mounted on a stand.
+- [PUBLISH] Collapses for transport in a gear bag.
+- [PUBLISH] Phone holder fits common smartphone sizes.
+
+- [INTERNAL] Pending before launch (specification keys only; no values published until verified): [待确认: pole extended and collapsed length]; [待确认: main material, e.g., aluminum alloy / ABS plastic]; [待确认: net weight].
+
+## Description Paragraph
+
+[PUBLISH] The Extension Pole lifts your phone above eye level for top-down, overhead, or wider group clips. Extend the length to your shot, hold it or fix it to a stand, and collapse it afterward. Exact extended and collapsed length, material, and weight will be confirmed after final product verification.
+
+## Specifications
+
+Attribute | Detail
+--- | ---
+Product type | Extension pole with phone holder
+Use | Overhead, higher-angle, and selfie-style clips
+Storage | Collapses for a gear bag
+
+## What's in the Box
+
+- [PUBLISH] 1 x Extension pole
+
+[PUBLISH] Any included mount adapter or carry strap is still being finalized; contact us for details.
+
+## Use Scenarios
+
+- [PUBLISH] Overhead product arrangement shots
+- [PUBLISH] Group clips where one phone must reach the whole frame
+- [PUBLISH] Higher-angle talking-head setup on a stand
+
+## FAQ
+
+- [INTERNAL] FAQ layout: question line as a bold standalone heading; answer paragraph below; collapsed by default on mobile; on desktop, open the first question and collapse the rest.
+
+[PUBLISH] Q: How long does it extend?
+
+[PUBLISH] A: Extended and collapsed lengths are still being finalized; contact us for details.
+
+[PUBLISH] Q: Does it fit my phone?
+
+[PUBLISH] A: The holder fits common smartphone sizes. The exact compatible width range is still being finalized; contact us for details.
+
+[PUBLISH] Q: What is the pole made of?
+
+[PUBLISH] A: Material and net weight are still being finalized; contact us for details.
+
+## Pricing
+
+[INTERNAL] Demo price: $16.99 — Demo configuration, confirm before launch. Bundle pricing available in the Pro Creator Kit.
+
+## Add to Cart
+
+- [PUBLISH] Primary button: Add to Cart
+- [PUBLISH] Secondary button: Add to Pro Creator Kit
+
+## Shopping Trust (generic; no certification claims)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] Return terms: see the Return & Refund Policy for the confirmed return window.
+- [PUBLISH] ShotStarter outputs are drafts you review and approve before posting.
+- [PUBLISH] No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.
+- [PUBLISH] Questions? Reach us at 1744059451@qq.com.
+
+[INTERNAL] 【操作者说明】Platform fact (INTERNAL only): the drill store is hosted on Shoplazza; the public checkout line does not name the platform. Strip any platform mention from the live store per the launch cleanup checklist.
+
+## Bundle Entry
+
+[PUBLISH] Pair this with the other Pro Creator Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.
+
+- [PUBLISH] STARTERKIT applies to this kit only; it cannot be combined with other codes.
+
+- [INTERNAL] Demo configuration: the Pro Creator Kit is a standalone SPU listed at $62.96; STARTERKIT (15% off) applies to that SPU only; code price $53.52; savings $9.44 (62.96 − 53.52), rounded to the cent. Confirm bundle discount, inventory, and eligibility before launch. No compare-at reference price or strike-through field is used.
+
+
+[INTERNAL] 【待确认占位键】上线前在 placeholder-map.txt 查英文定稿与中性兜底句；前台不得残留方括号占位： [待确认: any included mount adapter or carry bag]; [待确认: pole extended and collapsed length]; [待确认: compatible phone width range]; [待确认: main material, e.g., aluminum alloy / ABS plastic]
