@@ -1,0 +1,82 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Product Detail: Lens Cleaning Refill
+
+[INTERNAL] 【操作者说明】清洁液成分、容量、布材、笔刷与件数属于需核实信息；未确认前一律占位，不得写认证或功效承诺。
+
+## Product Title
+
+[PUBLISH] Lens Cleaning Refill — Restock Fluid, Cloths, and the Brush Pen for Your Kit
+
+## Selling Points (bullets)
+
+- [PUBLISH] Refills the cleaning fluid, cloth, and brush pen for your Lens Cleaning Kit.
+- [PUBLISH] For phone lenses, compact camera lenses, and accessory lenses.
+- [PUBLISH] Contents and pack count are listed in What's in the Box.
+
+- [INTERNAL] Pending before launch: [待确认: included contents list]; [待确认: cloth material and count]; [待确认: liquid inclusion, volume, and ingredients].
+
+## Description Paragraph
+
+[PUBLISH] The Lens Cleaning Refill restocks the cleaning fluid, cloth, and brush pen you use between shoots, so your kit stays ready for the next clip. Exact counts, cloth material, and any fluid volume or ingredients will be confirmed after final product verification.
+
+## Specifications
+
+Attribute | Detail
+--- | ---
+Product type | Cleaning kit refill
+Compatible surfaces | Phone lenses, compact camera lenses, accessory lenses
+
+## What's in the Box
+
+[PUBLISH] The depicted refill includes a cleaning fluid bottle, a cloth, and a brush pen; final counts, materials, and fluid details are listed here after final confirmation.
+
+- [INTERNAL] Final included items, cloth material, and fluid volume/ingredients: [待确认: included contents, cloth material, liquid volume and ingredients].
+
+## Use Scenarios
+
+- [PUBLISH] Replenishing the cloth and brush pen after repeated lens cleaning
+- [PUBLISH] Refilling fluid for the existing Lens Cleaning Kit
+- [PUBLISH] Keeping cleaning supplies on hand for on-location shoots
+
+## FAQ
+
+- [INTERNAL] FAQ layout: question line as a bold standalone heading; answer paragraph below; collapsed by default on mobile; on desktop, open the first question and collapse the rest.
+
+[PUBLISH] Q: What is included in the refill?
+
+[PUBLISH] A: The depicted refill includes a cleaning fluid bottle, a cloth, and a brush pen; exact count, cloth material, and fluid volume or ingredients are still being finalized; contact us for details.
+
+[PUBLISH] Q: Does it include cleaning fluid?
+
+[PUBLISH] A: The refill includes a cleaning fluid bottle; the fluid volume and ingredients are still being finalized; contact us for details; check the contents list before ordering.
+
+[PUBLISH] Q: Does it work with the Lens Cleaning Kit?
+
+[PUBLISH] A: The refill is made for use with the Lens Cleaning Kit on phone, compact camera, and accessory lenses.
+
+## Pricing
+
+[INTERNAL] Demo price: $7.99 — Demo configuration, confirm before launch. Sold as a single refill; bundle sets are listed in the Creator Kits collection.
+
+## Add to Cart
+
+- [PUBLISH] Primary button: Add to Cart
+- [PUBLISH] Secondary button: Browse Creator Kits
+
+## Shopping Trust (generic; no certification claims)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] Return terms: see the Return & Refund Policy for the confirmed return window.
+- [PUBLISH] ShotStarter outputs are drafts you review and approve before posting.
+- [PUBLISH] No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.
+- [PUBLISH] Questions? Reach us at 1744059451@qq.com.
+
+[INTERNAL] 【操作者说明】Platform fact (INTERNAL only): the drill store is hosted on Shoplazza; the public checkout line does not name the platform. Strip any platform mention from the live store per the launch cleanup checklist.
+
+## Bundle Entry
+
+[PUBLISH] This refill is sold as a single item. Bundle sets are listed in the Creator Kits collection.
+
+
+[INTERNAL] 【待确认占位键】上线前在 placeholder-map.txt 查英文定稿与中性兜底句；前台不得残留方括号占位： [待确认: included contents, cloth material, liquid volume and ingredients]; [待确认: liquid inclusion, volume, and ingredients]
