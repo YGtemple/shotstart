@@ -1,0 +1,67 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Marketing Components
+
+[INTERNAL] 【操作者说明】以下折扣、门槛、码均为演示配置，上线前必须与运营/财务确认生效期限、叠加规则与库存范围。
+
+## 1. Announcement Bar — Free Shipping Threshold
+
+[PUBLISH] Consumer copy: Free standard shipping on US orders over $35.
+
+- [INTERNAL] Demo configuration: threshold $35; standard flat rate $4.99
+- [INTERNAL] Applies to: US standard shipping only
+- [INTERNAL] Threshold basis: defaults to the post-discount subtotal; verify against the live store backend before launch.
+- [INTERNAL] Confirm: final threshold, excluded products, and messaging before launch
+
+## 2. Creator Starter Kit Bundle (three items)
+
+[PUBLISH] Bundle contents: Adjustable Phone Tripod ($19.99) + Desktop Phone Stand ($14.99) + Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.
+
+[PUBLISH] Consumer copy: The Creator Starter Kit pairs steady gear with a clean lens — the basics a first-time creator needs to set up and shoot.
+
+- [INTERNAL] Mechanism (decided): there is no free native bundle builder; the kit is a standalone SPU listed at $44.97. STARTERKIT = 15% off and applies to that SPU only; code price $38.22; savings $6.75 (44.97 − 38.22), rounded to the cent.
+- [INTERNAL] Demo defaults: code valid during the drill period; no usage cap; no minimum order; one code per order; STARTERKIT and NEWCREATOR10 cannot be combined. No compare-at reference price or strike-through field is shown.
+- [INTERNAL] Confirm: final validity, limits, inventory, and eligibility before launch.
+
+## 2b. Pro Creator Kit Bundle (four items)
+
+[PUBLISH] Bundle contents: Adjustable Phone Tripod ($19.99) + Extension Pole ($16.99) + Mini Ball Head ($12.99) + Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.
+
+[PUBLISH] Consumer copy: The Pro Creator Kit adds steady framing, height and angle control, and a carry case for creators moving beyond the basics.
+
+- [INTERNAL] Mechanism (decided): like the Starter Kit, this is a standalone SPU listed at $62.96. STARTERKIT = 15% off and applies to that SPU only; code price $53.52; savings $9.44 (62.96 − 53.52), rounded to the cent.
+- [INTERNAL] Demo defaults: code valid during the drill period; no usage cap; no minimum order; one code per order; STARTERKIT and NEWCREATOR10 cannot be combined. No compare-at reference price or strike-through field is shown.
+- [INTERNAL] Confirm: final validity, limits, inventory, and eligibility before launch.
+
+## 3. Welcome Discount Code (First-Order Offer)
+
+[PUBLISH] Consumer copy: New here? Take 10% off your first order with code NEWCREATOR10.
+
+- [INTERNAL] Demo configuration: NEWCREATOR10 = 10% off the customer's first order
+- [INTERNAL] Note (internal): 原拟 WELCOME10 因后台已结束记录锁定不可复用，演练改用 NEWCREATOR10；正式店可重新启用 WELCOME10 或沿用新码，上线前定稿。
+- [INTERNAL] Validity: demo valid during the drill period; final expiry to confirm before launch
+- [INTERNAL] Usage: one redemption per customer; one code per order; does not stack with STARTERKIT
+- [INTERNAL] Eligibility: applies to all single items in the Shop collection; both bundle SPUs (Creator Starter Kit and Pro Creator Kit) are excluded
+- [INTERNAL] Pricing: no minimum order in the demo; discount applied before shipping; totals rounded to the cent
+- [INTERNAL] Confirm: minimum order, excluded items, and consent wording before launch
+
+## 4. Email Popup — First-Order Offer
+
+[PUBLISH] Consumer copy: Subscribe for a first-order discount and the 7-Day Shooting Challenge checklist.
+
+[PUBLISH] Button: Save my spot
+
+- [INTERNAL] Demo configuration: 10% off first order after email signup
+- [INTERNAL] Mechanism: NEWCREATOR10 code shown immediately after the email is submitted
+- [INTERNAL] Frequency: shown once per browser; a localStorage flag prevents it from showing again in the same browser
+- [INTERNAL] Fallback: if the native email popup is not available, show the NEWCREATOR10 code on the challenge sign-up success state (see challenge.txt thank-you message) and the form-states challenge success copy; keep eligibility wording aligned with section 3.
+- [INTERNAL] Confirm: expiry, consent wording, and unsubscribe flow before launch
+
+## 5. Challenge UGC Hashtag Wall — Retention / Community Component
+
+[PUBLISH] Concept: a UGC hashtag wall collecting public posts tagged #ShotStartChallenge.
+
+- [PUBLISH] Display copy: Made something this week? Tag #ShotStartChallenge — your clip could be featured.
+
+- [INTERNAL] Moderation: featured content is reviewed before display; creators retain ownership of their posts. [待确认: UGC repost consent wording]
+- [INTERNAL] Demo configuration: community concept only; wall tool and permissions to confirm before launch
