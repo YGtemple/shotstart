@@ -1,0 +1,59 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Privacy Policy
+
+[INTERNAL] 【操作者说明】Demo configuration，正式营业前复核：采集范围、服务商、适用地区权利条款须经法务与技术配置核实；前台行不出现演示/演练字样。
+
+[PUBLISH] Last updated: 2026-11-20.
+
+## What We Collect
+
+- [PUBLISH] Contact and order information: name, email address, shipping address, and order details
+- [PUBLISH] Challenge participation: email signup, chosen platform, and daily task interaction
+- [PUBLISH] Usage data: email opens and store browsing behavior
+
+## How We Use Information
+
+- [PUBLISH] Process orders and provide customer support
+- [PUBLISH] Send the 7-Day Shooting Challenge sequence and marketing emails, where you have consented
+- [PUBLISH] Improve the store experience and product assortment
+
+## Data Retention
+
+[PUBLISH] Order records are kept for 24 months. Marketing consent remains active until 30 days after you unsubscribe; after that, the associated email is removed from marketing lists.
+
+## Email Marketing
+
+[PUBLISH] Marketing emails are sent only with your consent. Each email includes an unsubscribe option.
+
+- [INTERNAL] Demo configuration，正式营业前复核：email service provider and send schedule to confirm before launch.
+
+## Sharing Information
+
+[PUBLISH] We do not sell personal data. Information is shared with service providers (payment, shipping, email) only as needed to operate the store.
+
+- [INTERNAL] Demo configuration，正式营业前复核：service provider list to confirm before launch.
+
+## Cookies and Pixels
+
+[PUBLISH] The store uses necessary cookies to operate checkout and remember your preferences. Non-essential cookies can be declined through your browser or store consent settings where available.
+
+- [INTERNAL] Demo configuration，正式营业前复核：cookie list and any third-party pixel or advertising tools to confirm before launch.
+
+## Security
+
+[PUBLISH] We apply reasonable measures to protect personal data; no method of transmission over the internet is fully secure.
+
+## Your Rights
+
+[PUBLISH] You may request access to, correction of, or deletion of your personal data, and may withdraw consent at any time. To exercise these rights, email 1744059451@qq.com.
+
+- [INTERNAL] Demo configuration，正式营业前复核：region-specific privacy rights text (e.g., US state privacy law) to confirm with legal review.
+
+## Children
+
+[PUBLISH] The store is not directed to children under 13. If you are under 13, do not place an order or submit personal data.
+
+## Contact
+
+[PUBLISH] Privacy questions: 1744059451@qq.com
