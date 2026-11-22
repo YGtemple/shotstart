@@ -1,0 +1,890 @@
+[P0] Athena 建店指令包 · ShotStart 演练店
+[P1] 2026-11-21 AI 独立站挑战赛备赛文档 · 现场执行用
+[P2] 目录将在 Word 中打开后刷新（引用 > 更新目录）
+[P3] 1  使用说明与边界
+[P4] 1.1  适用范围
+[P5] 本文档用于比赛当天通过大赛专属链接注册新店后，使用 Shoplazza Athena 完成建店、商品、页面、视觉、运费与促销的指令序列。所有英文指令可直接复制粘贴到 Athena 输入框。
+[P6] 本文档只覆盖 Athena 可承接的建站与配置任务；支付测试下单、运费后台细则、营销组件清单与留证要求见《运营配置与测试下单SOP.docx》。
+[P7] 1.2  三条执行原则（依据 Athena 官方指南）
+[P8] 先核对确认卡，再让 Athena 执行：创建、修改、删除、发布等重要操作前，逐项核对卡片列出的信息，确认无误后再点创建或应用。
+[P9] 人工核对不能凭图片认定的字段：价格、材质、重量、库存、规格、兼容性；这些字段未核实前保留占位，不得让 AI 补猜数值。
+[P10] Athena 为补全原型而生成的示例商品、图片、价格和服务内容不等于真实经营信息；正式发布前至少替换或核对商品标题、图片、价格、规格、库存、材质卖点、配送范围与政策。
+[P11] 1.3  合规红线（摘要，详见 SOP 文档）
+[P12] 不虚构参数、销量、评价、奖项、资质、认证与真实库存；未确认信息保留 [待确认] 占位，不上前台。
+[P13] 演示价在商品描述或后台备注中保留 “Demo price, confirm before launch” 标注；前台商品页可不显示该字样，举证材料中说明为演示配置。
+[P14] 2  品牌与素材基线（开工前核对一遍）
+[P15] 2.1  品牌基线
+[T0R0C0] 项目
+[T0R0C1] 口径
+[T0R1C0] 品牌名
+[T0R1C1] ShotStart
+[T0R2C0] 口号
+[T0R2C1] Your first shot starts here.
+[T0R3C0] 主色
+[T0R3C1] 珊瑚橙 #FF5A2C
+[T0R4C0] 辅助色
+[T0R4C1] 深海军蓝 #0F1B2D
+[T0R5C0] 背景色
+[T0R5C1] 暖白 #FAF6F0
+[T0R6C0] 目标人群
+[T0R6C1] 美国英语市场新手短视频创作者与小商家
+[T0R7C0] 市场语言
+[T0R7C1] 英语（US）
+[P16] 2.2  商品基线
+[T1R0C0] SPU
+[T1R0C1] 英文标题
+[T1R0C2] 演示价
+[T1R0C3] 商品图
+[T1R0C4] 文案文件
+[T1R1C0] 1
+[T1R1C1] Adjustable Phone Tripod — Steady, Hands-Free Framing for Short Videos
+[T1R1C2] $19.99
+[T1R1C3] product-tripod.png
+[T1R1C4] product-tripod.txt
+[T1R2C0] 2
+[T1R2C1] Desktop Phone Stand — Keep Your Phone Upright on Your Desk
+[T1R2C2] $14.99
+[T1R2C3] product-stand.png
+[T1R2C4] product-stand.txt
+[T1R3C0] 3
+[T1R3C1] Lens Cleaning Kit — Keep Phone and Camera Lenses Clear
+[T1R3C2] $9.99
+[T1R3C3] product-cleaning-kit.png
+[T1R3C4] product-cleaning-kit.txt
+[T1R4C0] 4
+[T1R4C1] Creator Carry Case — Keep Your Gear Together on the Go
+[T1R4C2] $12.99
+[T1R4C3] product-carry-case.png
+[T1R4C4] product-carry-case.txt
+[T1R5C0] 5
+[T1R5C1] Folding Reflector — Soften and Fill Light for Clips
+[T1R5C2] $10.99
+[T1R5C3] product-reflector.png
+[T1R5C4] product-reflector.txt
+[T1R6C0] 6
+[T1R6C1] Backdrop Cloth — A Simple Background for Product and Talking-Head Clips
+[T1R6C2] $13.99
+[T1R6C3] product-backdrop.png
+[T1R6C4] product-backdrop.txt
+[T1R7C0] 7
+[T1R7C1] Extension Pole — Reach Higher Angles for Selfie and Group Clips
+[T1R7C2] $16.99
+[T1R7C3] [待确认: 主图]
+[T1R7C4] product-extension-pole.txt
+[T1R8C0] 8
+[T1R8C1] Lens Cleaning Refill — Restock Cloths and Fluid for Your Kit
+[T1R8C2] $7.99
+[T1R8C3] [待确认: 主图]
+[T1R8C4] product-cleaning-refill.txt
+[T1R9C0] 9
+[T1R9C1] Mini Ball Head Mount（自拟工作名，待文案包回填）
+[T1R9C2] $12.99
+[T1R9C3] [待确认: 主图]
+[T1R9C4] [待回填]
+[T1R10C0] 10
+[T1R10C1] Magnetic Phone Mount（自拟工作名，待文案包回填）
+[T1R10C2] $11.99
+[T1R10C3] [待确认: 主图]
+[T1R10C4] [待回填]
+[T1R11C0] 11
+[T1R11C1] Microfiber Cloth 3-Pack（自拟工作名，待文案包回填）
+[T1R11C2] $6.99
+[T1R11C3] [待确认: 主图]
+[T1R11C4] [待回填]
+[T1R12C0] 12
+[T1R12C1] Shot List Cards（自拟工作名，待文案包回填）
+[T1R12C2] $8.99
+[T1R12C3] [待确认: 主图]
+[T1R12C4] [待回填]
+[T1R13C0] 13
+[T1R13C1] Creator Starter Kit（套装）
+[T1R13C2] $44.97 → $38.22（STARTERKIT 15%）
+[T1R13C3] —
+[T1R13C4] marketing.txt
+[T1R14C0] 14
+[T1R14C1] Pro Creator Kit（套装）
+[T1R14C2] $62.96 → $53.52（STARTERKIT 15%）
+[T1R14C3] —
+[T1R14C4] marketing.txt
+[P17] 2.3  页面清单
+[P18] 首页 Home、Shop 商品列表、7-Day Challenge、About、Contact；页尾政策页：Shipping Policy、Return & Refund Policy、Privacy Policy、Terms of Service。主导航顺序：Home、Shop、7-Day Challenge、About、Contact；政策链接仅放页尾。
+[P19] 2.4  素材路径（Windows 备赛目录）
+[T2R0C0] 类别
+[T2R0C1] 相对路径（基准目录 new-chat）
+[T2R0C2] 文件
+[T2R1C0] 文案
+[T2R1C1] shotstart-copy\pages\
+[T2R1C2] 22 个 txt；主文档 shotstart-copy\ShotStart店铺文案包.docx
+[T2R2C0] 视觉
+[T2R2C1] shotstart-visuals\
+[T2R2C2] logo-icon-square.png、logo-icon-transparent.png、logo-square.png、logo-transparent.png、logo-white.png、logo-lockup-navy.png、logo-lockup-white.png、hero-banner.png、product-tripod.png、product-stand.png、product-cleaning-kit.png、product-carry-case.png、product-reflector.png、product-backdrop.png、challenge-poster.png
+[T2R3C0] AI 演示
+[T2R3C1] shotstart-demo\
+[T2R3C2] shotstarter-demo.html；AI应用与创新举证材料.docx
+[P20] 跨环境提醒：现场浏览器运行在云主机时，图片需先在 Windows 侧上传取得 URL，再下载到云主机后上传到后台；文案先在 Windows 侧读取本地 txt，再粘贴到页面。
+[P21] 3  Athena 建站入口与起步方式
+[P22] 入口：https://hyperselling.shoplazza.com/ ；现场以大赛专属入口为准。
+[P23] 三种起步：一句话想法；输入框旁「+」上传商品图（一次最多 50 张）；粘贴参考链接。本次采用「一句话想法 + 上传首批 3 张商品图」。
+[P24] 四道选择题依次补齐：卖给谁、有没有商品图、品牌调性、店名；不符预期可选「换一批」。
+[P25] 生成前弹出确认卡：哪一行需要修改直接在输入框说明，确认后再点创建；等待 3–5 分钟获得三套装修方案，左上角可切换桌面端与移动端预览，选「选用，继续」后点右上角「发布」安装到账号。
+[P26] 每个账号有店铺额度上限；登录前先确认账号还有店铺额度，额度不足时先注册新账号，避免作品遗失。
+[P27] 4  首条建店总指令（指令 0）
+[P28] 英文指令正文：可直接复制粘贴到 Athena 输入框。
+[T3R0C0] Build a complete online store called ShotStart for the US English-speaking market.
+[T3R0C0] 
+[T3R0C0] Brand:
+[T3R0C0] - Brand name: ShotStart
+[T3R0C0] - Tagline: "Your first shot starts here."
+[T3R0C0] - Brand colors: coral orange #FF5A2C, deep navy #0F1B2D, warm white #FAF6F0
+[T3R0C0] - Audience: beginner short-video creators and small shop owners in the US; plain-language, friendly, no jargon
+[T3R0C0] - Tone: simple, encouraging, practical
+[T3R0C0] 
+[T3R0C0] Twelve individual products (demo prices, confirm before launch):
+[T3R0C0] 1. Adjustable Phone Tripod - $19.99 - steady hands-free framing for talking-head videos, product demos, and on-location clips.
+[T3R0C0] 2. Desktop Phone Stand - $14.99 - holds the phone upright on the desk for demos, live clips, and reference viewing.
+[T3R0C0] 3. Lens Cleaning Kit - $9.99 - compact brush, cloth, and cleaning basics for phone and camera lenses.
+[T3R0C0] 4. Creator Carry Case - $12.99 - a portable case to keep gear and small accessories together.
+[T3R0C0] 5. Folding Reflector - $10.99 - soften and fill light for face and product clips.
+[T3R0C0] 6. Backdrop Cloth - $13.99 - a plain background for product and talking-head clips.
+[T3R0C0] 7. Extension Pole - $16.99 - reach overhead and higher-angle shots for selfie and group clips.
+[T3R0C0] 8. Lens Cleaning Refill - $7.99 - restock cloths and fluid for your cleaning kit.
+[T3R0C0] 9. Mini Ball Head Mount - $12.99 - swivel head for angled phone shots (working title, copy pending).
+[T3R0C0] 10. Magnetic Phone Mount - $11.99 - quick magnetic phone attachment for setups (working title, copy pending).
+[T3R0C0] 11. Microfiber Cloth 3-Pack - $6.99 - spare cloths for lens and gear cleaning (working title, copy pending).
+[T3R0C0] 12. Shot List Cards - $8.99 - shot-planning cards for beginner creators (working title, copy pending).
+[T3R0C0] 
+[T3R0C0] Pages to build:
+[T3R0C0] - Home: hero with the tagline, product cards for all twelve items, brand value pillars, a section introducing the ShotStarter AI content assistant, a 7-Day Challenge signup block, and an email popup.
+[T3R0C0] - Shop: listing of the twelve individual products, then the two bundle cards.
+[T3R0C0] - 7-Day Challenge: email signup page with a seven-day daily task loop.
+[T3R0C0] - About: brand story and audience.
+[T3R0C0] - Contact: contact form (full name, email, order number optional, subject, message).
+[T3R0C0] - Footer policy pages: Shipping Policy, Return & Refund Policy, Privacy Policy, Terms of Service.
+[T3R0C0] 
+[T3R0C0] Navigation: Home, Shop, 7-Day Challenge, About, Contact in the main menu; policy links in the footer.
+[T3R0C0] 
+[T3R0C0] Do not invent exact product dimensions, materials, weights, compatibility ranges, stock, certificates, or reviews. Leave those fields as placeholders rather than filling in guessed numbers.
+[P29] 
+[P30] 中文用途说明：一次性把品牌、口号、配色、人群、十二件单品与价格、页面清单、导航和合规边界交代给 Athena，作为整套店铺的生成基线。
+[P31] 预期结果：Athena 弹出确认卡，列出店名、受众、商品、页面与调性；随后生成三套桌面/移动预览方案。
+[P32] 核对点：
+[P33] 店名 ShotStart、口号逐字正确，无多余词；
+[P34] 三色十六进制值 #FF5A2C / #0F1B2D / #FAF6F0 无误；
+[P35] 十二件单品名称与价格 $19.99 / $14.99 / $9.99 / $12.99 / $10.99 / $13.99 / $16.99 / $7.99 / $12.99 / $11.99 / $6.99 / $8.99 一致；
+[P36] 九个页面（Home、Shop、7-Day Challenge、About、Contact、四政策）均在清单内；
+[P37] 导航顺序正确，政策页在页尾；
+[P38] 确认卡未出现虚构参数、库存或评价；
+[P39] 预览同时检查桌面端与移动端，无文字溢出、图片变形、中英文混杂。
+[P40] 预估耗时：10 分钟（含 Athena 生成等待 3–5 分钟/套；P0 建店基线）。
+[P41] 5  分步指令（指令 1–8）
+[P42] 5.1  完善原三件商品（标题、描述、标签、SEO、价格）
+[P43] 英文指令正文：
+[T4R0C0] Complete the three existing products in ShotStart. Match each product to the copy I provide; do not change the approved prices.
+1. Adjustable Phone Tripod, $19.99: title "Adjustable Phone Tripod - Steady, Hands-Free Framing for Short Videos". Use the uploaded product-tripod.png as the main image. Draft selling points, product tags, SEO title and meta description in plain US English.
+2. Desktop Phone Stand, $14.99: title "Desktop Phone Stand - Keep Your Phone Upright on Your Desk". Use product-stand.png.
+3. Lens Cleaning Kit, $9.99: title "Lens Cleaning Kit - Keep Phone and Camera Lenses Clear". Use product-cleaning-kit.png.
+For each product, structure the description in short sections: a one-line use-case summary, selling points, a "What's in the box" list, and an FAQ block. Keep dimensions, materials, weight, compatibility range, and stock as unconfirmed placeholders; do not invent specs. Apply only after I confirm each preview card.
+[P44] 
+[P45] 中文用途说明：把 Athena 生成的商品初稿对齐到已批准标题、价格与主图，并补商品标签与基础 SEO。
+[P46] 预期结果：每张商品预览卡列出标题、描述、标签、SEO、价格与重量；人工核对后逐张「应用」。
+[P47] 核对点：
+[P48] 标题与文案包一致；价格三档正确；主图与商品对应；
+[P49] 商详按用途要点 / What's in the box / FAQ 分段呈现；FAQ 使用主题 FAQ 卡片区块；
+[P50] 商品标题与卡片描述按使用场景撰写，不出现未核实的尺寸、材质、重量与兼容机型。
+[P51] 未出现编造的尺寸、材质、重量、兼容性与库存；规格占位保留；
+[P52] PDP 加购核查：主按钮 "Add to Cart"、次按钮 "Add to Creator Starter Kit" 与文案包一致；数量器 Qty +/- 在 Reformia 免费主题设置内核查可用，车内行显示商品名、单价与小计。
+[P53] PDP 互补推荐：tripod → extension-pole / mini-ball-head / carry-case；desktop-stand → magnetic-mount / mini-ball-head；cleaning-kit → microfiber-3pack / cleaning-refill；carry-case → tripod / extension-pole；shot-list-cards → tripod / creator-starter-kit；其余互补位（extension-pole → tripod / mini-ball-head；mini-ball-head → tripod / desktop-stand；magnetic-mount → desktop-stand / mini-ball-head；reflector → backdrop / carry-case；backdrop → reflector / carry-case；microfiber-3pack → cleaning-kit / cleaning-refill；cleaning-refill → cleaning-kit / microfiber-3pack）为自拟口径，建品后随 PDP 回填。
+[P54] SEO 标题与描述为平实美式英语，不使用夸张承诺。
+[P55] 素材映射：商品文案以 product-tripod.txt / product-stand.txt / product-cleaning-kit.txt / 其余九件 product-*.txt 为准（见第 6 节对照表）；主图 product-*.png。
+[P56] 预估耗时：10 分钟（P0：场景化商品标题、商详分段 + FAQ 卡片；映射表 #6、#11）。
+[P57] 5.2  首页区块搭建
+[P58] 英文指令正文：
+[T5R0C0] 1. Hero: use a split layout with the headline "Your first shot starts here." and subhead introducing simple phone gear plus the ShotStarter AI content assistant for beginner creators on one side, and hero-banner.png on the other. Primary CTA "Shop All Gear", secondary CTA "Join the 7-Day Shooting Challenge".
+[T5R0C0] 2. Trust signal row: a plain-text line reading "Free standard shipping on US orders over $35." with links to the Shipping, Return & Refund, Privacy, and Terms policy pages; include the note that AI outputs are drafts creators review before posting.
+[T5R0C0] 3. Three scenario doorway cards: split beginner creators and small shop owners by use case; made for beginners; gear that works with your phone; AI that stays on your side.
+[T5R0C0] 4. Creator Starter Kit banner card: above the individual product grid, show the three Starter Kit main images together, the list price $44.97 side by side with the after-code price $38.22 (no compare-at strike-through price field), the line "Use code STARTERKIT at checkout", and CTA "View the kit". If the free theme has no bundle card block, use an image + plain-text card with the same prices.
+[T5R0C0] 5. Product grid cards for the twelve individual products with their approved prices, laid out in a 4-column grid across three rows.
+[T5R0C0] 6. Pro Creator Kit bundle card: below the product grid, show the four Pro kit images together, the list price $62.96 side by side with the after-code price $53.52 (no compare-at strike-through price field), the line "Use code STARTERKIT at checkout", and CTA "View the kit". If the free theme has no bundle card block, use an image + plain-text card with the same prices.
+[T5R0C0] 7. ShotStarter AI block: section title "Meet ShotStarter, your AI content assistant."; describe the 15-second script draft, four-shot storyboard, and ready-to-review caption. Outputs are drafts creators review before posting.
+[T5R0C0] 8. 7-Day Challenge block with email signup CTA "Join the challenge".
+[T5R0C0] 9. Email popup: headline "Your first discount is one click away.", email field, button "Save my spot", unsubscribe fine print. After the visitor submits the email, show NEWCREATOR10 immediately on the success page; email delivery of the code is optional in the demo. The popup shows once per browser, marked in localStorage; clearing cache or local storage may make it reappear, which is expected.
+[T5R0C0] Keep the palette #FF5A2C / #0F1B2D / #FAF6F0. Use #FF5A2C only for buttons and primary links. Do not add fake reviews, ratings, awards, or sales counts.
+[P59] 
+[P60] 中文用途说明：按 home.txt 的区块顺序落地首页，保证品牌感与转化入口齐全。
+[P61] 预期结果：首页区块齐全（Hero、信任行、场景门三列、Starter 横幅卡、商品网格、Pro 卡、ShotStarter、Challenge、弹窗），两个 CTA 分别指向 Shop 与 7-Day Challenge 页。
+[P62] 核对点：
+[P63] 口号逐字正确；两个 CTA 链接有效；
+[P64] Hero 为左文右图分栏；首屏仅主、次两个 CTA，不堆其他入口；
+[P65] 两张捆绑卡：Starter 三主图拼合、清单价 $44.97 与码后价 $38.22 同屏对照；Pro Creator Kit 四件清单、$62.96 与码后价 $53.52 同屏对照（均不用 compare-at 划线字段）、"Use code STARTERKIT at checkout" 与 CTA 可见；无原生卡片块时图文纯文本卡同等呈现；
+[P66] 信任行只含可兑现项：满 $35 免邮文案与政策页链接、AI 草稿需本人审核表述；
+[P67] 弹窗提交后成功页即时展示 NEWCREATOR10；邮件发送列为可选；localStorage 一次标记，清缓存后重弹属预期；小字含退订说明；
+[P68] ShotStarter 区块包含「草稿需创作者本人审核后再发布」的表述；
+[P69] Challenge 留资区块是弹窗之外的第二留存入口，与弹窗互补（弹窗一次、挑战表单可重复进入）；按钮 "Join the challenge"，文案以 challenge.txt 为准。
+[P70] 无虚假评价、评分、销量与奖项；配色统一。
+[P71] 素材映射：home.txt（Bundle Display Slot）；hero-banner.png；弹窗细则见 marketing.txt。
+[P72] 预估耗时：12 分钟（P0：Hero 左文右图双 CTA、弹窗一次 + 退订、首页信任信号一行；映射表 #1、#9、#12）。
+[P73] 5.3  标准页面与导航（About / Contact / Challenge / 四政策）
+[P74] 英文指令正文：
+[T6R0C0] Create the remaining pages, the Shop collection, and footer navigation for ShotStart:
+[T6R0C0] - Shop collection: list the twelve individual products first, then the Creator Starter Kit and Pro Creator Kit bundle cards. Each card shows the approved price and a one-line use-case summary from shop.txt; collections: "All Gear" holds the twelve individual products, with use-case collections "Stability & Height", "Desk & Angle", "Clean & Care", "Carry & Set Up"; the two bundles sit under the hidden "Creator Kits" collection if the theme supports collections, otherwise keep one single grid.
+[T6R0C0] - About: brand story around taking the first shot, audience of US beginner creators and small merchants; brand line "Your first shot starts here."
+[T6R0C0] - Contact: form fields Full name, Email address, Order number (optional), Subject, Message; consent checkbox "I agree to be contacted about my question."; unselected state blocks submit with "Please agree to be contacted before submitting."; submit button "Send message".
+[T6R0C0] - 7-Day Challenge: seven daily tasks Day 1 to Day 7, signup form with First name, Email, Platform (TikTok / Instagram Reels / YouTube Shorts / Other), optional product or topic; consent checkbox "By signing up, I agree to receive challenge and marketing emails. I can unsubscribe at any time."; unselected state blocks submit with "Please agree to be contacted before submitting."; required-field and invalid-email states follow form-states.txt; thank-you message "You're in! Check your inbox for Day 1. Remember: your first shot starts here."
+[T6R0C0] - Footer policy pages: Shipping Policy, Return & Refund Policy, Privacy Policy, Terms of Service. Use plain template language; include the line "Demo store ships to the US only; international terms are placeholders." Leave effective dates, return window, response time, and contact email as placeholders.
+[T6R0C0] Main menu: Home, Shop, 7-Day Challenge, About, Contact as a single-level menu. Policy links in the footer only; do not add nested dropdown menus.
+[P75] 
+[P76] 中文用途说明：补齐评分表要求的 About、Contact、Policy 完整度，保证每个页面可从菜单或页尾进入。
+[P77] 预期结果：八个非首页页面可访问；表单字段齐全；七日任务完整呈现。
+[P78] 核对点：
+[P79] 每个页面可打开，无 404；
+[P80] 主导航为单层菜单，无嵌套下拉；政策链接仅出现在页尾；
+[P81] Shop 卡片短文案、十二件单品先于两张捆绑卡的排序符合 shop.txt；
+[P82] 政策页不承诺具体到货天数、退回窗口或回复时效，含 "Demo store ships to the US only; international terms are placeholders." 兜底句；
+[P83] 占位信息未被替换成编造值；Challenge 页 Day 1 至 Day 7 任务完整。
+[P84] Challenge 表单含同意勾选；未勾选拦截提交并提示 "Please agree to be contacted before submitting."；必填与邮箱格式三态文案承接 form-states.txt（First name / Email 为必填，邮箱格式错误提示见 form-states）。
+[P85] Contact 表单同含同意勾选 "I agree to be contacted about my question."，未勾选拦截提交；必填与邮箱格式三态校验承接 form-states.txt。
+[P86] 素材映射：shop.txt；about.txt、contact.txt、challenge.txt、shipping-policy.txt、refund-policy.txt、privacy-policy.txt、terms.txt；challenge-poster.png 用于 Challenge 页头。
+[P87] 预估耗时：8 分钟（P0：扁平导航、政策页入口；映射表 #5）。
+[P88] 5.4  品牌视觉与主题（Logo、配色、字体、移动端）
+[P89] 英文指令正文：
+[T7R0C0] Apply the ShotStart brand to the theme:
+[T7R0C0] - Logo lockups (417×144 transparent, sharp lockup): the header on a light background uses logo-lockup-navy.png; the footer on a dark background uses logo-lockup-white.png. Icon-only marks (1024²): logo-icon-square.png for light-background favicon, avatar, and product-card corner mark; logo-icon-transparent.png for cutout light-background slots. logo-square.png / logo-transparent.png are large-format horizontal lockup masters with the wordmark, reserved for large light-background placement, not the square favicon/avatar slot; do not place the transparent master on a dark footer. logo-white.png for square placement on dark backgrounds.
+[T7R0C0] - Colors: primary #FF5A2C, secondary #0F1B2D, background #FAF6F0. Use #FF5A2C only for buttons and primary links; keep headings, body text, and the footer in deep navy #0F1B2D.
+[T7R0C0] - Fonts: headings in Montserrat, fallback Poppins (then Helvetica Neue, Arial, sans-serif); body copy in Inter (fallback -apple-system, Segoe UI, Roboto, Arial, sans-serif). Avoid decorative or script typefaces.
+[T7R0C0] - Product color: product bodies in photos are matte black, their physical color; do not recolor product renders to navy. #0F1B2D is the brand color for text, headings, and footer, not a product color; keep the two roles separate.
+[T7R0C0] - Header: store name ShotStart and the tagline in the header area; footer brand blurb repeats the audience and tagline.
+[T7R0C0] - Whitespace: keep generous spacing between sections; do not crowd the hero, product cards, and signup blocks.
+[T7R0C0] Check both desktop and mobile previews: no text overflow, no stretched images, no mixed Chinese and English on the storefront. On mobile, keep CTAs and add-to-cart buttons within easy thumb reach; keep information blocks short.
+[P90] 
+[P91] 中文用途说明：保证品牌及体验评分项：Logo、配色、字体与图片风格统一，移动端正常。
+[P92] 预期结果：主题色与 Logo 落地；桌面端与移动端预览均无溢出与变形。
+[P93] 核对点：
+[P94] Logo 未拉伸；三色值正确；
+[P95] 页眉浅底用 logo-lockup-navy.png，页脚深底用 logo-lockup-white.png；favicon、社交头像与商品卡角标用图标-only 版 logo-icon-square.png（浅底）/ logo-icon-transparent.png（去底）；logo-square.png / logo-transparent.png 为横版锁合大尺寸母版（含字标），仅用于大尺寸浅底场景，透明版不上深底；logo-white.png 用于深底方形位；Logo 未拉伸变形。
+[P96] 标题字体 Montserrat（备选 Poppins），正文 Inter；全站一对标题 / 正文字体，无装饰性字体；
+[P97] 橙色 #FF5A2C 仅用于按钮与主链接；#0F1B2D 仅用于标题、正文与页脚；
+[P98] 产品主体哑光黑为实物色，不被改成海军蓝；产品色与品牌色角色不混用；
+[P99] 移动端 CTA 与加购按钮位于拇指易达区，信息块短、按钮大；
+[P100] 区块之间保留暖白留白，不把 Hero、商品卡与留资区块挤在一起；
+[P101] 移动端导航、商品卡片、表单不溢出；前台无中文操作者备注外露。
+[P102] 素材映射：logo-icon-square.png、logo-icon-transparent.png、logo-square.png、logo-transparent.png、logo-white.png、logo-lockup-navy.png、logo-lockup-white.png（417×144 透明底锁合；navy 用于页眉浅底，white 用于页脚深底；图标双版用于 favicon / 头像 / 商品角标）。
+[P103] 预估耗时：10 分钟（P0：留白字体与单一行动色、移动端拇指区；映射表 #8、#10）。
+[P104] 5.5  商品场景图补充（@ 提及商品，电商素材技能）
+[P105] 英文指令正文：
+[T8R0C0] For each of the three original ShotStart products, generate one clean lifestyle scene image showing the product in a beginner creator's real setup, preserving the product color, shape, and details. Use the e-commerce visual skill; mention each product with @ after a space. Do not add text, watermarks, or fake logos in the image.
+[T8R0C0] After generation, show me the confirmation card with product thumbnail, title, price, and product ID before applying.
+[P106] 
+[P107] 中文用途说明：在基础主图之外补充场景图；@ 商品由 Athena 调取店内素材生成。
+[P108] 预期结果：三张场景图生成；确认卡列出缩略图、标题、价格与商品 ID；首次不选「总是应用」，核对后点「应用」。
+[P109] 核对点：
+[P110] 商品颜色、形状与细节未被改变；场景与品类相符；
+[P111] 图中无水印、无虚构品牌标识；
+[P112] 确认卡商品 ID 与目标商品对应。
+[P113] 素材映射：若现场时间紧张，本指令可后置；基础主图齐备即不影响商品页评分。
+[P114] 预估耗时：10 分钟（P0：三张场景图光线与风格统一、产品不被改造；映射表 #2；时间允许后置）。
+[P115] 5.6  运费方案（Athena 对话配置）
+[P116] 英文指令正文：
+[T9R0C0] Set up shipping for the ShotStart demo store, US market only:
+[T9R0C0] - Standard flat rate: $4.99 for US orders below $35.
+[T9R0C0] - Free standard shipping on US orders over $35.
+[T9R0C0] - The $35 threshold is checked against the post-discount subtotal by default; this basis is pending live verification against the backend (实机待验).
+[T9R0C0] - No cash on delivery.
+[T9R0C0] Show me the full shipping scheme in the confirmation card: destination region, rate bands, shipping fee, free-shipping threshold, and subtotal basis. Apply only after I confirm.
+[P117] 
+[P118] 中文用途说明：把运费经营要求交给 Athena 拆成付费配送与免运费两条规则。
+[P119] 预期结果：确认卡列出美国区域、$35 上下两档金额区间、$4.99 与免邮；核对后应用。
+[P120] 核对点：
+[P121] 门槛 $35、费率 $4.99；仅美国；无货到付款；
+[P122] 门槛按折后小计判断（默认口径，实机待验）；规则与公告栏文案一致。
+[P123] 素材映射：后台手工路径与验证点见《运营配置与测试下单SOP.docx》第 2 节。
+[P124] 预估耗时：5 分钟（P0：免邮门槛与公告栏、信任行口径一致；映射表 #4）。
+[P125] 5.7  促销码与两张捆绑（Athena 对话配置）
+[P126] 英文指令正文：
+[T10R0C0] Set up the promotion setups for ShotStart (demo configuration):
+[T10R0C0] 1. Discount code NEWCREATOR10:
+[T10R0C0]    - 10% off the customer's first order; applies to all twelve individual products in the Shop collection; both bundle SPUs are excluded.
+[T10R0C0]    - Demo defaults: valid during the drill period; no usage cap; no minimum order; order totals rounded to the cent.
+[T10R0C0]    - One code per order; do not combine with STARTERKIT.
+[T10R0C0] 2. Creator Starter Kit bundle - standalone bundle SPU:
+[T10R0C0]    - Title: "Creator Starter Kit - Tripod, Desktop Stand, Lens Cleaning Kit"
+[T10R0C0]    - List price on the bundle SPU: $44.97 ($19.99 + $14.99 + $9.99).
+[T10R0C0]    - What's in the kit: Adjustable Phone Tripod $19.99; Desktop Phone Stand $14.99; Lens Cleaning Kit $9.99.
+[T10R0C0]    - Code STARTERKIT (15% off) applies to this bundle SPU only; at checkout the bundle becomes $38.22. The bundle page and its cards read "Use code STARTERKIT at checkout".
+[T10R0C0]    - Gallery uses the three product main images; the description links back to the three individual products.
+[T10R0C0]    - One code per order; STARTERKIT does not combine with NEWCREATOR10. Dates and eligibility remain placeholders to confirm before launch.
+[T10R0C0] 3. Pro Creator Kit bundle - standalone bundle SPU:
+[T10R0C0]    - Title: "Pro Creator Kit - Tripod, Extension Pole, Mini Ball Head Mount, Carry Case"
+[T10R0C0]    - List price on the bundle SPU: $62.96 ($19.99 + $16.99 + $12.99 + $12.99).
+[T10R0C0]    - What's in the kit: Adjustable Phone Tripod $19.99; Extension Pole $16.99; Mini Ball Head Mount $12.99; Creator Carry Case $12.99.
+[T10R0C0]    - Code STARTERKIT (15% off) applies to this bundle SPU only; at checkout the bundle becomes $53.52. The bundle page and its cards read "Use code STARTERKIT at checkout".
+[T10R0C0]    - Gallery uses the four Pro kit main images; the description links back to the four individual products.
+[T10R0C0]    - One code per order; STARTERKIT does not combine with NEWCREATOR10. Dates and eligibility remain placeholders to confirm before launch.
+[T10R0C0] In the confirmation card, list discount type, code, scope, per-order use, and stacking rule. Apply only after I confirm.
+[P127] 
+[P128] 中文用途说明：落地 NEWCREATOR10 首单折扣与捆绑独立 SPU + STARTERKIT 码；单一路径，口径与 marketing.txt 一致。
+[P129] 预期结果：三张促销确认卡（一码两捆绑）分别列出折扣比例、优惠码、适用范围、演示默认值与叠加规则；核对后再应用。
+[P130] 核对点：
+[P131] NEWCREATOR10 = 10% off 首单；演示默认演练期有效、无次数上限、无起订额，金额四舍五入到分；
+[P132] STARTERKIT 仅作用于两张捆绑独立 SPU：Starter Kit $44.97 → $38.22、Pro Creator Kit $62.96 → $53.52；不在十二件单品上生效；
+[P133] 两张捆绑页逐项列各自单品及单价，图库用对应主图，描述内链回对应单件；
+[P134] 每单仅一码，两码不叠加；活动日期与资格占位待确认。
+[P135] 限定码作用范围为实机测试项：先验证 STARTERKIT 能否限定单一捆绑 SPU；若后台不支持，降级为全店码，前台改为在 kit 页提示结账时手动用码；两种方案的选择与验证结果写入留证。
+[P136] 素材映射：邮件弹窗发放口径见 SOP 文档第 3 节。
+[P137] 预估耗时：15 分钟（P0：价格对照 $44.97 → $38.22、捆绑清单透明；映射表 #3、#7）。
+[P138] 5.8  全站复查与移动端检查
+[P139] 英文指令正文：
+[T11R0C0] Run a final check on the ShotStart store:
+[T11R0C0] - Every main menu and footer link opens the correct page.
+[T11R0C0] - All twelve individual products and the two bundle products open, show the approved price and main image, and can be added to cart.
+[T11R0C0] - Cart, checkout, and the NEWCREATOR10 / STARTERKIT code fields are reachable from the storefront.
+[T11R0C0] - The cart page shows the free-shipping nudge line from cart-checkout.txt (e.g. "You're $X away from free standard shipping."); if the theme has no progress component, keep the plain-text line.
+[T11R0C0] - Both bundle product pages list their kit items and the price comparison: Starter $44.97 vs $38.22, Pro $62.96 vs $53.52, with "Use code STARTERKIT at checkout".
+[T11R0C0] - No star ratings, review counts, sales figures, certification badges, awards, or stock countdowns appear anywhere on the storefront.
+[T11R0C0] - Mobile preview: header, product cards, forms, and footer are not cut off; images are not stretched; CTAs and add-to-cart buttons are within easy thumb reach.
+[T11R0C0] - Storefront copy is US English only; remove any internal Chinese notes or placeholder markers that should not be public.
+[T11R0C0] Report any broken links, missing images, or inconsistent prices you find.
+[P140] 
+[P141] 中文用途说明：发布前做一次全站走查，覆盖导航、商品、加购、移动端与前台文案。
+[P142] 预期结果：Athena 回传问题清单；人工逐项修复后再发布或提交。
+[P143] 核对点：
+[P144] 九个页面链接有效；十二件单品 + 两张捆绑 SPU 可加购；结账页有优惠码入口；
+[P145] 两张捆绑页各自清单、$44.97 / $38.22 与 $62.96 / $53.52 对照与 "Use code STARTERKIT at checkout" 前台可见；购物车凑单行按 cart-checkout.txt 口径；
+[P146] 凑单行差额按最终确认的门槛基数计算；$34.98 差 $0.02 为折前口径演示示例，基数折后默认、实机待验。
+[P147] 前台无星级、评价数、销量、认证徽章、奖项与库存倒计时；移动端按钮在拇指易达区；
+[P148] 移动端无溢出；前台无中文备注与 [待确认] 标记外露。
+[P149] 素材映射：复查结果截图归入举证材料。
+[P150] 预估耗时：10 分钟（P0 复查收口；映射表 #8 移动端走查）。
+[P151] 5.9  P1 建议项补充指令（时间允许再做）
+[P152] 以下八条来自落地映射表 P1 项；按转化影响排序：P1-1（#14 商详捆绑内链）→ P1-2（#20 双向导流）→ P1-3（#17 分组陈列）→ 其余；现场时间紧张时可整体后置，不影响 P0 评分项。
+[P153] P1-1 商详底部套装内链（#14，优先级第 1）
+[P154] 英文指令正文：
+[T12R0C0] At the end of each single-product description, add one text link: "View the kit" pointing to the Starter Kit bundle product. Keep the link plain text; do not install a recommendation app.
+[P155] 
+[P156] 中文用途：单件商详末段用文本链接导流到捆绑 SPU。
+[P157] 预期结果：十二件商详各有一条指向捆绑商品的文本链接。
+[P158] 核对点：
+[P159] 链接为纯文本；不依赖推荐应用块。
+[P160] 预估耗时：5 分钟（P1，映射表 #14）。
+[P161] P1-2 商品页与 Challenge 双向文本导流（#20，优先级第 2）
+[P162] 英文指令正文：
+[T13R0C0] Add one plain-text link from each single product page to the 7-Day Challenge page: "New here? Join the 7-Day Shooting Challenge." On the Challenge page, add one plain-text link back to the Shop page: "Browse the starter gear." Use text links only.
+[P163] 
+[P164] 中文用途：商详与 Challenge 页互相放一条纯文本导流链接。
+[P165] 预期结果：十二件商详链到 Challenge，Challenge 页回链 Shop。
+[P166] 核对点：
+[P167] 纯文本链接；不依赖内容推荐模块。
+[P168] 预估耗时：5 分钟（P1，映射表 #20）。
+[P169] P1-3 Shop 按用途分组陈列（#17，优先级第 3）
+[P170] 英文指令正文：
+[T14R0C0] On the Shop collection page, group the twelve products under use-case collections: "Stability & Height" (tripod, extension pole, mini ball head), "Desk & Angle" (stand, magnetic mount, mini ball head), "Clean & Care" (cleaning kit, microfiber cloths, refill), "Carry & Set Up" (carry case, reflector, backdrop); the shot-list cards remain an All Gear hook item. A single product grid may stay unchanged if grouping blocks are not available in the free theme.
+[P171] 
+[P172] 中文用途：集合页按 Stability & Height / Desk & Angle / Clean & Care / Carry & Set Up 四类用途集合分组，Shot List Cards 作为 All Gear Hook 单品。
+[P173] 预期结果：十二件商品归入对应集合；主题不支持分组区块时保留单一网格。
+[P174] 核对点：
+[P175] 12 件单件，分组非必需。
+[P176] 预估耗时：10 分钟（P1，映射表 #17）。
+[P177] P1-4 商品卡第二张细节 / 场景图轮播（#13）
+[P178] 英文指令正文：
+[T15R0C0] Add a second image to each of the twelve product cards or product galleries: the approved lifestyle scene image for that product. Keep the main product image first; the second image shows the product in a beginner creator's real setup. Preserve product color, shape, and details; no text, watermark, or fake logos.
+[P179] 
+[P180] 中文用途：在主图之外补一张细节或场景图，让商品卡可轮播查看。
+[P181] 预期结果：十二件商品各有两张图；主题卡片/商详多图轮播自动展示。
+[P182] 核对点：
+[P183] 第二张图与主图商品一致；无悬停特效时轮播图即可满足目标。
+[P184] 预估耗时：10 分钟（P1，映射表 #13）。
+[P185] P1-5 About / Challenge 人群分流小标题（#15）
+[P186] 英文指令正文：
+[T16R0C0] On the About page, split the audience story under two short subheadings: "For beginner creators" and "For small shop owners". On the 7-Day Challenge page, keep the platform options TikTok / Instagram Reels / YouTube Shorts / Other. Do not add unverified founding dates, company registration details, or community size numbers.
+[P187] 
+[P188] 中文用途：按新手创作者与小商家两类人群分流叙述。
+[P189] 预期结果：About 页两段小标题就位；Challenge 表单平台选项不变。
+[P190] 核对点：
+[P191] 不出现创立时间、法律主体、社区规模等未核实信息。
+[P192] 预估耗时：5 分钟（P1，映射表 #15）。
+[P193] P1-6 Challenge 编辑式氛围卡片压字（#16）
+[P194] 英文指令正文：
+[T17R0C0] Prefer a solid-color card fallback for the 7-Day Challenge header. If challenge-poster.png is used as the background, the Day 1 to Day 7 task title in centered white text must sit on a semi-transparent dark mask; check contrast on device before publishing. Do not stretch the poster.
+[P195] 
+[P196] 中文用途：优先纯色卡片兜底；若用挑战海报做背景图，白字标题须加半透明深色遮罩，并在实机上核对对比度。
+[P197] 预期结果：Challenge 页头氛围卡片就位，标题清晰可读。
+[P198] 核对点：
+[P199] 海报未拉伸；透明度不可调时回退纯色底 + 白字卡片；白字压图必须加半透明遮罩并实机测对比度。
+[P200] 预估耗时：5 分钟（P1，映射表 #16）。
+[P201] P1-7 sticky 加购条开关核查（#18）
+[P202] 英文指令正文：
+[T18R0C0] Check the product page template settings in the theme editor for a sticky add-to-cart bar or sticky CTA. If the free theme provides the switch, enable it. If it does not, keep the add-to-cart button near the top of the product page with a larger size; do not add code or install an app.
+[P203] 
+[P204] 中文用途：先在主题模板内查找固定加购条开关；无开关则用顶部加大按钮替代。
+[P205] 预期结果：开关状态已确认；无免费开关时顶部加购按钮位置与字号达标。
+[P206] 核对点：
+[P207] 不写代码、不装加购应用。
+[P208] 预估耗时：5 分钟（P1，映射表 #18）。
+[P209] P1-8 商品卡 Quick-Add 开关核查（#19）
+[P210] 英文指令正文：
+[T19R0C0] Check the product grid settings for a quick-add button on product cards. If the free theme provides the switch, enable it; otherwise keep the card-to-product-page path unchanged. Do not install an add-to-cart app.
+[P211] 
+[P212] 中文用途：在商品网格设置中核查卡片直加购开关。
+[P213] 预期结果：开关状态已确认；无开关时保留卡片进商详路径。
+[P214] 核对点：
+[P215] 不装加购应用。
+[P216] 预估耗时：5 分钟（P1，映射表 #19）。
+[P217] 5.10  扩品 SPU 创建：四件新增单品与 Pro Creator Kit 捆绑
+[P218] 英文指令正文：
+[T20R0C0] Create the four new individual products and the Pro Creator Kit bundle SPU in ShotStart. Match each product to the copy I provide; do not change the approved prices. The carry-case, reflector, backdrop, extension-pole, and refill products follow the prices in the 2.2 baseline table.
+[T20R0C0] Individual products:
+[T20R0C0] 1. Mini Ball Head Mount, $12.99: working title "Mini Ball Head Mount"; final title pending the copy pack. Main image: placeholder pending [待确认: 主图].
+[T20R0C0] 2. Magnetic Phone Mount, $11.99: working title "Magnetic Phone Mount"; final title pending the copy pack. Main image: placeholder pending [待确认: 主图].
+[T20R0C0] 3. Microfiber Cloth 3-Pack, $6.99: working title "Microfiber Cloth 3-Pack"; final title pending the copy pack. Main image: placeholder pending [待确认: 主图].
+[T20R0C0] 4. Shot List Cards, $8.99: working title "Shot List Cards"; final title pending the copy pack. Main image: placeholder pending [待确认: 主图].
+[T20R0C0] For each product, structure the description in short sections: a one-line use-case summary, selling points, a "What's in the box" list, and an FAQ block. Keep dimensions, materials, weight, compatibility range, and stock as unconfirmed placeholders; do not invent specs.
+[T20R0C0] Pro Creator Kit bundle - standalone bundle SPU:
+[T20R0C0] - Title: "Pro Creator Kit - Tripod, Extension Pole, Mini Ball Head Mount, Carry Case"
+[T20R0C0] - List price: $62.96 ($19.99 + $16.99 + $12.99 + $12.99).
+[T20R0C0] - What's in the kit: Adjustable Phone Tripod $19.99; Extension Pole $16.99; Mini Ball Head Mount $12.99; Creator Carry Case $12.99.
+[T20R0C0] - STARTERKIT (15% off) applies to this bundle SPU only; code price $53.52; the bundle page reads "Use code STARTERKIT at checkout".
+[T20R0C0] - Gallery uses the four Pro kit main images; the description links back to the four individual products.
+[T20R0C0] Apply only after I confirm each preview card.
+[P219] 中文用途说明：把四件新增单品与 Pro Creator Kit 捆绑 SPU 录入店内，标题、价格、主图与文案包对齐；新品缺图位保留占位，不补猜素材。
+[P220] 预期结果：四件新增单品预览卡与 Pro 捆绑卡列出标题、价格、主图（缺图占位）、清单与描述；人工核对后逐张应用。
+[P221] 核对点：
+[P222] 四件新增单品标题与价格 $12.99 / $11.99 / $6.99 / $8.99 与 shop.txt、对应 product-*.txt 一致；
+[P223] 四件新增单品主图未备齐，占位 [待确认: 主图]，不得用无关图顶替；
+[P224] Pro Creator Kit 四件清单、$62.96 / $53.52 对照与 "Use code STARTERKIT at checkout" 可见；
+[P225] 未出现编造的尺寸、材质、重量、兼容性与库存；规格占位保留；
+[P226] 新品单件同样适用 NEWCREATOR10；两张捆绑 SPU 均不适用首单码。
+[P227] 素材映射：product-mini-ball-head.txt / product-magnetic-mount.txt / product-microfiber-3pack.txt / product-shot-list-cards.txt（待回填）；shop.txt、marketing.txt、home.txt 捆绑卡口径。
+[P228] 预估耗时：22 分钟（P0：四件新增单品连同其余转正单品录入 + Pro 捆绑 SPU；映射表 #30、#31）。
+[P229] 5.11  动效与视觉台阶（主题开关优先，轻代码兜底）
+[P230] 口径依据同目录《主题代码编辑可行性.md》方案 B：先在 Reformia 主题编辑器内查找自带动效开关；代码增补仅在 Edit code 入口可用、且已 Duplicate 主题副本后进行；不装动效应用、不引入 GSAP 等外部库。
+[P231] 英文指令正文：
+[T21R0C0] First check the Reformia theme settings and product grid/card blocks for built-in motion switches: hover elevation, card image zoom, and section entrance reveal. Enable only switches already provided by the free theme.
+[T21R0C0] If the code editor is available and a theme copy has been backed up, add light custom CSS in assets and one small IntersectionObserver script:
+[T21R0C0] - Transition duration 150-300ms with ease; hover card scale 1.03 only; no heavy parallax.
+[T21R0C0] - Entrance reveal: fade in and a slight upward shift for cards, triggered once on scroll into view.
+[T21R0C0] - Serve fonts and scripts from self-hosted assets; do not load external CDN fonts or animation libraries.
+[T21R0C0] - Respect prefers-reduced-motion: when the visitor has reduced motion enabled, skip the reveal and keep static cards.
+[T21R0C0] Do not change cart, checkout, payment, or order-confirmation templates. Apply only after I confirm the draft preview on both desktop and mobile.
+[P232] 中文用途：在不破坏免费主题结构的前提下，补齐 hover 反馈与卡片入场节奏；动效克制、可降级，不拖慢加载。
+[P233] 预期结果：主题内可开的开关已核对；轻 CSS/JS 仅在代码入口可用时增补，草稿预览双端核对。
+[P234] 核对点：
+[P235] 过渡 150–300ms，hover 缩放 1.03，无 parallax、无粒子；
+[P236] 字体与脚本自托管 assets，禁外链 CDN 与 GSAP；
+[P237] reduced-motion 下回落静态卡片；
+[P238] 标杆对齐：Peak Design / Elgato 的 hover 反馈与卡片节奏（来源沿用第 10 节附录）；不迁移其评分、销量等社交证明；
+[P239] 改动前 Duplicate 主题副本；Edit code 入口不可用则整体回退主题开关路径，不写代码。
+[P240] 素材映射：《主题代码编辑可行性.md》方案 B；第 10 节附录 Peak Design、Elgato 条目。
+[P241] 预估耗时：10 分钟（P1：动效开关核查 + 轻代码兜底；映射表 #34；入口不可用时后置）。
+[P242] 6  文案包与视觉素材对照
+[P243] 政策页、联系方式、规格占位与品牌表述必须以文案包为准直接粘贴；Athena 生成的标题、SEO 与卖点初稿可保留，但须与文案包核对。粘贴前删除【操作者说明】中文备注；面向消费者的英文内容保留。 前台按钮与卡片文案的唯一数据源为文案代理 shotstart_content.py 生成的 pages/*.txt；锁定术语：弹窗按钮 Save my spot，挑战 / 表单按钮 Join the challenge，联系按钮 Send message。指令侧不直接修改 pages/*.txt；如需文案语义变更，在本节对照表注明对应 txt，由文案代理执行。
+[T22R0C0] 店铺位置
+[T22R0C1] 文案 txt
+[T22R0C2] 图片
+[T22R0C3] 粘贴 / 核对要点
+[T22R1C0] Home
+[T22R1C1] home.txt
+[T22R1C2] hero-banner.png
+[T22R1C3] 公告栏、Hero、三支柱、商品卡片、ShotStarter、Challenge、弹窗、页尾文案
+[T22R2C0] Tripod 商详
+[T22R2C1] product-tripod.txt
+[T22R2C2] product-tripod.png
+[T22R2C3] 标题、卖点、描述、规格表、What's in the box、FAQ；规格占位保留
+[T22R3C0] Stand 商详
+[T22R3C1] product-stand.txt
+[T22R3C2] product-stand.png
+[T22R3C3] 同上
+[T22R4C0] Cleaning Kit 商详
+[T22R4C1] product-cleaning-kit.txt
+[T22R4C2] product-cleaning-kit.png
+[T22R4C3] 同上；清洁液成分、容量占位
+[T22R5C0] Carry Case 商详
+[T22R5C1] product-carry-case.txt
+[T22R5C2] product-carry-case.png
+[T22R5C3] 标题、卖点、描述、规格表、What's in the box、FAQ；规格占位保留
+[T22R6C0] Reflector 商详
+[T22R6C1] product-reflector.txt
+[T22R6C2] product-reflector.png
+[T22R6C3] 同上
+[T22R7C0] Backdrop 商详
+[T22R7C1] product-backdrop.txt
+[T22R7C2] product-backdrop.png
+[T22R7C3] 同上
+[T22R8C0] Extension Pole 商详
+[T22R8C1] product-extension-pole.txt
+[T22R8C2] [待确认: 主图]
+[T22R8C3] 同上；主图待补
+[T22R9C0] Cleaning Refill 商详
+[T22R9C1] product-cleaning-refill.txt
+[T22R9C2] [待确认: 主图]
+[T22R9C3] 同上；主图待补；清洁液成分、容量占位
+[T22R10C0] Mini Ball Head Mount 商详
+[T22R10C1] product-mini-ball-head.txt（待回填）
+[T22R10C2] [待确认: 主图]
+[T22R10C3] 同上；标题待文案包回填
+[T22R11C0] Magnetic Phone Mount 商详
+[T22R11C1] product-magnetic-mount.txt（待回填）
+[T22R11C2] [待确认: 主图]
+[T22R11C3] 同上；标题待文案包回填
+[T22R12C0] Microfiber Cloth 3-Pack 商详
+[T22R12C1] product-microfiber-3pack.txt（待回填）
+[T22R12C2] [待确认: 主图]
+[T22R12C3] 同上；标题待文案包回填
+[T22R13C0] Shot List Cards 商详
+[T22R13C1] product-shot-list-cards.txt（待回填）
+[T22R13C2] [待确认: 主图]
+[T22R13C3] 同上；标题待文案包回填
+[T22R14C0] About
+[T22R14C1] about.txt
+[T22R14C2] —
+[T22R14C3] 品牌故事、人群、口号；创立时间与法律主体占位
+[T22R15C0] Contact
+[T22R15C1] contact.txt
+[T22R15C2] —
+[T22R15C3] 表单字段；邮箱与营业时间占位
+[T22R16C0] Challenge
+[T22R16C1] challenge.txt
+[T22R16C2] challenge-poster.png
+[T22R16C3] 七日任务、表单字段、感谢语
+[T22R17C0] Shipping Policy
+[T22R17C1] shipping-policy.txt
+[T22R17C2] —
+[T22R17C3] 模板政策；不承诺到货天数
+[T22R18C0] Return & Refund
+[T22R18C1] refund-policy.txt
+[T22R18C2] —
+[T22R18C3] 退回窗口、费用与换货规则占位
+[T22R19C0] Privacy Policy
+[T22R19C1] privacy-policy.txt
+[T22R19C2] —
+[T22R19C3] 采集、使用、共享与权利条款占位
+[T22R20C0] Terms
+[T22R20C1] terms.txt
+[T22R20C2] —
+[T22R20C3] 使用规则、AI 草稿责任、责任限制占位
+[T22R21C0] 营销组件
+[T22R21C1] marketing.txt
+[T22R21C2] —
+[T22R21C3] 公告栏、两张捆绑（Starter / Pro Creator Kit）、NEWCREATOR10、弹窗口径
+[T22R22C0] 品牌 Logo
+[T22R22C1] —
+[T22R22C2] logo-icon-square.png / logo-icon-transparent.png / logo-square.png / logo-transparent.png / logo-white.png / logo-lockup-navy.png / logo-lockup-white.png
+[T22R22C3] 页眉浅底 navy 锁合；页脚深底 white 锁合；图标双版用于 favicon / 头像 / 商品角标；square / transparent 为横版锁合大尺寸母版（含字标），不承担方形 favicon/头像位
+[T22R23C0] Shop
+[T22R23C1] shop.txt
+[T22R23C2] —
+[T22R23C3] 集合名 "All Gear"；十二件单品先于两张捆绑卡；用途集合 Stability & Height / Desk & Angle / Clean & Care / Carry & Set Up；Creator Kits 隐藏；卡片一句话短文案；Bundle Display Slot 文案
+[T22R24C0] Pro Creator Kit 捆绑卡
+[T22R24C1] shop.txt / marketing.txt / home.txt
+[T22R24C2] —
+[T22R24C3] 四件清单（tripod、extension-pole、mini-ball-head、carry-case）、$62.96 / $53.52 对照、"View the kit"；STARTERKIT 仅作用该捆绑 SPU
+[T22R25C0] 购物车 / 结账
+[T22R25C1] cart-checkout.txt
+[T22R25C2] —
+[T22R25C3] 凑单免邮差额提示行；优惠码输入与报错；结账信任文案；订单确认页
+[T22R26C0] 表单状态
+[T22R26C1] form-states.txt
+[T22R26C2] —
+[T22R26C3] 表单成功 / 必填 / 格式 / 失败 / 同意状态文案
+[T22R27C0] 词表
+[T22R27C1] glossary.txt
+[T22R27C2] —
+[T22R27C3] 锁定术语与避免混用写法
+[T22R28C0] 占位映射
+[T22R28C1] placeholder-map.txt
+[T22R28C2] —
+[T22R28C3] [待确认] 英文定稿与中性兜底句对照
+[P244] 7  登录日执行 Runbook（指令包视角）
+[P245] 比赛时间：09:30–11:30 Round 1，13:00–15:00 Round 2，15:00–15:30 提交。下表为指令包与 SOP 合并的单一总时间表；各步骤估时含 Athena 确认卡往返，Athena 生成等待 3–5 分钟/套已计入相关步骤；缓冲拆分为门禁排队 5 分钟与故障恢复 5 分钟。
+[P246] 评分项：商品及页面 20 / 商业运营 20 / 品牌及体验 20 / AI 应用深度 15 / 突破创新 10 / 选品与商业链路 10 / 效率与展示 5。
+[P247] 最低保底清单（排队超时优先保住）：十二件单品 + 两张捆绑 SPU 可加购；九个页面可打开；运费两档；NEWCREATOR10 与 STARTERKIT 码入口；Bogus 成功测试单；移动端不溢出；前台无评价、销量、认证、奖项等红线内容。并行顺序：步骤 3 可与步骤 7 并行；步骤 8 与步骤 11 在 Round 2 并行；步骤 16 复查串行最后。P1 项全部后置，不挤占保底清单。
+[P248] 单人负荷说明：串行主链为步骤 1→2、9、12→13→14→15、16、18；可并行 / 交替的为 3∥7、4↔5、8∥11、9↔10、17∥16 末段。Athena 生成等待（3–5 分钟 / 套）期间不闲置：为已完成步骤归档确认卡截图、对照 pages 文案核对已落地内容、准备下一条指令的确认卡信息与留证目录。门禁余量不足时按降级顺序先保 P0 核心六项：十二件单品 + 两张捆绑 SPU 可加购、九个页面可打开、运费两档、两个码入口、Bogus 成功测试单、移动端不溢出且前台无虚构徽章；再补失败测试单与停用 Bogus；P1 整体后置，P2 不投入时间。
+[T23R0C0] 步骤
+[T23R0C1] 动作
+[T23R0C2] 对应指令 / 模式
+[T23R0C3] 估时
+[T23R0C4] 顺序 / 并行
+[T23R0C5] 完成标准
+[T23R1C0] 1
+[T23R1C1] 现场专属链接注册新店，确认店铺额度
+[T23R1C2] —
+[T23R1C3] 5 分钟
+[T23R1C4] 顺序前置
+[T23R1C5] 可登录后台，有建店额度
+[T23R2C0] 2
+[T23R2C1] 指令 0：总指令、核对确认卡、选方案发布（含 Athena 生成等待 3–5 分钟/套）
+[T23R2C2] 指令 0
+[T23R2C3] 10 分钟
+[T23R2C4] 顺序（依赖步骤 1）
+[T23R2C5] 三套预览选定，品牌名、口号、配色、页面齐全
+[T23R3C0] 3
+[T23R3C1] 指令 1：三商品录入、场景标题、商详分段 + FAQ
+[T23R3C2] 指令 1；P0 #6 #11
+[T23R3C3] 10 分钟
+[T23R3C4] 可与步骤 7 并行
+[T23R3C5] 三件原 SPU 价格、标题、主图正确；商详分段与 FAQ 卡片就位，可打开
+[T23R4C0] 3a
+[T23R4C1] 指令 1b：其余九件单品 + Pro Creator Kit 捆绑录入
+[T23R4C2] 指令 5.10；P0 #30 #31
+[T23R4C3] 22 分钟
+[T23R4C4] 可与步骤 7 并行
+[T23R4C5] 九件单品价格、标题、主图（缺图占位）正确；Pro 捆绑四件清单、$62.96 → $53.52 可见
+[T23R5C0] 4
+[T23R5C1] 指令 2：首页 Hero 双 CTA、捆绑卡片位、弹窗一次 + 退订、信任信号一行
+[T23R5C2] 指令 2；P0 #1 #9 #12
+[T23R5C3] 12 分钟
+[T23R5C4] 顺序（依赖步骤 2 方案）
+[T23R5C5] 首页区块 + 两张捆绑卡 + 信任行齐全；双 CTA 链接有效；弹窗仅一次出现
+[T23R6C0] 5
+[T23R6C1] 指令 3：Shop 集合、标准页面与扁平导航、政策页尾入口
+[T23R6C2] 指令 3；P0 #5
+[T23R6C3] 8 分钟
+[T23R6C4] 可与步骤 4 交替
+[T23R6C5] 九页面可进入；Shop 排序与卡片文案就位；主导航单层
+[T23R7C0] 6
+[T23R7C1] 指令 4：Logo、配色、字体栈、留白、单一行动色、移动拇指区
+[T23R7C2] 指令 4；P0 #8 #10
+[T23R7C3] 10 分钟
+[T23R7C4] 顺序（依赖主题方案）
+[T23R7C5] 双端无溢出变形；橙色仅用于行动按钮；字体与产品色角色正确
+[T23R8C0] 7
+[T23R8C1] 指令 5：商品场景图统一光线与产品保真
+[T23R8C2] 指令 5；P0 #2
+[T23R8C3] 10 分钟
+[T23R8C4] 可后置；等待期可并行录入
+[T23R8C5] 场景图经确认卡应用，风格统一
+[T23R9C0] 8
+[T23R9C1] SOP 步骤 1：运费方案配置与两档验证
+[T23R9C2] 指令 6；P0 #4
+[T23R9C3] 8 分钟（配置 5 + 两档验证 3）
+[T23R9C4] Round 2；可与步骤 11 并行
+[T23R9C5] $4.99 / 满 $35 免邮生效；公告栏口径一致；折后基数待验
+[T23R10C0] 9
+[T23R10C1] SOP 步骤 2：NEWCREATOR10 码创建与实测
+[T23R10C2] 指令 7 第一条
+[T23R10C3] 7 分钟
+[T23R10C4] 顺序
+[T23R10C5] 码生效、扣减 10%、错误码不生效；演示默认值就位
+[T23R11C0] 10
+[T23R11C1] SOP 步骤 3：公告栏 + 邮件弹窗启用
+[T23R11C2] 指令 2 区块 8
+[T23R11C3] 7 分钟
+[T23R11C4] 可与步骤 9 交替
+[T23R11C5] 两组件前台可交互；提交后即时展示码；退订小字可见
+[T23R12C0] 11
+[T23R12C1] 指令 7 / SOP 步骤 4：捆绑独立 SPU + STARTERKIT
+[T23R12C2] 指令 7；P0 #3 #7
+[T23R12C3] 15 分钟
+[T23R12C4] Round 2；可与步骤 8 并行
+[T23R12C5] Starter 捆绑页三件清单、$44.97 → $38.22；Pro 捆绑见步骤 3a；码仅作用于捆绑 SPU；两码不叠加
+[T23R13C0] 12
+[T23R13C1] SOP 步骤 5：启用 Bogus Gateway（门禁动作，需 organizer 确认）
+[T23R13C2] —
+[T23R13C3] 2 分钟
+[T23R13C4] 顺序前置于测试单
+[T23R13C5] 其他支付方式自动停用提示已确认
+[T23R14C0] 13
+[T23R14C1] SOP 步骤 6：成功测试下单（4200000000000000）
+[T23R14C2] —
+[T23R14C3] 5 分钟
+[T23R14C4] 顺序
+[T23R14C5] 后台 Orders 可见测试单，金额含商品价、运费与折扣
+[T23R15C0] 14
+[T23R15C1] SOP 步骤 7：失败测试下单（4111111111111111）
+[T23R15C2] —
+[T23R15C3] 3 分钟
+[T23R15C4] 顺序
+[T23R15C5] 失败提示可见，后台无成功单
+[T23R16C0] 15
+[T23R16C1] SOP 步骤 8：停用 Bogus 并留证
+[T23R16C2] —
+[T23R16C3] 3 分钟
+[T23R16C4] 顺序
+[T23R16C5] 模拟支付关闭，配置可恢复
+[T23R17C0] 16
+[T23R17C1] 指令 8：全站复查与移动端走查
+[T23R17C2] 指令 8；P0 #8
+[T23R17C3] 10 分钟
+[T23R17C4] 串行最后
+[T23R17C5] 十二件单品 + 两张捆绑页链接、加购、凑单行、移动端、前台文案无问题
+[T23R18C0] 17
+[T23R18C1] SOP 步骤 9：移动端复测与截图归档
+[T23R18C2] —
+[T23R18C3] 5 分钟
+[T23R18C4] 可与步骤 16 末段并行
+[T23R18C5] 移动端链路正常，截图齐全
+[T23R19C0] 18
+[T23R19C1] 留证：后台与前台截图归档
+[T23R19C2] —
+[T23R19C3] 10 分钟
+[T23R19C4] 串行
+[T23R19C5] 截图与举证材料归档；Athena 留痕：每条指令执行后保存确认卡截图、指令原文、AI 初稿与定稿对照，命名规则 `指令编号_页面或对象_日期_序号`（如 02_home_popup_1121_01.png）
+[T23R20C0] 缓冲 A
+[T23R20C1] 门禁排队预留
+[T23R20C2] —
+[T23R20C3] 5 分钟
+[T23R20C4] —
+[T23R20C5] 排队超时即跳过非 P0 项（P1 整体后置）
+[T23R21C0] 缓冲 B
+[T23R21C1] 故障恢复预留
+[T23R21C2] —
+[T23R21C3] 5 分钟
+[T23R21C4] —
+[T23R21C5] 故障超 10 分钟回到评分表，优先保底清单
+[P249] Round 1 建议完成步骤 1–7 与 3a；Round 2 完成步骤 8–18。按总表复算：步骤 1–7 与 3a（R1）计 87 分钟，步骤 8–18（R2）计 75 分钟，合计 162 分钟；分层：设计配置 1–11 与 3a 计 124 分钟，测试单 12–15 计 13 分钟，复查留证 16–18 计 25 分钟；另留缓冲 10 分钟（门禁排队 5 + 故障恢复 5）。旧口径“P0 设计段约 70 分钟”为步骤 3–9 粗估，已被本总表分层取代，现场以总表步骤估时为准。
+[P250] 8  增长闭环（挑战后 nurture / 复购 / 指标 · 离线演示大纲）
+[P251] 本轮为离线模板站，邮件自动化序列不可运行；本章为上线后 ESP 配置大纲，现场不配置自动发信、不产生发送证据，只保留设计与文案草案。
+[P252] 8.1  挑战后邮件序列（草案，文案来自 challenge.txt）
+[P253] 发送时点：自挑战表单报名起 D+8 / D+10 / D+14 各一封；Win-back 在 D+21 对未打开挑战邮件、未完成 Day 1 的参与者发送（排程为演示假设，上线前确认）。
+[P254] 邮件 1（D+8 · Review & next shot）— Subject（草案）：Which shot worked best?；Preheader（草案）：Your next topic gets a 15-second script draft.；Merge 字段：[first name]；Body（challenge.txt 原文）：Hi [first name], Day 7 is done. Which shot worked best? Reply and tell us your next topic; ShotStarter can draft your next 15-second script.
+[P255] 邮件 2（D+10 · Keep your gear ready）— Subject（草案）：A quick lens check before your next clip；Preheader（草案）：Keep phone and camera lenses clear between shoots.；Merge 字段：无（Body 不含称呼槽位，如需称呼由 ESP 模板顶部插入 [first name]）；Body（原文）：Quick lens check: smudges show up on camera. The Lens Cleaning Kit keeps phone and camera lenses clear between shoots.
+[P256] 邮件 3（D+14 · Second video prompt）— Subject（草案）：One video down — what's next?；Preheader（草案）：Pick a new selling point and run the four-shot storyboard again.；Merge 字段：[first name]；Body（原文）：Hi [first name], one video down, the next one is easier. Pick a new selling point and run the four-shot storyboard again.
+[P257] Win-back（D+21 · 未活跃）— Subject（原文）：Your first shot is still waiting；Preheader（草案）：No pressure — pick up where you left off.；Merge 字段：无（Body 不含称呼槽位）；Body（原文）：We noticed you haven't finished the challenge. Reply here or open Day 1 again.
+[P258] 复购钩子：Refill reminder: when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit（内链 product-cleaning-kit 商详页）to keep every new clip sharp. Refill availability and repeat-purchase offer: pending final confirmation.
+[P259] 合规：每封邮件保留退订入口；[first name] 为 merge 字段；Subject 与 Preheader 为草案，上线前按 ESP 模板定稿；离线演示不实际发送。
+[P260] 8.2  挑战专属激励（诚实占位）
+[P261] 演示默认激励码 CHALLENGE7：权益为下一单免美国标准运费；一次性使用；演练期有效；Demo configuration，上线前确认码名、使用窗口与资格条件。
+[P262] 现场不虚构生效激励码；参与者激励不得承诺涨粉、销量或平台结果。
+[P263] 8.3  增长指标定义（漏斗）
+[P264] Signups：挑战表单收集的有效邮箱数。
+[P265] Participants：打开至少一封挑战邮件或完成 Day 1 的报名者。
+[P266] Engagement：完成三个及以上每日任务的参与者。
+[P267] Purchase：挑战期间或之后下单的参与者。
+[P268] 指标通过后台连接的分析或邮件工具跟踪，字段在店铺 admin 设置；离线演示不产生指标运行数据。
+[P269] 记录字段：signup 数、Day 1 完成数、邮件打开数、回复数、复购单数；以后台连接的分析 / 邮件工具可取字段为准，取不到的字段留空，不臆造。
+[P270] 演示目标口径：Day 1 完成率 ≥40% 为演示假设目标，非承诺指标；其余漏斗比值在离线演示中不跑出实绩。
+[P271] 8.4  上线后 ESP 配置步骤（免费内置组件优先，手动发送兜底）
+[P272] 选定 ESP 或主题内置邮件组件；无免费组件时，按表单名单手动发送兜底，不装付费邮件应用。
+[P273] 导入挑战表单邮箱；分段：完成 Day 1 / 完成 ≥3 任务 / 未完成唤醒。
+[P274] 按 Day 8 / 10 / 14 节奏排程；每封邮件保留退订入口。
+[P275] 在 admin 或分析工具登记漏斗指标；本轮离线演示只留设计与文案草案。
+[P276] 免费内置邮件组件配置步骤（主题 / 后台提供时）：新建邮件列表并挂挑战表单 → 新建三段 nurture 序列 + Win-back → 按 D+8 / D+10 / D+14 / D+21 排程 → 预览 [first name] merge 字段与退订入口 → 保存草稿，不实际发送。
+[P277] 手动发送兜底：导出表单名单为 CSV，按完成 Day 1 / 完成 ≥3 任务 / 未完成唤醒分段，手动发送邮件草案并手工登记回复与下单；不安装付费邮件应用。
+[P278] 素材映射：challenge.txt（Day 8/10/14 序列草案、Win-back、复购钩子、激励占位、指标定义）；marketing.txt。
+[P279] 9  参考来源
+[P280] Athena 指南首页：https://www.shoplazza.cn/athena-guide
+[P281] 建店：https://www.shoplazza.cn/athena-guide/build-store
+[P282] 创建商品：https://www.shoplazza.cn/athena-guide/create-products
+[P283] 商品视觉：https://www.shoplazza.cn/athena-guide/product-visuals
+[P284] 运费设置：https://www.shoplazza.cn/athena-guide/shipping-settings
+[P285] 促销创建：https://www.shoplazza.cn/athena-guide/create-promotion
+[P286] Bogus 测试下单（规则见 SOP 文档）：https://helpcenter.shoplazza.com/hc/en-us/articles/10281137058457-How-to-place-test-orders-through-simulated-transactions
+[P287] 10  设计借鉴来源附录
+[P288] 以下标杆站点与模式来自公开页面与公开案例分析调研；仅借鉴可迁移的 UI/UX 模式，不迁移其评价、销量、评分、认证等社交证明数字。完整调研见同目录《全球电商UI标杆调研.md》与《落地映射表.md》。
+[T24R0C0] 类别
+[T24R0C1] 标杆站点
+[T24R0C2] 借鉴模式
+[T24R0C3] 来源链接
+[T24R1C0] A｜评审共性
+[T24R1C1] CSS Design Awards / Web Design Awards 电商画廊
+[T24R1C2] 评奖覆盖 PDP、结账、陈列、导航与信息架构；好电商 UI = 简单、快、易用
+[T24R1C3] https://www.cssdesignawards.com/website-gallery；https://www.webdesignawards.io/best-web-design-awards/for-ecommerce
+[T24R2C0] B｜同类装备
+[T24R2C1] Peak Design
+[T24R2C2] 变体/套装选择器、商详信息标签页、产品线分组陈列
+[T24R2C3] https://www.peakdesign.com/products/everyday-messenger；https://www.peakdesign.com/en-au/collections/straps
+[T24R3C0] B｜同类装备
+[T24R3C1] Joby
+[T24R3C2] 按设备场景分卡、折扣价/原价并列、免邮门槛前置
+[T24R3C3] https://joby.com/；https://joby.com/cn-zh/tripods/
+[T24R4C0] B｜同类装备
+[T24R4C1] Elgato
+[T24R4C2] 策展式套装与开箱清单、部件拆解标注、创作者导向标题
+[T24R4C3] https://www.elgato.com/en/store；https://www.elgato.com/tw/en/p/key-light-bundle
+[T24R5C0] B｜同类装备
+[T24R5C1] Ulanzi
+[T24R5C2] 产品线成行 + 场景四宫格、两件捆绑直标折扣、价格划掉原价
+[T24R5C3] https://www.ulanzi.com/；https://www.ulanzi.com/en-ca
+[T24R6C0] B｜同类装备
+[T24R6C1] SmallRig
+[T24R6C2] 套件组件清单、兼容矩阵、创作者人设分支战役页
+[T24R6C3] https://www.smallrig.com/eu/smallrig-professional-phone-video-rig-kit-for-vlogging-live-streaming-3384.html；https://www.smallrig.com/global/campaigns/winter-creator
+[T24R7C0] B｜同类装备
+[T24R7C1] DJI 官网商城
+[T24R7C2] 按创作场景分组、常驻轻量顶栏、首屏信任行、场景推荐块
+[T24R7C3] https://store.dji.com/cn/selection/welcome
+[T24R8C0] C｜第三方拆解
+[T24R8C1] shadcn.io 对 DJI 站点的设计拆解（非 DJI 官方）
+[T24R8C2] 信息层级与导航结构参考；结论需自核
+[T24R8C3] https://www.shadcn.io/design/dji
+[T24R9C0] C｜优秀 DTC 拆解
+[T24R9C1] Bellroy（品牌刊文 + 第三方博客）
+[T24R9C2] 棚拍/实景分屏网格、清晰分类菜单、大留白暖调、sticky CTA
+[T24R9C3] https://es.bellroy.com/journal/bellroys-design-philosophy；https://www.goodcart.design/blog/best-travel-luggage-homepages-2026 *
+[T24R10C0] B｜品牌官网
+[T24R10C1] Ridge
+[T24R10C2] Bundle & Save 套装阶梯、套件清单勾选、规格条目化、可兑现承诺集中呈现
+[T24R10C3] https://ridge.com/products/heritage
+[T24R11C0] C｜活动页拆解
+[T24R11C1] Ridge Wallet EU 活动页 *
+[T24R11C2] 套装阶梯与清单勾选参考；活动 slug 存在失效风险
+[T24R11C3] https://ridgewallet.eu/pages/18-april-home
+[T24R12C0] C｜第三方拆解
+[T24R12C1] Allbirds
+[T24R12C2] 品牌叙事逐节织入、场景图统一灯光、免邮试用前置、移动端分步决策
+[T24R12C3] https://landingdoctors.com/teardowns/allbirds-com；https://www.designrocket.biz/case-studies/allbirds
+[T24R13C0] B｜品牌官网
+[T24R13C1] Gymshark
+[T24R13C2] 移动优先拇指区、移动端 sticky 加购、Quick-Add、高对比产品摄影
+[T24R13C3] https://www.gymshark.com/
+[T24R14C0] C｜第三方拆解
+[T24R14C1] Gymshark CRO 审计博客
+[T24R14C2] 移动端转化与 CRO 参考；结论需自核
+[T24R14C3] https://hopatoo.com/blogs/news/gymshark-cro-audit-shopify-conversion-optimization
+[T24R15C0] A｜获奖案例
+[T24R15C1] Shopify Supply Performance Pack
+[T24R15C2] 极简首屏层级与双色对比（WebGL 滚动 3D 不迁移）
+[T24R15C3] https://www.awwwards.com/sites/shopify-supply-performance-pack
+[T24R16C0] A｜获奖案例
+[T24R16C1] iyO 音频电脑
+[T24R16C2] 选项同屏对照布局（配置器滑块不迁移）
+[T24R16C3] https://www.awwwards.com/iyo-case-study-selling-the-worlds-first-audio-computer.html
+[T24R17C0] C｜代理商作品
+[T24R17C1] Mother Root
+[T24R17C2] 商品页嵌入用法/场景内容（智能购物车与 GSAP 不迁移）
+[T24R17C3] https://tribe.studio/our-work/mother-root
+[T24R18C0] C｜代理商作品
+[T24R18C1] Polaroid 官网旗舰
+[T24R18C2] 生活方式摄影统一规范（headless 与会员体系不迁移）
+[T24R18C3] https://www.frontrowgroup.com/en/cases/rebuilding-polaroid-digital-flagship-with-headless-shopify
+[T24R19C0] C｜代理商作品
+[T24R19C1] Wook Water
+[T24R19C2] 转化优先：PDP 完整、车与结账路径短、移动端优化
+[T24R19C3] https://jbyer.com/work/case-studies/wook-water
+[P289] 来源分层：A = 官方文档 / 权威获奖画廊；B = 品牌官网一手页面；C = 第三方拆解、代理商作品集与营销博客，模式可参考、结论需自核。带 * 的活动页 / 博客 slug 存在失效风险，第三轮做链接活性检查，失效则替换为品牌官网对应栏目。附录链接已清洗 aff=/srsltid= 等跟踪查询串。
+[P290] 11  P2 放弃项与免费替代
+[P291] 以下方向在 Reformia 免费主题 + Athena 能力内不可实现，现场不投入时间；每条给出免费替代方案。
+[T25R0C0] 放弃模式
+[T25R0C1] 来源
+[T25R0C2] 不可免费实现原因
+[T25R0C3] 免费替代方案
+[T25R1C0] WebGL / Three.js 滚动 3D、滚动同步机位、3D 手势
+[T25R1C1] https://www.awwwards.com/sites/shopify-supply-performance-pack；https://www.awwwards.com/iyo-case-study-selling-the-worlds-first-audio-computer.html
+[T25R1C2] 依赖 headless 定制与 WebGL 前端开发，Reformia + Athena 不支持
+[T25R1C3] 静态 Hero 图 + 主题自带图片轮播；保证首屏层级清晰
+[T25R2C0] 无限渲染配置器滑块、玻璃拟态自定义面板
+[T25R2C1] https://www.awwwards.com/iyo-case-study-selling-the-worlds-first-audio-computer.html
+[T25R2C2] 自定义前端 + 实时 3D 渲染，免费能力外
+[T25R2C3] 套装/选项以静态商品与促销码呈现
+[T25R3C0] 智能购物车、自动凑单推荐、原生捆绑构建器
+[T25R3C1] https://tribe.studio/our-work/mother-root；https://www.elgato.com/en/store
+[T25R3C2] 属应用内嵌块或付费能力，本次免费约束不得依赖
+[T25R3C3] 独立捆绑 SPU + 促销码 STARTERKIT；商品描述内链单件商品
+[T25R4C0] 评价、评分、星级、勋章墙
+[T25R4C1] https://joby.com/collections/gorillapod；https://www.smallrig.com/eu/smallrig-professional-phone-video-rig-kit-for-vlogging-live-streaming-3384.html
+[T25R4C2] 无免费评价块，且 ShotStart 无真实评价证据，属合规红线
+[T25R4C3] 不放置任何评价组件；信任表达只用政策链接与免邮门槛
+[T25R5C0] 会员体系 / 会员区块
+[T25R5C1] https://www.frontrowgroup.com/en/cases/rebuilding-polaroid-digital-flagship-with-headless-shopify
+[T25R5C2] 免费能力外，无对应应用额度
+[T25R5C3] 邮件表单 + 7-Day Challenge 承接留资闭环
+[T25R6C0] 侧栏筛选器 / 多层级分类导航
+[T25R6C1] https://releaselens.org/demos/gymshark/
+[T25R6C2] 12 件单件，无需筛选；侧栏筛选无免费必要
+[T25R6C3] Shop 单一商品网格
+[T25R7C0] headless 架构 / 自定义内容中台
+[T25R7C1] https://www.frontrowgroup.com/en/cases/rebuilding-polaroid-digital-flagship-with-headless-shopify
+[T25R7C2] 免费模板与 Athena 能力外
+[T25R7C3] 主题区块 + 自定义页面满足九个页面
+[T25R8C0] GSAP 滚动动画、粒子、自定义平滑滚动
+[T25R8C1] https://www.awwwards.com/iyo-case-study-selling-the-worlds-first-audio-computer.html；https://tribe.studio/our-work/mother-root
+[T25R8C2] 需前端代码开发
+[T25R8C3] 仅使用主题自带轻量动效；动效不影响加载与移动端
