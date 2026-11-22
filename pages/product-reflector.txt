@@ -1,0 +1,84 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Product Detail: Folding Reflector
+
+[INTERNAL] 【操作者说明】规格表仅写品类通用、可诚实描述的属性；凡需真实参数处一律用 [待确认: ...] 占位，上线前由运营替换，不得编造数值。
+
+## Product Title
+
+[PUBLISH] Folding Reflector — Soften and Fill Light for Clips
+
+## Selling Points (bullets)
+
+- [PUBLISH] Fills harsh shadows and softens light on a face or product.
+- [PUBLISH] Folds down for storage in a gear bag.
+- [PUBLISH] Handheld or held by a second person during a shot.
+- [PUBLISH] Suited to talking-head and product close-up clips.
+
+- [INTERNAL] Pending before launch (specification keys only; no values published until verified): [待确认: reflector diameter and fabric]; [待确认: main material, e.g., aluminum alloy / ABS plastic]; [待确认: net weight].
+
+## Description Paragraph
+
+[PUBLISH] The Folding Reflector helps bounce light back onto your subject when the room light is flat or one-sided. Hold it near the product or face to open up shadows, then fold it flat for storage between takes. Exact diameter, fabric, and weight will be confirmed after final product verification.
+
+## Specifications
+
+Attribute | Detail
+--- | ---
+Product type | Folding light reflector
+Use | Fill light for face and product clips
+Storage | Folds flat for a gear bag
+
+## What's in the Box
+
+- [PUBLISH] 1 x Folding reflector
+
+[PUBLISH] Any storage pouch or carry strap is still being finalized; contact us for details.
+
+## Use Scenarios
+
+- [PUBLISH] Filling shadow on a talking-head clip at home
+- [PUBLISH] Softening product close-up lighting near a window
+- [PUBLISH] On-location shots where natural light is uneven
+
+## FAQ
+
+- [INTERNAL] FAQ layout: question line as a bold standalone heading; answer paragraph below; collapsed by default on mobile; on desktop, open the first question and collapse the rest.
+
+[PUBLISH] Q: What size and surface does it have?
+
+[PUBLISH] A: Diameter and surface fabric are pending final confirmation.
+
+[PUBLISH] Q: How do I store it?
+
+[PUBLISH] A: The reflector folds flat for bag storage. The included storage pouch, if any, is listed in What's in the Box.
+
+[PUBLISH] Q: Does it come with a stand?
+
+[PUBLISH] A: A stand or mounting clip is not listed in the basic contents; any included accessory is still being finalized; contact us for details.
+
+## Pricing
+
+[INTERNAL] Demo price: $10.99 — Demo configuration, confirm before launch. Sold as a single item; bundle sets are listed in the Creator Kits collection.
+
+## Add to Cart
+
+- [PUBLISH] Primary button: Add to Cart
+- [PUBLISH] Secondary button: Browse Creator Kits
+
+## Shopping Trust (generic; no certification claims)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] Return terms: see the Return & Refund Policy for the confirmed return window.
+- [PUBLISH] ShotStarter outputs are drafts you review and approve before posting.
+- [PUBLISH] No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.
+- [PUBLISH] Questions? Reach us at 1744059451@qq.com.
+
+[INTERNAL] 【操作者说明】Platform fact (INTERNAL only): the drill store is hosted on Shoplazza; the public checkout line does not name the platform. Strip any platform mention from the live store per the launch cleanup checklist.
+
+## Bundle Entry
+
+[PUBLISH] This item is sold as a single item. Bundle sets are listed in the Creator Kits collection.
+
+
+[INTERNAL] 【待确认占位键】上线前在 placeholder-map.txt 查英文定稿与中性兜底句；前台不得残留方括号占位： [待确认: included contents list]; [待确认: reflector diameter and fabric]
