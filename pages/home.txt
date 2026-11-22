@@ -1,0 +1,138 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Home Page Copy
+
+[INTERNAL] 【操作者说明】本页为 Shoplazza 首页各区块文案；面向消费者的英文内容可直接复制，括号内中文为操作者备注，不上架。
+
+## Announcement Bar (Top Banner)
+
+[PUBLISH] Free standard shipping on US orders over $35.
+
+[INTERNAL] Demo configuration: free-shipping threshold $35; standard flat rate $4.99. Confirm before launch.
+
+[PUBLISH] Alternate announcement: New creators get 10% off their first order with code NEWCREATOR10.
+
+[INTERNAL] Demo configuration: 10% off welcome code NEWCREATOR10 for first orders; applies to all single items in the Shop collection; both bundle SPUs (Creator Starter Kit and Pro Creator Kit) are excluded. Confirm discount terms before launch.
+
+[PUBLISH] 评委导览：商品价格、挑战闭环与参观路线一览。Judge Guide
+
+[INTERNAL] 【操作者说明】例外说明：本行为店内唯一面向中文评委的入口链接，指向独立中文导览页 Judge Guide；除该页外，其余前台页面均为英文。Judge Guide 仅供评审使用，正式店上线前可移除该条。
+
+## Hero Section
+
+- [INTERNAL] Layout: split hero — copy on the left, hero image on the right. Hero image slot: hero-banner.png (see shotstart-visuals).
+
+[PUBLISH] Headline: Your first shot starts here.
+
+[PUBLISH] Subhead: ShotStart helps beginner creators and small shop owners film cleaner videos, write smarter captions, and stay consistent — with simple phone gear and the ShotStarter AI content assistant.
+
+- [PUBLISH] Primary CTA button: Shop All Gear
+- [PUBLISH] Secondary CTA button: Join the 7-Day Shooting Challenge
+
+## Trust Row
+
+- [PUBLISH] Policy links: Shipping Policy · Return & Refund Policy · Privacy Policy · Terms of Service
+
+## Home Trust Signals
+
+[PUBLISH] ShotStarter AI outputs are drafts you review before posting · Beginner-friendly plain-language guidance · Responsive support by email.
+
+## Brand Value Proposition (3 pillars)
+
+- [PUBLISH] Made for beginners: No jargon, no complicated setup. Simple gear and plain-language AI prompts help you publish your first video faster.
+- [PUBLISH] Gear that works with your phone: Designed around common smartphone sizes and everyday short-video setups; confirmed compatibility details are listed on each product page.
+- [PUBLISH] AI that stays on your side: ShotStarter turns your platform, product, and main selling point into a 15-second script, a four-shot storyboard, and publish-ready caption copy.
+
+- [INTERNAL] Pending before launch: exact phone compatibility range (confirmed on each product page). [待确认: exact phone compatibility range]
+
+## Product Showcase (short cards)
+
+[PUBLISH] Adjustable Phone Tripod: Steady shots, hands free. Adjustable framing for talking-head videos, product demos, and on-location clips.
+
+[PUBLISH] Desktop Phone Stand: A clean home for your phone on the desk. Keeps your device upright and within reach for demos, streams, and live clips.
+
+[PUBLISH] Lens Cleaning Kit: Keep smudges and dust off your lenses. A compact cleaning set for phones, cameras, and accessory lenses.
+
+[PUBLISH] Creator Carry Case: A portable case to keep your tripod, stand, and small accessories together.
+
+[PUBLISH] Folding Reflector: Soften and fill light for face and product clips.
+
+[PUBLISH] Backdrop Cloth: A plain background for product and talking-head clips.
+
+[PUBLISH] Extension Pole: Reach overhead and higher-angle shots for selfie and group clips.
+
+[PUBLISH] Lens Cleaning Refill: Restock fluid, cloths, and the brush pen for your cleaning kit.
+
+[PUBLISH] Mini Ball Head: Level and lock the frame between shots with one twist.
+
+[PUBLISH] Magnetic Mount: Snap your phone on and off for quick desk setups.
+
+[PUBLISH] Microfiber 3-Pack: Three spare soft cloths for between-take lens and screen cleaning.
+
+[PUBLISH] Shot List Cards: Four-shot prompt cards paired with your ShotStarter script draft.
+
+## Creator Starter Kit Bundle Card
+
+[PUBLISH] Section title: The Starter Kit: your first filming setup in one kit.
+
+- [PUBLISH] What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99).
+- [PUBLISH] Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.
+- [PUBLISH] STARTERKIT applies to this kit only; it cannot be combined with other codes.
+- [PUBLISH] Card CTA button: View the kit
+
+- [INTERNAL] Demo configuration: the kit is a standalone SPU listed at $44.97; STARTERKIT (15% off) applies to that SPU only; code price $38.22, savings $6.75 (44.97 − 38.22). No compare-at reference price or strike-through field is shown.
+
+## Pro Creator Kit Bundle Card
+
+[PUBLISH] Section title: The Pro Kit: stable framing, height, angle control, and a carry case for the next level.
+
+- [PUBLISH] What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99).
+- [PUBLISH] Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.
+- [PUBLISH] STARTERKIT applies to this kit only; it cannot be combined with other codes.
+- [PUBLISH] Card CTA button: View the kit
+
+- [INTERNAL] Demo configuration: Pro Creator Kit standalone SPU listed at $62.96; STARTERKIT (15% off) applies to that SPU only; code price $53.52, savings $9.44 (62.96 − 53.52). No compare-at reference price or strike-through field is shown.
+
+## ShotStarter AI Block
+
+[PUBLISH] Section title: Meet ShotStarter, your AI content assistant.
+
+[PUBLISH] Body: Tell ShotStarter your platform (TikTok, Instagram Reels, YouTube Shorts, or another), your product type, and the one selling point you want to lead with. It drafts a 15-second script, lays out a four-shot storyboard, and suggests a caption and publish-ready text you can edit before posting.
+
+- [PUBLISH] 15-second script draft tailored to your platform and product
+- [PUBLISH] Four-shot storyboard: hook, close-up, demonstration, closing line
+- [PUBLISH] Caption and publish-ready copy to review and personalize
+
+[INTERNAL] 【操作者说明】合规提示：ShotStarter 输出为草稿，发布前由创作者自行审核修改；页面不得暗示 AI 生成内容可直接免责或保证效果。
+
+## 7-Day Shooting Challenge Block
+
+[PUBLISH] Section title: Join the 7-Day Shooting Challenge.
+
+[PUBLISH] Body: One small filming task each day for seven days. Sign up with your email to receive the day-by-day tasks, prompts, and ShotStarter template suggestions.
+
+- [PUBLISH] CTA button: Join the challenge
+
+- [INTERNAL] Lead form: email signup (see challenge.txt for fields and thank-you message)
+
+## Email Popup
+
+[PUBLISH] Popup headline: Your first discount is one click away.
+
+[PUBLISH] Popup body: Submit to get your welcome code NEWCREATOR10.
+
+- [PUBLISH] Button: Save my spot
+
+- [INTERNAL] Form field: Email
+
+- [PUBLISH] Fine print: By subscribing, you agree to receive marketing emails from ShotStart. You can unsubscribe at any time.
+
+[INTERNAL] Demo configuration: first-order discount applied after signup; confirm rate, minimum order, and expiry before launch.
+
+## Footer Brand Blurb
+
+[PUBLISH] ShotStart builds simple filming gear and the ShotStarter AI content assistant for beginner short-video creators and small shop owners in the US market. Your first shot starts here.
+
+- [PUBLISH] Footer links: Shop, About, Contact, Shipping Policy, Return & Refund Policy, Privacy Policy, Terms of Service
+
+- [INTERNAL] Footer note: Prices and offers on this store are demo configurations pending final confirmation.
