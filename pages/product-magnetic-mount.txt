@@ -1,0 +1,84 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Product Detail: Magnetic Mount
+
+[INTERNAL] 【操作者说明】规格表仅写品类通用、可诚实描述的属性；凡需真实参数处一律用 [待确认: ...] 占位，上线前由运营替换，不得编造数值。
+
+## Product Title
+
+[PUBLISH] Magnetic Mount — Snap Your Phone On and Off in Seconds
+
+## Selling Points (bullets)
+
+- [PUBLISH] Attach and remove the phone in one motion for quick setup between clips.
+- [PUBLISH] Holds the phone at a usable angle for desk demos and reference viewing.
+- [PUBLISH] Compact footprint for desks, countertops, and small workspaces.
+- [PUBLISH] Case and magnet compatibility are listed in What's in the Box.
+
+- [INTERNAL] Pending before launch (specification keys only; no values published until verified): [待确认: magnetic mount compatibility and case thickness]; [待确认: main material, e.g., ABS plastic / metal]; [待确认: base material / non-slip pad]; [待确认: net weight].
+
+## Description Paragraph
+
+[PUBLISH] The Magnetic Mount lets you attach and remove your phone without fumbling with clamps each time. It suits desk demos, recipe or tutorial follow-alongs, and quick reference checks between shoots. Exact compatibility, base material, and hold details will be confirmed after final verification.
+
+## Specifications
+
+Attribute | Detail
+--- | ---
+Product type | Magnetic phone mount
+Use | Desk-side phone holding for demos and reference viewing
+Compatibility | Case and magnet details confirmed in What's in the Box
+
+## What's in the Box
+
+- [PUBLISH] 1 x Magnetic mount
+
+[PUBLISH] Any included magnet plate or accessory is still being finalized; contact us for details.
+
+## Use Scenarios
+
+- [PUBLISH] Product demos shot from a desk or countertop
+- [PUBLISH] Keeping a reference video or script within view while filming
+- [PUBLISH] Quick phone removal and remount between takes
+
+## FAQ
+
+- [INTERNAL] FAQ layout: question line as a bold standalone heading; answer paragraph below; collapsed by default on mobile; on desktop, open the first question and collapse the rest.
+
+[PUBLISH] Q: Will it hold my phone with a case?
+
+[PUBLISH] A: Case thickness and magnet compatibility are still being finalized; contact us for details.
+
+[PUBLISH] Q: Does it work without a clamp?
+
+[PUBLISH] A: The mount uses a magnetic attachment; the included plates or pads are listed in What's in the Box.
+
+[PUBLISH] Q: What is the base made of?
+
+[PUBLISH] A: Base material and non-slip pad are still being finalized; contact us for details.
+
+## Pricing
+
+[INTERNAL] Demo price: $11.99 — Demo configuration, confirm before launch. Sold as a single item; bundle sets are listed in the Creator Kits collection.
+
+## Add to Cart
+
+- [PUBLISH] Primary button: Add to Cart
+- [PUBLISH] Secondary button: Browse Creator Kits
+
+## Shopping Trust (generic; no certification claims)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] Return terms: see the Return & Refund Policy for the confirmed return window.
+- [PUBLISH] ShotStarter outputs are drafts you review and approve before posting.
+- [PUBLISH] No hidden fees: the price shown at checkout is what you pay, before any applicable shipping.
+- [PUBLISH] Questions? Reach us at 1744059451@qq.com.
+
+[INTERNAL] 【操作者说明】Platform fact (INTERNAL only): the drill store is hosted on Shoplazza; the public checkout line does not name the platform. Strip any platform mention from the live store per the launch cleanup checklist.
+
+## Bundle Entry
+
+[PUBLISH] This item is sold as a single item. Bundle sets are listed in the Creator Kits collection.
+
+
+[INTERNAL] 【待确认占位键】上线前在 placeholder-map.txt 查英文定稿与中性兜底句；前台不得残留方括号占位： [待确认: included contents list]; [待确认: magnetic mount compatibility and case thickness]; [待确认: base material / non-slip pad]
