@@ -1,0 +1,53 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Shop / Collection Page Copy
+
+## Collections
+
+- [PUBLISH] All Gear: Every creator item in one collection.
+- [PUBLISH] Creator Kits: Bundled gear sets — the Creator Starter Kit and the Pro Creator Kit.
+
+## Sorting
+
+- [PUBLISH] Sort options: Featured, Price: Low to High, Price: High to Low, Newest.
+
+- [INTERNAL] Default collection sort and product order to be configured in the store admin. [待确认: default sorting rule]
+
+## Product Cards
+
+- [PUBLISH] Adjustable Phone Tripod — $19.99. Steady, hands-free framing for talking-head clips and product demos.
+- [PUBLISH] Desktop Phone Stand — $14.99. Keep your phone upright on the desk for demos and live clips.
+- [PUBLISH] Lens Cleaning Kit — $9.99. A compact cleaning set to keep lenses clear.
+- [PUBLISH] Creator Carry Case — $12.99. A portable case to keep gear and small accessories together.
+- [PUBLISH] Folding Reflector — $10.99. Soften and fill light for face and product clips.
+- [PUBLISH] Backdrop Cloth — $13.99. A plain background for product and talking-head clips.
+- [PUBLISH] Extension Pole — $16.99. Reach overhead and higher-angle shots for selfie and group clips.
+- [PUBLISH] Lens Cleaning Refill — $7.99. Restock fluid, cloths, and the brush pen for your cleaning kit.
+- [PUBLISH] Mini Ball Head — $12.99. Level and lock the frame between shots with one twist.
+- [PUBLISH] Magnetic Mount — $11.99. Snap your phone on and off for quick desk setups.
+- [PUBLISH] Microfiber 3-Pack — $6.99. Three spare soft cloths for between-take lens and screen cleaning.
+- [PUBLISH] Shot List Cards — $8.99. Four-shot prompt cards paired with your ShotStarter script draft.
+
+- [INTERNAL] Cleaning kit demonstrated composition is a demo configuration; confirm contents before launch.
+
+## Bundle SPU Card (Creator Starter Kit)
+
+[PUBLISH] Card description: Creator Starter Kit — steady framing, a desk stand, and a compact lens cleaning set together.
+
+[PUBLISH] What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.
+
+- [PUBLISH] STARTERKIT applies to this kit only; it cannot be combined with other codes.
+- [PUBLISH] Card CTA: View the kit
+
+- [INTERNAL] Demo configuration: standalone bundle SPU listed at $44.97; STARTERKIT (15% off) applies to that SPU only; code price $38.22, savings $6.75 (44.97 − 38.22). Confirm discount, inventory, and eligibility before launch. No compare-at reference price or strike-through field is used.
+
+## Bundle SPU Card (Pro Creator Kit)
+
+[PUBLISH] Card description: Pro Creator Kit — a tripod, extension pole, mini ball head, and carry case for the next level of setup.
+
+[PUBLISH] What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($12.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.
+
+- [PUBLISH] STARTERKIT applies to this kit only; it cannot be combined with other codes.
+- [PUBLISH] Card CTA: View the kit
+
+- [INTERNAL] Demo configuration: standalone bundle SPU listed at $62.96; STARTERKIT (15% off) applies to that SPU only; code price $53.52, savings $9.44 (62.96 − 53.52). Confirm discount, inventory, and eligibility before launch. No compare-at reference price or strike-through field is used.
