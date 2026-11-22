@@ -1,0 +1,45 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Shipping Policy
+
+[INTERNAL] 【操作者说明】Demo configuration，正式营业前复核：地区、费率、时效以正式营业前运营核实为准；前台行不出现演示/演练字样。
+
+[PUBLISH] Last updated: 2026-11-20.
+
+[PUBLISH] This policy describes how orders are handled after checkout. Actual carrier times depend on destination and order availability; estimated delivery times are provided at checkout.
+
+## Order Processing
+
+[PUBLISH] We process orders within 2 business days after payment. Orders placed on weekends or holidays are processed the next business day.
+
+## Shipping Destinations
+
+[PUBLISH] We currently ship to the United States only. Cross-border shipping is not available from this store.
+
+- [INTERNAL] Demo configuration，正式营业前复核：supported regions and cross-border availability to verify before launch.
+
+## Shipping Rates
+
+[PUBLISH] Standard shipping: US flat rate $4.99; free standard shipping on orders over $35.
+
+- [INTERNAL] Demo configuration，正式营业前复核：rates, threshold, and excluded products to confirm before launch.
+
+## Estimated Delivery
+
+[PUBLISH] US standard delivery typically arrives in 5–8 business days after processing. Carrier timing may vary; the estimated delivery window is shown at checkout.
+
+## Order Tracking
+
+[PUBLISH] A tracking number is emailed to you once your order ships.
+
+## Address Issues
+
+[PUBLISH] It is the customer's responsibility to provide a correct shipping address. Re-routing or address correction after dispatch may incur additional carrier charges.
+
+## Customs and Duties
+
+[PUBLISH] Because this store ships to the United States only, cross-border customs and duties do not apply to current orders.
+
+## Contact
+
+[PUBLISH] Shipping questions: 1744059451@qq.com
