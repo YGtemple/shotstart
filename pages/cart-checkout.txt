@@ -1,0 +1,53 @@
+[PUBLISH] 可粘贴到店铺前台 · [INTERNAL] 仅后台备注，禁止粘贴前台
+
+# Cart & Checkout Microcopy
+
+## Cart Page
+
+- [PUBLISH] Add-to-cart confirmation: Added to cart.
+- [PUBLISH] Quantity control: Qty minus / plus; each line shows product name, unit price, and line total.
+- [PUBLISH] Continue shopping link: Continue browsing gear
+- [PUBLISH] Checkout button: Secure Checkout
+- [PUBLISH] Total recalculation: Your order total, taxes, and shipping are recalculated at checkout.
+
+## Free Shipping Nudge
+
+[PUBLISH] Nudge line: You're $X away from free US standard shipping.
+
+[PUBLISH] Example in-cart scenario: Tripod $19.99 + Stand $14.99 = $34.98 before any discount, $0.02 away. Add the Lens Cleaning Kit ($9.99) to reach the $35 free-shipping threshold.
+
+- [INTERNAL] Insert the live gap ($X) at checkout; keep the tone neutral, no pressure wording.
+
+- [PUBLISH] Suggestion card: Add the Lens Cleaning Kit — keep your lenses clear and unlock free standard shipping.
+
+- [INTERNAL] Threshold basis: the free-shipping threshold defaults to the post-discount subtotal; verify this basis against the live store backend before launch.
+
+## Promo Code
+
+- [PUBLISH] Input label: Promo code
+- [PUBLISH] Apply button: Apply
+- [PUBLISH] Applied message: Code applied.
+- [PUBLISH] Invalid code message: This code isn't valid. Check the code and try again.
+- [PUBLISH] Code rule: one code per order; STARTERKIT and NEWCREATOR10 cannot be combined.
+
+## Stock and Address States
+
+- [PUBLISH] Out of stock: This item is out of stock. Remove it from your cart or check back later.
+- [PUBLISH] Address validation: Please review your address — one or more fields look incomplete. Check the highlighted field and try again.
+
+- [INTERNAL] Demo checkout notice (demo store only, do not publish on the live store): Demo checkout — no real payment is processed.
+
+## Checkout Trust Copy (generic; no fabricated certifications)
+
+- [PUBLISH] Secure checkout: Payments are processed on the store's secure checkout page.
+- [PUBLISH] No hidden fees: The order total shown at checkout includes item price and any applicable shipping; taxes (if any) are shown before you pay.
+- [PUBLISH] Support: Questions before ordering? Email 1744059451@qq.com.
+
+## Order Confirmation Page
+
+- [PUBLISH] Heading: Thank you — your order is confirmed.
+- [PUBLISH] Body: A confirmation and order number have been sent to your email. Please save your order number for support questions.
+- [PUBLISH] Order number: your order number is shown on the confirmation page and sent to your email.
+- [PUBLISH] Next steps: We'll send tracking details once your order ships.
+- [PUBLISH] CTA: Continue shopping
+- [PUBLISH] Support link: Contact us at 1744059451@qq.com
