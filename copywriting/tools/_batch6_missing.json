@@ -1,0 +1,1785 @@
+{
+ "home.txt": [
+  {
+   "kind": "p",
+   "src": "Alternate announcement: New creators get 10% off their first order with code NEWCREATOR10.",
+   "key": "Alternate announcement: New creators get 10% off their first order with code NEWCREATOR10."
+  },
+  {
+   "kind": "p",
+   "src": "评委导览：商品价格、挑战闭环与参观路线一览。Judge Guide",
+   "key": "评委导览：商品价格、挑战闭环与参观路线一览。Judge Guide"
+  },
+  {
+   "kind": "p",
+   "src": "Adjustable Phone Tripod: Steady shots, hands free. Adjustable framing for talking-head videos, product demos, and on-location clips.",
+   "key": "Adjustable Phone Tripod: Steady shots, hands free. Adjustable framing for talking-head videos, product demos, and on-location clips."
+  },
+  {
+   "kind": "p",
+   "src": "Desktop Phone Stand: A clean home for your phone on the desk. Keeps your device upright and within reach for demos, streams, and live clips.",
+   "key": "Desktop Phone Stand: A clean home for your phone on the desk. Keeps your device upright and within reach for demos, streams, and live clips."
+  },
+  {
+   "kind": "p",
+   "src": "Lens Cleaning Kit: Keep smudges and dust off your lenses. A compact cleaning set for phones, cameras, and accessory lenses.",
+   "key": "Lens Cleaning Kit: Keep smudges and dust off your lenses. A compact cleaning set for phones, cameras, and accessory lenses."
+  },
+  {
+   "kind": "p",
+   "src": "Creator Carry Case: A portable case to keep your tripod, stand, and small accessories together.",
+   "key": "Creator Carry Case: A portable case to keep your tripod, stand, and small accessories together."
+  },
+  {
+   "kind": "p",
+   "src": "Folding Reflector: Soften and fill light for face and product clips.",
+   "key": "Folding Reflector: Soften and fill light for face and product clips."
+  },
+  {
+   "kind": "p",
+   "src": "Backdrop Cloth: A plain background for product and talking-head clips.",
+   "key": "Backdrop Cloth: A plain background for product and talking-head clips."
+  },
+  {
+   "kind": "p",
+   "src": "Extension Pole: Reach overhead and higher-angle shots for selfie and group clips.",
+   "key": "Extension Pole: Reach overhead and higher-angle shots for selfie and group clips."
+  },
+  {
+   "kind": "p",
+   "src": "Lens Cleaning Refill: Restock fluid, cloths, and the brush pen for your cleaning kit.",
+   "key": "Lens Cleaning Refill: Restock fluid, cloths, and the brush pen for your cleaning kit."
+  },
+  {
+   "kind": "p",
+   "src": "Mini Ball Head: Level and lock the frame between shots with one twist.",
+   "key": "Mini Ball Head: Level and lock the frame between shots with one twist."
+  },
+  {
+   "kind": "p",
+   "src": "Magnetic Mount: Snap your phone on and off for quick desk setups.",
+   "key": "Magnetic Mount: Snap your phone on and off for quick desk setups."
+  },
+  {
+   "kind": "p",
+   "src": "Microfiber 3-Pack: Three spare soft cloths for between-take lens and screen cleaning.",
+   "key": "Microfiber 3-Pack: Three spare soft cloths for between-take lens and screen cleaning."
+  },
+  {
+   "kind": "p",
+   "src": "Shot List Cards: Four-shot prompt cards paired with your ShotStarter script draft.",
+   "key": "Shot List Cards: Four-shot prompt cards paired with your ShotStarter script draft."
+  },
+  {
+   "kind": "bullets",
+   "src": "What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99).",
+   "key": "Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99)."
+  },
+  {
+   "kind": "bullets",
+   "src": "STARTERKIT applies to this kit only; it cannot be combined with other codes.",
+   "key": "STARTERKIT applies to this kit only; it cannot be combined with other codes."
+  },
+  {
+   "kind": "bullets",
+   "src": "What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99).",
+   "key": "Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99)."
+  },
+  {
+   "kind": "p",
+   "src": "Section title: Join the 7-Day Shooting Challenge.",
+   "key": "Join the 7-Day Shooting Challenge."
+  },
+  {
+   "kind": "p",
+   "src": "Body: One small filming task each day for seven days. Sign up with your email to receive the day-by-day tasks, prompts, and ShotStarter template suggestions.",
+   "key": "One small filming task each day for seven days. Sign up with your email to receive the day-by-day tasks, prompts, and ShotStarter template suggestions."
+  },
+  {
+   "kind": "bullets",
+   "src": "CTA button: Join the challenge",
+   "key": "CTA button: Join the challenge"
+  },
+  {
+   "kind": "p",
+   "src": "Popup headline: Your first discount is one click away.",
+   "key": "Your first discount is one click away."
+  },
+  {
+   "kind": "p",
+   "src": "Popup body: Submit to get your welcome code NEWCREATOR10.",
+   "key": "Submit to get your welcome code NEWCREATOR10."
+  },
+  {
+   "kind": "bullets",
+   "src": "Button: Save my spot",
+   "key": "Save my spot"
+  },
+  {
+   "kind": "bullets",
+   "src": "Fine print: By subscribing, you agree to receive marketing emails from ShotStart. You can unsubscribe at any time.",
+   "key": "Fine print: By subscribing, you agree to receive marketing emails from ShotStart. You can unsubscribe at any time."
+  },
+  {
+   "kind": "p",
+   "src": "ShotStart builds simple filming gear and the ShotStarter AI content assistant for beginner short-video creators and small shop owners in the US market. Your first shot starts here.",
+   "key": "ShotStart builds simple filming gear and the ShotStarter AI content assistant for beginner short-video creators and small shop owners in the US market. Your first shot starts here."
+  }
+ ],
+ "shop.txt": [
+  {
+   "kind": "bullets",
+   "src": "Sort options: Featured, Price: Low to High, Price: High to Low, Newest.",
+   "key": "Sort options: Featured, Price: Low to High, Price: High to Low, Newest."
+  },
+  {
+   "kind": "bullets",
+   "src": "Adjustable Phone Tripod — $19.99. Steady, hands-free framing for talking-head clips and product demos.",
+   "key": "Adjustable Phone Tripod — $19.99. Steady, hands-free framing for talking-head clips and product demos."
+  },
+  {
+   "kind": "bullets",
+   "src": "Desktop Phone Stand — $14.99. Keep your phone upright on the desk for demos and live clips.",
+   "key": "Desktop Phone Stand — $14.99. Keep your phone upright on the desk for demos and live clips."
+  },
+  {
+   "kind": "bullets",
+   "src": "Lens Cleaning Kit — $9.99. A compact cleaning set to keep lenses clear.",
+   "key": "Lens Cleaning Kit — $9.99. A compact cleaning set to keep lenses clear."
+  },
+  {
+   "kind": "bullets",
+   "src": "Creator Carry Case — $12.99. A portable case to keep gear and small accessories together.",
+   "key": "Creator Carry Case — $12.99. A portable case to keep gear and small accessories together."
+  },
+  {
+   "kind": "bullets",
+   "src": "Folding Reflector — $10.99. Soften and fill light for face and product clips.",
+   "key": "Folding Reflector — $10.99. Soften and fill light for face and product clips."
+  },
+  {
+   "kind": "bullets",
+   "src": "Backdrop Cloth — $13.99. A plain background for product and talking-head clips.",
+   "key": "Backdrop Cloth — $13.99. A plain background for product and talking-head clips."
+  },
+  {
+   "kind": "bullets",
+   "src": "Extension Pole — $16.99. Reach overhead and higher-angle shots for selfie and group clips.",
+   "key": "Extension Pole — $16.99. Reach overhead and higher-angle shots for selfie and group clips."
+  },
+  {
+   "kind": "bullets",
+   "src": "Lens Cleaning Refill — $7.99. Restock fluid, cloths, and the brush pen for your cleaning kit.",
+   "key": "Lens Cleaning Refill — $7.99. Restock fluid, cloths, and the brush pen for your cleaning kit."
+  },
+  {
+   "kind": "bullets",
+   "src": "Mini Ball Head — $11.99. Level and lock the frame between shots with one twist.",
+   "key": "Mini Ball Head — $11.99. Level and lock the frame between shots with one twist."
+  },
+  {
+   "kind": "bullets",
+   "src": "Magnetic Mount — $9.99. Snap your phone on and off for quick desk setups.",
+   "key": "Magnetic Mount — $9.99. Snap your phone on and off for quick desk setups."
+  },
+  {
+   "kind": "bullets",
+   "src": "Microfiber 3-Pack — $8.99. Three spare soft cloths for between-take lens and screen cleaning.",
+   "key": "Microfiber 3-Pack — $8.99. Three spare soft cloths for between-take lens and screen cleaning."
+  },
+  {
+   "kind": "bullets",
+   "src": "Shot List Cards — $6.99. Four-shot prompt cards paired with your ShotStarter script draft.",
+   "key": "Shot List Cards — $6.99. Four-shot prompt cards paired with your ShotStarter script draft."
+  },
+  {
+   "kind": "p",
+   "src": "What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.",
+   "key": "Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75."
+  },
+  {
+   "kind": "p",
+   "src": "What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+   "key": "Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44."
+  }
+ ],
+ "product-tripod.txt": [
+  {
+   "kind": "bullets",
+   "src": "Phone clamp fits common smartphone sizes.",
+   "key": "Phone clamp fits common smartphone sizes."
+  },
+  {
+   "kind": "bullets",
+   "src": "Hands-free shooting for talking-head clips, product demos, and outdoor clips.",
+   "key": "Hands-free shooting for talking-head clips, product demos, and outdoor clips."
+  },
+  {
+   "kind": "bullets",
+   "src": "Foldable, portable design for indoor and on-location use.",
+   "key": "Foldable, portable design for indoor and on-location use."
+  },
+  {
+   "kind": "bullets",
+   "src": "Feet designed for placement on flat surfaces.",
+   "key": "Feet designed for placement on flat surfaces."
+  },
+  {
+   "kind": "p",
+   "src": "The Adjustable Phone Tripod is built for creators who want steady framing without a complicated rig. Set your phone in the clamp, adjust the height and angle to your shot, and film hands-free. It suits short talking-head videos, product close-ups, and casual on-location clips. Exact dimensions, materials, and compatibility details will be updated after final product verification.",
+   "key": "The Adjustable Phone Tripod is built for creators who want steady framing without a complicated rig. Set your phone in the clamp, adjust the height and angle to your shot, and film hands-free. It suits short talking-head videos, product close-ups, and casual on-location clips. Exact dimensions, materials, and compatibility details will be updated after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Product type",
+   "key": "Product type"
+  },
+  {
+   "kind": "table",
+   "src": "Adjustable phone tripod",
+   "key": "Adjustable phone tripod"
+  },
+  {
+   "kind": "table",
+   "src": "Clamp compatibility",
+   "key": "Clamp compatibility"
+  },
+  {
+   "kind": "table",
+   "src": "Common smartphone sizes",
+   "key": "Common smartphone sizes"
+  },
+  {
+   "kind": "table",
+   "src": "Adjustability",
+   "key": "Adjustability"
+  },
+  {
+   "kind": "table",
+   "src": "Height and angle adjustable",
+   "key": "Height and angle adjustable"
+  },
+  {
+   "kind": "table",
+   "src": "Placement surface",
+   "key": "Placement surface"
+  },
+  {
+   "kind": "table",
+   "src": "Flat, stable surfaces",
+   "key": "Flat, stable surfaces"
+  },
+  {
+   "kind": "table",
+   "src": "Carry design",
+   "key": "Carry design"
+  },
+  {
+   "kind": "table",
+   "src": "Portable, foldable design",
+   "key": "Portable, foldable design"
+  },
+  {
+   "kind": "p",
+   "src": "Exact specifications — compatible width range, height and tilt ranges, material, net weight, folded length, foot material, and included accessories — are being finalized; contact us for details.",
+   "key": "Exact specifications — compatible width range, height and tilt ranges, material, net weight, folded length, foot material, and included accessories — are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Adjustable phone tripod",
+   "key": "1 x Adjustable phone tripod"
+  },
+  {
+   "kind": "bullets",
+   "src": "Talking-head introductions and talking points filmed at home",
+   "key": "Talking-head introductions and talking points filmed at home"
+  },
+  {
+   "kind": "bullets",
+   "src": "Product demos and unboxing clips on a tabletop or floor",
+   "key": "Product demos and unboxing clips on a tabletop or floor"
+  },
+  {
+   "kind": "bullets",
+   "src": "On-location clips outdoors or at an event, placed on flat ground",
+   "key": "On-location clips outdoors or at an event, placed on flat ground"
+  },
+  {
+   "kind": "faq_a",
+   "src": "The tripod is designed for portable, on-location use on flat, stable surfaces; avoid unstable or sloped ground.",
+   "key": "The tripod is designed for portable, on-location use on flat, stable surfaces; avoid unstable or sloped ground."
+  },
+  {
+   "kind": "p",
+   "src": "Pair this with the other Creator Starter Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.",
+   "key": "Pair this with the other Creator Starter Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Desktop Phone Stand ($14.99), Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75."
+  }
+ ],
+ "product-stand.txt": [
+  {
+   "kind": "bullets",
+   "src": "Compact footprint for desks, countertops, and small workspaces.",
+   "key": "Compact footprint for desks, countertops, and small workspaces."
+  },
+  {
+   "kind": "bullets",
+   "src": "Designed for steady desk placement during demos, live clips, and reference viewing.",
+   "key": "Designed for steady desk placement during demos, live clips, and reference viewing."
+  },
+  {
+   "kind": "bullets",
+   "src": "Holder compatible with common smartphone sizes.",
+   "key": "Holder compatible with common smartphone sizes."
+  },
+  {
+   "kind": "bullets",
+   "src": "Cable-friendly open design.",
+   "key": "Cable-friendly open design."
+  },
+  {
+   "kind": "p",
+   "src": "The Desktop Phone Stand gives your phone a steady home right on the desk. Keep your device upright while you film product demos, follow along with a recipe or tutorial, or prepare for a live short clip. Its compact footprint suits small workspaces, and the open design leaves room for everyday use. Exact dimensions, materials, and compatibility will be confirmed after final verification.",
+   "key": "The Desktop Phone Stand gives your phone a steady home right on the desk. Keep your device upright while you film product demos, follow along with a recipe or tutorial, or prepare for a live short clip. Its compact footprint suits small workspaces, and the open design leaves room for everyday use. Exact dimensions, materials, and compatibility will be confirmed after final verification."
+  },
+  {
+   "kind": "table",
+   "src": "Desktop phone stand",
+   "key": "Desktop phone stand"
+  },
+  {
+   "kind": "table",
+   "src": "Holder compatibility",
+   "key": "Holder compatibility"
+  },
+  {
+   "kind": "table",
+   "src": "Angle adjustability",
+   "key": "Angle adjustability"
+  },
+  {
+   "kind": "table",
+   "src": "Adjustable viewing/tilt angle",
+   "key": "Adjustable viewing/tilt angle"
+  },
+  {
+   "kind": "table",
+   "src": "Base",
+   "key": "Base"
+  },
+  {
+   "kind": "table",
+   "src": "Desk base",
+   "key": "Desk base"
+  },
+  {
+   "kind": "table",
+   "src": "Cable access",
+   "key": "Cable access"
+  },
+  {
+   "kind": "table",
+   "src": "Open design for charging cable",
+   "key": "Open design for charging cable"
+  },
+  {
+   "kind": "p",
+   "src": "Exact specifications — compatible width range, angle range, material, base dimensions and non-slip pad, cable cutout details, and net weight — are being finalized; contact us for details.",
+   "key": "Exact specifications — compatible width range, angle range, material, base dimensions and non-slip pad, cable cutout details, and net weight — are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Desktop phone stand",
+   "key": "1 x Desktop phone stand"
+  },
+  {
+   "kind": "bullets",
+   "src": "Product demos shot from a desk or countertop",
+   "key": "Product demos shot from a desk or countertop"
+  },
+  {
+   "kind": "bullets",
+   "src": "Live streams and Q&A clips with the phone held steady",
+   "key": "Live streams and Q&A clips with the phone held steady"
+  },
+  {
+   "kind": "bullets",
+   "src": "Keeping reference videos, scripts, or captions within view while filming",
+   "key": "Keeping reference videos, scripts, or captions within view while filming"
+  }
+ ],
+ "product-cleaning-kit.txt": [
+  {
+   "kind": "p",
+   "src": "Contents are listed in What's in the Box.",
+   "key": "Contents are listed in What's in the Box."
+  },
+  {
+   "kind": "bullets",
+   "src": "For dust, smudges, and fingerprints on phone lenses, compact camera lenses, and accessory lenses.",
+   "key": "For dust, smudges, and fingerprints on phone lenses, compact camera lenses, and accessory lenses."
+  },
+  {
+   "kind": "p",
+   "src": "A clear lens makes your clips look cleaner. The Lens Cleaning Kit gathers the basics for dusting and wiping phone, camera, and accessory lenses. It is compact enough to keep in your filming bag. Final contents, materials, and any liquid ingredients will be confirmed after final verification.",
+   "key": "A clear lens makes your clips look cleaner. The Lens Cleaning Kit gathers the basics for dusting and wiping phone, camera, and accessory lenses. It is compact enough to keep in your filming bag. Final contents, materials, and any liquid ingredients will be confirmed after final verification."
+  },
+  {
+   "kind": "table",
+   "src": "Lens cleaning kit",
+   "key": "Lens cleaning kit"
+  },
+  {
+   "kind": "table",
+   "src": "Compatible surfaces",
+   "key": "Compatible surfaces"
+  },
+  {
+   "kind": "table",
+   "src": "Phone lenses, compact camera lenses, accessory lenses",
+   "key": "Phone lenses, compact camera lenses, accessory lenses"
+  },
+  {
+   "kind": "p",
+   "src": "Exact contents, approved surface list, materials, fluid volume, and kit dimensions are being finalized; contact us for details.",
+   "key": "Exact contents, approved surface list, materials, fluid volume, and kit dimensions are being finalized; contact us for details."
+  },
+  {
+   "kind": "p",
+   "src": "A compact cleaning set for phone and camera lenses. Contents will be listed here after final confirmation.",
+   "key": "A compact cleaning set for phone and camera lenses. Contents will be listed here after final confirmation."
+  },
+  {
+   "kind": "bullets",
+   "src": "Wiping fingerprints off a phone lens before filming",
+   "key": "Wiping fingerprints off a phone lens before filming"
+  },
+  {
+   "kind": "bullets",
+   "src": "Dusting a compact camera or accessory lens between takes",
+   "key": "Dusting a compact camera or accessory lens between takes"
+  },
+  {
+   "kind": "bullets",
+   "src": "Traveling with a small cleaning set in a creator bag",
+   "key": "Traveling with a small cleaning set in a creator bag"
+  }
+ ],
+ "product-carry-case.txt": [
+  {
+   "kind": "bullets",
+   "src": "Compact, portable design for home storage and on-location shoots.",
+   "key": "Compact, portable design for home storage and on-location shoots."
+  },
+  {
+   "kind": "bullets",
+   "src": "Internal organization is listed in What's in the Box.",
+   "key": "Internal organization is listed in What's in the Box."
+  },
+  {
+   "kind": "bullets",
+   "src": "Built around common creator gear setups.",
+   "key": "Built around common creator gear setups."
+  },
+  {
+   "kind": "p",
+   "src": "The Creator Carry Case keeps your phone gear and small accessories in one place between shoots. Pack the tripod, stand, cleaning supplies, and clips for a session, then stow the case at home or take it to a location. Exact dimensions, material, and fit details will be updated after final product verification.",
+   "key": "The Creator Carry Case keeps your phone gear and small accessories in one place between shoots. Pack the tripod, stand, cleaning supplies, and clips for a session, then stow the case at home or take it to a location. Exact dimensions, material, and fit details will be updated after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Gear carry case",
+   "key": "Gear carry case"
+  },
+  {
+   "kind": "table",
+   "src": "Portable case",
+   "key": "Portable case"
+  },
+  {
+   "kind": "table",
+   "src": "Organization",
+   "key": "Organization"
+  },
+  {
+   "kind": "table",
+   "src": "Internal pockets/compartments listed in What's in the Box",
+   "key": "Internal pockets/compartments listed in What's in the Box"
+  },
+  {
+   "kind": "p",
+   "src": "Exact dimensions, material, net weight, and included accessories are being finalized; contact us for details.",
+   "key": "Exact dimensions, material, net weight, and included accessories are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Creator carry case",
+   "key": "1 x Creator carry case"
+  },
+  {
+   "kind": "bullets",
+   "src": "Packing gear for a home or outdoor shoot",
+   "key": "Packing gear for a home or outdoor shoot"
+  },
+  {
+   "kind": "bullets",
+   "src": "Storing tripod, stand, and small accessories between sessions",
+   "key": "Storing tripod, stand, and small accessories between sessions"
+  },
+  {
+   "kind": "bullets",
+   "src": "Moving gear between locations without loose pieces",
+   "key": "Moving gear between locations without loose pieces"
+  },
+  {
+   "kind": "p",
+   "src": "Pair this with the other Pro Creator Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+   "key": "Pair this with the other Pro Creator Kit items. What's in the kit: Adjustable Phone Tripod ($19.99), Extension Pole ($16.99), Mini Ball Head ($11.99), Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44."
+  }
+ ],
+ "product-reflector.txt": [
+  {
+   "kind": "bullets",
+   "src": "Folds down for storage in a gear bag.",
+   "key": "Folds down for storage in a gear bag."
+  },
+  {
+   "kind": "bullets",
+   "src": "Handheld or held by a second person during a shot.",
+   "key": "Handheld or held by a second person during a shot."
+  },
+  {
+   "kind": "bullets",
+   "src": "Suited to talking-head and product close-up clips.",
+   "key": "Suited to talking-head and product close-up clips."
+  },
+  {
+   "kind": "p",
+   "src": "The Folding Reflector helps bounce light back onto your subject when the room light is flat or one-sided. Hold it near the product or face to open up shadows, then fold it flat for storage between takes. Exact diameter, fabric, and weight will be confirmed after final product verification.",
+   "key": "The Folding Reflector helps bounce light back onto your subject when the room light is flat or one-sided. Hold it near the product or face to open up shadows, then fold it flat for storage between takes. Exact diameter, fabric, and weight will be confirmed after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Folding light reflector",
+   "key": "Folding light reflector"
+  },
+  {
+   "kind": "table",
+   "src": "Use",
+   "key": "Use"
+  },
+  {
+   "kind": "table",
+   "src": "Fill light for face and product clips",
+   "key": "Fill light for face and product clips"
+  },
+  {
+   "kind": "table",
+   "src": "Storage",
+   "key": "Storage"
+  },
+  {
+   "kind": "table",
+   "src": "Folds flat for a gear bag",
+   "key": "Folds flat for a gear bag"
+  },
+  {
+   "kind": "p",
+   "src": "Exact diameter, surface fabric, and net weight are being finalized; contact us for details.",
+   "key": "Exact diameter, surface fabric, and net weight are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Folding reflector",
+   "key": "1 x Folding reflector"
+  },
+  {
+   "kind": "bullets",
+   "src": "Filling shadow on a talking-head clip at home",
+   "key": "Filling shadow on a talking-head clip at home"
+  },
+  {
+   "kind": "bullets",
+   "src": "Softening product close-up lighting near a window",
+   "key": "Softening product close-up lighting near a window"
+  },
+  {
+   "kind": "bullets",
+   "src": "On-location shots where natural light is uneven",
+   "key": "On-location shots where natural light is uneven"
+  },
+  {
+   "kind": "faq_a",
+   "src": "The reflector folds flat for bag storage. The included storage pouch, if any, is listed in What's in the Box.",
+   "key": "The reflector folds flat for bag storage. The included storage pouch, if any, is listed in What's in the Box."
+  },
+  {
+   "kind": "p",
+   "src": "This item is sold as a single item. Bundle sets are listed in the Creator Kits collection.",
+   "key": "This item is sold as a single item. Bundle sets are listed in the Creator Kits collection."
+  }
+ ],
+ "product-backdrop.txt": [
+  {
+   "kind": "bullets",
+   "src": "Hangs on common stands, clamps, or a wall-mounted setup.",
+   "key": "Hangs on common stands, clamps, or a wall-mounted setup."
+  },
+  {
+   "kind": "bullets",
+   "src": "Easy to hang and fold for storage between sessions.",
+   "key": "Easy to hang and fold for storage between sessions."
+  },
+  {
+   "kind": "bullets",
+   "src": "One neutral surface behind the subject.",
+   "key": "One neutral surface behind the subject."
+  },
+  {
+   "kind": "p",
+   "src": "The Backdrop Cloth gives your clip a clean, uncluttered background instead of a busy room. Hang it behind the product or yourself, frame the shot, and film. Exact size, fabric, and color will be confirmed after final product verification.",
+   "key": "The Backdrop Cloth gives your clip a clean, uncluttered background instead of a busy room. Hang it behind the product or yourself, frame the shot, and film. Exact size, fabric, and color will be confirmed after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Backdrop cloth",
+   "key": "Backdrop cloth"
+  },
+  {
+   "kind": "table",
+   "src": "Background for product and talking-head clips",
+   "key": "Background for product and talking-head clips"
+  },
+  {
+   "kind": "table",
+   "src": "Mounting",
+   "key": "Mounting"
+  },
+  {
+   "kind": "table",
+   "src": "Common stands, clamps, or wall setup",
+   "key": "Common stands, clamps, or wall setup"
+  },
+  {
+   "kind": "p",
+   "src": "Exact dimensions, fabric, and color are being finalized; contact us for details.",
+   "key": "Exact dimensions, fabric, and color are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Backdrop cloth",
+   "key": "1 x Backdrop cloth"
+  },
+  {
+   "kind": "bullets",
+   "src": "Product shots with a plain background",
+   "key": "Product shots with a plain background"
+  },
+  {
+   "kind": "bullets",
+   "src": "Talking-head clips filmed at a desk",
+   "key": "Talking-head clips filmed at a desk"
+  },
+  {
+   "kind": "bullets",
+   "src": "Recurring setup reused across daily challenge videos",
+   "key": "Recurring setup reused across daily challenge videos"
+  },
+  {
+   "kind": "faq_a",
+   "src": "The available color is listed after final product verification; exact dimensions, fabric, and finish are being finalized.",
+   "key": "The available color is listed after final product verification; exact dimensions, fabric, and finish are being finalized."
+  }
+ ],
+ "product-extension-pole.txt": [
+  {
+   "kind": "bullets",
+   "src": "Handheld for selfie-style clips or mounted on a stand.",
+   "key": "Handheld for selfie-style clips or mounted on a stand."
+  },
+  {
+   "kind": "bullets",
+   "src": "Collapses for transport in a gear bag.",
+   "key": "Collapses for transport in a gear bag."
+  },
+  {
+   "kind": "bullets",
+   "src": "Phone holder fits common smartphone sizes.",
+   "key": "Phone holder fits common smartphone sizes."
+  },
+  {
+   "kind": "p",
+   "src": "The Extension Pole lifts your phone above eye level for top-down, overhead, or wider group clips. Extend the length to your shot, hold it or fix it to a stand, and collapse it afterward. Exact extended and collapsed length, material, and weight will be confirmed after final product verification.",
+   "key": "The Extension Pole lifts your phone above eye level for top-down, overhead, or wider group clips. Extend the length to your shot, hold it or fix it to a stand, and collapse it afterward. Exact extended and collapsed length, material, and weight will be confirmed after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Extension pole with phone holder",
+   "key": "Extension pole with phone holder"
+  },
+  {
+   "kind": "table",
+   "src": "Overhead, higher-angle, and selfie-style clips",
+   "key": "Overhead, higher-angle, and selfie-style clips"
+  },
+  {
+   "kind": "table",
+   "src": "Collapses for a gear bag",
+   "key": "Collapses for a gear bag"
+  },
+  {
+   "kind": "p",
+   "src": "Exact extended/collapsed length, material, net weight, and holder compatibility are being finalized; contact us for details.",
+   "key": "Exact extended/collapsed length, material, net weight, and holder compatibility are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Extension pole",
+   "key": "1 x Extension pole"
+  },
+  {
+   "kind": "bullets",
+   "src": "Overhead product arrangement shots",
+   "key": "Overhead product arrangement shots"
+  },
+  {
+   "kind": "bullets",
+   "src": "Group clips where one phone must reach the whole frame",
+   "key": "Group clips where one phone must reach the whole frame"
+  },
+  {
+   "kind": "bullets",
+   "src": "Higher-angle talking-head setup on a stand",
+   "key": "Higher-angle talking-head setup on a stand"
+  }
+ ],
+ "product-cleaning-refill.txt": [
+  {
+   "kind": "bullets",
+   "src": "For phone lenses, compact camera lenses, and accessory lenses.",
+   "key": "For phone lenses, compact camera lenses, and accessory lenses."
+  },
+  {
+   "kind": "bullets",
+   "src": "Contents and pack count are listed in What's in the Box.",
+   "key": "Contents and pack count are listed in What's in the Box."
+  },
+  {
+   "kind": "p",
+   "src": "The Lens Cleaning Refill restocks the cleaning fluid, cloth, and brush pen you use between shoots, so your kit stays ready for the next clip. Exact counts, cloth material, and any fluid volume or ingredients will be confirmed after final product verification.",
+   "key": "The Lens Cleaning Refill restocks the cleaning fluid, cloth, and brush pen you use between shoots, so your kit stays ready for the next clip. Exact counts, cloth material, and any fluid volume or ingredients will be confirmed after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Cleaning kit refill",
+   "key": "Cleaning kit refill"
+  },
+  {
+   "kind": "p",
+   "src": "Exact contents, cloth material, fluid volume, and ingredients are being finalized; contact us for details.",
+   "key": "Exact contents, cloth material, fluid volume, and ingredients are being finalized; contact us for details."
+  },
+  {
+   "kind": "p",
+   "src": "The depicted refill includes a cleaning fluid bottle, a cloth, and a brush pen; final counts, materials, and fluid details are listed here after final confirmation.",
+   "key": "The depicted refill includes a cleaning fluid bottle, a cloth, and a brush pen; final counts, materials, and fluid details are listed here after final confirmation."
+  },
+  {
+   "kind": "bullets",
+   "src": "Replenishing the cloth and brush pen after repeated lens cleaning",
+   "key": "Replenishing the cloth and brush pen after repeated lens cleaning"
+  },
+  {
+   "kind": "bullets",
+   "src": "Refilling fluid for the existing Lens Cleaning Kit",
+   "key": "Refilling fluid for the existing Lens Cleaning Kit"
+  },
+  {
+   "kind": "bullets",
+   "src": "Keeping cleaning supplies on hand for on-location shoots",
+   "key": "Keeping cleaning supplies on hand for on-location shoots"
+  },
+  {
+   "kind": "faq_a",
+   "src": "The refill is made for use with the Lens Cleaning Kit on phone, compact camera, and accessory lenses.",
+   "key": "The refill is made for use with the Lens Cleaning Kit on phone, compact camera, and accessory lenses."
+  },
+  {
+   "kind": "p",
+   "src": "This refill is sold as a single item. Bundle sets are listed in the Creator Kits collection.",
+   "key": "This refill is sold as a single item. Bundle sets are listed in the Creator Kits collection."
+  }
+ ],
+ "product-mini-ball-head.txt": [
+  {
+   "kind": "bullets",
+   "src": "Tilt and rotate to level the frame, then lock it in for the take.",
+   "key": "Tilt and rotate to level the frame, then lock it in for the take."
+  },
+  {
+   "kind": "bullets",
+   "src": "Mounts between the tripod and phone clamp for steadier angle adjustments.",
+   "key": "Mounts between the tripod and phone clamp for steadier angle adjustments."
+  },
+  {
+   "kind": "bullets",
+   "src": "Compact add-on that stays on the tripod between shoots.",
+   "key": "Compact add-on that stays on the tripod between shoots."
+  },
+  {
+   "kind": "bullets",
+   "src": "Mount size and compatibility details are listed in What's in the Box.",
+   "key": "Mount size and compatibility details are listed in What's in the Box."
+  },
+  {
+   "kind": "p",
+   "src": "The Mini Ball Head sits between your tripod and phone clamp, so you can tilt, rotate, and level the frame with one twist instead of moving the whole tripod. It suits talking-head setups, product demos, and quick re-framing between takes. Exact mount size, materials, and hold details will be confirmed after final product verification.",
+   "key": "The Mini Ball Head sits between your tripod and phone clamp, so you can tilt, rotate, and level the frame with one twist instead of moving the whole tripod. It suits talking-head setups, product demos, and quick re-framing between takes. Exact mount size, materials, and hold details will be confirmed after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Mini ball head",
+   "key": "Mini ball head"
+  },
+  {
+   "kind": "table",
+   "src": "Angle adjustment on a tripod",
+   "key": "Angle adjustment on a tripod"
+  },
+  {
+   "kind": "table",
+   "src": "Mount",
+   "key": "Mount"
+  },
+  {
+   "kind": "table",
+   "src": "Details confirmed in What's in the Box",
+   "key": "Details confirmed in What's in the Box"
+  },
+  {
+   "kind": "p",
+   "src": "Exact mount and thread details, material, net weight, and included adapter are being finalized; contact us for details.",
+   "key": "Exact mount and thread details, material, net weight, and included adapter are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Mini ball head",
+   "key": "1 x Mini ball head"
+  },
+  {
+   "kind": "bullets",
+   "src": "Re-leveling the frame between talking-head takes",
+   "key": "Re-leveling the frame between talking-head takes"
+  },
+  {
+   "kind": "bullets",
+   "src": "Adjusting the angle for product demos on a flat surface",
+   "key": "Adjusting the angle for product demos on a flat surface"
+  },
+  {
+   "kind": "bullets",
+   "src": "Moving between a desk setup and an outdoor flat-ground spot",
+   "key": "Moving between a desk setup and an outdoor flat-ground spot"
+  },
+  {
+   "kind": "faq_q",
+   "src": "What tripod does it fit?",
+   "key": "What tripod does it fit?"
+  },
+  {
+   "kind": "faq_q",
+   "src": "Does it replace the tripod?",
+   "key": "Does it replace the tripod?"
+  },
+  {
+   "kind": "faq_a",
+   "src": "No. The ball head is an add-on that mounts to a tripod or stand; it does not replace the support itself.",
+   "key": "No. The ball head is an add-on that mounts to a tripod or stand; it does not replace the support itself."
+  },
+  {
+   "kind": "faq_q",
+   "src": "What is it made of?",
+   "key": "What is it made of?"
+  }
+ ],
+ "product-magnetic-mount.txt": [
+  {
+   "kind": "bullets",
+   "src": "Attach and remove the phone in one motion for quick setup between clips.",
+   "key": "Attach and remove the phone in one motion for quick setup between clips."
+  },
+  {
+   "kind": "bullets",
+   "src": "Holds the phone at a usable angle for desk demos and reference viewing.",
+   "key": "Holds the phone at a usable angle for desk demos and reference viewing."
+  },
+  {
+   "kind": "bullets",
+   "src": "Case and magnet compatibility are listed in What's in the Box.",
+   "key": "Case and magnet compatibility are listed in What's in the Box."
+  },
+  {
+   "kind": "p",
+   "src": "The Magnetic Mount lets you attach and remove your phone without fumbling with clamps each time. It suits desk demos, recipe or tutorial follow-alongs, and quick reference checks between shoots. Exact compatibility, base material, and hold details will be confirmed after final verification.",
+   "key": "The Magnetic Mount lets you attach and remove your phone without fumbling with clamps each time. It suits desk demos, recipe or tutorial follow-alongs, and quick reference checks between shoots. Exact compatibility, base material, and hold details will be confirmed after final verification."
+  },
+  {
+   "kind": "table",
+   "src": "Magnetic phone mount",
+   "key": "Magnetic phone mount"
+  },
+  {
+   "kind": "table",
+   "src": "Desk-side phone holding for demos and reference viewing",
+   "key": "Desk-side phone holding for demos and reference viewing"
+  },
+  {
+   "kind": "table",
+   "src": "Compatibility",
+   "key": "Compatibility"
+  },
+  {
+   "kind": "table",
+   "src": "Case and magnet details confirmed in What's in the Box",
+   "key": "Case and magnet details confirmed in What's in the Box"
+  },
+  {
+   "kind": "p",
+   "src": "Exact case compatibility, material, base dimensions and non-slip pad, and net weight are being finalized; contact us for details.",
+   "key": "Exact case compatibility, material, base dimensions and non-slip pad, and net weight are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Magnetic mount",
+   "key": "1 x Magnetic mount"
+  },
+  {
+   "kind": "bullets",
+   "src": "Keeping a reference video or script within view while filming",
+   "key": "Keeping a reference video or script within view while filming"
+  },
+  {
+   "kind": "bullets",
+   "src": "Quick phone removal and remount between takes",
+   "key": "Quick phone removal and remount between takes"
+  },
+  {
+   "kind": "faq_q",
+   "src": "Will it hold my phone with a case?",
+   "key": "Will it hold my phone with a case?"
+  },
+  {
+   "kind": "faq_q",
+   "src": "Does it work without a clamp?",
+   "key": "Does it work without a clamp?"
+  },
+  {
+   "kind": "faq_a",
+   "src": "The mount uses a magnetic attachment; the included plates or pads are listed in What's in the Box.",
+   "key": "The mount uses a magnetic attachment; the included plates or pads are listed in What's in the Box."
+  },
+  {
+   "kind": "faq_q",
+   "src": "What is the base made of?",
+   "key": "What is the base made of?"
+  }
+ ],
+ "product-microfiber-3pack.txt": [
+  {
+   "kind": "bullets",
+   "src": "Three spare cloths so one can stay in the cleaning kit while another handles touch-ups.",
+   "key": "Three spare cloths so one can stay in the cleaning kit while another handles touch-ups."
+  },
+  {
+   "kind": "bullets",
+   "src": "For dust, smudges, and fingerprints on phone lenses and screens.",
+   "key": "For dust, smudges, and fingerprints on phone lenses and screens."
+  },
+  {
+   "kind": "bullets",
+   "src": "Soft surface; approved use list is listed in What's in the Box.",
+   "key": "Soft surface; approved use list is listed in What's in the Box."
+  },
+  {
+   "kind": "bullets",
+   "src": "Pairs with the Lens Cleaning Kit for between-take lens care.",
+   "key": "Pairs with the Lens Cleaning Kit for between-take lens care."
+  },
+  {
+   "kind": "p",
+   "src": "The Microfiber 3-Pack gives you spare cloths so one can remain in the cleaning kit while another handles on-location touch-ups. Use it on phone lenses and screens between takes; exact cloth material, size, and pack count will be confirmed after final product verification.",
+   "key": "The Microfiber 3-Pack gives you spare cloths so one can remain in the cleaning kit while another handles on-location touch-ups. Use it on phone lenses and screens between takes; exact cloth material, size, and pack count will be confirmed after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Cleaning cloth 3-pack",
+   "key": "Cleaning cloth 3-pack"
+  },
+  {
+   "kind": "table",
+   "src": "Phone lenses and screens; approved list confirmed in What's in the Box",
+   "key": "Phone lenses and screens; approved list confirmed in What's in the Box"
+  },
+  {
+   "kind": "p",
+   "src": "Exact cloth material, weave, size, and count are being finalized; contact us for details.",
+   "key": "Exact cloth material, weave, size, and count are being finalized; contact us for details."
+  },
+  {
+   "kind": "p",
+   "src": "Three soft cleaning cloths for between-take lens and screen care. Final material and size are listed here after final confirmation.",
+   "key": "Three soft cleaning cloths for between-take lens and screen care. Final material and size are listed here after final confirmation."
+  },
+  {
+   "kind": "bullets",
+   "src": "Wiping smudges off a phone lens before a take",
+   "key": "Wiping smudges off a phone lens before a take"
+  },
+  {
+   "kind": "bullets",
+   "src": "Cleaning a phone screen between clips",
+   "key": "Cleaning a phone screen between clips"
+  },
+  {
+   "kind": "bullets",
+   "src": "Keeping a spare cloth in the creator bag for on-location shoots",
+   "key": "Keeping a spare cloth in the creator bag for on-location shoots"
+  },
+  {
+   "kind": "faq_q",
+   "src": "What surfaces are the cloths for?",
+   "key": "What surfaces are the cloths for?"
+  },
+  {
+   "kind": "faq_q",
+   "src": "How many cloths are included?",
+   "key": "How many cloths are included?"
+  },
+  {
+   "kind": "faq_q",
+   "src": "Does this replace the Lens Cleaning Kit?",
+   "key": "Does this replace the Lens Cleaning Kit?"
+  },
+  {
+   "kind": "faq_a",
+   "src": "No. The cloths pair with the Lens Cleaning Kit; fluid and brush pen are sold separately in the kit and refill.",
+   "key": "No. The cloths pair with the Lens Cleaning Kit; fluid and brush pen are sold separately in the kit and refill."
+  }
+ ],
+ "product-shot-list-cards.txt": [
+  {
+   "kind": "bullets",
+   "src": "Four-shot prompt sequence: hook, close-up, demonstration, closing line.",
+   "key": "Four-shot prompt sequence: hook, close-up, demonstration, closing line."
+  },
+  {
+   "kind": "bullets",
+   "src": "Each card pairs with the ShotStarter AI script and storyboard draft.",
+   "key": "Each card pairs with the ShotStarter AI script and storyboard draft."
+  },
+  {
+   "kind": "bullets",
+   "src": "Pocket-sized set to keep beside the setup during filming.",
+   "key": "Pocket-sized set to keep beside the setup during filming."
+  },
+  {
+   "kind": "bullets",
+   "src": "Card count, material, and language list are listed in What's in the Box.",
+   "key": "Card count, material, and language list are listed in What's in the Box."
+  },
+  {
+   "kind": "p",
+   "src": "The Shot List Cards turn the ShotStarter draft into a physical check you can follow on set. Match each card to the script line and the four-shot storyboard, then tick off the hook, close-up, demonstration, and closing line before you publish. The cards are a companion to the ShotStarter AI assistant; they do not replace your own review of the draft. Exact card count, size, and material will be confirmed after final product verification.",
+   "key": "The Shot List Cards turn the ShotStarter draft into a physical check you can follow on set. Match each card to the script line and the four-shot storyboard, then tick off the hook, close-up, demonstration, and closing line before you publish. The cards are a companion to the ShotStarter AI assistant; they do not replace your own review of the draft. Exact card count, size, and material will be confirmed after final product verification."
+  },
+  {
+   "kind": "table",
+   "src": "Shot list prompt card set",
+   "key": "Shot list prompt card set"
+  },
+  {
+   "kind": "table",
+   "src": "On-set four-shot planning paired with the ShotStarter draft",
+   "key": "On-set four-shot planning paired with the ShotStarter draft"
+  },
+  {
+   "kind": "table",
+   "src": "Contents",
+   "key": "Contents"
+  },
+  {
+   "kind": "table",
+   "src": "Card count and material confirmed in What's in the Box",
+   "key": "Card count and material confirmed in What's in the Box"
+  },
+  {
+   "kind": "p",
+   "src": "Exact card count, size, material, and printed language list are being finalized; contact us for details.",
+   "key": "Exact card count, size, material, and printed language list are being finalized; contact us for details."
+  },
+  {
+   "kind": "bullets",
+   "src": "1 x Shot List card set",
+   "key": "1 x Shot List card set"
+  },
+  {
+   "kind": "bullets",
+   "src": "Planning the hook, close-up, demonstration, and closing line before filming",
+   "key": "Planning the hook, close-up, demonstration, and closing line before filming"
+  },
+  {
+   "kind": "bullets",
+   "src": "Matching each shot to the ShotStarter script draft on set",
+   "key": "Matching each shot to the ShotStarter script draft on set"
+  },
+  {
+   "kind": "bullets",
+   "src": "Keeping the shot order visible beside a desk or flat-ground setup",
+   "key": "Keeping the shot order visible beside a desk or flat-ground setup"
+  },
+  {
+   "kind": "faq_q",
+   "src": "What cards are included?",
+   "key": "What cards are included?"
+  },
+  {
+   "kind": "faq_q",
+   "src": "Do the cards replace the ShotStarter AI draft?",
+   "key": "Do the cards replace the ShotStarter AI draft?"
+  },
+  {
+   "kind": "faq_a",
+   "src": "No. The cards pair with the script and storyboard draft from ShotStarter; you still review and edit the draft before posting.",
+   "key": "No. The cards pair with the script and storyboard draft from ShotStarter; you still review and edit the draft before posting."
+  },
+  {
+   "kind": "faq_q",
+   "src": "What languages are the cards printed in?",
+   "key": "What languages are the cards printed in?"
+  }
+ ],
+ "cart-checkout.txt": [
+  {
+   "kind": "bullets",
+   "src": "Add-to-cart confirmation: Added to cart.",
+   "key": "Added to cart."
+  },
+  {
+   "kind": "bullets",
+   "src": "Quantity control: Qty minus / plus; each line shows product name, unit price, and line total.",
+   "key": "Qty minus / plus; each line shows product name, unit price, and line total."
+  },
+  {
+   "kind": "bullets",
+   "src": "Total recalculation: Your order total, taxes, and shipping are recalculated at checkout.",
+   "key": "Your order total, taxes, and shipping are recalculated at checkout."
+  },
+  {
+   "kind": "p",
+   "src": "Example in-cart scenario: Tripod $19.99 + Stand $14.99 = $34.98 before any discount, $0.02 away. Add the Lens Cleaning Kit ($9.99) to reach the $35 free-shipping threshold.",
+   "key": "Tripod $19.99 + Stand $14.99 = $34.98 before any discount, $0.02 away. Add the Lens Cleaning Kit ($9.99) to reach the $35 free-shipping threshold."
+  },
+  {
+   "kind": "bullets",
+   "src": "Input label: Promo code",
+   "key": "Promo code"
+  },
+  {
+   "kind": "bullets",
+   "src": "Apply button: Apply",
+   "key": "Apply"
+  },
+  {
+   "kind": "bullets",
+   "src": "Applied message: Code applied.",
+   "key": "Code applied."
+  },
+  {
+   "kind": "bullets",
+   "src": "Code rule: one code per order; STARTERKIT and NEWCREATOR10 cannot be combined.",
+   "key": "one code per order; STARTERKIT and NEWCREATOR10 cannot be combined."
+  },
+  {
+   "kind": "bullets",
+   "src": "Address validation: Please review your address — one or more fields look incomplete. Check the highlighted field and try again.",
+   "key": "Please review your address — one or more fields look incomplete. Check the highlighted field and try again."
+  },
+  {
+   "kind": "bullets",
+   "src": "No hidden fees: The order total shown at checkout includes item price and any applicable shipping; taxes (if any) are shown before you pay.",
+   "key": "The order total shown at checkout includes item price and any applicable shipping; taxes (if any) are shown before you pay."
+  },
+  {
+   "kind": "bullets",
+   "src": "Support: Questions before ordering? Email 1744059451@qq.com.",
+   "key": "Questions before ordering? Email 1744059451@qq.com."
+  },
+  {
+   "kind": "bullets",
+   "src": "Heading: Thank you — your order is confirmed.",
+   "key": "Thank you — your order is confirmed."
+  },
+  {
+   "kind": "bullets",
+   "src": "Body: A confirmation and order number have been sent to your email. Please save your order number for support questions.",
+   "key": "A confirmation and order number have been sent to your email. Please save your order number for support questions."
+  },
+  {
+   "kind": "bullets",
+   "src": "Order number: your order number is shown on the confirmation page and sent to your email.",
+   "key": "your order number is shown on the confirmation page and sent to your email."
+  },
+  {
+   "kind": "bullets",
+   "src": "Next steps: We'll send tracking details once your order ships.",
+   "key": "We'll send tracking details once your order ships."
+  },
+  {
+   "kind": "bullets",
+   "src": "CTA: Continue shopping",
+   "key": "Continue shopping"
+  },
+  {
+   "kind": "bullets",
+   "src": "Support link: Contact us at 1744059451@qq.com",
+   "key": "Contact us at 1744059451@qq.com"
+  }
+ ],
+ "about.txt": [
+  {
+   "kind": "h1",
+   "src": "About ShotStart",
+   "key": "About ShotStart"
+  },
+  {
+   "kind": "p",
+   "src": "New creators and small shop owners often have a real product and a real message, but they don't know how to set up a phone, frame a shot, or turn an idea into a caption. ShotStart pairs straightforward filming gear with the ShotStarter AI assistant to lower that barrier. We keep instructions plain, setups simple, and decisions in your hands.",
+   "key": "New creators and small shop owners often have a real product and a real message, but they don't know how to set up a phone, frame a shot, or turn an idea into a caption. ShotStart pairs straightforward filming gear with the ShotStarter AI assistant to lower that barrier. We keep instructions plain, setups simple, and decisions in your hands."
+  }
+ ],
+ "contact.txt": [
+  {
+   "kind": "h1",
+   "src": "Contact Us",
+   "key": "Contact Us"
+  },
+  {
+   "kind": "p",
+   "src": "Email 1744059451@qq.com — include your name, order number (if any), and a short description of the issue. Reference your order number in the subject line for a faster reply.",
+   "key": "Email 1744059451@qq.com — include your name, order number (if any), and a short description of the issue. Reference your order number in the subject line for a faster reply."
+  }
+ ],
+ "shipping-policy.txt": [
+  {
+   "kind": "p",
+   "src": "Last updated: 2026-11-20.",
+   "key": "Last updated: 2026-11-20."
+  },
+  {
+   "kind": "h2",
+   "src": "Order Processing",
+   "key": "Order Processing"
+  },
+  {
+   "kind": "h2",
+   "src": "Shipping Destinations",
+   "key": "Shipping Destinations"
+  },
+  {
+   "kind": "h2",
+   "src": "Shipping Rates",
+   "key": "Shipping Rates"
+  },
+  {
+   "kind": "h2",
+   "src": "Estimated Delivery",
+   "key": "Estimated Delivery"
+  },
+  {
+   "kind": "h2",
+   "src": "Order Tracking",
+   "key": "Order Tracking"
+  },
+  {
+   "kind": "p",
+   "src": "A tracking number is emailed to you once your order ships.",
+   "key": "A tracking number is emailed to you once your order ships."
+  },
+  {
+   "kind": "h2",
+   "src": "Address Issues",
+   "key": "Address Issues"
+  },
+  {
+   "kind": "p",
+   "src": "It is the customer's responsibility to provide a correct shipping address. Re-routing or address correction after dispatch may incur additional carrier charges.",
+   "key": "It is the customer's responsibility to provide a correct shipping address. Re-routing or address correction after dispatch may incur additional carrier charges."
+  },
+  {
+   "kind": "h2",
+   "src": "Customs and Duties",
+   "key": "Customs and Duties"
+  },
+  {
+   "kind": "p",
+   "src": "Because this store ships to the United States only, cross-border customs and duties do not apply to current orders.",
+   "key": "Because this store ships to the United States only, cross-border customs and duties do not apply to current orders."
+  },
+  {
+   "kind": "p",
+   "src": "Shipping questions: 1744059451@qq.com",
+   "key": "Shipping questions: 1744059451@qq.com"
+  }
+ ],
+ "refund-policy.txt": [
+  {
+   "kind": "h2",
+   "src": "Return Eligibility",
+   "key": "Return Eligibility"
+  },
+  {
+   "kind": "h2",
+   "src": "Non-Returnable Items",
+   "key": "Non-Returnable Items"
+  },
+  {
+   "kind": "h2",
+   "src": "How to Request a Return",
+   "key": "How to Request a Return"
+  },
+  {
+   "kind": "p",
+   "src": "Contact 1744059451@qq.com with your order number. We will send return instructions by email.",
+   "key": "Contact 1744059451@qq.com with your order number. We will send return instructions by email."
+  },
+  {
+   "kind": "h2",
+   "src": "Return Shipping Costs",
+   "key": "Return Shipping Costs"
+  },
+  {
+   "kind": "h2",
+   "src": "Refunds",
+   "key": "Refunds"
+  },
+  {
+   "kind": "h2",
+   "src": "Exchanges",
+   "key": "Exchanges"
+  },
+  {
+   "kind": "p",
+   "src": "Exchanges are handled case by case. Contact 1744059451@qq.com with your order number to check availability, any price difference, and return-shipping responsibility before a replacement is arranged.",
+   "key": "Exchanges are handled case by case. Contact 1744059451@qq.com with your order number to check availability, any price difference, and return-shipping responsibility before a replacement is arranged."
+  },
+  {
+   "kind": "h2",
+   "src": "Damaged or Defective Items",
+   "key": "Damaged or Defective Items"
+  }
+ ],
+ "privacy-policy.txt": [
+  {
+   "kind": "h2",
+   "src": "What We Collect",
+   "key": "What We Collect"
+  },
+  {
+   "kind": "bullets",
+   "src": "Challenge participation: email signup, chosen platform, and daily task interaction",
+   "key": "email signup, chosen platform, and daily task interaction"
+  },
+  {
+   "kind": "bullets",
+   "src": "Usage data: email opens and store browsing behavior",
+   "key": "email opens and store browsing behavior"
+  },
+  {
+   "kind": "h2",
+   "src": "How We Use Information",
+   "key": "How We Use Information"
+  },
+  {
+   "kind": "bullets",
+   "src": "Process orders and provide customer support",
+   "key": "Process orders and provide customer support"
+  },
+  {
+   "kind": "bullets",
+   "src": "Send the 7-Day Shooting Challenge sequence and marketing emails, where you have consented",
+   "key": "Send the 7-Day Shooting Challenge sequence and marketing emails, where you have consented"
+  },
+  {
+   "kind": "bullets",
+   "src": "Improve the store experience and product assortment",
+   "key": "Improve the store experience and product assortment"
+  },
+  {
+   "kind": "h2",
+   "src": "Data Retention",
+   "key": "Data Retention"
+  },
+  {
+   "kind": "h2",
+   "src": "Email Marketing",
+   "key": "Email Marketing"
+  },
+  {
+   "kind": "h2",
+   "src": "Sharing Information",
+   "key": "Sharing Information"
+  },
+  {
+   "kind": "h2",
+   "src": "Cookies and Pixels",
+   "key": "Cookies and Pixels"
+  },
+  {
+   "kind": "p",
+   "src": "The store uses necessary cookies to operate checkout and remember your preferences. Non-essential cookies can be declined through your browser or store consent settings where available.",
+   "key": "The store uses necessary cookies to operate checkout and remember your preferences. Non-essential cookies can be declined through your browser or store consent settings where available."
+  },
+  {
+   "kind": "h2",
+   "src": "Security",
+   "key": "Security"
+  },
+  {
+   "kind": "h2",
+   "src": "Your Rights",
+   "key": "Your Rights"
+  },
+  {
+   "kind": "h2",
+   "src": "Children",
+   "key": "Children"
+  },
+  {
+   "kind": "p",
+   "src": "Privacy questions: 1744059451@qq.com",
+   "key": "Privacy questions: 1744059451@qq.com"
+  }
+ ],
+ "terms.txt": [
+  {
+   "kind": "p",
+   "src": "Effective: 2026-11-20.",
+   "key": "Effective: 2026-11-20."
+  },
+  {
+   "kind": "h2",
+   "src": "Use of the Store",
+   "key": "Use of the Store"
+  },
+  {
+   "kind": "p",
+   "src": "You agree to use the store lawfully and not to engage in fraud, abuse, unauthorized scraping, or interference with store operations.",
+   "key": "You agree to use the store lawfully and not to engage in fraud, abuse, unauthorized scraping, or interference with store operations."
+  },
+  {
+   "kind": "h2",
+   "src": "Eligibility",
+   "key": "Eligibility"
+  },
+  {
+   "kind": "h2",
+   "src": "Products, Pricing, and Availability",
+   "key": "Products, Pricing, and Availability"
+  },
+  {
+   "kind": "p",
+   "src": "Listings, prices, and discounts may change. Availability and bundle terms are noted on each product page.",
+   "key": "Listings, prices, and discounts may change. Availability and bundle terms are noted on each product page."
+  },
+  {
+   "kind": "h2",
+   "src": "Orders",
+   "key": "Orders"
+  },
+  {
+   "kind": "p",
+   "src": "Placing an order is an offer to purchase; acceptance and order confirmation occur when the order is processed, and a confirmation email is sent.",
+   "key": "Placing an order is an offer to purchase; acceptance and order confirmation occur when the order is processed, and a confirmation email is sent."
+  },
+  {
+   "kind": "h2",
+   "src": "Intellectual Property",
+   "key": "Intellectual Property"
+  },
+  {
+   "kind": "p",
+   "src": "The ShotStart name, store copy, and creative materials belong to the brand.",
+   "key": "The ShotStart name, store copy, and creative materials belong to the brand."
+  },
+  {
+   "kind": "h2",
+   "src": "ShotStarter AI Assistant",
+   "key": "ShotStarter AI Assistant"
+  },
+  {
+   "kind": "h2",
+   "src": "Challenge Participation",
+   "key": "Challenge Participation"
+  },
+  {
+   "kind": "h2",
+   "src": "Promo Codes",
+   "key": "Promo Codes"
+  },
+  {
+   "kind": "h2",
+   "src": "Dispute Resolution",
+   "key": "Dispute Resolution"
+  },
+  {
+   "kind": "p",
+   "src": "If you have an issue with an order or product, contact us at 1744059451@qq.com first. We will work with you by email to try to resolve the matter directly.",
+   "key": "If you have an issue with an order or product, contact us at 1744059451@qq.com first. We will work with you by email to try to resolve the matter directly."
+  },
+  {
+   "kind": "p",
+   "src": "Questions about these terms: 1744059451@qq.com",
+   "key": "Questions about these terms: 1744059451@qq.com"
+  }
+ ],
+ "challenge.txt": [
+  {
+   "kind": "h1",
+   "src": "7-Day Shooting Challenge",
+   "key": "7-Day Shooting Challenge"
+  },
+  {
+   "kind": "p",
+   "src": "Seven short daily tasks. One small step each day to plan, film, and publish your first short video. Sign up with your email to receive daily prompts and ShotStarter template suggestions.",
+   "key": "Seven short daily tasks. One small step each day to plan, film, and publish your first short video. Sign up with your email to receive daily prompts and ShotStarter template suggestions."
+  },
+  {
+   "kind": "bullets",
+   "src": "Sign up with a valid email; one short challenge email arrives each day for seven days.",
+   "key": "Sign up with a valid email; one short challenge email arrives each day for seven days."
+  },
+  {
+   "kind": "bullets",
+   "src": "Complete one task per day. You may adapt tasks to your product and style.",
+   "key": "Complete one task per day. You may adapt tasks to your product and style."
+  },
+  {
+   "kind": "bullets",
+   "src": "Use ShotStarter drafts as starting points — review and edit before posting.",
+   "key": "Use ShotStarter drafts as starting points — review and edit before posting."
+  },
+  {
+   "kind": "bullets",
+   "src": "The challenge is free to join; no purchase is required.",
+   "key": "The challenge is free to join; no purchase is required."
+  },
+  {
+   "kind": "bullets",
+   "src": "Participation does not guarantee followers, sales, or any platform result.",
+   "key": "Participation does not guarantee followers, sales, or any platform result."
+  },
+  {
+   "kind": "p",
+   "src": "Day 1 — Pick your topic and selling point. Write down your product or topic and the one point you want viewers to remember. Use ShotStarter to set your platform and product type.",
+   "key": "Day 1 — Pick your topic and selling point. Write down your product or topic and the one point you want viewers to remember. Use ShotStarter to set your platform and product type."
+  },
+  {
+   "kind": "p",
+   "src": "Day 2 — Plan your 15-second script. Generate a draft script with ShotStarter; edit the opening line so it sounds like you.",
+   "key": "Day 2 — Plan your 15-second script. Generate a draft script with ShotStarter; edit the opening line so it sounds like you."
+  },
+  {
+   "kind": "p",
+   "src": "Day 3 — Set up your shot. Choose a flat surface or tripod/stand position; clean your lens; frame your first shot.",
+   "key": "Day 3 — Set up your shot. Choose a flat surface or tripod/stand position; clean your lens; frame your first shot."
+  },
+  {
+   "kind": "p",
+   "src": "Day 4 — Shoot four storyboard clips. Follow the four-shot storyboard: opening hook, product/topic close-up, middle demonstration, closing line. Record each clip.",
+   "key": "Day 4 — Shoot four storyboard clips. Follow the four-shot storyboard: opening hook, product/topic close-up, middle demonstration, closing line. Record each clip."
+  },
+  {
+   "kind": "p",
+   "src": "Day 5 — Assemble your cut. Trim clips to a 15-second pace; add simple captions; check lighting and focus.",
+   "key": "Day 5 — Assemble your cut. Trim clips to a 15-second pace; add simple captions; check lighting and focus."
+  },
+  {
+   "kind": "p",
+   "src": "Day 6 — Write the publish caption. Use the ShotStarter caption draft; add your own voice, relevant hashtags, and a clear call to action.",
+   "key": "Day 6 — Write the publish caption. Use the ShotStarter caption draft; add your own voice, relevant hashtags, and a clear call to action."
+  },
+  {
+   "kind": "p",
+   "src": "Day 7 — Publish and review. Post your first short video, note what worked, and plan your next clip.",
+   "key": "Day 7 — Publish and review. Post your first short video, note what worked, and plan your next clip."
+  },
+  {
+   "kind": "p",
+   "src": "You're in! Check your inbox for Day 1. Remember: your first shot starts here.",
+   "key": "You're in! Check your inbox for Day 1. Remember: your first shot starts here."
+  },
+  {
+   "kind": "h2",
+   "src": "Day 8+ Nurture Email Sequence",
+   "key": "Day 8+ Nurture Email Sequence"
+  },
+  {
+   "kind": "p",
+   "src": "Email 1 (Day 8 — Review & next shot)",
+   "key": "Email 1 (Day 8 — Review & next shot)"
+  },
+  {
+   "kind": "p",
+   "src": "Subject: Which shot worked best?",
+   "key": "Which shot worked best?"
+  },
+  {
+   "kind": "p",
+   "src": "Preheader: Your next topic gets a 15-second script draft.",
+   "key": "Your next topic gets a 15-second script draft."
+  },
+  {
+   "kind": "p",
+   "src": "Body: Hi [first name], Day 7 is done. Which shot worked best? Reply and tell us your next topic; ShotStarter can draft your next 15-second script.",
+   "key": "Hi [first name], Day 7 is done. Which shot worked best? Reply and tell us your next topic; ShotStarter can draft your next 15-second script."
+  },
+  {
+   "kind": "p",
+   "src": "Email 2 (Day 10 — Keep your gear ready)",
+   "key": "Email 2 (Day 10 — Keep your gear ready)"
+  },
+  {
+   "kind": "p",
+   "src": "Subject: A quick lens check before your next clip",
+   "key": "A quick lens check before your next clip"
+  },
+  {
+   "kind": "p",
+   "src": "Preheader: Keep phone and camera lenses clear between shoots.",
+   "key": "Keep phone and camera lenses clear between shoots."
+  },
+  {
+   "kind": "p",
+   "src": "Body: Quick lens check: smudges show up on camera. The Lens Cleaning Kit keeps phone and camera lenses clear between shoots.",
+   "key": "Quick lens check: smudges show up on camera. The Lens Cleaning Kit keeps phone and camera lenses clear between shoots."
+  },
+  {
+   "kind": "p",
+   "src": "Email 3 (Day 14 — Second video prompt)",
+   "key": "Email 3 (Day 14 — Second video prompt)"
+  },
+  {
+   "kind": "p",
+   "src": "Subject: One video down — what's next?",
+   "key": "One video down — what's next?"
+  },
+  {
+   "kind": "p",
+   "src": "Preheader: Pick a new selling point and run the four-shot storyboard again.",
+   "key": "Pick a new selling point and run the four-shot storyboard again."
+  },
+  {
+   "kind": "p",
+   "src": "Body: Hi [first name], one video down, the next one is easier. Pick a new selling point and run the four-shot storyboard again.",
+   "key": "Hi [first name], one video down, the next one is easier. Pick a new selling point and run the four-shot storyboard again."
+  },
+  {
+   "kind": "p",
+   "src": "Refill reminder: when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit to keep every new clip sharp.",
+   "key": "when your cleaning cloth or blower wears out, restock the Lens Cleaning Kit to keep every new clip sharp."
+  },
+  {
+   "kind": "p",
+   "src": "Subject: Your first shot is still waiting",
+   "key": "Your first shot is still waiting"
+  },
+  {
+   "kind": "p",
+   "src": "Preheader: No pressure — pick up where you left off.",
+   "key": "No pressure — pick up where you left off."
+  },
+  {
+   "kind": "p",
+   "src": "Body: We noticed you haven't finished the challenge. Reply here or open Day 1 again.",
+   "key": "We noticed you haven't finished the challenge. Reply here or open Day 1 again."
+  },
+  {
+   "kind": "bullets",
+   "src": "Participants may receive a thank-you offer; offer terms are finalized before launch.",
+   "key": "Participants may receive a thank-you offer; offer terms are finalized before launch."
+  },
+  {
+   "kind": "bullets",
+   "src": "Signups: number of valid emails collected through the challenge form.",
+   "key": "number of valid emails collected through the challenge form."
+  },
+  {
+   "kind": "bullets",
+   "src": "Participants: signups who open at least one challenge email or complete Day 1.",
+   "key": "signups who open at least one challenge email or complete Day 1."
+  },
+  {
+   "kind": "bullets",
+   "src": "Engagement: participants who complete three or more daily tasks.",
+   "key": "participants who complete three or more daily tasks."
+  },
+  {
+   "kind": "bullets",
+   "src": "Purchase: participants who place an order during or after the challenge.",
+   "key": "participants who place an order during or after the challenge."
+  },
+  {
+   "kind": "bullets",
+   "src": "Tools: metrics tracked via the connected analytics or email tool; fields are set up in the store admin.",
+   "key": "metrics tracked via the connected analytics or email tool; fields are set up in the store admin."
+  }
+ ],
+ "marketing.txt": [
+  {
+   "kind": "p",
+   "src": "Bundle contents: Adjustable Phone Tripod ($19.99) + Desktop Phone Stand ($14.99) + Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75.",
+   "key": "Adjustable Phone Tripod ($19.99) + Desktop Phone Stand ($14.99) + Lens Cleaning Kit ($9.99). Kit price $44.97 — use code STARTERKIT at checkout: $38.22. You save $6.75."
+  },
+  {
+   "kind": "p",
+   "src": "Consumer copy: The Creator Starter Kit pairs steady gear with a clean lens — the basics a first-time creator needs to set up and shoot.",
+   "key": "The Creator Starter Kit pairs steady gear with a clean lens — the basics a first-time creator needs to set up and shoot."
+  },
+  {
+   "kind": "p",
+   "src": "Bundle contents: Adjustable Phone Tripod ($19.99) + Extension Pole ($16.99) + Mini Ball Head ($11.99) + Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44.",
+   "key": "Adjustable Phone Tripod ($19.99) + Extension Pole ($16.99) + Mini Ball Head ($11.99) + Creator Carry Case ($12.99). Kit price $62.96 — use code STARTERKIT at checkout: $53.52. You save $9.44."
+  },
+  {
+   "kind": "p",
+   "src": "Consumer copy: The Pro Creator Kit adds steady framing, height and angle control, and a carry case for creators moving beyond the basics.",
+   "key": "The Pro Creator Kit adds steady framing, height and angle control, and a carry case for creators moving beyond the basics."
+  },
+  {
+   "kind": "p",
+   "src": "Consumer copy: New here? Take 10% off your first order with code NEWCREATOR10.",
+   "key": "New here? Take 10% off your first order with code NEWCREATOR10."
+  },
+  {
+   "kind": "p",
+   "src": "Consumer copy: Subscribe for a first-order discount and the 7-Day Shooting Challenge checklist.",
+   "key": "Subscribe for a first-order discount and the 7-Day Shooting Challenge checklist."
+  },
+  {
+   "kind": "p",
+   "src": "Concept: a UGC hashtag wall collecting public posts tagged #ShotStartChallenge.",
+   "key": "a UGC hashtag wall collecting public posts tagged #ShotStartChallenge."
+  },
+  {
+   "kind": "bullets",
+   "src": "Display copy: Made something this week? Tag #ShotStartChallenge — your clip could be featured.",
+   "key": "Made something this week? Tag #ShotStartChallenge — your clip could be featured."
+  }
+ ],
+ "form-states.txt": [
+  {
+   "kind": "h1",
+   "src": "Form States Copy (Contact / Challenge / Popup)",
+   "key": "Form States Copy (Contact / Challenge / Popup)"
+  }
+ ]
+}
