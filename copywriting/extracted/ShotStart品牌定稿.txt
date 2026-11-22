@@ -1,0 +1,189 @@
+
+ShotStart 品牌定稿 / Brand Guidelines
+Your first shot starts here. · 你的第一个镜头，从这里开始。
+品牌名 / Brand Name
+ShotStart
+品牌定位 / Positioning
+ShotStart 面向美国英语市场的新手短视频创作者与小商家，提供简洁拍摄装备与 ShotStarter AI 内容助手。
+ShotStart builds simple filming gear and the ShotStarter AI content assistant for beginner short-video creators and small shop owners in the US English-speaking market.
+品牌口号 / Slogan
+Your first shot starts here.
+你的第一个镜头，从这里开始。
+品牌故事 / Brand Story
+我们从一个朴素的观察出发：开始做短视频最难的不是天赋，而是迈出第一个镜头。
+新手创作者和小商家往往有真实的产品和真实的想法，却不知道怎么架手机、构图、把点子写成文案。ShotStart 用直白易用的拍摄装备搭配 ShotStarter AI 助手，降低这道门槛：说明清楚、设置简单，决定权在你手里。
+我们不承诺一夜涨粉。我们帮你把第一条视频做完、发出去，然后一条一条继续——用七天挑战的节奏。
+ShotStart was built around a simple observation: the hardest part of starting short-video creation isn't talent — it's taking the first shot.
+New creators and small shop owners often have a real product and a real message, but they don't know how to set up a phone, frame a shot, or turn an idea into a caption. ShotStart pairs straightforward filming gear with the ShotStarter AI assistant to lower that barrier. We keep instructions plain, setups simple, and decisions in your hands.
+We don't promise overnight growth. We help you finish and publish that first video, then the next one — seven days at a time.
+配色规范 / Color Palette
+角色 / Role
+ | Color
+ | Hex
+ | 使用建议 / Usage
+ | 
+主强调色 / Primary accent
+ | Coral Orange
+ | #FF5A2C
+ | 主 CTA、折扣徽章、重点高亮与激活状态，少量用于行动引导。Primary CTA buttons, discount badges, key highlights, active states; use sparingly.
+ | 
+品牌深色 / Brand dark
+ | Deep Navy Blue
+ | #0F1B2D
+ | 品牌文字、标题、页脚与深色 Hero 背景；浅色页面正文。Brand text, headings, footer, dark hero backgrounds, and body text on light surfaces.
+ | 
+界面底色 / Surface
+ | Warm White
+ | #FAF6F0
+ | 页面背景、卡片表面、深色面板上的文字底色。Page background, card surfaces, text background on navy panels.
+ | 
+次要派生色 / Muted secondary
+ | Muted Warm Gray
+ | #6B6259
+ | 次要说明文字、弱化标签，用于暖白底。Secondary captions and muted labels on warm white.
+ | 
+备注色 / Note gray
+ | Neutral Note Gray
+ | #555555
+ | 仅后台操作者备注文字，不上前台。Operator note text only; not for storefront.
+ | 
+实物成色 / Product finish
+ | Matte Black
+ | #1B1B1B
+ | 实物商品主体哑光黑，属产品成色，不是品牌界面色；不得与海军蓝文字/页脚混用。Physical product matte black finish; a product color, not a brand UI color — do not mix with navy text or footer.
+ | 
+保持对比度可达：深蓝文字配暖白底，白字配深蓝底，橙色留给行动点。Keep contrast accessible: navy text on warm white, white on navy, orange for action points.
+界定：#0F1B2D 海军蓝只用于品牌文字与页脚等界面结构；商品实拍中的哑光黑是实物颜色，两者不互相替代。The navy #0F1B2D is reserved for brand text and footer UI structure; product matte black is a physical finish and is not substituted for it.
+橙色使用约束：#FF5A2C 珊瑚橙仅用于大字号展示标题（≥24px 粗体）、行动按钮与图形符号；不用于小字号正文——实测橙/暖白对比度 2.89:1，低于大文本 AA 3:1 边际。小字号文字统一使用海军蓝 #0F1B2D 或 muted #6B6259。如未来需让橙色承载正文，必须改用加深派生色并重新通过对比度测试。
+Orange usage constraint: #FF5A2C is reserved for large display headings (≥24px bold), action buttons, and graphic symbols only; it is not used for small-size body text — measured contrast on warm white is 2.89:1, below the large-text AA 3:1 margin. Small text stays navy #0F1B2D or muted #6B6259. If orange ever carries body copy in future, a darkened derivative must be adopted and its contrast retested.
+派生色附录：muted 暖灰 #6B6259（次要说明/弱化标签）、备注灰 #555555（仅后台备注）已入表；加深橙色派生色（若日后用于正文）待定，须在选定后补登 Hex 并附对比度实测值。Derived-color appendix: muted warm gray #6B6259 (secondary captions/muted labels) and note gray #555555 (operator notes only) are listed above; a darkened orange derivative (if used for body copy later) is pending — record its Hex and measured contrast once selected.
+浅底派生色 / Light tint
+ | Color
+ | Hex
+ | 拟定用途 / Proposed usage
+ | 
+卡片浅底 / Card surface
+ | Warm light gray
+ | #E8DED2
+ | 卡片底色，拟定用于商品卡/信息卡。Proposed card background for product or info cards.
+ | 
+分区浅底 / Section surface
+ | Off-white beige
+ | #F3ECE3
+ | 分区底色，拟定用于页面分区或浅色面板。Proposed section background for page zones or light panels.
+ | 
+橙晕浅底 / Orange tint
+ | Light coral tint
+ | #FFE9E1
+ | 橙色晕染底，拟定用于挑战/活动区块的浅底色。Proposed tinted background for challenge or promo zones.
+ | 
+三条浅底用途均为拟定方向；实际采用须在视觉稿核实后定稿，未核实前不得作为固定配色承诺。These three tints are proposed directions; final usage is confirmed against the visual design before launch.
+Logo 素材 / Logo Assets
+素材位于店铺根目录 shotstart-visuals\ 文件夹。Assets live in the store-root shotstart-visuals\ folder.
+File
+ | Path (root-relative)
+ | 用途 / Primary use
+ | 
+logo-square.png
+ | shotstart-visuals\logo-square.png
+ | 暖白底横版锁合大尺寸场景母版（图标+字标，方形画布）；不用于 favicon 或头像。Horizontal-lockup master on warm-white background (icon + wordmark, square canvas) for large-format scenes; not used for favicon or avatar.
+ | 
+logo-transparent.png
+ | shotstart-visuals\logo-transparent.png
+ | 透明底横版锁合大尺寸场景母版；不承担页眉锁合位，头像源归口图标-only 母版。Transparent horizontal-lockup master for large-format scenes; not the header lockup slot, and avatar source uses the icon-only masters.
+ | 
+logo-white.png
+ | shotstart-visuals\logo-white.png
+ | 深底反白变体，用于页脚、深色横幅与海军蓝面板。White reverse variant for footer, dark banners, and navy panels.
+ | 
+logo-lockup-navy.png
+ | shotstart-visuals\logo-lockup-navy.png
+ | 横版锁合（字标组合，navy 版），417×144 透明底；页眉浅底使用 DPI 锐利版。Horizontal lockup with wordmark, navy version, 417×144 transparent; crisp-DPI edition for the light-background header.
+ | 
+logo-lockup-white.png
+ | shotstart-visuals\logo-lockup-white.png
+ | 横版锁合（反白组合），417×144 透明底；页脚深底使用 DPI 锐利版。Horizontal lockup, white reverse version, 417×144 transparent; crisp-DPI edition for the dark-background footer.
+ | 
+logo-icon-square.png
+ | shotstart-visuals\logo-icon-square.png
+ | 图标-only 方形母版（不透明底），1024×1024；favicon、社交头像、商品卡片角标统一归口此母版。Icon-only square master, opaque background, 1024×1024; favicon, social profile picture, and small product-card corner mark all use this master.
+ | 
+logo-icon-transparent.png
+ | shotstart-visuals\logo-icon-transparent.png
+ | 图标-only 透明底方形母版，1024×1024 ARGB；favicon/头像透明底场景。Icon-only transparent square master, 1024×1024 ARGB; favicon/avatar on transparent surfaces.
+ | 
+路由规则：页眉浅底统一使用 logo-lockup-navy，页脚深底使用 logo-lockup-white；logo-square 为暖白底横版锁合大尺寸场景母版，logo-transparent 为透明底横版锁合大尺寸场景母版；favicon、头像、卡片角标统一归口图标-only 母版 logo-icon-square / logo-icon-transparent；深底（深色横幅、海军蓝面板）使用反白变体 logo-white。Routing: the light header uses logo-lockup-navy and the dark footer uses logo-lockup-white; logo-square is the warm-white horizontal-lockup master for large-format scenes, and logo-transparent is the transparent horizontal-lockup master for large-format scenes; favicon, avatar, and corner marks all use the icon-only masters logo-icon-square / logo-icon-transparent; on dark backgrounds (dark banners, navy panels) use the white reverse variant logo-white.
+字体规范 / Typography
+标题：粗几何无衬线，推荐 Montserrat 或 Poppins（Bold / SemiBold），字距收紧。Headings: bold geometric sans-serif; Montserrat or Poppins (Bold/SemiBold), tight tracking.
+正文：易读常规无衬线，如 Inter 或系统无衬线常规字重。Body: clean readable sans-serif, e.g., Inter or system sans regular weight.
+标题回落栈 / Heading stack: Montserrat, Poppins, 'Helvetica Neue', Arial, sans-serif
+正文回落栈 / Body stack: Inter, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif
+避免装饰性或手写字体。Avoid decorative or script typefaces.
+语气规范 / Tone of Voice
+有活力：语气积极，推动创作者迈出下一步。Energetic: motivated, ready to help creators take the next step.
+直白：短句、平实语言，不堆术语和空话。Direct: short sentences, plain language, no jargon or filler.
+鼓励新手行动：聚焦把第一条视频做完发出去，站在新手角度说话。Encouraging beginner action: finish and publish that first shot; meet new creators where they are.
+诚实：不使用夸大、保证增长或施压话术；AI 草稿仅作起点，需本人审核。Stay honest: no hype, guaranteed-growth claims, or pressure tactics; AI drafts are starting points to review.
+CTA 组件矩阵 / Button Matrix
+位置 / Placement
+ | 按钮文案 / Button label
+ | 说明 / Note
+ | 
+Hero — 主按钮 / Primary
+ | Shop All Gear
+ | 首页 Hero 主行动入口。Hero primary action.
+ | 
+Hero — 次按钮 / Secondary
+ | Join the 7-Day Shooting Challenge
+ | 首页 Hero 次级行动入口。Hero secondary action.
+ | 
+挑战区块 / Challenge block
+ | Join the challenge
+ | 首页挑战区块入口。Challenge section entry.
+ | 
+挑战留资表单提交 / Challenge sign-up submit
+ | Join the challenge
+ | 挑战报名表提交按钮。Challenge form submit.
+ | 
+邮件弹窗 / Email popup
+ | Save my spot
+ | 邮件弹窗订阅按钮。Popup subscribe button.
+ | 
+海报 / Poster
+ | Join the challenge
+ | 宣传海报 CTA。Poster call to action.
+ | 
+联系表单 / Contact form submit
+ | Send message
+ | 联系页表单提交按钮。Contact form submit.
+ | 
+口径说明：Hero 次按钮使用全称 “Join the 7-Day Shooting Challenge”，属入口级完整表述；挑战区块、表单提交、海报使用短 CTA “Join the challenge”。二者为同一动作的入口级/组件级两级口径，并非文案不一致。Note: the Hero secondary button uses the full name “Join the 7-Day Shooting Challenge” as an entry-level complete expression; the challenge block, form submit, and poster use the short CTA “Join the challenge”. These are entry-level and component-level phrasings of the same action, not a copy inconsistency.
+海报与图面使用规范 / Poster Usage
+白字压图：白色文字叠加实拍/场景图时，须加半透明深色遮罩（或预先加深图面），保证文字对比度可读；遮罩不可用时，优先回退到纯色卡片排版，不要直接把白字压在亮图上。White text over a photo or scene image must sit on a semi-transparent dark overlay (or a pre-darkened image) for readable contrast; when an overlay is not feasible, fall back to a solid-color card layout instead of placing white text directly on a bright image.
+海报主标题使用 7-Day Shooting Challenge；按钮 CTA 使用 Join the challenge（见 CTA 矩阵）。Poster headline uses 7-Day Shooting Challenge; the button CTA uses Join the challenge (see the Button Matrix).
+图面英文对照 / On-Image Copy Reference
+供中文评委对照图面文案；图面以英文为准，中文仅释义。For Chinese reviewers only; on-image text stays English.
+图面位置 / Placement
+ | 图面英文 / On-image EN copy
+ | 中文释义
+ | 
+海报主标题 / Poster headline
+ | 7-Day Shooting Challenge
+ | 7 天拍摄挑战（海报主标题）
+ | 
+海报按钮 / Poster button
+ | Join the challenge
+ | 加入挑战
+ | 
+七日标签 / Day labels
+ | Day 1 – Day 7
+ | 第 1 天 – 第 7 天（每日任务标签）
+ | 
+Hero 横幅 / Hero banner
+ | No on-image text; no wordmark (pure scene image)
+ | 横幅为纯场景图，无文字、无字标
+ | 
+Logo 字标 / Wordmark
+ | ShotStart
+ | 品牌名，不翻译
+ | 
